@@ -1,0 +1,15 @@
+          MODULE=assimp
+         VERSION=4.1.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/assimp/assimp/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:3520b1e9793b93a2ca3b797199e16f40d61762617e072f2d525fad70f9678a71
+        WEB_SITE=http://assimp.org
+         ENTERED=20130417
+         UPDATED=20180415
+           SHORT="Open Asset(3D models) Import Library"
+cat << EOF
+Open Asset Import Library (short name: Assimp) is a portable
+library to import various well-known 3D model formats in a
+uniform manner. It also knows how to export 3d files and is
+therefore suitable as a general-purpose 3D model converter.
+EOF

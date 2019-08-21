@@ -1,0 +1,9 @@
+depends python2
+depends qt5
+depends libdbusmenu-qt5
+depends phonon
+depends extra-cmake-modules
+depends kconfig
+depends kcodecs
+depends kcoreaddons
+depends kwindowsystem

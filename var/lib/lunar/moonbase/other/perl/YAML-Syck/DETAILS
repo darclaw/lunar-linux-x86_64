@@ -1,0 +1,22 @@
+          MODULE=YAML-Syck
+         VERSION=1.30
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
+      SOURCE_URL=http://search.cpan.org/CPAN/authors/id/T/TO/TODDR/
+      SOURCE_VFY=sha256:62b344216176556a0c497065ad8385157b9f261c6e687218dfa19ec7d7258dc7
+        WEB_SITE=http://search.cpan.org/~toddr/YAML-Syck
+            TYPE=perl
+         ENTERED=20060801
+         UPDATED=20180408
+      MAINTAINER=perldude@lunar-linux.org
+           SHORT="Perl interface to the libsyck library."
+cat << EOF
+This module provides a Perl interface to the libsyck data serialization
+library.
+
+YAML is a generic data serialization language that is optimized for human
+readability. It can be used to express the data structures of most modern
+programming languages. (Including Perl!!!)
+
+For information on the YAML syntax, please refer to the YAML specification.
+EOF

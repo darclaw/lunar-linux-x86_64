@@ -1,0 +1,7 @@
+depends grantlee-qt5
+depends syntax-highlighting
+depends kcodecs
+depends kcoreaddons
+depends kemoticons
+depends sonnet
+depends ki18n

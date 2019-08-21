@@ -1,0 +1,18 @@
+          MODULE=fann
+         VERSION=2.2.0-Source
+          SOURCE=FANN-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/$MODULE/${VERSION%-S*}/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/FANN-$VERSION
+      SOURCE_VFY=sha256:3d6ee056dab91f3b34a3f233de6a15331737848a4cbdb4e0552123d95eed4485
+        WEB_SITE=http://leenissen.dk/fann/
+            TYPE=cmake
+         ENTERED=20101105
+         UPDATED=20120201
+           SHORT="Fast Artificial Neural Network"
+cat << EOF
+Fast Artificial Neural Network Library is a free open source neural network
+library, which implements multilayer artificial neural networks in C with
+support for both fully connected and sparsely connected networks. Cross-platform
+execution in both fixed and floating point are supported. It includes a
+framework for easy handling of training data sets.
+EOF

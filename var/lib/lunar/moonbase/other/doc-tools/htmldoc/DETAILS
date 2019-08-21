@@ -1,0 +1,16 @@
+          MODULE=htmldoc
+         VERSION=1.8.29
+          SOURCE=$MODULE-$VERSION-source.tar.bz2
+      SOURCE_URL=http://www.msweet.org/files/project1/
+      SOURCE_VFY=sha256:e8c96ad740d19169eab8305c8e2ee1c795c4afa59ba99d18786ad191a2853f31
+        WEB_SITE=http://www.htmldoc.org
+         ENTERED=20101111
+         UPDATED=20160804
+           SHORT="convert html to indexed html, postscript or pdf"
+PSAFE=no
+cat << EOF
+HTMLDOC converts HTML web pages and files to indexed HTML,
+PostScript, and PDF files, complete with a table-of-contents.
+It can be used from the command-line, a simple GUI
+or from a web server.
+EOF

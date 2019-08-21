@@ -1,0 +1,12 @@
+[Unit]
+Description=DHCPv6 Server Daemon
+After=network.target
+
+[Service]
+EnvironmentFile=/etc/config.d/dhcpd6
+ExecStart=/usr/sbin/dhcpd -f -6 -cf /etc/dhcpd6.conf --no-pid $DHCPD_ARGS
+ProtectSystem=full
+ProtectHome=on
+
+[Install]
+WantedBy=multi-user.target

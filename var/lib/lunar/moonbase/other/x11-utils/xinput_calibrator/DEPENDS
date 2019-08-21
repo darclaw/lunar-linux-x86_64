@@ -1,0 +1,5 @@
+depends libX11
+depends libXext
+depends xorgproto
+depends libXi
+depends xrandr

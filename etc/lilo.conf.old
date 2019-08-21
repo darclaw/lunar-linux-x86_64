@@ -1,0 +1,12 @@
+lba32
+prompt
+compact
+delay=100
+timeout=100
+install=menu
+append="loglevel=3"
+read-only
+
+boot=/dev/sda
+root="UUID=2b02dda1-55f1-4fbd-ba68-cfb90ae97790"
+

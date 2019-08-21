@@ -1,0 +1,2 @@
+optional_depends yasm ""  "--disable-asm"  "for assembly code support"
+

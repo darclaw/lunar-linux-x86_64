@@ -1,0 +1,13 @@
+          MODULE=warzone2100
+         VERSION=3.2.3
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$SFORGE_URL/$MODULE
+      SOURCE_VFY=sha256:fcab9e860203e7dacda6ee60384da490a9d44aeafc07aa31ff25f9c548be7582
+        WEB_SITE=http://wz2100.net/
+         ENTERED=20090606
+         UPDATED=20170429
+           SHORT="3D realtime strategy game"
+
+cat << EOF
+Warzone 2100 is a 3D realtime strategy game, set on a future Earth.
+EOF

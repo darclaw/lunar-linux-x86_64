@@ -1,0 +1,16 @@
+          MODULE=ocl-icd
+         VERSION=2.2.12
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/OCL-dev/ocl-icd/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:17500e5788304eef5b52dbe784cec197bdae64e05eecf38317840d2d05484272
+        WEB_SITE=https://forge.imag.fr/projects/ocl-icd/
+         ENTERED=20160610
+         UPDATED=20181108
+           SHORT="OpenCL ICD loader"
+
+cat << EOF
+OpenCL implementations are provided as ICD (Installable Client Driver).
+An OpenCL program can use several ICD thanks to the use of an ICD Loader
+as provided by this project. This free ICD Loader can load any (free or
+non free) ICD.
+EOF

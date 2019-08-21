@@ -1,0 +1,14 @@
+15ef52918de3ec19246a2694c6c74c11  /usr/bin/lzip
+a03f77836f6c3195714f61a884d3e2af  /usr/share/doc/lzip/ChangeLog
+9ecffe570e3a9bfc63ccd16732721f83  /usr/share/doc/lzip/doc/lzip.1
+463b3a9bbc21ce9a66b624c054a15d2b  /usr/share/doc/lzip/doc/lzip.info
+67b7c2c0f6d2ede253ffe95e44d3a79f  /usr/share/doc/lzip/doc/lzip.texi
+a7a2c456e4141bf994ef77c3d3c1e493  /usr/share/doc/lzip/INSTALL
+c56c10e5ab71e453cbe8bf31adad5bbd  /usr/share/doc/lzip/NEWS
+3165475ad9cca970f8f312608e1a8eae  /usr/share/doc/lzip/README
+c464ad898b0637ab19106555be1c4a35  /usr/share/info/dir
+463b3a9bbc21ce9a66b624c054a15d2b  /usr/share/info/lzip.info
+50b98111650c67424ea094533361ff7e  /usr/share/man/man1/lzip.1.gz
+881cd9c25a50f91402ded5ae59f4caf3  /var/log/lunar/install/lzip-1.21
+69c1ea0823f2c08f57ff728425c9ebdc  /var/log/lunar/compile/lzip-1.21.xz
+85522300a55ea452d8b5eba2405b817c  /var/log/lunar/md5sum/lzip-1.21

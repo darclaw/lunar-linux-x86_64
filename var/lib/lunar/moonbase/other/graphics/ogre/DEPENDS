@@ -1,0 +1,23 @@
+depends cmake
+depends boost
+depends cppunit
+depends SDL2
+depends glu
+depends freetype2
+depends FreeImage
+depends tinyxml
+depends zziplib
+depends graphviz
+depends dejavu-ttf
+depends openexr
+depends bzip2
+
+optional_depends FreeImage \
+                 "-DOGRE_BUILD_PLUGIN_FREEIMAGE=TRUE" \
+                 "-DOGRE_BUILD_PLUGIN_FREEIMAGE=FALSE" \
+                 "for FreeImage plugin support"
+
+optional_depends openexr \
+                 "-DOGRE_BUILD_PLUGIN_EXRCODEC=TRUE" \
+                 "-DOGRE_BUILD_PLUGIN_EXRCODEC=FALSE" \
+                 "for EXR plugin support"

@@ -1,0 +1,10 @@
+[Unit]
+Description=Apply CPU microcode
+
+[Service]
+ExecStart=echo 1 > /sys/devices/system/cpu/microcode/reload
+Type=oneshot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target

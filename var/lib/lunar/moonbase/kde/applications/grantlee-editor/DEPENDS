@@ -1,0 +1,4 @@
+depends hicolor-icon-theme
+depends kparts
+depends knewstuff
+depends libkleo

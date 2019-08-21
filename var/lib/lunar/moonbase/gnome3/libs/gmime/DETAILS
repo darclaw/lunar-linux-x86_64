@@ -1,0 +1,15 @@
+          MODULE=gmime
+         VERSION=3.2.3
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha256:6a0875eeb552ab447dd54853a68ced62217d863631048737dd97eaa2713e7311
+        WEB_SITE=http://spruce.sourceforge.net/gmime
+         ENTERED=20040721
+         UPDATED=20181127
+           SHORT="MIME creation/parsing library and toolset"
+
+cat << EOF
+The GMime suite provides a core library and set of utilities which may be used
+for the creation and parsing of messages using the Multipurpose Internet Mail
+Extension (MIME).
+EOF

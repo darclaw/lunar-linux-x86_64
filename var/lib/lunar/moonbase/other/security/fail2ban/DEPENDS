@@ -1,0 +1,5 @@
+depends python-setuptools
+depends python-pyinotify
+depends iptables
+depends whois
+depends sqlite

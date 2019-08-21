@@ -1,0 +1,4 @@
+depends gtk+-3
+depends hicolor-icon-theme
+depends librsvg
+depends intltool

@@ -1,0 +1,18 @@
+depends asciidoc
+depends libxdg-basedir
+depends libXcomposite
+depends libXdamage
+depends libXrandr
+depends libXinerama
+depends xcb-util-image
+depends xcb-util-renderutil
+depends hicolor-icon-theme
+depends mesa-lib
+depends meson
+
+optional_depends dbus      "-Ddbus=true"   "-Ddbus=false"   "for DBUS support"
+optional_depends pcre      "-Dregex=true"  "-Dregex=false"  "for pcre regex support"
+optional_depends libconfig "-Dconfig=true" "-Dconfig=false" "for config file support"
+
+optional_depends xwininfo "" "" "for compton-trans build"
+optional_depends xprop    "" "" "for compton-trans build"

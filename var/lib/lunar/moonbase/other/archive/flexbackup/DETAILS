@@ -1,0 +1,23 @@
+          MODULE=flexbackup
+         VERSION=1.2.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+   SOURCE_URL=$SFORGE_URL/$MODULE/
+   SOURCE_VFY=sha256:58282b21985be75f1219c5ff4906d217055ed8627ea3e2ffdfe7a2393bc9d2c3
+        WEB_SITE=http://flexbackup.sourceforge.net
+         ENTERED=20030225
+         UPDATED=20050222
+           SHORT="A flexible backup tool"
+
+cat << EOF
+A flexible backup tool
+Features:
+   o Easy to configure
+   o Uses dump, afio, GNU tar, cpio, star, pax, or zip archivers
+   o Full and numbered levels of incremental backup (acts like "dump")
+   o Backup, list, compare, extract, extract list of files modes
+   o Compression and buffering options for all backup types
+   o Keeps a table of contents so you know archives are on each tape
+   o Does remote filesystems (over rsh/ssh; no special service)
+   o Works with tape drives or on-disk files
+   o Nice log files
+EOF

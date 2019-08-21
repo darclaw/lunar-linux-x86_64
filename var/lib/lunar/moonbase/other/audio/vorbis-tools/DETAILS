@@ -1,0 +1,16 @@
+          MODULE=vorbis-tools
+         VERSION=1.4.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://downloads.xiph.org/releases/vorbis/
+      SOURCE_VFY=sha256:a389395baa43f8e5a796c99daf62397e435a7e73531c9f44d9084055a05d22bc
+        WEB_SITE=http://www.xiph.org/ogg/vorbis
+         ENTERED=20010922
+         UPDATED=20190114
+           SHORT="vorbis-tools contains tools to create and play Ogg Vorbis files"
+
+cat << EOF
+Ogg Vorbis is a high-quality lossy audio codec which is free of
+intellectual property restrictions (like those surrounding MP3). These
+are the tools that one needs to create and play Ogg Vorbis files on the
+commandline, as well as a simple commentor.
+EOF

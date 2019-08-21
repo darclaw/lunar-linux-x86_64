@@ -1,0 +1,13 @@
+          MODULE=libgweather
+         VERSION=3.32.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha256:de9a2b392a8b27e012ed80bb9c950085692cd8e898c367c092df15f964a91d13
+        WEB_SITE=http://www.gnome.org/gnome-3/
+         ENTERED=20120706
+         UPDATED=20190318
+           SHORT="Provides access to weather information from the net"
+
+cat << EOF
+A library which provides access to weather information from the net.
+EOF

@@ -1,0 +1,20 @@
+          MODULE=libimobiledevice
+         VERSION=1.2.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://www.libimobiledevice.org/downloads
+      SOURCE_VFY=sha1:a8e3f21180b1d6df754d04a4080a29cf6891e701
+        WEB_SITE=http://www.libimobiledevice.org
+         ENTERED=20110923
+         UPDATED=20150222
+           SHORT="library to support iPhone, iPod Touch, iPad and Apple TV devices"
+
+cat << EOF
+libimobiledevice is a software library that talks the protocols to support iPhone,
+iPod Touch, iPad and Apple TV devices. Unlike other projects, it does not depend 
+on using any existing proprietary libraries and does not require jailbreaking. 
+It allows other software to easily access the device's filesystem, retrieve 
+information about the device and it's internals, backup/restore the device, 
+manage SpringBoard icons, manage installed applications, retrieve 
+addressbook/calendars/notes and bookmarks and (using libgpod) synchronize 
+music and video to the device. 
+EOF

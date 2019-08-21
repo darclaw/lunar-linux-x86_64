@@ -1,0 +1,11 @@
+depends expat
+depends python
+depends readline
+depends texinfo
+depends zlib
+
+# guile breaks the build
+#optional_depends guile \
+#                 "--with-guile=guile-2.2" \
+#                 "--without-guile" \
+#                 "for Scheme support"

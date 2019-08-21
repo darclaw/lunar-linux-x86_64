@@ -1,0 +1,9 @@
+depends python2
+depends gettext
+depends intltool
+depends meson
+
+optional_depends gobject-introspection \
+                 "-Denable-introspection=true" \
+                 "-Denable-introspection=false" \
+                 "for object introspection"

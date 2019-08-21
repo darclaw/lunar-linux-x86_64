@@ -1,0 +1,23 @@
+          MODULE=cups
+         VERSION=2.2.11
+          SOURCE=$MODULE-$VERSION-source.tar.gz
+      SOURCE_URL=http://github.com/apple/cups/releases/download/v$VERSION/
+      SOURCE_VFY=sha256:f58010813fd6903f690cdb0c0b91e4d1bc9e5b9570c28734229ba3ed2908b76c
+        WEB_SITE=http://www.cups.org/
+         ENTERED=20020218
+         UPDATED=20190323
+           SHORT="A portable printing layer"
+
+cat << EOF
+CUPS provides a portable printing layer for UNIX(r)-based operating systems. It
+has been developed to promote a standard printing solution for all UNIX vendors
+and users. CUPS provides the System V and Berkeley commandline interfaces, uses
+the Internet Printing Protocol ("IPP") as the basis for managing print jobs and
+queues, supports (with reduced functionality) the Line Printer Daemon ("LPD"),
+Server Message Block ("SMB"), and AppSocket (a.k.a. JetDirect) protocols, and
+adds network printer browsing and PostScript Printer Description ("PPD")-based
+printing options to support real-world printing under UNIX. CUPS also includes
+a customized version of GNU Ghostscript and an image file RIP that are used to
+support non-PostScript printers. Sample drivers for HP and EPSON printers are
+included that use these filters.
+EOF

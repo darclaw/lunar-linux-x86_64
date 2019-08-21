@@ -1,0 +1,14 @@
+          MODULE=kdecoration
+         VERSION=5.15.4
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/plasma/$VERSION
+      SOURCE_VFY=sha256:22ceaa283df60defdef9f51da568375bf42ec9ddd74fc3bfd7e519f867c69b89
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=https://projects.kde.org/projects/kde/workspace/kdecoration
+         ENTERED=20150504
+         UPDATED=20190404
+           SHORT="create window decorations"
+
+cat << EOF
+Plugin based library to create window decorations.
+EOF

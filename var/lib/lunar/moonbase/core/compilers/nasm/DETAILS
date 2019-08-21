@@ -1,0 +1,19 @@
+          MODULE=nasm
+         VERSION=2.14.02
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://www.nasm.us/pub/nasm/releasebuilds/$VERSION/
+      SOURCE_VFY=sha256:e24ade3e928f7253aa8c14aa44726d1edf3f98643f87c9d72ec1df44b26be8f5
+        WEB_SITE=http://nasm.sourceforge.net/
+         ENTERED=20010922
+         UPDATED=20190123
+           SHORT="The netwide assembler"
+
+cat << EOF
+NASM is an 80x86 assembler designed for portability and modularity. It supports
+a range of object file formats including Linux a.out and ELF, COFF, Microsoft
+16-bit OBJ and Win32. It will also output plain binary files. Its syntax is
+designed to be simple and easy to understand, similar to Intel's but less
+complex. It supports Pentium, P6, MMX, 3DNow! and SSE opcodes, and has macro
+capability. It includes a disassembler as well. Now with full 64-bit
+(x86-64/x64/AMD64/Intel 64) architecture and object file support.
+EOF

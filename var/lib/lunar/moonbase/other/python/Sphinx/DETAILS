@@ -1,0 +1,19 @@
+          MODULE=Sphinx
+         VERSION=2.0.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://files.pythonhosted.org/packages/source/S/Sphinx/
+      SOURCE_VFY=sha256:423280646fb37944dd3c85c58fb92a20d745793a9f6c511f59da82fa97cd404b
+        WEB_SITE=http://pypi.python.org/pypi/Sphinx/
+            TYPE=python3
+         ENTERED=20100824
+         UPDATED=20190412
+           SHORT="Python document tool"
+
+cat << EOF
+Sphinx is a tool that makes it easy to create intelligent and beautiful
+documentation for Python projects (or other documents consisting of multiple
+reStructuredText sources), written by Georg Brandl. It was originally created
+for the new Python documentation, and has excellentfacilities for Python
+project documentation, but C/C++ is supported as well, and more languages are
+planned.
+EOF

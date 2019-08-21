@@ -1,0 +1,14 @@
+          MODULE=rpcbind
+         VERSION=1.2.5
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/$MODULE
+      SOURCE_VFY=sha256:2ce360683963b35c19c43f0ee2c7f18aa5b81ef41c3fdbd15ffcb00b8bffda7a
+        WEB_SITE=http://rpcbind.sourceforge.net
+           SHORT="portmap replacement which supports RPC over various protocols"
+         ENTERED=20140111
+         UPDATED=20180819
+
+cat << EOF
+The rpcbind utility is a server that converts RPC program numbers into
+universal addresses.
+EOF

@@ -1,0 +1,15 @@
+          MODULE=libiodbc
+         VERSION=3.52.12
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/iodbc
+      SOURCE_VFY=sha256:51c5ff3a7d9a54202486cb77a3514e0e379a135beefcd5d12b96d1901f9dfb62
+        WEB_SITE=http://www.iodbc.org/dataspace/iodbc/wiki/iODBC/About
+         ENTERED=20091208
+         UPDATED=20180403
+           SHORT="Independent Open DataBase Connectivity"
+cat << EOF
+iODBC is the acronym for Independent Open DataBase Connectivity, an Open Source
+platform independent implementation of both the ODBC and X/Open specifications.
+It is rapidly emerging as the industry standard for developing solutions that
+are language, platform and database independent.
+EOF

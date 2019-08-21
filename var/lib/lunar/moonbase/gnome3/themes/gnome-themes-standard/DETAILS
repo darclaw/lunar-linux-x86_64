@@ -1,0 +1,14 @@
+          MODULE=gnome-themes-standard
+         VERSION=3.22.3
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION:0:4}
+      SOURCE_VFY=sha256:61dc87c52261cfd5b94d65e8ffd923ddeb5d3944562f84942eeeb197ab8ab56a
+        WEB_SITE=http://www.gnome.org/gnome-3
+         ENTERED=20130217
+         UPDATED=20171001
+           SHORT="Default themes for the GNOME desktop"
+ARCHIVE=off
+cat << EOF
+Gnome-themes is the collection of offical desktop themes for the GNOME desktop
+environment.
+EOF

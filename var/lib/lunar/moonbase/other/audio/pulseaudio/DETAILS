@@ -1,0 +1,34 @@
+          MODULE=pulseaudio
+         VERSION=12.2
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://freedesktop.org/software/pulseaudio/releases
+      SOURCE_VFY=sha256:809668ffc296043779c984f53461c2b3987a45b7a25eb2f0a1d11d9f23ba4055
+        WEB_SITE=http://pulseaudio.org
+         ENTERED=20060205
+         UPDATED=20180717
+           SHORT="Networked sound server"
+           PSAFE=no
+
+cat << EOF
+PulseAudio is a sound server for Linux and other Unix like operating
+systems. It is intended to be an improved drop-in replacement for the
+Enlightened Sound Daemon (ESOUND).
+It is my ultimate ambition to get PulseAudio into Gnome as a
+replacement for ESOUND. In addition to the features ESOUND provides
+pulseaudio has:
+  * Extensible plugin architecture (by loading dynamic loadable
+    modules with dlopen())
+  * Support for more than one sink/source
+  * Better low latency behaviour
+  * Embedabble into other software (the core is available as C library)
+  * Completely asynchronous C API
+  * Simple command line interface for reconfiguring the daemon
+    while running
+  * Flexible, implicit sample type conversion and resampling
+  * "Zero-Copy" architecture
+  * Module autoloading
+  * Very accurate latency measurement for playback and recordin.
+  * May be used to combine multiple sound cards to one (with sample
+    rate adjustment)
+  * Client side latency interpolation
+EOF

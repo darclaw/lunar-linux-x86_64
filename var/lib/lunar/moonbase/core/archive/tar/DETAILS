@@ -1,0 +1,26 @@
+          MODULE=tar
+         VERSION=1.32
+          SOURCE=$MODULE-$VERSION.tar.bz2
+   SOURCE_URL[0]=$GNU_URL/$MODULE
+   SOURCE_URL[1]=ftp://ftp.gnu.org/gnu/$MODULE
+      SOURCE_VFY=sha256:e4bb9e08e12e7fa9f11fef544efc85e59ba34538593d9ad38148c7ca2bfbb566
+        WEB_SITE=http://www.gnu.org/software/tar/tar.html
+         ENTERED=20010922
+         UPDATED=20190223
+           SHORT="Creates GNU tar archives"
+
+cat << EOF
+GNU tar - Creates tar archives
+Can create tar archives, as well as other forms of manipulation. For
+example, you can use tar on previously created archives to extract
+files, store additional files, or update or list files which were
+already stored.
+Tar can direct its output to available devices, files, or other programs
+(using pipes); tar can even access remote devices or files (as
+archives).
+The program saves many files together into a single tape or disk
+archive, and can restore individual files from the archive. It includes
+multivolume support, the ability to archive sparse files, automatic
+archive compression/decompression, remote archives and special features
+that allow 'tar' to be used for incremental and full backups.
+EOF

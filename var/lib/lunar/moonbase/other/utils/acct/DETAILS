@@ -1,0 +1,14 @@
+          MODULE=acct
+         VERSION=6.6.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$GNU_URL/$MODULE/
+      SOURCE_VFY=sha256:4c15bf2b58b16378bcc83f70e77d4d40ab0b194acf2ebeefdb507f151faa663f
+        WEB_SITE=http://www.gnu.org/software/acct/
+         ENTERED=20041117
+         UPDATED=20181009
+           SHORT="The GNU Accounting Utils"
+
+cat << EOF
+The GNU Accounting Utils provide login and process accounting utilities
+for GNU/Linux systems.
+EOF

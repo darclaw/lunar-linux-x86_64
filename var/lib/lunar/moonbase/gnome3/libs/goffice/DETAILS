@@ -1,0 +1,18 @@
+          MODULE=goffice
+         VERSION=0.10.44
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha256:6d6042af92cd962604068dbced5925948af6c812c2138defc3153c204d65a7b9
+        WEB_SITE=www.gnome.org
+         ENTERED=20071104
+         UPDATED=20181207
+           SHORT="A glib/gtk set of document centric objects and utilities"
+
+cat << EOF
+GOffice provides some added capabilities for abiword and gnumeric2 and gnucash.
+There are common operations for document centric applications that are
+conceptually simple, but complex to implement fully.
+    - plugins
+    - load/save documents
+    - undo/redo
+EOF

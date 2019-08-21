@@ -1,0 +1,4 @@
+optional_depends doxygen \
+                 "-D documetation=true" \
+                 "-D documentation=false" \
+                 "Builds API docs"

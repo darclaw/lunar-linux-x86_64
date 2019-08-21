@@ -1,0 +1,20 @@
+          MODULE=docutils
+         VERSION=0.14
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/$MODULE/
+      SOURCE_VFY=sha256:51e64ef2ebfb29cae1faa133b3710143496eca21c530f3f71424d77687764274
+        WEB_SITE=http://docutils.sourceforge.net/
+         ENTERED=20030402
+         UPDATED=20171122
+           SHORT="Tools to transform plaintext documentation to useful formats"
+
+cat << EOF
+The purpose of the Docutils project is to create a set of tools for
+processing plaintext documentation into useful formats, such as HTML,
+XML, and TeX. Several sources will be supported:
+  * Standalone files (implemented).
+  * Inline documentation from Python modules and packages, extracted
+    with namespace context.
+  * PEPs (Python Enhancement Proposals) (implemented).
+  * And others as discovered.
+EOF

@@ -1,0 +1,14 @@
+          MODULE=jpeg
+         VERSION=9c
+          SOURCE=${MODULE}src.v$VERSION.tar.gz
+      SOURCE_URL=http://www.ijg.org/files
+      SOURCE_VFY=sha256:650250979303a649e21f87b5ccd02672af1ea6954b911342ea491f351ceb7122
+        WEB_SITE=http://www.ijg.org
+         ENTERED=20010922
+         UPDATED=20180509
+           SHORT="A library that supports the JPEG image format"
+
+cat << EOF
+libjpeg supplies support functions for the image format "JPEG", to programs
+that are linked to it.
+EOF

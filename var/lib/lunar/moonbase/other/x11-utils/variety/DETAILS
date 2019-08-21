@@ -1,0 +1,17 @@
+          MODULE=variety
+         VERSION=0.7.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/varietywalls/variety/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:93c868024c081c3550c87211bbfba4544b32f800b24f0c361b15a74db0689295
+        WEB_SITE=http://peterlevi.com/variety/
+         ENTERED=20151226
+         UPDATED=20190509
+           SHORT="A wallpaper changer for Linux"
+
+cat << EOF
+Variety is a wallpaper changer for Linux packed with great features, yet slim
+and easy to use. It can use local images or automatically download wallpapers
+from lots of online sources, allows you to rotate them on a regular interval,
+and provides easy ways to separate the great images from the junk. Variety can
+also display wise and funny quotations or a nice digital clock on the desktop.
+EOF

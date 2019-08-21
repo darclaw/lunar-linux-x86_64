@@ -1,0 +1,7 @@
+94afa2a51188c367774de7b1988b7698  /usr/bin/installwatch
+bb0de9b0ad41de63cead82ab3e7a24b2  /usr/lib/installwatch.so
+f2766448e74c24bd1c1c5d12466093ae  /usr/share/doc/installwatch/INSTALL
+4792d6671077a46a826a505ef27cddc6  /usr/share/doc/installwatch/README
+eec5ac91f41853e48bd69b08e9398911  /var/log/lunar/install/installwatch-0.8.0rc6
+64465d18e338a653ed00cf4d294beaab  /var/log/lunar/compile/installwatch-0.8.0rc6.xz
+c05378b0ff601d538cbdccc62bb196c0  /var/log/lunar/md5sum/installwatch-0.8.0rc6

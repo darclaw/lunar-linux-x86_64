@@ -1,0 +1,2 @@
+# Unregister Nvidia XvMC
+rm -f /etc/X11/XvMCConfig

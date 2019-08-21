@@ -1,0 +1,22 @@
+           MODULE=vim
+          VERSION=8.1
+            MAJOR=${VERSION//./}
+           SOURCE=$MODULE-$VERSION.tar.bz2
+ SOURCE_DIRECTORY=$BUILD_DIRECTORY/vim${MAJOR}
+    SOURCE_URL[0]=http://ftp.vim.org/pub/vim/unix
+    SOURCE_URL[1]=http://mirrors-usa.go-parts.com/pub/vim/unix
+    SOURCE_URL[2]=http://mirror.netinch.com/pub/vim/unix
+       SOURCE_VFY=sha256:8b69fbd01c877dd8ecbbeca1dc66e5e927228d631ac4c2174b9307eb5c827c86
+         WEB_SITE=http://vim.sf.net
+       MAINTAINER=sofar@lunar-linux.org
+          ENTERED=20010922
+          UPDATED=20180518
+            SHORT="Improved version of vi"
+
+cat << EOF
+VIM is an improved version of the editor vi, one of the standard text
+editors on UNIX systems. VIM adds many of the features that you would
+expect in an editor: Unlimited undo, syntax coloring, split windows,
+visual selection, graphical user interface (read: menus, mouse control,
+scrollbars, text selection), and much much more.
+EOF

@@ -1,0 +1,20 @@
+          MODULE=Glib-Perl
+         VERSION=1.307
+          SOURCE=Glib-$VERSION.tar.gz
+   SOURCE_URL[0]=http://search.cpan.org/CPAN/authors/id/X/XA/XAOC
+   SOURCE_URL[1]=$SFORGE_URL/gtk2-perl
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${MODULE%-*}-$VERSION
+      SOURCE_VFY=sha256:f9d9b36226adbdb65b376d4bc9f00237a4ed85c4975e7cceff4acda28211a4ce
+        WEB_SITE=http://search.cpan.org/~tsch/Glib/
+            TYPE=perl
+         ENTERED=20040712
+         UPDATED=20150705
+           SHORT="Perl wrappers for the GLib utility and Object libraries"
+
+cat << EOF
+This module provides perl access to GLib and GLib's GObject libraries. GLib
+is a portability and utility library; GObject provides a generic type
+system with inheritance and a powerful signal system. Together these
+libraries are used as the foundation for many of the libraries that make
+up the Gnome environment, and are used in many unrelated projects.
+EOF

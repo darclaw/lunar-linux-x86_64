@@ -1,0 +1,14 @@
+          MODULE=Locale-Maketext-Lexicon
+         VERSION=1.00
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://search.cpan.org/CPAN/authors/id/D/DR/DRTECH
+      SOURCE_VFY=sha256:b73f6b04a58d3f0e38ebf2115a4c1532f1a4eef6fac5c6a2a449e4e14c1ddc7c
+        WEB_SITE=http://search.cpan.org/~drtech/Locale-Maketext-Lexicon
+            TYPE=perl
+         ENTERED=20060310
+         UPDATED=20150705
+           SHORT="Perl module to use other catalog formats in Maketext"
+cat << EOF
+This Perl module provides lexicon-handling modules to read from other
+localization formats, such as Gettext, Msgcat, and so on.
+EOF

@@ -1,0 +1,17 @@
+          MODULE=Net-SSLeay
+         VERSION=1.84
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://search.cpan.org/CPAN/authors/id/M/MI/MIKEM/
+      SOURCE_VFY=sha256:823ec3cbb428309d6a9e56f362a9300693ce3215b7fede109adb7be361fff177
+        WEB_SITE=http://search.cpan.org/~mikem/Net-SSLeay
+         ENTERED=20011212
+         UPDATED=20150705
+           SHORT="Perl bindings to the functions in the OpenSSL library"
+
+cat << EOF
+Net::SSLeay.pm is a Perl module that allows you to call Secure Sockets
+Layer (SSL) functions of the SSLeay library directly from your perl
+scripts. It is useful if you want to program robots that access secure
+web servers, or if you want to build your own applications over SSL
+encrypted tunnels.
+EOF

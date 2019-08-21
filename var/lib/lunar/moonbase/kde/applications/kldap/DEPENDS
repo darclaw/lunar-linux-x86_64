@@ -1,0 +1,3 @@
+depends openldap
+depends kcompletion
+depends ki18n

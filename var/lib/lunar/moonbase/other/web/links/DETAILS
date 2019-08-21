@@ -1,0 +1,14 @@
+          MODULE=links
+         VERSION=2.19
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://links.twibright.com/download
+      SOURCE_VFY=sha256:70758c7dd9bb70f045407900e0a90f1114947fce832c2f9bdefd5c0158089a0a
+        WEB_SITE=http://links.twibright.com
+         ENTERED=20020523
+         UPDATED=20190405
+           SHORT="graphics and text mode web browser"
+
+cat << EOF
+Links is a graphics and text mode web browser. Graphics mode is supported
+via SVGA, Framebuffer, X and DirectFB. With unicode support patch.
+EOF

@@ -1,0 +1,2 @@
+depends libevdev
+depends xorg-server

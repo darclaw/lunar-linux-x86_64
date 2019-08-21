@@ -1,0 +1,12 @@
+conftest.c: In function 'main':
+conftest.c:178:20: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+ struct timeval tv; exit(gettimeofday(&tv, NULL));
+                    ^~~~
+conftest.c:178:20: warning: incompatible implicit declaration of built-in function 'exit'
+conftest.c:178:20: note: include '<stdlib.h>' or provide a declaration of 'exit'
+conftest.c:175:1:
++#include <stdlib.h>
+ int
+conftest.c:178:20:
+ struct timeval tv; exit(gettimeofday(&tv, NULL));
+                    ^~~~

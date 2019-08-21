@@ -1,0 +1,14 @@
+          MODULE=konversation
+         VERSION=1.7.5
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://download.kde.org/stable/konversation/$VERSION/src/
+      SOURCE_VFY=sha256:60bf7533062b5fc63a37105461b4776437f4e24859e8ddaed1d48c4ba1470940
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=http://konversation.kde.org
+         ENTERED=20090329
+         UPDATED=20180728
+           SHORT="A kde4 irc chat program"
+
+cat << EOF
+The kde4 of konversation, the irc chat program.
+EOF

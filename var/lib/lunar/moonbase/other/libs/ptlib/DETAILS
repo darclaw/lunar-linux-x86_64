@@ -1,0 +1,14 @@
+          MODULE=ptlib
+         VERSION=2.10.11
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=https://ftp.acc.umu.se/pub/gnome/sources/ptlib/
+      SOURCE_VFY=sha256:27a8ba1fd147195c0b310897f81d26f73996b77b18147e587638444cfacd681a
+        WEB_SITE=http://www.opalvoip.org
+         ENTERED=20080924
+         UPDATED=20170409
+           SHORT="A Portable Text and GUI C/C++ Class Libarary"
+
+cat << EOF
+A multi-platform operating system and GUI abstraction system for
+application development. Formerly named pwlib.
+EOF

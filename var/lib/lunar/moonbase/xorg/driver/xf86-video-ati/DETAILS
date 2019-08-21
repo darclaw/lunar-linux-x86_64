@@ -1,0 +1,15 @@
+          MODULE=xf86-video-ati
+         VERSION=18.0.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$XORG_URL/individual/driver/
+      SOURCE_VFY=sha256:72ea3b8127d4550b64f797457f5a7851a541fa4ee2cc3f345b6c1886b81714a0
+   MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+        WEB_SITE=http://www.x.org
+         ENTERED=20060124
+         UPDATED=20180316
+           SHORT="The X.Org video driver for ATI based cards"
+
+cat << EOF
+xf86-video-ati provides the X.Org video drivers for ATI Mach, Rage, Rage128,
+Radeon, and most FireGL series video cards.
+EOF

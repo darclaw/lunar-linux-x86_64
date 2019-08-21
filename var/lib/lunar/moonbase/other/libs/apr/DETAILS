@@ -1,0 +1,22 @@
+          MODULE=apr
+         VERSION=1.6.5
+          SOURCE=$MODULE-$VERSION.tar.bz2
+   SOURCE_URL[0]=http://www.apache.org/dist/apr
+   SOURCE_URL[1]=ftp://mirror2.dataphone.se/pub/apache/apr
+   SOURCE_URL[2]=http://www.apache.org/dist/apr
+      SOURCE_VFY=sha256:a67ca9fcf9c4ff59bce7f428a323c8b5e18667fdea7b0ebad47d194371b0a105
+        WEB_SITE=http://apr.apache.org
+         ENTERED=20051208
+         UPDATED=20190513
+           SHORT="Apache Portable Runtime Project"
+
+PSAFE=no
+cat << EOF
+The mission of the Apache Portable Runtime (APR) project is to create and
+maintain software libraries that provide a predictable and consistent interface
+to underlying platform-specific implementations. The primary goal is to provide
+an API to which software developers may code and be assured of predictable if
+not identical behaviour regardless of the platform on which their software is
+built, relieving them of the need to code special-case conditions to work
+around or take advantage of platform-specific deficiencies or features.
+EOF

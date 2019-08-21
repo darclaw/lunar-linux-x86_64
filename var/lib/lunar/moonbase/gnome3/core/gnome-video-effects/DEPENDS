@@ -1,0 +1,4 @@
+depends gnome-common
+depends gst-plugins-bad
+depends gst-plugins-good
+depends intltool

@@ -1,0 +1,17 @@
+          MODULE=antiword
+         VERSION=0.37
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.winfield.demon.nl/linux/
+      SOURCE_VFY=sha1:4364f7f99cb2d37f7d1d5bc14a335ccc0c67292e
+        WEB_SITE=http://www.winfield.demon.nl/index.html
+         ENTERED=20020514
+         UPDATED=20051128
+           SHORT="free MS Word reader for Linux and RISC OS"
+cat << EOF
+antiword is a free MS Word reader for Linux and RISC OS
+
+Antiword converts the binary files from Word 6, 7, 97, 2000
+and 2002 to plain text and to PostScript
+
+Example: antiword -m 8859-9.txt my_turkish.doc > my_turkish.txt
+EOF

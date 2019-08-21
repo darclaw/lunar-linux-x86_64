@@ -1,0 +1,5 @@
+depends lua
+depends zlib
+depends SDL_mixer
+depends SDL_ttf
+depends libpng

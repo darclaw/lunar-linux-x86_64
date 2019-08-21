@@ -1,0 +1,44 @@
+depends pkgconf
+depends zlib
+depends ghostscript
+depends qpdf
+depends poppler
+depends lcms2
+depends freetype2
+depends fontconfig
+depends ijs
+depends shared-mime-info
+depends gdbus-codegen
+
+# for print testing we use DejaVuSans-ttf
+depends dejavu-ttf
+
+# required for pstopdf script
+depends bc
+
+depends cups
+
+optional_depends  %JPEG  \
+                  "--with-jpeg"  \
+                  "--without-jpeg" \
+                  "Support for JPEG filter"
+
+optional_depends  tiff  \
+                  "--with-tiff"  \
+                  "--without-tiff" \
+                  "Support for TIFF filter"
+
+optional_depends  libpng \
+                  "--with-png" \
+                  "--without-png" \
+                  "Support PNG filter"
+
+optional_depends ImageMagick \
+                 "--enable-imagefilters" \
+                 "--disable-imagefilters" \
+                 "for image filters support"
+
+optional_depends avahi \
+                 "--enable-avahi" \
+                 "--disable-avahi" \
+                 "for DNS Service Discovery support using Avahi"

@@ -1,0 +1,18 @@
+          MODULE=libsoup
+         VERSION=2.66.2
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/`echo $VERSION | cut -d. -f1-2`
+      SOURCE_VFY=sha256:bd2ea602eba642509672812f3c99b77cbec2f3de02ba1cc8cb7206bf7de0ae2a
+        WEB_SITE=http://www.gnome.org
+         ENTERED=20030413
+         UPDATED=20190515
+           SHORT="A SOAP implementation in C"
+
+#PSAFE=no
+cat << EOF
+Soup is a SOAP (Simple Object Access Protocol) implementation in C.
+It provides an queued asynchronous callback-based mechanism for sending and
+servicing SOAP requests, and a WSDL (Web Service Definition Language) to C
+compiler which generates client stubs and server skeletons for easily calling
+and implementing SOAP methods.
+EOF

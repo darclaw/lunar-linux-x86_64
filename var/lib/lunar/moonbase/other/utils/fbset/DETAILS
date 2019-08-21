@@ -1,0 +1,18 @@
+          MODULE=fbset
+         VERSION=2.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://users.telenet.be/geertu/Linux/fbdev/
+      SOURCE_VFY=sha256:40ff4ab0247b75138a0887ed40f81c1a6184f340b77126c16d074b1075b41c20
+        WEB_SITE=http://users.telenet.be/geertu/Linux/fbdev/
+         ENTERED=20020121
+         UPDATED=20180507
+           PSAFE=no
+           SHORT="A utility used to control framebuffer devices"
+
+cat << EOF
+fbset is a group of utilities to control the linux framebuffer.
+Included is fbset to change video modes on the fly, and fbcmap which
+is used to change colormaps.
+
+fbset "etc profiles" can be found in /usr/share/doc/fbset.
+EOF

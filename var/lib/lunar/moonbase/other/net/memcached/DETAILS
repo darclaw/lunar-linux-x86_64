@@ -1,0 +1,20 @@
+          MODULE=memcached
+         VERSION=1.5.14
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.memcached.org/files/
+      SOURCE_VFY=sha256:9c5bdf29a780fb6c6f7c9eaaeeda0583efdf663193758c3e316c969a510af2a9
+        WEB_SITE=http://memcached.org/
+         ENTERED=20060904
+         UPDATED=20190527
+           SHORT="Distributed memory object caching system"
+
+cat << EOF
+memcached is a high-performance, distributed memory object caching system,
+generic in nature, but intended for use in speeding up dynamic web applications
+by alleviating database load.
+It uses libevent to scale to any number of open connections (using epoll on
+Linux, if available at runtime), uses non-blocking network I/O, refcounts
+internal objects (so objects can be in multiple states to multiple clients), and
+uses its own slab allocator and hash table so virtual memory never gets 
+externally fragmented and allocations are guaranteed O(1).
+EOF

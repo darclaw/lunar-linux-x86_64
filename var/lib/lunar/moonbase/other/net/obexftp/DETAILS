@@ -1,0 +1,18 @@
+          MODULE=obexftp
+         VERSION=0.24.2-Source
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/openobex/obexftp/${VERSION%-*}/
+      SOURCE_VFY=sha256:d40fb48e0a0eea997b3e582774b29f793919a625d54b87182e31a3f3d1c989a3
+        WEB_SITE=http://openobex.sf.net
+         ENTERED=20030927
+         UPDATED=20190416
+           SHORT="Implementation of the Object Exchange (OBEX) protocol"
+
+cat << EOF
+The overall goal of this project is to make an open source
+implementation of the Object Exchange (OBEX) protocol. OBEX is a session
+protocol and can best be described as a binary HTTP protocol. OBEX is
+optimised for ad-hoc wireless links and can be used to exchange all kind
+of objects like files, pictures, calendar entries (vCal) and business
+cards (vCard).
+EOF

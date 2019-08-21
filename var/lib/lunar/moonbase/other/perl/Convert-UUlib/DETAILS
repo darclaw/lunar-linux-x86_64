@@ -1,0 +1,14 @@
+          MODULE=Convert-UUlib
+         VERSION=1.5
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/
+      SOURCE_VFY=sha256:0cd81bc21377fad191f89aa427733efe5b7e75ca1889e9317945ad448c6388ea
+        WEB_SITE=http://search.cpan.org/search?dist=Convert-UUlib
+            TYPE=perl
+         ENTERED=20030309
+         UPDATED=20180219
+           SHORT="PERL interface to the uulib library"
+
+cat << EOF
+PERL interface to the uulib library.
+EOF

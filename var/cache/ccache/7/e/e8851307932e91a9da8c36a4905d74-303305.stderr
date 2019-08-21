@@ -1,0 +1,14 @@
+socket.c: In function 'open_socket_out':
+socket.c:76:59: warning: '%s' directive output may be truncated writing up to 1023 bytes into a region of size between 976 and 1005 [-Wformat-truncation=]
+  snprintf(buffer, sizeof buffer, "CONNECT %s:%d HTTP/1.0%s%s\r\n\r\n",
+                                                           ^~
+    host, port, authhdr, authbuf);
+                         ~~~~~~~                            
+In file included from /usr/include/stdio.h:867,
+                 from rsync.h:287,
+                 from socket.c:27:
+/usr/include/bits/stdio2.h:67:10: note: '__builtin___snprintf_chk' output 24 or more bytes (assuming 1076) into a destination of size 1024
+   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        __bos (__s), __fmt, __va_arg_pack ());
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

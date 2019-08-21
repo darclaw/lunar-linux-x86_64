@@ -1,0 +1,20 @@
+          MODULE=motion
+         VERSION=4.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/Motion-Project/motion/archive/release-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-release-$VERSION
+      SOURCE_VFY=sha256:6ef8504fc5be00a49c82c4045c0004fbf575d9a5df8687025a9b06923efda2a9
+        WEB_SITE=https://github.com/Motion-Project/motion
+         ENTERED=20060110
+         UPDATED=20181105
+           SHORT="Detect movement in a video stream, webcam, etc."
+cat << EOF
+Note: motion has a new home and new project owner. See;
+http://www.lavrsen.dk/twiki/bin/view/Motion/WebHome
+
+Motion is a console application that can monitor any v4l device for
+signs of movement and process this information, such as creating small
+movies of movement events, output photographs or trigger custom
+commands. Motion also runs a separate http thread serving your video or
+webcam feed, and is highly customiseable.
+EOF

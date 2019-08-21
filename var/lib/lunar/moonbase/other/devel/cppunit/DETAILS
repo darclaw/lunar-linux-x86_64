@@ -1,0 +1,28 @@
+          MODULE=cppunit
+         VERSION=1.14.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://dev-www.libreoffice.org/src/
+      SOURCE_VFY=sha256:3d569869d27b48860210c758c4f313082103a5e58219a7669b52bfd29d674780
+        WEB_SITE=http://www.freedesktop.org/wiki/Software/cppunit/
+         ENTERED=20100321
+         UPDATED=20170511
+           SHORT="C++ unit testing framework"
+
+cat << EOF
+CppUnit is a C++ unit testing framework.
+
+CFeatures:
+
+    * XML output with hooks for additional data (XSL format avaliable in release
+      1.10.2 needs some FiXing)
+    * Compiler-like text output to integrate with an IDE
+    * Helper macros for easier test suite declaration
+    * Hierarchical test fixture support
+    * Test registry to reduce recompilation need
+    * Test plug-in for faster compile/test cycle (self testable dynamic library)
+    * Protector to encapsulate test execution (allow capture of exception not
+      derived from std::exception)
+    * MfcTestRunner
+    * QtTestRunner, a Qt based graphic test runner ppUnit is a C++ unit testing
+      framework.
+EOF

@@ -1,0 +1,17 @@
+          MODULE=libktorrent
+         VERSION=2.1.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/KDE/libktorrent/archive/v$VERSION.tar.gz
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+      SOURCE_VFY=sha256:1d0f2978dccc5b8ccd274324b515fbcde8ca9481666b1c2f761e157110de035e
+        WEB_SITE=https://www.kde.org/applications/internet/ktorrent/
+         ENTERED=20100526
+         UPDATED=20181011
+           SHORT="BitTorrent library"
+
+cat << EOF
+Libktorrent contains all the torrent downloading code.
+The goal is to make libktorrent an independent library
+(though still closely related to ktorrent),
+which can be used by other applications.
+EOF

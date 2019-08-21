@@ -1,0 +1,12 @@
+          MODULE=gtk2-bluecurve-engine
+         VERSION=1.0
+          SOURCE=GTK2-Wonderland-Engine-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Bluecurve
+   SOURCE_URL[0]=http://art.gnome.org/download/themes/gtk2/274/
+        WEB_SITE=http://www.gnome.org
+         ENTERED=20040131
+         UPDATED=20040131
+           SHORT="GTK engine for GTK+-2"
+cat << EOF
+Bluecurve is a simple and clean GTK engine for GTK+-2 environments
+EOF

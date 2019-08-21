@@ -1,0 +1,7 @@
+acls.c: In function 'default_perms_for_dir':
+acls.c:1121:7: warning: this statement may fall through [-Wimplicit-fallthrough=]
+    if (dry_run) {
+       ^
+acls.c:1127:3: note: here
+   default:
+   ^~~~~~~

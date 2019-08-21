@@ -1,0 +1,19 @@
+          MODULE=libcaca
+         VERSION=0.99.beta19
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://caca.zoy.org/files/libcaca/
+      SOURCE_VFY=sha256:128b467c4ed03264c187405172a4e83049342cc8cc2f655f53a2d0ee9d3772f4
+        WEB_SITE=http://sam.zoy.org/libcaca/
+         ENTERED=20050602
+         UPDATED=20160204
+           SHORT="Graphical output represented with ASCII text"
+
+cat << EOF
+The libcaca library is a graphics library that outputs text instead of
+pixels, so that it can work on older video cards or text terminals. It
+is not unlike the famous AAlib library. libcaca needs a terminal to
+work, thus it should work on all Unix systems (including Mac OS X)
+using either the slang library or the ncurses library, on DOS using
+the conio library, and on Windows systems using either slang or
+ncurses (through Cygwin emulation) or conio.
+EOF

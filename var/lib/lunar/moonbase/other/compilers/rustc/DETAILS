@@ -1,0 +1,28 @@
+            MODULE=rustc
+           VERSION=1.35.0-src
+            SOURCE=$MODULE-$VERSION.tar.gz
+           SOURCE2=rust-${VERSION%-*}-i686-unknown-linux-gnu.tar.gz
+        SOURCE_URL=https://static.rust-lang.org/dist/
+       SOURCE2_URL=$SOURCE_URL
+        SOURCE_VFY=sha256:5a4d637a716bac18d085f44dd87ef48b32195f71b967d872d80280b38cff712d
+       SOURCE2_VFY=sha256:05337776b3645e4b8c8c7ced0bcd1615cf9ad1b9c8b3d0f333620e5401e31aee
+          WEB_SITE=https://www.rust-lang.org/
+           ENTERED=20150916
+           UPDATED=20190524
+             SHORT="Rust language compiler"
+             BUILD=${BUILD/pc/unknown}
+
+cat << EOF
+Rust is a systems programming language that runs blazingly fast, prevents
+nearly all segfaults, and guarantees thread safety.
+Featuring:
+  * zero-cost abstractions
+  * move semantics
+  * guaranteed memory safety
+  * threads without data races
+  * trait-based generics
+  * pattern matching
+  * type inference
+  * minimal runtime
+  * efficient C bindings
+EOF

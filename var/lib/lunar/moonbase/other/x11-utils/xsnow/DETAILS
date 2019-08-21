@@ -1,0 +1,15 @@
+          MODULE=xsnow
+         VERSION=1.42
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://janswaal.home.xs4all.nl/Xsnow
+      SOURCE_VFY=sha256:d0d7c8f1fb91ca096995b1c30797e8f443c2e97d6f1e5f574b31318ed05d561a
+        WEB_SITE=http://janswaal.home.xs4all.nl/Xsnow
+         ENTERED=20011213
+         UPDATED=20170121
+           SHORT="An X application that will let it snow on the root window"
+
+cat << EOF
+Xsnow is the X-windows application that will let it snow on the root,
+in between and on windows. Santa and his reindeer will complete your
+festive-season feeling.
+EOF

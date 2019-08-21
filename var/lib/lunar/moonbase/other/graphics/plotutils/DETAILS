@@ -1,0 +1,16 @@
+          MODULE=plotutils
+         VERSION=2.6
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$GNU_URL/$MODULE
+      SOURCE_VFY=sha256:4f4222820f97ca08c7ea707e4c53e5a3556af4d8f1ab51e0da6ff1627ff433ab
+        WEB_SITE=http://www.gnu.org/software/plotutils
+         ENTERED=20070722
+         UPDATED=20091128
+           SHORT="function library for exporting 2-D vector graphics"
+
+cat << EOF
+The GNU plotutils package contains software for both programmers and technical
+users. Its centerpiece is libplot, a powerful C/C++ function library for
+exporting 2-D vector graphics in many file formats, both vector and raster. It
+can also do vector graphics animations.
+EOF

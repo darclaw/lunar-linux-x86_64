@@ -1,0 +1,19 @@
+          MODULE=ode
+         VERSION=0.13
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/opende
+      SOURCE_VFY=sha1:0279d58cc390ff5cc048f2baf96cff23887f3838
+        WEB_SITE=http://www.ode.org
+         ENTERED=20041011
+         UPDATED=20141026
+           SHORT="Open Dynamics Engine"
+
+cat << EOF
+ODE is an open source, high performance library for simulating rigid
+body dynamics. It is fully featured, stable, mature and platform
+independent with an easy to use C/C++ API. It has advanced joint types
+and integrated collision detection with friction. ODE is useful for
+simulating vehicles, objects in virtual reality environments and
+virtual creatures. It is currently used in many computer games, 3D
+authoring tools and simulation tools.
+EOF

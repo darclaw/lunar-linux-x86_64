@@ -1,0 +1,22 @@
+          MODULE=libmowgli
+         VERSION=2.1.3
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/atheme/libmowgli-2/archive/v$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-2-$VERSION
+      SOURCE_VFY=sha256:b7faab2fb9f46366a52b51443054a2ed4ecdd04774c65754bf807c5e9bdda477
+        WEB_SITE=http://atheme.org/projects/libmowgli.html
+         ENTERED=20071017
+         UPDATED=20181211
+           SHORT="development framework for C"
+
+cat << EOF
+mowgli is a development framework for C (like GLib), which provides
+high-performance and highly flexible algorithms. It can be used as a
+supplement to GLib (to add additional functions (dictionaries, hashes),
+or replace some of the slow GLib list manipulation functions), or
+stand-alone. It also provides a powerful hook system and convenient
+logging for your code, as well as a high-performance block allocator.
+
+mowgli builds upon previous attempts, such as libmisc, and will likely
+become the primary development framework for most projects at Atheme.
+EOF

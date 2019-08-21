@@ -1,0 +1,16 @@
+          MODULE=libmng
+         VERSION=2.0.3
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$SFORGE_URL/$MODULE/
+      SOURCE_VFY=sha256:4a462fdd48d4bc82c1d7a21106c8a18b62f8cc0042454323058e6da0dbb57dd3
+        WEB_SITE=http://www.libmng.com/
+         ENTERED=20010922
+         UPDATED=20150531
+           SHORT="A library that supports the MNG graphics format"
+
+cat << EOF
+The MNG library is a collection of routines used to create and manipulate
+MNG format graphics files. MNG was designed with the same modular philosophy
+as PNG. It is intended to provide a home for all of the multi-image
+capabilities that have no place in PNG.
+EOF

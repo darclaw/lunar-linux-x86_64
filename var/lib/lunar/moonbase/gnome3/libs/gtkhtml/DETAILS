@@ -1,0 +1,16 @@
+          MODULE=gtkhtml
+         VERSION=4.10.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha256:ca3b6424fb2c7ac5d9cb8fdafb69318fa2e825c9cf6ed17d1e38d9b29e5606c3
+        WEB_SITE=http://www.gnome.org
+         ENTERED=20021118
+         UPDATED=20151002
+           SHORT="HTML rendering/editing library"
+           PSAFE=no
+
+cat  <<  EOF
+GtkHTML is a HTML rendering/editing library. It is not designed to be the
+ultimate HTML browser/editor; instead, it is designed to be easily embedded
+into applications that require lightweight HTML functionality.
+EOF

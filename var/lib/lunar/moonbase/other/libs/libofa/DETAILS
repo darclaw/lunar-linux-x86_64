@@ -1,0 +1,20 @@
+          MODULE=libofa
+         VERSION=0.9.3
+          SOURCE=$MODULE-$VERSION.tar.gz
+         SOURCE2=$MODULE-$VERSION-gcc44.patch.bz2
+      SOURCE_URL=https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/musicip-libofa/
+     SOURCE2_URL=$PATCH_URL
+      SOURCE_VFY=sha256:0216466153e92058c5202dea03390ddc7601d916b983f71ce4f4d034405590a0
+     SOURCE2_VFY=sha256:3edd8ddd4a916c60908c885c0550ab191a32e3fa3350a5645ecfd07db701fc55
+        WEB_SITE=http://code.google.com/p/musicip-libofa/
+         ENTERED=20060924
+         UPDATED=20180315
+           SHORT="the Open Fingerprint Architechture"
+
+cat << EOF
+libofa (Open Fingerprint Architecture) normalizes, extracts frequencies,
+and creates an array representing the frequency data in an audio file.
+This data-chunk (so called acoustic fingerprint) was designed for use
+with the MusicDNS service.
+EOF
+

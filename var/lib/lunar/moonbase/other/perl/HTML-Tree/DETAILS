@@ -1,0 +1,17 @@
+          MODULE=HTML-Tree
+         VERSION=5.07
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://search.cpan.org/CPAN/authors/id/K/KE/KENTNL/
+      SOURCE_VFY=sha256:f0374db84731c204b86c1d5b90975fef0d30a86bd9def919343e554e31a9dbbf
+        WEB_SITE=http://search.cpan.org/~cjm/HTML-Tree/
+         ENTERED=20040212
+         UPDATED=20180218
+           SHORT="Parser that builds an HTML syntax tree"
+
+cat << EOF
+This is a parser that builds (and actually itself is) a HTML syntax tree.
+
+Objects of this class inherit the methods of both HTML::Parser and
+HTML::Element. After parsing has taken place it can be regarded as
+the syntax tree itself.
+EOF

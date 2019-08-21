@@ -1,0 +1,5 @@
+depends libwnck
+depends libxfcegui4
+depends libxfce4ui
+depends xfconf
+depends startup-notification

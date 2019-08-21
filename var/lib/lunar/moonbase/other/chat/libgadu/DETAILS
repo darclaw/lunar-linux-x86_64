@@ -1,0 +1,13 @@
+          MODULE=libgadu
+         VERSION=1.12.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://github.com/wojtekka/libgadu/releases/download/$VERSION/
+      SOURCE_VFY=sha256:28e70fb3d56ed01c01eb3a4c099cc84315d2255869ecf08e9af32c41d4cbbf5d
+        WEB_SITE=http://toxygen.net/libgadu
+         ENTERED=20090805
+         UPDATED=20181025
+           SHORT="A library for handling Gadu-Gadu"
+
+cat << EOF
+A library for handling Gadu-Gadu instant messaging protocol.
+EOF

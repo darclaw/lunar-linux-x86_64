@@ -1,0 +1,16 @@
+          MODULE=esmtp
+         VERSION=1.2
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/$MODULE
+      SOURCE_VFY=sha256:a0d26931bf731f97514da266d079d8bc7d73c65b3499ed080576ab606b21c0ce
+        WEB_SITE=http://esmtp.sourceforge.net
+         ENTERED=20050523
+         UPDATED=20160416
+           SHORT="User configurable relay-only Mail Transfer Agent (MTA)"
+
+cat << EOF
+esmtp is a user configurable relay-only Mail Transfer Agent (MTA) with a
+sendmail compatible syntax. It's based on libESMTP supporting the AUTH
+(including the CRAM-MD5 and NTLM SASL mechanisms) and the StartTLS SMTP
+extensions.
+EOF

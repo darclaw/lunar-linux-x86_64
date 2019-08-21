@@ -1,0 +1,13 @@
+          MODULE=sbc
+         VERSION=1.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://www.kernel.org/pub/linux/bluetooth/
+      SOURCE_VFY=sha256:050058cfc5a2709d324868ddbb82f9b796ba6c4f5e00cb6a715b3841ee13dfe9
+        WEB_SITE=http://www.bluez.org/
+         ENTERED=20121218
+         UPDATED=20181019
+           SHORT="Low-Complexity, Sub-Band Codec Utilities"
+
+cat << EOF
+Low-Complexity, Sub-Band Codec Utilities.
+EOF

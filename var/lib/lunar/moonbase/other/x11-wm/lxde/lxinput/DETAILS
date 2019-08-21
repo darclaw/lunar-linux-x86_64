@@ -1,0 +1,14 @@
+          MODULE=lxinput
+         VERSION=0.3.5
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$SFORGE_URL/lxde
+      SOURCE_VFY=sha256:4e8f778a65a4afe2365b47e7899358aa4fab535343aa62c72a3cdc4cac1f6e88
+        WEB_SITE=http://lxde.org
+         ENTERED=20090713
+         UPDATED=20160220
+           SHORT="Keyboard and mouse configuration for LXDE"
+      MAINTAINER=florin@lunar-linux.org
+
+cat << EOF
+An application to configure the keyboard and the mouse for LXDE.
+EOF

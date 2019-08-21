@@ -1,0 +1,22 @@
+          MODULE=docbook-book
+         SRCNAME=tdg
+         VERSION=en-html-2.0.10
+          SOURCE=$SRCNAME-$VERSION.zip
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$SRCNAME
+      SOURCE_URL=http://docbook.org/tdg/en/
+      SOURCE_VFY=sha1:11dc9eef5d5105052786bf5de10d9e93c4ed8dd7
+        WEB_SITE=http://docbook.org
+         ENTERED=20020701
+         UPDATED=20040915
+      MAINTAINER=csm@moongroup.com
+           SHORT="DocBook: The Definitive Guide."
+
+cat << EOF
+This is this offical documentation for DocBook (Version 4.3)
+
+It is the full text (in html) to the book "DocBook: The Definitive
+Guide" which was written by Norman Walsh and Leonard Muellner and
+published by O'Reilly & Associates, Inc.  This "book" is usually
+newer than the bound book version that you could buy in your local
+bookstore.
+EOF

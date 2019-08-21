@@ -1,0 +1,11 @@
+depends %BLUEZ
+depends gtk+-3
+depends libnotify
+depends pulseaudio
+depends python-pygobject
+depends python-dbus
+depends cython
+
+optional_depends dnsmasq "" "" "for Network Acess Point support"
+
+optional_depends NetworkManager "" "" "for Dial Up Networking and Personal Area Networking support"

@@ -1,0 +1,15 @@
+          MODULE=Data-UUID
+         VERSION=1.221
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://search.cpan.org/CPAN/authors/id/R/RJ/RJBS
+      SOURCE_VFY=sha256:3cc7b2a3a7b74b45a059e013f7fd878078500ea4b7269036f84556b022078667
+        WEB_SITE=https://search.cpan.org/~rjbs/Data-UUID
+         ENTERED=20060310
+         UPDATED=20181018
+           SHORT="Perl extension for generating GUIDs and UUIDs"
+cat << EOF
+This module provides a framework for generating UUIDs (Universally
+Unique Identifiers, also known as GUIDs (Globally Unique Identifiers). A
+UUID is 128 bits long, and is guaranteed to be different from all other
+UUIDs/GUIDs generated until 3400 CE.
+EOF

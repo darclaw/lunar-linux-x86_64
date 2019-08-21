@@ -1,0 +1,14 @@
+          MODULE=parley
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:243f7f1a89bb603c059b0610a9bb7f51627540d439b4026d736062b693879ed2
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=http://www.kde.org
+         ENTERED=20110813
+         UPDATED=20190418
+           SHORT="parley"
+
+cat << EOF
+Parley.
+EOF

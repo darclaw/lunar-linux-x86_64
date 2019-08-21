@@ -1,0 +1,14 @@
+          MODULE=File-Type
+         VERSION=0.22
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://search.cpan.org/CPAN/authors/id/P/PM/PMISON/
+      SOURCE_VFY=sha256:d35cd95fef57fd4dfd8831f62c34e294d7c4b861fc909e02b76071739d52d341
+        WEB_SITE=https://metacpan.org/pod/File::Type
+            TYPE=perl
+         ENTERED=20070310
+         UPDATED=20070310
+           SHORT="Perl module to determine file type using magic"
+cat << EOF
+File::Type uses magic numbers (typically at the start of a file) to
+determine the MIME type of that file.
+EOF

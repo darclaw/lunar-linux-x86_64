@@ -1,0 +1,13 @@
+/usr
+/usr/bin/bash_static
+/usr/share
+/usr/share/doc
+/usr/share/doc/bash_static
+/usr/share/doc/bash_static/ChangeLog
+/usr/share/doc/bash_static/CHANGES
+/usr/share/doc/bash_static/INSTALL
+/usr/share/doc/bash_static/NEWS
+/usr/share/doc/bash_static/README
+/var/log/lunar/install/bash_static-4.4.18
+/var/log/lunar/compile/bash_static-4.4.18.xz
+/var/log/lunar/md5sum/bash_static-4.4.18

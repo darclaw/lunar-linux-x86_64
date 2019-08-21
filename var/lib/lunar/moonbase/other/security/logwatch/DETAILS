@@ -1,0 +1,16 @@
+          MODULE=logwatch
+         VERSION=7.4.3
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/logwatch
+        WEB_SITE=http://www.logwatch.org
+      SOURCE_VFY=sha256:1dbdc48d65e150f2dbb43f1e4f4700d94166e053b1c7bbbdedf4ad670283720e
+         ENTERED=20040913
+         UPDATED=20180225
+           SHORT="Monitor log files realtime"
+
+cat << EOF
+Logwatch is a customizable log analysis system. Logwatch parses through your
+system's logs for a given period of time and creates a report analyzing areas
+that you specify, in as much detail as you require. Logwatch is easy to use
+and will work right out of the package on most systems.
+EOF

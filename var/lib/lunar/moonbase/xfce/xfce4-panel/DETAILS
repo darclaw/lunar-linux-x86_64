@@ -1,0 +1,16 @@
+          MODULE=xfce4-panel
+         VERSION=4.12.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://archive.xfce.org/src/xfce/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha256:93d58b80cca9c9eb58adb281bc75404df7cf6cae89f7f98bb9f38690009aa2e8
+        WEB_SITE=http://www.xfce.org/projects/xfce4-panel
+         ENTERED=20030715
+         UPDATED=20161025
+           SHORT="Xfce4 panel"
+
+cat << EOF
+xfce4-panel -- The panel for the Xfce4 desktop environment. Provides
+program lauchers, menus, and several plugins like a clock, a pager and
+a mail checker. Allows external plugins to be written and installed
+separately.
+EOF

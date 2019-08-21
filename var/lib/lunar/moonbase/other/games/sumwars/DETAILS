@@ -1,0 +1,14 @@
+          MODULE=sumwars
+         VERSION=0.5.8
+          SOURCE=${MODULE}-${VERSION}-src.tar.bz2
+      SOURCE_URL=$SFORGE_URL/$MODULE
+      SOURCE_VFY=sha256:2f432d5f84708447507f6686b847b8538de373cd951f5842cfec5a09aba0aabf
+        WEB_SITE=http://sumwars.org/
+         ENTERED=20131109
+         UPDATED=20140525
+           SHORT="A role-playing game"
+
+cat <<EOF
+Summoning Wars is an open source role-playing game, featuring both
+a single-player and a multiplayer mode for about 2 to 8 players.
+EOF

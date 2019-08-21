@@ -1,0 +1,6 @@
+depends gtk+-3
+depends cairomm
+depends pangomm
+depends atkmm
+
+optional_depends doxygen "" "" "for documentations generation"

@@ -1,0 +1,3 @@
+default_pre_build &&
+
+sedit "29i #include <uuid/uuid.h>" lashd/server.h

@@ -1,0 +1,5 @@
+depends python2
+depends extra-cmake-modules
+depends kconfigwidgets
+depends kio
+depends extra-cmake-modules

@@ -1,0 +1,4 @@
+depends python-setuptools
+
+optional_depends python-pycurl  "" "" "for curl support"
+optional_depends python-twisted "" "" "for platform twisted support"

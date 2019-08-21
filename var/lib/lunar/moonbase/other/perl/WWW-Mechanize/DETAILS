@@ -1,0 +1,21 @@
+          MODULE=WWW-Mechanize
+         VERSION=1.89
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://search.cpan.org/CPAN/authors/id/O/OA/OALDERS/
+      SOURCE_VFY=sha256:b09e88254b5f9a1b3ea38b3998a308e0e8b0d23e724c1337e2d146bc8519bdd7
+        WEB_SITE=https://search.cpan.org/dist/WWW-Mechanize
+            TYPE=perl
+         ENTERED=20090328
+         UPDATED=20181018
+           SHORT="Handy web browsing in a Perl object"
+
+cat << EOF
+WWW::Mechanize, or Mech for short, helps you automate interaction
+with a website. It supports performing a sequence of page fetches
+including following links and submitting forms. Each fetched page
+is parsed and its links and forms are extracted. A link or a form
+can be selected, form fields can be filled and the next page can
+be fetched. Mech also stores a history of the URLs you've visited,
+which can be queried and revisited.
+EOF
+

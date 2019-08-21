@@ -1,0 +1,16 @@
+          MODULE=libzip
+         VERSION=1.5.2
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://libzip.org/download/
+      SOURCE_VFY=sha256:b3de4d4bd49a01e0cab3507fc163f88e1651695b6b9cb25ad174dbe319d4a3b4
+        WEB_SITE=https://libzip.org
+         ENTERED=20071027
+         UPDATED=20190411
+           SHORT="C library for reading, creating, and modifying zip archives"
+
+cat << EOF
+libzip is a C library for reading, creating, and modifying zip archives. Files
+can be added from data buffers, files, or compressed data copied directly from
+other zip archives. Changes made without closing the archive can be reverted.
+The API is documented by man pages.
+EOF

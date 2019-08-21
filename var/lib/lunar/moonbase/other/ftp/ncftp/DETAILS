@@ -1,0 +1,19 @@
+          MODULE=ncftp
+         VERSION=3.2.6
+          SOURCE=$MODULE-$VERSION-src.tar.xz
+      SOURCE_URL=ftp://ftp.ncftp.com/$MODULE/
+      SOURCE_VFY=sha256:5f200687c05d0807690d9fb770327b226f02dd86155b49e750853fce4e31098d
+        WEB_SITE=http://www.ncftp.com/
+         ENTERED=20010922
+         UPDATED=20161129
+           SHORT="A set of programs implementing the File Transfer Protocol"
+
+cat << EOF
+NcFTP Client (also known as just NcFTP) is a set of FREE application
+programs implementing the File Transfer Protocol (FTP).
+The program has been in service on UNIX systems since 1991 and is a
+popular alternative to the standard FTP program, /usr/bin/ftp. NcFTP
+offers many ease-of-use and performance enhancements over the stock
+ftp client, and runs on a wide variety of UNIX platforms as well as
+operating systems such Microsoft Windows and Apple Mac OS X.
+EOF

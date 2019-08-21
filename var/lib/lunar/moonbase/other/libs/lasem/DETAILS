@@ -1,0 +1,17 @@
+            MODULE=lasem
+           VERSION=0.5.0
+            SOURCE=$MODULE-$VERSION.tar.xz
+        SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}/
+        SOURCE_VFY=sha256:d40aa6b82416dd9e17b62c0292aab5b2b00eb1d7c3b93cec85ac1bf1ac25b9b9
+          WEB_SITE=http://blogs.gnome.org/emmanuel/category/lasem/
+           ENTERED=20130219
+           UPDATED=20150514
+             SHORT="SVG/Mathml renderer"
+
+cat << EOF
+Lasem aims to be a C/Gobject based SVG/Mathml renderer
+and editor, supporting CSS style sheets. It uses cairo
+and pango as it's rendering abstraction layer, and then
+support numerous output formats: xlib, PNG, SVG, PDF,
+PS, EPS...
+EOF

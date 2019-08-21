@@ -1,0 +1,14 @@
+          MODULE=qwtpolar
+         VERSION=1.1.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/$MODULE
+      SOURCE_VFY=sha256:6168baa9dbc8d527ae1ebf2631313291a1d545da268a05f4caa52ceadbe8b295
+   MODULE_PREFIX=${QT5_PREFIX:-/usr}
+        WEB_SITE=http://qwtpolar.sourceforge.net/
+         ENTERED=20111206
+         UPDATED=20170329
+           SHORT="Qwt/Qt Polar Plot Library"
+
+cat << EOF
+Qwt/Qt Polar Plot Library.
+EOF

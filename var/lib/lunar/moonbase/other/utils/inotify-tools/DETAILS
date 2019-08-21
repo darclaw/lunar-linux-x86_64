@@ -1,0 +1,17 @@
+          MODULE=inotify-tools
+         VERSION=3.20.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/rvoicilas/inotify-tools/archive/${VERSION}.tar.gz
+      SOURCE_VFY=sha256:a433cc1dedba851078276db69b0e97f9fe41e4ba3336d2971adfca4b3a6242ac
+        WEB_SITE=http://inotify-tools.sourceforge.net/
+         ENTERED=20070430
+         UPDATED=20180330
+           SHORT="Some commandline utilities relating to inotify"
+
+cat << EOF
+inotify-tools is a C library and a set of command-line programs for
+Linux providing a simple interface to inotify. These programs can be
+used to monitor and act upon filesystem events.
+The general purpose of this package is to allow inotify's features to
+be used from within shell scripts.
+EOF

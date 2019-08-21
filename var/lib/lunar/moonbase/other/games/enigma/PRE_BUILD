@@ -1,0 +1,9 @@
+default_pre_build &&
+
+cd lib-src/enet &&
+# don't overwrite system enet
+sedit 's/lib_LIBRARIES/noinst_LIBRARIES/' Makefile.am &&
+sedit 's/.*_HEADERS =/noinst_HEADERS =/' include/enet/Makefile.am &&
+
+touch AUTHORS NEWS ChangeLog COPYING &&
+rm missing

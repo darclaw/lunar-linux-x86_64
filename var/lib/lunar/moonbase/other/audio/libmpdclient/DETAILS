@@ -1,0 +1,14 @@
+          MODULE=libmpdclient
+         VERSION=2.15
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://www.musicpd.org/download/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha256:b4dbf6f9fd99e8e7c183cb3b7de75ee4ac14d92ca43e9a99bef09168b20246d1
+        WEB_SITE=http://musicpd.org
+         ENTERED=20100111
+         UPDATED=20180909
+           SHORT="Async API lib to MPD"
+
+cat << EOF
+A stable, documented, asynchronous API library for interfacing MPD in the C, C++
+& Objective C languages.
+EOF

@@ -1,0 +1,4 @@
+depends ncurses
+
+optional_depends pcre "--with-regex=pcre" "" "for pcre support"
+

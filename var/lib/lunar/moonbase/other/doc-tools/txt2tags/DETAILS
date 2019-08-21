@@ -1,0 +1,28 @@
+          MODULE=txt2tags
+         VERSION=2.6
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/txt2tags/txt2tags/archive/2.6.tar.gz
+      SOURCE_VFY=sha256:c87b911ac5cc97dd2fdb6067601cf4fbd0094a065f6b7a593142fa75e3a924c1
+        WEB_SITE=http://txt2tags.sourceforge.net/index.html
+         ENTERED=20090411
+         UPDATED=20180324
+           SHORT="a document generator"
+
+cat << EOF
+Txt2tags is a document generator. It reads a text file with minimal markup as
+**bold** and //italic// and converts it to the following formats:
+
+    * HTML
+    * XHTML
+    * SGML
+    * LaTeX
+    * Lout
+    * Man page
+    * Wikipedia / MediaWiki (NEW)
+    * Google Code Wiki (NEW)
+    * DokuWiki (NEW)
+    * MoinMoin
+    * MagicPoint
+    * PageMaker
+    * Plain text
+EOF

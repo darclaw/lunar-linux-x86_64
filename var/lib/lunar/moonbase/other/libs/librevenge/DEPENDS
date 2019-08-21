@@ -1,0 +1,5 @@
+depends boost
+depends cppunit
+depends zlib
+
+optional_depends doxygen "" "" "for documentation install"

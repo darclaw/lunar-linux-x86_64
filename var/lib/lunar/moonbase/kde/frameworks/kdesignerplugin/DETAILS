@@ -1,0 +1,17 @@
+          MODULE=kdesignerplugin
+         VERSION=5.57.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/frameworks/$(module_version kf5)
+      SOURCE_VFY=sha256:9e85a4ac798122b459722773a6e81f639be6dfe9c9714a16704f555c88334393
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=https://projects.kde.org/projects/frameworks/kdesignerplugin
+         ENTERED=20150205
+         UPDATED=20190415
+           SHORT="Integrating KDE frameworks widgets with Qt Designer"
+
+cat << EOF
+This framework provides plugins for Qt Designer that allow it to display
+the widgets provided by various KDE frameworks, as well as a utility
+(kgendesignerplugin) that can be used to generate other such plugins
+from ini-style description files.
+EOF

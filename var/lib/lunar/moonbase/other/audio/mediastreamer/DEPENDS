@@ -1,0 +1,20 @@
+depends vim
+depends bzrtp
+depends libpcap
+depends alsa-lib
+depends ortp
+depends spandsp
+depends libvpx
+depends libtheora
+depends libmatroska
+depends libsrtp
+depends v4l-utils
+
+optional_depends libebml    "--with-ebml"         "--without-ebml"       "for Extensible Binary Meta Language support" y
+optional_depends portaudio  "--enable-portaudio"  "--disable-portaudio"  "for portaudio support" y
+optional_depends speex      "--enable-speex"      "--disable-speex"      "for speech support" y
+optional_depends SDL        "--enable-sdl"        "--disable-sdl --enable-xv" "for SDL sound support(n=using X11)" y
+optional_depends alsa-oss   "--enable-oss"        "--disable-oss"        "for Alsa oss support" y
+optional_depends ffmpeg     "--enable-ffmpeg"     "--disable-ffmpeg"     "for ffmpeg support" y
+optional_depends pulseaudio "--enable-pulseaudio" "--disable-pulseaudio" "for pulseaudio support" y
+optional_depends libupnp    "--enable-upnp"       "--disable-upnp"       "for upnp support; ${PROBLEM_COLOR}Broken for now so no${DEFAULT_COLOR}" n

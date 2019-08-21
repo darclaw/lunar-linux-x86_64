@@ -1,0 +1,15 @@
+          MODULE=at-spi2-core
+         VERSION=2.32.1
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha256:3c2aa937ebfaca2c86569bce9b16a34fbe20d69ef0c58846313b1c42f53b0d53
+        WEB_SITE=http://www.gnome.org
+         ENTERED=20120706
+         UPDATED=20190409
+           SHORT="Protocol definitions for D-Bus at-spi"
+
+cat << EOF
+This package includes the protocol definitions for the new D-Bus at-spi. Also
+included is the daemon neccessary for forwarding device events and registering
+accessible applications.
+EOF

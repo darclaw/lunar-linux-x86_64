@@ -1,0 +1,17 @@
+          MODULE=jbig2dec
+         VERSION=0.16
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs927
+      SOURCE_VFY=sha256:a4f6bf15d217e7816aa61b92971597c801e81f0a63f9fe1daee60fb88e0f0602
+        WEB_SITE=https://www.jbig2dec.com/
+         ENTERED=20101023
+         UPDATED=20190404
+           SHORT="A decoder implementation of the JBIG2 image compression format"
+
+cat << EOF
+jbig2dec is a decoder implementation of the JBIG2 image compression
+format. JBIG2 is designed for lossy or lossless encoding of 'bilevel'
+(1-bit monochrome) images at moderately high resolution, and in
+particular scanned paper documents. In this domain it is very
+efficient, offering compression ratios on the order of 100:1.
+EOF

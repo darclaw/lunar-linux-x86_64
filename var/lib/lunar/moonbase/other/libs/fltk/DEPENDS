@@ -1,0 +1,11 @@
+depends desktop-file-utils
+depends hicolor-icon-theme
+depends alsa-lib
+depends libXft
+depends libXcursor
+depends glu
+
+optional_depends zlib   "--disable-localzlib"  "--enable-localzlib" "use system zlib"
+optional_depends %JPEG  "--disable-localjpeg"  "--enable-localjpeg" "use system jpeg"
+optional_depends libpng "--disable-localpng"   "--enable-localpng"  "use system png"
+optional_depends cairo  "--enable-cairo"       "--disable-cairo"    "for cairo support"

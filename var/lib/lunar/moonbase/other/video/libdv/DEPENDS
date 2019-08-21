@@ -1,0 +1,3 @@
+depends popt
+
+optional_depends SDL "--enable-sdl" "" "for SDL support"

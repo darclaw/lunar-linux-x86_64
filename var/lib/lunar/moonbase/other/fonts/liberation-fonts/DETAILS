@@ -1,0 +1,22 @@
+          MODULE=liberation-fonts
+         VERSION=2.00.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://releases.pagure.org/liberation-fonts
+      SOURCE_VFY=sha1:256675ea876b9b98daeb66df4d75e23c941d4d39
+        WEB_SITE=http://www.redhat.com/promo/fonts
+         ENTERED=20070516
+         UPDATED=20121205
+           SHORT="some RedHat GPL exception licensed fonts"
+
+cat << EOF
+There are three sets: Sans (a substitute for Arial, Albany, Helvetica,
+Nimbus Sans L, and Bitstream Vera Sans), Serif (a substitute for Times
+New Roman, Thorndale, Nimbus Roman, and Bitstream Vera Serif) and Mono
+(a substitute for Courier New, Cumberland, Courier, Nimbus Mono L, and
+Bitstream Vera Sans Mono). The fonts are now available for you to
+install.
+You are free to use these fonts on any system you would like. You are
+free to redistribute them under the GPL+exception license found in the
+download. Using these fonts does not subject your documents to the
+GPL--it liberates them from any proprietary claim.
+EOF

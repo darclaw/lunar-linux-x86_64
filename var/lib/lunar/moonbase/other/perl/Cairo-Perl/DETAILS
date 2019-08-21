@@ -1,0 +1,18 @@
+          MODULE=Cairo-Perl
+         VERSION=1.106
+          SOURCE=Cairo-$VERSION.tar.gz
+   SOURCE_URL[0]=https://search.cpan.org/CPAN/authors/id/X/XA/XAOC
+   SOURCE_URL[1]=$SFORGE_URL/gtk2-perl/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/Cairo-$VERSION
+      SOURCE_VFY=sha256:e64803018bc7cba49e73e258547f5378cc4249797beafec524852140f49c45c4
+        WEB_SITE=https://sourceforge.net/projects/gtk2-perl/
+            TYPE=perl
+         ENTERED=20060924
+         UPDATED=20181017
+           SHORT="Perl interface to the cairo library"
+
+cat << EOF
+Cairo provides Perl bindings for the vector graphics library cairo.
+It supports multiple output targets, including PNG, PDF and SVG. Cairo
+produces identical output on all those targets.
+EOF

@@ -1,0 +1,15 @@
+          MODULE=exiv2
+         VERSION=0.27.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/Exiv2/exiv2/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:1b3766b2c203ce213a4195de14d61694017ec1a69d15d4575bccecef130990fe
+        WEB_SITE=http://www.exiv2.org
+         ENTERED=20060726
+         UPDATED=20190519
+           SHORT="Access image metadata"
+
+cat << EOF
+Exiv2 is a C++ library and a command line utility to access image
+metadata.
+EOF
+

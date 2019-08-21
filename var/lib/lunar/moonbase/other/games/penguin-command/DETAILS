@@ -1,0 +1,15 @@
+           MODULE=penguin-command
+          VERSION=1.6.11
+           SOURCE=$MODULE-$VERSION.tar.gz
+       SOURCE_URL=$SFORGE_URL/$MODULE/
+       SOURCE_VFY=sha256:659c7b5f3f968f386e820cf7387d88c0a61c17dfbdb005bd85f8e93c537e89d6
+         WEB_SITE=http://www.linux-games.com
+          ENTERED=20010922
+          UPDATED=20080202
+            SHORT="A missile command clone"
+
+cat << EOF
+This is a clone of the classic "Missile Command" Game, but it has better
+graphics and music. The gameplay has only been slightly modified.
+Penguin Command is completely licensed under the GPL.
+EOF

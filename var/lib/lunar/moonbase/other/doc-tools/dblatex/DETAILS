@@ -1,0 +1,13 @@
+          MODULE=dblatex
+         VERSION=0.3.10
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/dblatex/
+      SOURCE_VFY=sha256:6fd696b740e0044ae1caf843d225d98c01b6ed916550384544e7e31c0c6a2cfa
+        WEB_SITE=http://dblatex.sourceforge.net/
+         ENTERED=20110813
+         UPDATED=20180903
+           SHORT="DocBook to LaTeX Publishing"
+
+cat << EOF
+DocBook to LaTeX Publishing.
+EOF

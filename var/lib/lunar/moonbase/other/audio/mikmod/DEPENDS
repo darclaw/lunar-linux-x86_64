@@ -1,0 +1,2 @@
+depends libmikmod
+depends ncurses

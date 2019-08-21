@@ -1,0 +1,6 @@
+fe3d174e96866de80b4a130083df24f6  /usr/bin/lsof
+0b4b886548e26a0602819a609160ffc0  /usr/share/doc/lsof/README.lsof_4.91
+2815bfc887eabf1a22713c4cbb7b620e  /usr/share/man/man8/lsof.8.gz
+8a10fade3bd106cb86d8882f03472281  /var/log/lunar/install/lsof-4.91
+d37e3db8c88a8cd9988dc9098c59e94d  /var/log/lunar/compile/lsof-4.91.xz
+30448de60cdb6fe68223b94fdf81bc55  /var/log/lunar/md5sum/lsof-4.91

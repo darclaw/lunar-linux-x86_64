@@ -1,0 +1,6 @@
+depends cmake
+depends mesa-lib
+depends graphviz
+depends dejavu-ttf
+
+optional_depends python-numpy "" "" "for python bindings"

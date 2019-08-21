@@ -1,0 +1,17 @@
+          MODULE=libevent
+         VERSION=2.1.8
+          SOURCE=$MODULE-$VERSION-stable.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION-stable
+      SOURCE_URL=http://github.com/libevent/libevent/releases/download/release-$VERSION-stable/
+      SOURCE_VFY=sha256:965cc5a8bb46ce4199a47e9b2c9e1cae3b137e8356ffdad6d94d3b9069b71dc2
+        WEB_SITE=http://www.monkey.org/~provos/libevent
+         ENTERED=20060904
+         UPDATED=20170626
+           SHORT="An event notification library"
+
+cat << EOF
+The libevent API provides a mechanism to execute a callback function
+when a specific event occurs on a file descriptor or after a timeout
+has been reached. Furthermore, libevent also support callbacks due
+to signals or regular timeouts.
+EOF

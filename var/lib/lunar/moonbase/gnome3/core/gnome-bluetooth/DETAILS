@@ -1,0 +1,25 @@
+          MODULE=gnome-bluetooth
+         VERSION=3.32.1
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha256:6441cafd313af94fba28b701698074f97d693b9023788a74e8e6f16f817ba1aa
+        WEB_SITE=http://live.gnome.org/GnomeBluetooth
+         ENTERED=20130316
+         UPDATED=20190327
+           SHORT="Bluetooth app for GNOME"
+
+cat << EOF
+Gnome-Bluetooth is a Full Bluetooth app for gnome allowing all bluetooth
+devices to communicate through your Gnome Desktop.
+Current features include:
+* Bonobo component to manage the discovery of nearby Bluetooth devices
+* Component will create serial (RFCOMM) connections for clients to
+  devices
+* libbtcl, a GObject wrapper for Bluetooth functionality
+* An OBEX server, so you can "beam" files such as pictures, addresses
+  or contacts from other Bluetooth devices to your computer
+* An OBEX push send tool, so you can beam files from your computer to
+  remote devices.
+* gnome-vfs plugin so Nautilus can navigate known Bluetooth devices,
+  and send files to them via drag'n'drop.
+EOF

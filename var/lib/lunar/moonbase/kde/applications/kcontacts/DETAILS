@@ -1,0 +1,14 @@
+          MODULE=kcontacts
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:81ad5b3eada7c91b4b7ed09a0a17a146e87b3075925caa3d23b82c2a6f67f5b4
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=https://userbase.kde.org/KCron
+         ENTERED=20151122
+         UPDATED=20190418
+           SHORT="Address book API for KDE"
+
+cat << EOF
+Address book API for KDE.
+EOF

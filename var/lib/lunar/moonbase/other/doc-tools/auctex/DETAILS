@@ -1,0 +1,15 @@
+          MODULE=auctex
+         VERSION=11.87
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$GNU_URL/auctex/
+      SOURCE_VFY=sha256:63d57229e585dbf727f5545337615b997488bfdf475274da0718c90b77bd5cf2
+        WEB_SITE=http://www.nongnu.org/auctex/
+         ENTERED=20030213
+         UPDATED=20181127
+           SHORT="Ultimate LaTeX mode for emacs"
+
+cat << EOF
+Emacs is an advanced and extensible editor. A Major Mode customizes Emacs
+for editing text of a particular sort. AucTeX is a major mode for (La)TeX
+documents.
+EOF

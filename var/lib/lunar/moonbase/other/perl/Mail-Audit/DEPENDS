@@ -1,0 +1,4 @@
+depends MailTools
+depends MIME-tools
+depends File-HomeDir
+depends Mail-POP3Client

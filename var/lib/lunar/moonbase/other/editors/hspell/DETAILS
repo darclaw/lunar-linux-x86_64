@@ -1,0 +1,19 @@
+          MODULE=hspell
+         VERSION=1.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://hspell.ivrix.org.il/
+      SOURCE_VFY=sha256:7310f5d58740d21d6d215c1179658602ef7da97a816bc1497c8764be97aabea3
+        WEB_SITE=http://hspell.ivrix.org.il/
+         ENTERED=20010922
+         UPDATED=20171205
+           SHORT="Hebrew spell-checker"
+           PSAFE=no
+
+cat << EOF
+The Hspell project is a free Hebrew linguistic project. Its primary goal is to
+create a free Hebrew spell-checker. In addition to a spell-checker, the
+project also produced a Hebrew morphological analyzer, which for every valid
+Hebrew word lists all of its possible readings (valid combinations of prefix
+and inflected base word), and for each reading describe its part-of-speech,
+gender, tense, and other attributes.
+EOF

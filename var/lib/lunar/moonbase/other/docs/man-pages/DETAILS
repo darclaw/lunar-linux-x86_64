@@ -1,0 +1,16 @@
+          MODULE=man-pages
+         VERSION=5.01
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://www.kernel.org/pub/linux/docs/$MODULE
+      SOURCE_VFY=sha256:7dfce1334e22e2565cf219a83c5cdfa1fc5e877d54ee15a0d1f5f1de5143b627
+        WEB_SITE=http://www.win.tue.nl/~aeb/linux/man
+         ENTERED=20011003
+         UPDATED=20190509
+           SHORT="A large collection of man pages"
+ARCHIVE=off
+PSAFE=no
+
+cat << EOF
+The manpages package contains a large collection of man pages for
+Linux covering programming APIs, file formats, protocols, etc.
+EOF

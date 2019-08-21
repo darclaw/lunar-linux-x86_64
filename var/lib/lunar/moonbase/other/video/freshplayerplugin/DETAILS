@@ -1,0 +1,27 @@
+          MODULE=freshplayerplugin
+         VERSION=v0.3.10
+          SOURCE=$VERSION.tar.gz
+      SOURCE_URL=https://github.com/i-rinat/freshplayerplugin/archive
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-${VERSION#*v}
+      SOURCE_VFY=sha256:5695575999ee1741e091eab0b526b156981463fb62321063c94ed7c53557b09a
+        WEB_SITE=https://github.com/i-rinat/freshplayerplugin
+         ENTERED=20140802
+         UPDATED=20190320
+           SHORT="PPAPI-host NPAPI-plugin adapter"
+
+cat << EOF
+As you know, Adobe have suspended further development of Flash player plugin for GNU/Linux. 
+Latest available as an NPAPI plugin version 11.2 will get security updates for five years 
+(since its release on May 4th, 2012), but further development have been ceased. Fortunately 
+or not, newer versions are still available for Linux as a part of Chrome browser, where Flash 
+comes bundled in a form of PPAPI plugin. PPAPI or Pepper Plugin API is an interface promoted 
+by Chromium/Chrome team for browser plugins. It's NPAPI-inspired yet significantly different 
+API which have every concievable function plugin may want.
+
+For various reasons Firefox developers are not interested now in implementing PPAPI in Firefox. 
+However that does not mean it cannot be done.
+
+The main goal of this project is to get PPAPI (Pepper) Flash player working in Firefox.
+
+Do note freshplayerplugin at this time does not implement any sandboxing.
+EOF

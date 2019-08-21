@@ -1,0 +1,23 @@
+          MODULE=blueman
+         VERSION=2.0.8
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://github.com/blueman-project/blueman/releases/download/$VERSION/
+      SOURCE_VFY=sha256:a5f8cc9a796b19e9afea5eaca8cddc5422bac53811c32548f609bca358fe7a1a
+        WEB_SITE=https://github.com/blueman-project/blueman/
+         ENTERED=20090511
+         UPDATED=20190228
+           SHORT="GTK+ Bluetooth Manager"
+
+cat << EOF
+Blueman is a GTK+ Bluetooth Manager.
+It is designed to be simple and intuitive for everyday bluetooth tasks
+such as:
+    * Connecting to 3G/EDGE/GPRS via DUN profile.
+    * Connecting to/Creating bluetooth networks
+    * Connecting to input devices
+    * Connecting to audio devices
+    * Sending/Receiving/Browsing files via OBEX
+    * Pairing
+Blueman also integrates with Network Manager, making any Bluetooth
+Dialup/Network connections available (via HAL) to Network Manager.
+EOF

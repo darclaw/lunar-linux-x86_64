@@ -1,0 +1,27 @@
+          MODULE=dvdisaster
+         VERSION=0.79.5
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://dvdisaster.net/downloads/
+      SOURCE_VFY=sha256:9c4c53d9e67855eb04ef87b7525045b4c5b34a9e782c44615dac3ba1a2950f39
+        WEB_SITE=http://dvdisaster.net/en/
+         ENTERED=20070227
+         UPDATED=20180408
+           SHORT="data recovery of CDs and DVDs"
+PSAFE=no
+cat << EOF
+dvdisaster provides a margin of safety against data loss on CD and DVD
+media caused by aging or scratches.
+
+dvdisaster creates error correction data to compensate read errors which
+are not correctable in the CD/DVD drive.
+
+dvdisaster tries to read as much data as possible from defective media.
+Afterwards unreadable sectors are recovered using the previously created
+error correction data. The maximum error correction capacity is
+user-selectable. dvdisaster operates at the image level and does not
+depend on the file system.
+
+If you create the error correction data in time and keep it at a safe place,
+you have a good chance of recovering the medium contents from typical read
+errors and to transfer your complete data onto a new medium.
+EOF

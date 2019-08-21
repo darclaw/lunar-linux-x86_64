@@ -1,0 +1,16 @@
+[Unit]
+Description=MiniDLNA server
+After=network.target
+
+[Service]
+Type=simple
+User=minidlna
+Group=minidlna
+ExecStart=/usr/sbin/minidlnad -f /etc/minidlna/minidlna.conf -S
+ProtectSystem=full
+ProtectHome=on
+NoNewPrivileges=on
+
+[Install]
+WantedBy=multi-user.target
+

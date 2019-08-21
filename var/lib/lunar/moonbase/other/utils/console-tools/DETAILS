@@ -1,0 +1,29 @@
+          MODULE=console-tools
+         VERSION=0.2.3
+          SOURCE=$MODULE-$VERSION.tar.gz
+         SOURCE2=$MODULE-$VERSION-bootstrap.patch.bz2
+         SOURCE3=$MODULE-$VERSION-missing-quotes.patch.bz2
+         SOURCE4=gcc34_console-tools_lunar.patch
+         SOURCE5=console-tools-0.2.3-findfile-segv.patch
+      SOURCE_URL=ftp://metalab.unc.edu/pub/Linux/system/keyboards/
+     SOURCE2_URL=$PATCH_URL
+     SOURCE3_URL=$PATCH_URL
+     SOURCE4_URL=$PATCH_URL
+     SOURCE5_URL=$PATCH_URL
+      SOURCE_VFY=sha256:af990b20bb9bffdef4f6ef26b899993d75296c708ddb92bf20e4440c82661e77
+     SOURCE2_VFY=sha256:1bea686d077272baae22e7004498cc511b43e499bfb4d2a1adfbd7f60399bc07
+     SOURCE3_VFY=sha256:95613964ab0f7ba3b5906010582c597f9f881b798c27f28e217303b6d2fdf0d0
+     SOURCE4_VFY=sha256:ffa7bf10e1e717612d32eae9a33114f5031a7a64a5718ff0a7c41ceb53d24a56
+     SOURCE5_VFY=sha256:49a4fc4d8234049ab2485597267a92a94a2269c895c4d15f6cbfe1dc5db17089
+        WEB_SITE=http://lct.sourceforge.net
+         ENTERED=20010922
+         UPDATED=20040817
+           SHORT="Allows you to configure and manipulate Linux consoles"
+
+cat << EOF
+The console-tools package allows you to set-up and manipulate the Linux
+console (ie. text screen and keyboard), and manipulate console-font
+files. It was developed from version 0.94 of the standard kbd package,
+and integrates many fixes and enhancements, including new kbd features
+up to 0.99.
+EOF

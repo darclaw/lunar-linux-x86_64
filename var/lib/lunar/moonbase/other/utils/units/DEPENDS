@@ -1,0 +1,5 @@
+depends python
+depends readline
+
+optional_depends python-requests  "" "" "for live currency rates"
+optional_depends python-unidecode "" "" "for live currency rates"

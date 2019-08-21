@@ -1,0 +1,13 @@
+          MODULE=mp3info
+         VERSION=0.8.5a
+          SOURCE=$MODULE-$VERSION.tgz
+      SOURCE_URL=ftp://ftp.ibiblio.org/pub/linux/apps/sound/mp3-utils/mp3info
+      SOURCE_VFY=sha256:0438ac68e9f04947fb14ca5573d27c62454cb9db3a93b7f1d2c226cd3e0b4e10
+        WEB_SITE=http://www.ibiblio.org/mp3info
+         ENTERED=20080314
+         UPDATED=20080314
+           SHORT="An utility to read and modify the ID3 tags of MP3 files"
+
+cat << EOF
+An MP3 technical info viewer and ID3 1.x tag editor.
+EOF

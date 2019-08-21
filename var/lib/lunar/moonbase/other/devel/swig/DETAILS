@@ -1,0 +1,16 @@
+        MODULE=swig
+       VERSION=4.0.0
+        SOURCE=$MODULE-$VERSION.tar.gz
+    SOURCE_URL=https://ftp.osuosl.org/pub/blfs/conglomeration/$MODULE/
+    SOURCE_VFY=sha256:e8a39cd6437e342cdcbd5af27a9bf11b62dc9efec9248065debcb8276fcbb925
+      WEB_SITE=http://www.swig.org
+       ENTERED=20011207
+       UPDATED=20190510
+         SHORT="Creates wrapper code"
+
+cat << EOF
+SWIG is a compiler that makes it easy to integrate C and C++ code with
+scripting languages including Perl, Tcl, Python, Guile, Ruby, MzScheme, and
+Java. Swig takes a set of ANSI C/C++ declarations (with optional annotations)
+and generates an interface for them to your favorite scripting language.
+EOF

@@ -1,0 +1,22 @@
+Testing of wipe involves examining each pass, to ensure completeness
+and correctness. First add '#define PAUSE' to debug.h and
+compile. Next, run wipe -vKD -x1 <file>. After each pass, use hexdump,
+ghex, or khexdit to view the pattern. Look for breaks in the sequence,
+for multi-byte passes. For single byte passes, just run hexdump; it'll
+make it obvious if the whole file isn't filled with the same byte. The
+most difficult to verify is the random pass. There are basically three
+ways to check entropy. The first way is to run hexdump, pick some
+sequences two to four bytes long, and hexdump | grep them, to see how
+many times they appear. The longer the sequence, the less likely it is
+to appear more than once. This is obviously not the best method. The
+second method is to run a compression algorithm on the data. The
+greater the entropy, the less effective the compression (in fact,
+compression is often used to increase hash input randomness). I tested
+both gzip and bzip2, using -9, and the output of both was larger than
+the original file.
+
+The third method, which I have not done, is to make a histogram of
+PRNG output, and make sure it has decent distribution. Distribution
+isn't too much of an issue, since this isn't a monte carlo application
+and it doesn't require cryptographically strong entropy. However,
+there shouldn't be any big spikes.

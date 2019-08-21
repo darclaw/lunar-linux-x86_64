@@ -1,0 +1,14 @@
+          MODULE=kiten
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:53f5e4ef48b18989084858ab5c96b7dedf357cecf4dba3b2d2a967b4b4b8a742
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=http://www.kde.org
+         ENTERED=20110813
+         UPDATED=20190418
+           SHORT="Japanese reference tool"
+
+cat << EOF
+Kiten does do Japanese input of Kana for you.
+EOF

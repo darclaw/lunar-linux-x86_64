@@ -1,0 +1,19 @@
+          MODULE=swaylock
+         VERSION=1.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/swaywm/swaylock/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:8e6ad33d16370084f5242fd19e0ad631deaeb636cd9699cb8561ca9f18751440
+        WEB_SITE=https://github.com/swaywm/swaylock/
+         ENTERED=20190330
+         UPDATED=20190505
+           SHORT="Screen locker for Wayland"
+
+cat << EOF
+swaylock is a screen locking utility for Wayland compositors.
+It is compatible with any Wayland compositor which implements the following
+Wayland protocols:
+  - wlr-layer-shell
+  - wlr-input-inhibitor
+  - xdg-output
+  - xdg-shell
+EOF

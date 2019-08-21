@@ -1,0 +1,76 @@
+# generate the machine id
+/usr/bin/systemd-machine-id-setup
+
+# Remove obsolete 70-persistent-net.rules
+[ -f /etc/udev/rules.d/70-persistent-net.rules ] && rm /etc/udev/rules.d/70-persistent-net.rules
+
+# systemd readyness checks
+if [ ! -f /etc/machine-id ]; then
+  SYSTEMD_ERROR=1
+  message "\n${PROBLEM_COLOR}WARNING: ${MESSAGE_COLOR} File ${FILE_COLOR}/etc/machine-id${MESSAGE_COLOR} not found."
+  message "${MESSAGE_COLOR}To manually create /etc/machine-id run 'systemd-machine-id-setup' or 'dbus-uuidgen --ensure=/etc/machine-id'"
+fi
+
+if [ ! -L /etc/mtab ]; then
+  SYSTEMD_ERROR=1
+  message "\n${PROBLEM_COLOR}WARNING: ${FILE_COLOR}/etc/mtab${MESSAGE_COLOR} is not a symlink."
+  message "${MESSAGE_COLOR}To manually create a symlink to /proc/self/mounts run 'rm -f /etc/mtab; ln -s /proc/self/mounts /etc/mtab'"
+fi
+
+if [ ! -L /var/run ]; then
+  SYSTEMD_ERROR=1
+  message "\n${PROBLEM_COLOR}WARNING: ${FILE_COLOR}/var/run${MESSAGE_COLOR} is not a symlink."
+  if mountpoint -q /var/run; then
+    message "${MESSAGE_COLOR}To manually create a symlink to /run run 'umount /var/run; rm -rf /var/run; ln -s ../run /var/run'"
+  else
+    message "${MESSAGE_COLOR}To manually create a symlink to /run run 'rm -rf /var/run; ln -s ../run /var/run'"
+  fi
+fi
+
+if [ ! -L /var/lock ]; then
+  SYSTEMD_ERROR=1
+  message "\n${PROBLEM_COLOR}WARNING: ${FILE_COLOR}/var/lock${MESSAGE_COLOR} is not a symlink."
+  if mountpoint -q /var/lock; then
+    message "${MESSAGE_COLOR}To manually create a symlink to /run/lock run 'umount /var/lock; rm -rf /var/lock; ln -s ../run/lock /var/lock'"
+  else
+    message "${MESSAGE_COLOR}To manually create a symlink to /run/lock run 'rm -rf /var/lock; ln -s ../run/lock /var/lock'"
+  fi
+fi
+
+if egrep -q '^(proc|none|devpts|usbfs|tmpfs)' /etc/fstab; then
+  SYSTEMD_ERROR=1
+  message "\n${PROBLEM_COLOR}WARNING: ${MESSAGE_COLOR}Incompatible systemd mountpoints found in ${FILE_COLOR}/etc/fstab${MESSAGE_COLOR}."
+  message "${MESSAGE_COLOR}Please comment out or remove all lines except your file system and swap mountpoints from ${FILE_COLOR}/etc/fstab${MESSAGE_COLOR}."
+  message "${MESSAGE_COLOR}Hint: Lines that begin with proc, none, devpts, usbfs and tmpfs can safely be removed."
+fi
+
+if [ -n "$SYSTEMD_ERROR" ]; then
+  message "\e[5;31mPress any key to continue...${DEFAULT_COLOR}"
+  read -n 1
+fi
+
+# Generate some good default files based on current settings
+# /etc/os-release
+if [ ! -f /etc/os-release ] || ! grep -q 'HOME_URL' /etc/os-release ; then
+  if [ -f /etc/lunar.release ]; then
+    DRELEASE=$(awk '{ print $3 }' /etc/lunar.release | cut -d- -f1)
+    DCNAME=$(sed 's;.*(\(.*\) -.*;\1;' /etc/lunar.release)
+    DDESC=$(cat /etc/lunar.release)
+    DVERSION="$DRELEASE ($DCNAME)"
+  fi
+cat <<EOF > /etc/os-release
+NAME="Lunar Linux"
+VERSION="$DVERSION"
+ID=lunar
+VERSION_ID=$DRELEASE
+PRETTY_NAME="$DDESC"
+ANSI_COLOR="1;34"
+HOME_URL="http://lunar-linux.org/"
+EOF
+fi
+
+systemd-sysusers
+udevadm hwdb --update
+journalctl --update-catalog
+
+lin -c dbus

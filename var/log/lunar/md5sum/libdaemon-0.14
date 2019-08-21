@@ -1,0 +1,16 @@
+4902dfb28f781a4dcd40506a81e8d0e9  /usr/include/libdaemon/daemon.h
+fd87e28b4a37531944e06b2c5470978a  /usr/include/libdaemon/dexec.h
+43da1d5ba5ad7145ad9e2f2fa3e0c676  /usr/include/libdaemon/dfork.h
+898c6e952bb1026c673dda0e665c8953  /usr/include/libdaemon/dlog.h
+b8c0a3ac9c9300acae59c4b2df07594b  /usr/include/libdaemon/dnonblock.h
+ac20df98d4af30001cf135c7577a3088  /usr/include/libdaemon/dpid.h
+6e2abbe47c4864031a28d579a6ee3884  /usr/include/libdaemon/dsignal.h
+9ef5919a3cd76f298c903e05d3e6c559  /usr/lib/libdaemon.a
+f0486c03136e6a8f25dcaf6594fe5d17  /usr/lib/libdaemon.so.0.5.0
+13938c8f69beb0b2cb2002fa90813fde  /usr/lib/pkgconfig/libdaemon.pc
+8d55df3b7e701487fdd5e55247a42670  /usr/share/doc/libdaemon/README
+7b19ef1524f54f292abc52c4eea16f38  /usr/share/doc/libdaemon/README.html
+7a70e72e6b205ab094ae4ebdcde44959  /usr/share/doc/libdaemon/style.css
+9658b7d5d1a1925d4ed9acce29468478  /var/log/lunar/install/libdaemon-0.14
+f8b55612fd1f78533e4415a672ee7329  /var/log/lunar/compile/libdaemon-0.14.xz
+4f69e9e3ec8002c9a16820d8c9c28233  /var/log/lunar/md5sum/libdaemon-0.14

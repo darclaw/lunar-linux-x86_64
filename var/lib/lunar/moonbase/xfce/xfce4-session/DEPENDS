@@ -1,0 +1,10 @@
+depends libSM
+depends xfconf
+depends libwnck
+depends dbus-glib
+depends xfce4-panel
+depends iceauth
+
+optional_depends gnome-keyring "" "" "for keyring support when GNOME compatibility is enabled"
+optional_depends upower     "" "" "Upower support"
+optional_depends polkit     "" "" "PolicyKit support"

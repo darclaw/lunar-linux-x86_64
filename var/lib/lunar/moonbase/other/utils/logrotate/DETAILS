@@ -1,0 +1,17 @@
+          MODULE=logrotate
+         VERSION=3.15.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://github.com/logrotate/logrotate/releases/download/$VERSION/
+      SOURCE_VFY=sha256:724da48020bb801ba02728bde4c5bdce2daae46ac360d163e40ebf6914bb9927
+        WEB_SITE=http://github.com/logrotate/logrotate/
+         ENTERED=20021231
+         UPDATED=20181215
+           SHORT="Automatic rotation, compression and removal of log files"
+
+cat << EOF
+The logrotate utility is designed to simplify the administration of log files on
+a system which generates a lot of log files. Logrotate allows for the automatic
+rotation compression, removal, and mailing of log files. Logrotate can be set to
+handle a log file daily, weekly, monthly, or when the log file gets to a certain
+size. Normally, logrotate runs as a daily cron job.
+EOF

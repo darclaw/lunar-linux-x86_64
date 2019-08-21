@@ -1,0 +1,16 @@
+          MODULE=libgtop
+         VERSION=2.40.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha256:78f3274c0c79c434c03655c1b35edf7b95ec0421430897fb1345a98a265ed2d4
+        WEB_SITE=http://www.gnome.org
+         ENTERED=20020714
+         UPDATED=20190318
+           SHORT="A library to provide top functionality to applications"
+
+cat << EOF
+libgtop is a library that fetches information about the running system such as
+cpu and memory usage, active processes etc. On Linux systems, these information
+are taken directly from the /proc filesystem while on other systems a server is
+used to read those information from /dev/kmem or similar.
+EOF

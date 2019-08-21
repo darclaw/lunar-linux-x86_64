@@ -1,0 +1,5 @@
+depends python2-six
+depends python2-nose
+depends python2-beautifulsoup4
+depends isodate
+depends isolate

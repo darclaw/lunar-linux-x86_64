@@ -1,0 +1,27 @@
+          MODULE=qemu
+         VERSION=4.0.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://wiki.qemu.org/download
+      SOURCE_VFY=sha256:6d7f713f7400c8a636c770118957b13d6a7f72b0d2da4a925d10455d8e33af20
+        WEB_SITE=http://wiki.qemu.org/Index.html
+         ENTERED=20040301
+         UPDATED=20190424
+           SHORT="A fast processor emulator"
+      MAINTAINER=tchan@lunar-linux.org
+
+cat << EOF
+By using dynamic translation it achieves a reasonable speed while being easy
+to port on new host CPUs. QEMU has two operating modes:
+
+User mode emulation. In this mode, QEMU can launch Linux processes compiled
+for one CPU on another CPU. Linux system calls are converted because of
+endianness and 32/64 bit mismatches. Wine (Windows API emulator) and DOSEMU
+(DOS emulation) are the main targets for QEMU.
+
+Full system emulation. In this mode, QEMU emulates a full system, including
+a processor and various peripherials. It enables easier testing and
+debugging of system code. It can also be used to provide virtual hosting of
+several virtual PC on a single server.
+
+As QEMU requires no host kernel patches to run, it is very safe and easy to use.
+EOF

@@ -1,0 +1,18 @@
+          MODULE=libmikmod
+         VERSION=3.3.11.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+    SOURCE_URL[0]=http://mikmod.shlomifish.org/files
+    SOURCE_URL[1]=$SFORGE_URL/mikmod
+      SOURCE_VFY=sha256:ad9d64dfc8f83684876419ea7cd4ff4a41d8bcd8c23ef37ecb3a200a16b46d19
+        WEB_SITE=http://mikmod.shlomifish.org
+         ENTERED=20121108
+         UPDATED=20181013
+           SHORT="library for playing mod, s3m, xm, it, med, mtm, 669 files"
+
+cat << EOF
+libmikmod is a portable sound library, which used to be packaged with
+the MikMod module player, but is now released independentely. It is
+capable of playing samples as well as module files, using the OSS driver
+for output, as well as Alsa and EsounD. Supported module format include
+mod, s3m, xm, it, med, mtm and 669, to name a few.
+EOF

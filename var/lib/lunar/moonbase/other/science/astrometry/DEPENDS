@@ -1,0 +1,9 @@
+depends zlib
+depends bzip2
+depends cfitsio
+depends gsl
+depends libpng
+depends python-numpy
+depends %JPEG
+depends netpbm
+depends cairo

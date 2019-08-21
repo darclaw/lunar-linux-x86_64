@@ -1,0 +1,19 @@
+          MODULE=lrzip
+         VERSION=0.631
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://ck.kolivas.org/apps/lrzip
+      SOURCE_VFY=sha256:0d11e268d0d72310d6d73a8ce6bb3d85e26de3f34d8a713055f3f25a77226455
+        WEB_SITE=http://lrzip.kolivas.org/
+         ENTERED=20110219
+         UPDATED=20180104
+           SHORT="Compression which uses the lzma, lzo and rzip algorithms"
+
+cat << EOF
+"Long Range ZIP" or "Lzma RZIP".
+
+This is a compression program optimised for large files. The larger the
+file and the more memory you have, the better the compression advantage
+this will provide, especially once the files are larger than 100MB. The
+advantage can be chosen to be either size (much smaller than bzip2) or
+speed (much faster than bzip2).
+EOF

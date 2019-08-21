@@ -1,0 +1,20 @@
+          MODULE=intel-tbb
+         VERSION=2019_U5
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/01org/tbb/archive/$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/tbb-$VERSION
+      SOURCE_VFY=sha256:2ea82d74dec50e18075b4982b8d360f8bd2bf2950f38e2db483aef82e0047444
+        WEB_SITE=http://threadingbuildingblocks.org/
+         ENTERED=20160930
+         UPDATED=20190420
+           SHORT="Threading Building Blocks"
+
+cat << EOF
+Intel Threading Building Blocks (Intel TBB) offers a rich and complete approach
+to expressing parallelism in a C++ program. It is a library that helps you take 
+advantage of multi-core processor performance without having to be a threading 
+expert. Intel TBB is not just a threads-replacement library. 
+
+It represents a higher-level, task-based parallelism that abstracts platform 
+details and threading mechanisms for scalability and performance. 
+EOF

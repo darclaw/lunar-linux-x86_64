@@ -1,0 +1,16 @@
+          MODULE=Encode-Locale
+         VERSION=1.05
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://search.cpan.org/CPAN/authors/id/G/GA/GAAS
+      SOURCE_VFY=sha256:176fa02771f542a4efb1dbc2a4c928e8f4391bf4078473bd6040d8f11adb0ec1
+        WEB_SITE=http://search.cpan.org/~gaas/Encode-Locale
+            TYPE=perl
+         ENTERED=20111006
+         UPDATED=20150705
+           SHORT="determine what encodings should be used"
+
+cat << EOF
+The purpose of this Perl module is try determine what encodings should be used
+when interfacing to various external interfaces.  You will need perl-5.8 or
+better to use this module.
+EOF

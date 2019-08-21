@@ -1,0 +1,27 @@
+          MODULE=cgilib
+         VERSION=0.7
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.infodrom.org/projects/$MODULE/download/
+      SOURCE_VFY=sha256:09b7d71bd1eea10bb404cd665fd5abe69282144ce01d96f2863c85fd42d5d692
+        WEB_SITE=http://www.infodrom.org/projects/cgilib/
+         ENTERED=20050930
+         UPDATED=20101219
+           SHORT="A common gateway interface library"
+
+cat << EOF
+This is quite a simple library that provides an easy interface to the
+common gateway interface, known as CGI. The purpose is to provide an
+easy to use interface to CGI if you need to write your program in C
+instead of perl.
+
+Since version 0.5 this library also supports reading and writing
+cookies as used by shopping systems and the like.
+
+Features:
+    * Online (non-interactive) and offline (interactive) mode like CGI.pm
+    * Support for HTTP Redirections
+    * Support for FORM variables
+    * Support for HTTP Cookies
+    * Support for additional header lines
+    * Easy to use programming interface
+EOF

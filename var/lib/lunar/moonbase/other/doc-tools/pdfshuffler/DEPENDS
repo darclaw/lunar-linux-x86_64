@@ -1,0 +1,4 @@
+depends ghostscript
+depends pypoppler
+depends PyPDF2
+

@@ -1,0 +1,15 @@
+          MODULE=python2-pycparser
+         VERSION=2.19
+          SOURCE=pycparser-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/eliben/pycparser/archive/release_v$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/pycparser-release_v$VERSION
+      SOURCE_VFY=sha256:893ec3d0f26c0faa7d0b992979940353a1682f86b5cd1228740637055b112379
+        WEB_SITE=http://github.com/eliben/pycparser/
+            TYPE=python2
+         ENTERED=20150214
+         UPDATED=20180927
+           SHORT="C parser and AST generator written in Python"
+
+cat << EOF
+C parser and AST generator written in Python
+EOF

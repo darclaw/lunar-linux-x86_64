@@ -1,0 +1,17 @@
+          MODULE=mediastreamer
+         VERSION=2.16.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/BelledonneCommunications/mediastreamer2/archive/2.16.1.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${MODULE}2-$VERSION
+      SOURCE_VFY=sha256:25e0557d5b992d256a6df07466ba3c10587bdf899850b46a31e79b91147e5910
+        WEB_SITE=https://github.com/BelledonneCommunications/mediastreamer2
+         ENTERED=20091209
+         UPDATED=20180104
+           SHORT="multimedia streaming engine"
+
+cat << EOF
+Mediastreamer2 is a powerful and lightweighted streaming engine specialized for
+voice/video telephony applications. It is the library that is responsible for
+all the receiving and sending of multimedia streams in linphone, including
+voice/video capture, encoding and decoding, and rendering.
+EOF

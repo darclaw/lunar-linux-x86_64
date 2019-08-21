@@ -1,0 +1,15 @@
+          MODULE=ddrescue
+         VERSION=1.24
+          SOURCE=$MODULE-$VERSION.tar.lz
+      SOURCE_URL=http://mirrors.kernel.org/gnu/ddrescue/
+      SOURCE_VFY=sha256:4b5d3feede70e3657ca6b3c7844f23131851cbb6af0cecc9721500f7d7021087
+        WEB_SITE=http://www.gnu.org/software/ddrescue/ddrescue.html
+         ENTERED=20110620
+         UPDATED=20190519
+           SHORT="A dd version for rescueing data off problematic media"
+
+cat << EOF
+GNU ddrescue is a data recovery tool. It copies data from one file
+or block device (hard disc, cdrom, etc) to another, trying hard to
+rescue data in case of read errors.
+EOF

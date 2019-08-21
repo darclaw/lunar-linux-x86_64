@@ -1,0 +1,4 @@
+depends gettext
+depends libassuan
+depends libksba
+depends openldap

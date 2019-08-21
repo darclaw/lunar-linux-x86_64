@@ -1,0 +1,14 @@
+          MODULE=rebar
+         VERSION=2.6.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/rebar/rebar/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07
+        WEB_SITE=http://github.com/rebar/rebar/
+         ENTERED=20150614
+         UPDATED=20180216
+           SHORT="A build-tool for Erlang"
+
+cat << EOF
+Erlang build tool that makes it easy to compile and test Erlang applications,
+port drivers and releases.
+EOF

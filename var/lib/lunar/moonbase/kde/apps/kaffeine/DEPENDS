@@ -1,0 +1,5 @@
+depends libXScrnSaver
+depends qt5
+depends vlc
+depends extra-cmake-modules
+depends kidletime

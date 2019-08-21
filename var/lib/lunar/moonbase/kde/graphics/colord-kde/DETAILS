@@ -1,0 +1,14 @@
+          MODULE=colord-kde
+         VERSION=0.5.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/$MODULE/$VERSION/src/
+      SOURCE_VFY=sha256:6c545009af737ad67900e4d8549086bc65b979c799b2402871bba44addb52d2f
+        WEB_SITE=https://projects.kde.org/projects/playground/graphics/colord-kde
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+         ENTERED=20121016
+         UPDATED=20171203
+           SHORT="KDE color management module"
+
+cat << EOF
+A KDE based color management module. It can be found in system settings.
+EOF

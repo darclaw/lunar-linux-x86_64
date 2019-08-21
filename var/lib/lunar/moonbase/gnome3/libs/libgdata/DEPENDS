@@ -1,0 +1,12 @@
+depends gcr
+depends gnome-online-accounts
+depends liboauth
+depends libsoup
+depends intltool
+depends vala
+depends uhttpmock
+
+optional_depends gobject-introspection \
+                 "--enable-introspection" \
+                 "--disable-introspection" \
+                 "for introspection support"

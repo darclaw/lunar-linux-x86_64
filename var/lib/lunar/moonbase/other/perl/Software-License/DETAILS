@@ -1,0 +1,14 @@
+          MODULE=Software-License
+         VERSION=0.103013
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://cpan.metacpan.org/authors/id/L/LE/LEONT/
+      SOURCE_VFY=sha256:2641d937390f43b08fa31c419713cd96a2f0bf160be04cab322631daf6810ff3
+        WEB_SITE=https://search.cpan.org/dist/Software-License/
+            TYPE=perl
+         ENTERED=20100606
+         UPDATED=20181018
+           SHORT="Perl packages that provide templated software licenses"
+
+cat << EOF
+Perl packages that provide templated software licenses
+EOF

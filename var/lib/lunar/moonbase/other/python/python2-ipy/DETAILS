@@ -1,0 +1,14 @@
+          MODULE=python2-ipy
+         VERSION=0.83
+          SOURCE=IPy-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/IPy-$VERSION
+      SOURCE_URL=http://cheeseshop.python.org/packages/source/I/IPy
+      SOURCE_VFY=sha256:61da5a532b159b387176f6eabf11946e7458b6df8fb8b91ff1d345ca7a6edab8
+        WEB_SITE=https://pypi.python.org/pypi/IPy
+         ENTERED=20140920
+         UPDATED=20160622
+           SHORT="Python class and tools for handling IPv4/IPv6 addresses and networks"
+
+cat << EOF
+Python class and tools for handling of IPv4 and IPv6 addresses and networks.
+EOF

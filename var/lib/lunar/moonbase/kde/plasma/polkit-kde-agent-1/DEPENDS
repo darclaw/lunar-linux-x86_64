@@ -1,0 +1,7 @@
+depends python2
+depends extra-cmake-modules
+depends kcrash
+depends kdbusaddons
+depends kiconthemes
+depends knotifications
+depends kdoctools

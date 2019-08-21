@@ -1,0 +1,4 @@
+depends qt5
+depends cmake
+
+optional_depends Sphinx "" "" "For documentations support"

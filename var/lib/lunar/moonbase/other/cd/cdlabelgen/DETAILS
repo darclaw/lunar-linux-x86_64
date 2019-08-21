@@ -1,0 +1,17 @@
+          MODULE=cdlabelgen
+         VERSION=4.3.0
+          SOURCE=$MODULE-$VERSION.tgz
+      SOURCE_URL=http://www.aczoom.com/pub/tools/
+      SOURCE_VFY=sha256:94202a33bd6b19cc3c1cbf6a8e1779d7c72d8b3b48b96267f97d61ced4e1753f
+        WEB_SITE=http://www.aczoom.com/tools/cdinsert/
+         ENTERED=20011104
+         UPDATED=20180409
+           SHORT="Generating frontcards and traycards for CDs"
+
+cat << EOF
+cdlabelgen generates frontcards and traycards for CDs. It was designed to
+simplify the process of generating labels for CD's. It originated as a program
+to allow auto generation of frontcards and traycards for CD's burned via an
+automated mechanism (specifically for archiving data), but has now become
+popular for labelling CD compilations of mp3's, and copies of CDs as well.
+EOF

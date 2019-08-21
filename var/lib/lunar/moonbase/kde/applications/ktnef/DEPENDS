@@ -1,0 +1,5 @@
+depends python2
+depends extra-cmake-modules
+depends kcalutils
+depends kcontacts
+depends kdoctools

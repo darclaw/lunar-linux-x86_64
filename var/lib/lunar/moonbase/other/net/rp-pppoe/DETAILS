@@ -1,0 +1,17 @@
+          MODULE=rp-pppoe
+         VERSION=3.13
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://dianne.skoll.ca/projects/rp-pppoe/download/
+      SOURCE_VFY=sha256:8cd6bc71ba46bd5f6eb4daf60220ccdcd991a8525111dee466501b1b9717e676
+        WEB_SITE=https://dianne.skoll.ca/projects/rp-pppoe/
+         ENTERED=20020114
+         UPDATED=20181230
+           SHORT="PPP over Ethernet client/server suite"
+
+cat << EOF
+rp-pppoe, Roaring Penguin, is a PPPoE client and server suite for Linux,
+NetBSD, Solaris, and Mac OS X Beta. It is fully RFC-compliant and
+supports cookies, relay-IDs, and multiple simultaneous PPPoE discovery
+phases.  It is cleanly coded and fairly efficient, and supports
+kernel-mode PPPoE on Linux 2.4.x.
+EOF

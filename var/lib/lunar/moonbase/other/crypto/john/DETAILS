@@ -1,0 +1,17 @@
+           MODULE=john
+         VERSION=1.8.0-jumbo-1
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://www.openwall.com/john/j/
+      SOURCE_VFY=sha256:bac93d025995a051f055adbd7ce2f1975676cac6c74a6c7a3ee4cfdd9c160923
+        WEB_SITE=http://www.openwall.com/john/
+         ENTERED=20011216
+         UPDATED=20160619
+           SHORT="A fast password cracker"
+
+cat << EOF
+John the Ripper is a fast password cracker, currently available
+for many flavors of Unix (11 are officially supported, not
+counting different architectures), DOS, Win32, and BeOS. Its
+primary purpose is to detect weak Unix passwords, but a number
+of other hash types are supported as well.
+EOF

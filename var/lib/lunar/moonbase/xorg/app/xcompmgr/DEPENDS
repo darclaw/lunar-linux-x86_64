@@ -1,0 +1,4 @@
+depends libXcomposite
+depends libXdamage
+depends libXext
+depends libXrender

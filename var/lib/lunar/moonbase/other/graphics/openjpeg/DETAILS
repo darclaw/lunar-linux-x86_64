@@ -1,0 +1,21 @@
+          MODULE=openjpeg
+         VERSION=1.5.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+   SOURCE_URL[0]=http://downloads.sourceforge.net/openjpeg.mirror/
+   SOURCE_URL[1]=http://openjpeg.googlecode.com/files/
+      SOURCE_VFY=sha256:15df7b194a5d8dba0052cd21c17a4dc761149a770a907d73fffb972078c28a87
+        WEB_SITE=http://code.google.com/p/openjpeg/
+         ENTERED=20080119
+         UPDATED=20140430
+           SHORT="open-source JPEG 2000 codec written in C language"
+
+cat << EOF
+The OpenJPEG library is an open-source JPEG 2000 codec written in C language.
+It has been developed in order to promote the use of JPEG 2000, the new
+still-image compression standard from the Joint Photographic Experts Group
+(JPEG). In addition to the basic codec, various other features are under
+development, among them the  JP2 and MJ2 (Motion JPEG 2000) file formats, an
+indexing tool useful for the JPIP protocol, JPWL-tools for error-resilience, a
+Java-viewer for j2k-images, ...
+EOF
+

@@ -1,0 +1,14 @@
+          MODULE=kanagram
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:dda3ce8211957e016521597a923de92d261e32c31ebf84faa697bd26cf16647c
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=http://www.kde.org
+         ENTERED=20110813
+         UPDATED=20190418
+           SHORT="kanagram"
+
+cat << EOF
+kanagram
+EOF

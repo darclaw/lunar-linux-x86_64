@@ -1,0 +1,3 @@
+# This is private data. Do not parse.
+ADMIN_STATE=unmanaged
+OPER_STATE=routable

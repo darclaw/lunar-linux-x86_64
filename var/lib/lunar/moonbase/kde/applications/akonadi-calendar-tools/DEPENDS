@@ -1,0 +1,6 @@
+depends extra-cmake-modules
+depends kdelibs4support
+depends akonadi
+depends akonadi-calendar
+depends calendarsupport
+depends libkdepim

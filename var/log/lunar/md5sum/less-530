@@ -1,0 +1,14 @@
+55aa767a14711a67ffbe1d396f72b45a  /etc/profile.d/less.rc
+19e718508299e1f57beb4d533e1b06de  /usr/bin/less
+b5daf525c491d0b669653095f8eea1f2  /usr/bin/lessecho
+eacb08d314349075809508f9207c04af  /usr/bin/lesskey
+cd69c243e2b819df74743c1a36bc5eb8  /usr/bin/lesspipe.sh
+c8c241d80fe030e46eb11faa59037d84  /usr/share/doc/less/INSTALL
+8cb16ba30221730d971fbd34547ed1a2  /usr/share/doc/less/NEWS
+35652feda369e104dbc68280dc80e46b  /usr/share/doc/less/README
+df4ac7225d464795317965c34678d4eb  /usr/share/man/man1/less.1.gz
+1c21c97f0aa61dafc489f0abd5d79d3e  /usr/share/man/man1/lessecho.1.gz
+9d3e14b574515e01b59a48187c523571  /usr/share/man/man1/lesskey.1.gz
+505eb57a9f9d65b70ea210f990649d99  /var/log/lunar/install/less-530
+99f22c0522abdf4d56cc4f44a0ff1aa5  /var/log/lunar/compile/less-530.xz
+bfd8d8cb3ab900a3d56cd569cc9362ad  /var/log/lunar/md5sum/less-530

@@ -1,0 +1,4 @@
+depends python2-setuptools
+depends fpconst
+
+#optional_depends python2-m2crypto "" "" "for server-side SSL support"

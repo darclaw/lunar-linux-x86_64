@@ -1,0 +1,4 @@
+depends hicolor-icon-theme
+depends  SDL_image
+
+optional_depends %GLX "--enable-gl" "--disable-gl" "For OpenGL support"

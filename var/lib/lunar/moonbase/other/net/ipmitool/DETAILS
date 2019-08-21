@@ -1,0 +1,20 @@
+          MODULE=ipmitool
+         VERSION=1.8.18
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/$MODULE
+      SOURCE_VFY=sha256:7524b5c5299f870333a402535d1639fd725c800a697b0215ef7ce732bc45d04d
+        WEB_SITE=http://ipmitool.sourceforge.net
+         ENTERED=20061029
+         UPDATED=20181212
+           SHORT="Intelligent Platform Management Interface tools"
+
+cat << EOF
+IPMItool is a utility for managing and configuring devices that
+support the Intelligent Platform Management Interface (IPMI) version
+1.5 and version 2.0 specifications. IPMI is an open standard for
+monitoring, logging, recovery, inventory, and control of hardware
+that is implemented independent of the main CPU, BIOS, and OS. The
+service processor (or Baseboard Management Controller, BMC) is the
+brain behind platform management and its primary purpose is to handle
+the autonomous sensor monitoring and event logging features.
+EOF

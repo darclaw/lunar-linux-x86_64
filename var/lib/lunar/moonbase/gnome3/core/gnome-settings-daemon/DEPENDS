@@ -1,0 +1,30 @@
+depends alsa-lib
+depends pulseaudio
+depends nss
+depends dconf
+depends gnome-desktop
+depends hicolor-icon-theme
+depends libnotify
+depends libcanberra
+depends upower
+depends libxslt
+depends ibus
+depends libwacom
+depends xf86-input-wacom
+depends geocode-glib
+depends geoclue2
+depends libgweather
+depends libgudev
+depends colord
+depends NetworkManager
+depends meson
+
+optional_depends wayland \
+                 "-Dwayland=true" \
+                 "-Dwayland=false" \
+                 "Enable support for Wayland"
+
+optional_depends cups \
+                 "-Dcups=true" \
+                 "-Dcups=false" \
+                 "Enable support for CUPS"

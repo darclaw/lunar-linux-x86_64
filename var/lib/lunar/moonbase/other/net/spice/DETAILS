@@ -1,0 +1,16 @@
+          MODULE=spice
+         VERSION=0.14.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=https://www.spice-space.org/download/releases/spice-server/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
+      SOURCE_VFY=sha256:1ead5de63d06eededed4017db37240f07bef0abffbaf621899647e7e685a1519
+        WEB_SITE=http://spice-space.org/
+         ENTERED=20130203
+         UPDATED=20181107
+           SHORT="SPICE server and client"
+
+cat <<EOF
+The SPICE project aims to provide a complete open source solution for remote
+access to virtual machines in a seamless way so you can play videos, record
+audio, share usb devices and share folders without complications.
+EOF

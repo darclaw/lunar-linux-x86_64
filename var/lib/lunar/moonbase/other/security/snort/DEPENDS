@@ -1,0 +1,6 @@
+depends daq
+depends luajit
+depends libdnet
+depends pcre
+depends zlib
+depends %OSSL

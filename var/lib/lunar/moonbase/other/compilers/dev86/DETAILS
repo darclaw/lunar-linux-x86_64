@@ -1,0 +1,26 @@
+        MODULE=dev86
+       VERSION=0.16.21
+        SOURCE=Dev86src-$VERSION.tar.gz
+       SOURCE2=dev86-0.16.18-remove-bin86-conflicts.patch.bz2
+ SOURCE_URL[0]=http://v3.sk/~lkundrak/dev86/
+ SOURCE_URL[1]=$MIRROR_URL
+   SOURCE2_URL=$PATCH_URL
+    SOURCE_VFY=sha256:234b110e6df9b7f6843e2ee53473127c2211243a16748f229fc0127845f68d94
+   SOURCE2_VFY=sha256:9edf7685dc2c0c08e4ea19bf15ea05877effb996c1e1fcdd8e2983283200a4a8
+      WEB_SITE=http://www.debath.co.uk
+       ENTERED=20071004
+       UPDATED=20140919
+         SHORT="Bruce Evan's C compiler, related assembler and linker"
+         PSAFE=no
+
+cat << EOF
+This is based on Bruce Evans's C compiler with additional code,
+including a reasonable C library for ELKS DOS or standalone,
+written by myself and others.
+
+This is the source mainly for use with Linux i386 but should work
+with other unix versions. Within Linux the assembler and linker
+are used for bootblocks, DOSEMU and other packages.
+
+Includes bcc, as86 and more.
+EOF

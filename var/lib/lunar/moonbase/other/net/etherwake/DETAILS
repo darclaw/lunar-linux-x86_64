@@ -1,0 +1,16 @@
+         MODULE=etherwake
+        VERSION=1.09.orig
+         SOURCE=${MODULE}_$VERSION.tar.gz
+     SOURCE_URL=https://launchpad.net/ubuntu/+archive/primary/+files/
+     SOURCE_VFY=sha256:54241c7689579dc86e29e6afbc6d60e69f97135091a1395c8a10f6d5a2daec1d
+       WEB_SITE=http://www.scyld.com/wakeonlan.html
+        ENTERED=20051110
+        UPDATED=20051110
+          SHORT="WoL utility for starting computers remotely"
+
+cat << EOF
+Wake-On-LAN is the generic name for the AMD "Magic Packet" technology. It's
+very similar to the PCMCIA modem "wake on ring" signal line. The basic idea is
+that the network adapter has a very-low-power mode to monitor the network for
+special packet data that will wake up the machine.
+EOF

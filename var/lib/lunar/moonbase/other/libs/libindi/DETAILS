@@ -1,0 +1,17 @@
+          MODULE=libindi
+         VERSION=1.7.5
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/indilib/indi/archive/v$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/indi-$VERSION
+      SOURCE_VFY=sha256:842ec3ad1a2e19f7bcad7c03d3982b45ffa84c905df751001f620896002c4e09
+        WEB_SITE=http://www.indilib.org/index.php?title=Main_Page
+         ENTERED=20071027
+         UPDATED=20181212
+           SHORT="instrument neutral distributed interface control protocol"
+
+cat << EOF
+INDI is a distributed control protocol designed to operate astronomical
+instrumentation. INDI is small, flexible, easy to parse, and scalable.
+It supports common DCS functions such as remote control, data acquisition,
+monitoring, and a lot more.
+EOF

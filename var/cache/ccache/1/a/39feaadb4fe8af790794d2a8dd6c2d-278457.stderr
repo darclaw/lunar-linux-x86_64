@@ -1,0 +1,67 @@
+hashtable.c: In function 'hashlittle':
+hashtable.c:455:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 12: c+=((uint32_t)k[11])<<24;
+              ~^~~~~~~~~~~~~~~~~~~~~~~
+hashtable.c:456:5: note: here
+     case 11: c+=((uint32_t)k[10])<<16;
+     ^~~~
+hashtable.c:456:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 11: c+=((uint32_t)k[10])<<16;
+              ~^~~~~~~~~~~~~~~~~~~~~~~
+hashtable.c:457:5: note: here
+     case 10: c+=((uint32_t)k[9])<<8;
+     ^~~~
+hashtable.c:457:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 10: c+=((uint32_t)k[9])<<8;
+              ~^~~~~~~~~~~~~~~~~~~~~
+hashtable.c:458:5: note: here
+     case 9 : c+=k[8];
+     ^~~~
+hashtable.c:458:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 9 : c+=k[8];
+              ~^~~~~~
+hashtable.c:459:5: note: here
+     case 8 : b+=((uint32_t)k[7])<<24;
+     ^~~~
+hashtable.c:459:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 8 : b+=((uint32_t)k[7])<<24;
+              ~^~~~~~~~~~~~~~~~~~~~~~
+hashtable.c:460:5: note: here
+     case 7 : b+=((uint32_t)k[6])<<16;
+     ^~~~
+hashtable.c:460:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 7 : b+=((uint32_t)k[6])<<16;
+              ~^~~~~~~~~~~~~~~~~~~~~~
+hashtable.c:461:5: note: here
+     case 6 : b+=((uint32_t)k[5])<<8;
+     ^~~~
+hashtable.c:461:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 6 : b+=((uint32_t)k[5])<<8;
+              ~^~~~~~~~~~~~~~~~~~~~~
+hashtable.c:462:5: note: here
+     case 5 : b+=k[4];
+     ^~~~
+hashtable.c:462:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 5 : b+=k[4];
+              ~^~~~~~
+hashtable.c:463:5: note: here
+     case 4 : a+=((uint32_t)k[3])<<24;
+     ^~~~
+hashtable.c:463:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 4 : a+=((uint32_t)k[3])<<24;
+              ~^~~~~~~~~~~~~~~~~~~~~~
+hashtable.c:464:5: note: here
+     case 3 : a+=((uint32_t)k[2])<<16;
+     ^~~~
+hashtable.c:464:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 3 : a+=((uint32_t)k[2])<<16;
+              ~^~~~~~~~~~~~~~~~~~~~~~
+hashtable.c:465:5: note: here
+     case 2 : a+=((uint32_t)k[1])<<8;
+     ^~~~
+hashtable.c:465:15: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 2 : a+=((uint32_t)k[1])<<8;
+              ~^~~~~~~~~~~~~~~~~~~~~
+hashtable.c:466:5: note: here
+     case 1 : a+=k[0];
+     ^~~~

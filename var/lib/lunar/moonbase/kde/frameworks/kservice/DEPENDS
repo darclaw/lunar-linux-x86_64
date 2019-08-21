@@ -1,0 +1,8 @@
+depends bison
+depends flex
+depends python2
+depends extra-cmake-modules
+depends kconfig
+depends kcrash
+depends kdbusaddons
+depends ki18n

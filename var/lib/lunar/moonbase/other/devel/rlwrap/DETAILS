@@ -1,0 +1,16 @@
+          MODULE=rlwrap
+         VERSION=0.43
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://github.com/hanslub42/rlwrap/releases/download/v${VERSION}/
+      SOURCE_VFY=sha256:8e86d0b7882d9b8a73d229897a90edc207b1ae7fa0899dca8ee01c31a93feb2f
+        WEB_SITE=https://github.com/hanslub42/rlwrap
+         ENTERED=20150713
+         UPDATED=20170517
+           SHORT="Adds readline-style editing and history to programs"
+
+cat << EOF
+rlwrap is a wrapper that uses the GNU readline library to allow the editing of
+keyboard input for any other command. Input history is kept between invocations,
+separately for each command; history completion and search work as in bash and
+completion word lists can be specified on the command line.
+EOF

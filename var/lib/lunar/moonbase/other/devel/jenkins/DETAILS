@@ -1,0 +1,15 @@
+          MODULE=jenkins
+         VERSION=2.174
+          SOURCE=$MODULE-$VERSION.war
+ SOURCE_URL_FULL=http://mirrors.jenkins-ci.org/war/$VERSION/jenkins.war
+      SOURCE_VFY=sha256:32a949012fd7a5501fabe7dcc55bd5e2cd8b77100a992387262aa7f4515f5761
+        WEB_SITE=http://jenkins-ci.org/
+         ENTERED=20141027
+         UPDATED=20190422
+           SHORT="Extendable continuous integration server"
+         ARCHIVE=off
+       LDD_CHECK=off
+
+cat <<EOF
+A java based extendable continuous integration server.
+EOF

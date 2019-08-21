@@ -1,0 +1,13 @@
+          MODULE=lgi
+         VERSION=0.9.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/pavouk/lgi/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:cfc4105482b4730b3a40097c9d9e7e35c46df2fb255370bdeb2f45a886548c4f
+        WEB_SITE=https://github.com/pavouk/lgi
+         ENTERED=20130102
+         UPDATED=20181130
+           SHORT="Lua bindings for gnome/gobject using gobject-introspection library"
+
+cat << EOF
+Lua bindings for gnome/gobject using gobject-introspection library.
+EOF

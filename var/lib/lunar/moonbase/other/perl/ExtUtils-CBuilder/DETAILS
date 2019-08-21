@@ -1,0 +1,17 @@
+          MODULE=ExtUtils-CBuilder
+         VERSION=0.280230
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://search.cpan.org/CPAN/authors/id/A/AM/AMBS
+      SOURCE_VFY=sha256:1daae1d7709709a26139984b3c4c36e9ff22912cde6a393ea30ef40058dc9cd5
+        WEB_SITE=https://search.cpan.org/~dagolden/ExtUtils-CBuilder
+            TYPE=perl
+         ENTERED=20070610
+         UPDATED=20181018
+           SHORT="Compile and link C code for Perl modules."
+cat << EOF
+ExtUtils::CBuilder - Compile and link C code for Perl modules.
+
+This module can build the C portions of Perl modules by invoking
+the appropriate compilers and linkers in a cross-platform manner.
+EOF
+

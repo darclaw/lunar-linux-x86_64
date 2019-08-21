@@ -1,0 +1,15 @@
+          MODULE=chrpath
+         VERSION=0.16
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://alioth.debian.org/frs/download.php/file/3979/
+      SOURCE_VFY=sha1:174bb38c899229f4c928734b20e730f61191795a
+        WEB_SITE=http://alioth.debian.org/projects/chrpath/
+         ENTERED=20111030
+         UPDATED=20140905
+           SHORT="modify the dynamic library load path"
+
+cat << EOF
+chrpath allows you to modify the dynamic library load path (rpath) of
+compiled programs.  Currently, only removing and modifying the rpath
+is supported.
+EOF

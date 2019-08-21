@@ -1,0 +1,48 @@
+          MODULE=rxvt-unicode
+         VERSION=9.22
+          SOURCE=$MODULE-$VERSION.tar.bz2
+   SOURCE_URL[0]=http://dist.schmorp.de/rxvt-unicode
+   SOURCE_URL[1]=http://dist.schmorp.de/rxvt-unicode/Attic
+      SOURCE_VFY=sha256:e94628e9bcfa0adb1115d83649f898d6edb4baced44f5d5b769c2eeb8b95addd
+        WEB_SITE=http://software.schmorp.de/pkg/rxvt-unicode.html
+         ENTERED=20070203
+         UPDATED=20190203
+           SHORT="rxvt-unicode is a clone of rxvt"
+
+cat << EOF
+Its main features (many of them unique) over rxvt are:
+    * Stores text in Unicode (either UCS-2 or UCS-4).
+    * Uses locale-correct input, output and width: as long as your system
+      supports the locale, rxvt-unicode will display correctly.
+    * Daemon mode: one daemon can open multiple windows on multiple displays,
+      which improves memory usage and startup time considerably.
+    * Embedded perl, for endless customization and improvement opportunities,
+      such as:
+          o Tabbed terminal support.
+          o Regex-driven customisable selection that can properly select shell
+            arguments, urls etc.
+          o Selection-transformation and option popup menus.
+          o Automatically transforming the selection once made.
+          o Incremental scrollback buffer search.
+          o Automatic URL-underlining and launching.
+          o Remote pastebin, digital clock, block graphics to ascii filter and
+            whatever you like to implement for yourself.
+    * Crash-free. At least I try, but rxvt-unicode certainly crashes much less
+      often than rxvt and its many clones, and reproducible bugs get fixed
+      immediately.
+    * Completely flicker-free.
+    * Re-wraps long lines instead of splitting or cutting them on resizes.
+    * Full combining character support (unlike xterm :).
+    * Multiple fonts supported at the same time: No need to choose between nice
+      japanese and ugly latin, or no japanese and nice latin characters :).
+    * Supports Xft and core fonts in any combination.
+    * Can easily be embedded into other applications.
+    * All documentation accessible through manpages.
+    * Locale-independent XIM support.
+    * Many small improvements, such as improved and corrected terminfo,
+      improved secondary screen modes, italic and bold font support, tinting
+      and shading.
+    * Encapsulation of privileged operations in a separate process (improves
+      security).
+    * Optimised for local and remote connections.
+EOF

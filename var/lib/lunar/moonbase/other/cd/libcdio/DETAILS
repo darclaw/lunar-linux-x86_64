@@ -1,0 +1,16 @@
+          MODULE=libcdio
+         VERSION=2.1.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$GNU_URL/$MODULE
+      SOURCE_VFY=sha256:8550e9589dbd594bfac93b81ecf129b1dc9d0d51e90f9696f1b2f9b2af32712b
+        WEB_SITE=http://www.gnu.org/software/libcdio
+         ENTERED=20040711
+         UPDATED=20190422
+           SHORT="GNU Compact Disc Input and Control Library"
+           PSAFE=no
+
+cat << EOF
+The libcdio package contains a library which encapsulates CD-ROM reading
+and control. Applications wishing to be oblivious of the OS and device-
+dependent properties of a CD-ROM can use this library.
+EOF

@@ -1,0 +1,5 @@
+depends pango
+depends poppler
+depends gtksourceview2
+depends gtkspell
+depends texlive

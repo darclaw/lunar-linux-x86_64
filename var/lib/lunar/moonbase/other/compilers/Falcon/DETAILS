@@ -1,0 +1,20 @@
+          MODULE=Falcon
+         VERSION=0.9.6.9
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$MIRROR_URL
+      SOURCE_VFY=sha256:772d4443b316432230c9cd5570ad0b8f7b0d2292237634b198206399ef05b0e7
+        WEB_SITE=http://www.falconpl.org/index.ftd?page_id=Home
+         ENTERED=20090815
+         UPDATED=20180211
+           SHORT="Falcon Programming Language"
+
+cat << EOF
+Falcon is an Open Source, simple, fast and powerful programming language, easy
+to learn and to feel comfortable with, and a scripting engine ready to empower
+mission-critical multithreaded applications.
+
+Falcon provides six integrated programming paradigms: procedural, object
+oriented, prototype oriented, functional, tabular and message oriented. And you
+don't have to master all of them; you just need to pick the ingredients you
+prefer, and let the code to follow your inspiration.
+EOF

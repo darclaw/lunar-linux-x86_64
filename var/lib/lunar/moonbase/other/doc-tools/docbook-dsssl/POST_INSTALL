@@ -1,0 +1,18 @@
+OLD_VER=`get_module_config OLD_VER`
+CENTRALIZED=/etc/sgml/catalog
+CATALOGDIR=/usr/share/sgml/dsssl/dsssl-stylesheets-$VERSION
+CATALOGDIR_OLD=/usr/share/sgml/dsssl/dsssl-stylesheets-$OLD_VER
+
+if [ ! -z $OLD_VER ]; then
+  install-catalog --remove $CENTRALIZED $CATALOGDIR_OLD/catalog
+fi
+
+install-catalog --remove $CENTRALIZED $CATALOGDIR/catalog
+
+install-catalog --add $CENTRALIZED $CATALOGDIR/catalog
+install-catalog --remove $CENTRALIZED $CENTRALIZED
+
+cp $SOURCE_CACHE/$SOURCE2 $CATALOGDIR/html
+cp $SOURCE_CACHE/$SOURCE2 $CATALOGDIR/print
+
+unset_module_config OLD_VER

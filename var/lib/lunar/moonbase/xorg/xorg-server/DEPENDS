@@ -1,0 +1,43 @@
+depends libdmx
+depends libXaw
+depends libXt
+depends libXfont2
+depends libxkbui
+depends libXaw
+depends libXi
+depends libXrender
+depends libXtst
+depends libXres
+depends libXv
+depends libxkbfile
+depends pixman
+depends font-util
+depends mesa-lib
+depends dbus-glib
+depends xkeyboard-config
+depends xcb-util-keysyms
+
+optional_depends libgcrypt \
+                 "--with-sha1=libgcrypt" "" \
+                 "for SHA1 implementation"
+
+optional_depends libepoxy \
+                 "--enable-glamor" \
+                 "--disable-glamor" \
+                 "for glamor support (needed for radeonsi driver)" y
+
+optional_depends libunwind \
+                 "--enable-libunwind" \
+                 "--disable-libunwind" \
+                 "for call-chain library support" n
+
+optional_depends wayland \
+                 "--enable-xwayland" "" \
+                 "for Wayland support"
+
+optional_depends xmlto \
+                 "--with-xmlto" \
+                 "--without-xmlto" \
+                 "for xmlto support to regenerate documentation" n
+
+optional_depends libXxf86misc "" "" "for some old binary compatibility" n

@@ -1,0 +1,5 @@
+default_pre_build &&
+unpack $SOURCE2 &&
+unpack $SOURCE3 &&
+
+autoreconf -fi

@@ -1,0 +1,12 @@
+depends libburn
+depends libdvdread
+depends libkcddb
+depends libmad
+depends libmpcdec
+depends cdparanoia
+depends cdrdao
+depends cdrtools
+depends dvd+rw-tools
+depends vcdimager
+depends libmusicbrainz2
+depends libsamplerate

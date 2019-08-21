@@ -1,0 +1,14 @@
+          MODULE=kcachegrind
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:7021ac1b133e86692dad92ff8de6a0467c2b488d7e5c2977ee4880c166e088ca
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=http://www.kde.org/applications/development/kcachegrind/
+         ENTERED=20130814
+         UPDATED=20190418
+           SHORT="profile data visualization tool"
+
+cat << EOF
+KCachegrind is a profile data visualization tool, used to determine the most time consuming execution parts of program.
+EOF

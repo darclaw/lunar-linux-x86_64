@@ -1,0 +1,22 @@
+          MODULE=dhcpcd
+         VERSION=7.2.2
+          SOURCE=$MODULE-$VERSION.tar.xz
+   SOURCE_URL[0]=http://roy.marples.name/downloads/dhcpcd
+   SOURCE_URL[1]=ftp://gentoo.arcticnetwork.ca/pub/gentoo/distfiles
+   SOURCE_URL[2]=http://mirrors.ludost.net/gentoo/distfiles
+   SOURCE_URL[3]=http://open-systems.ufl.edu/mirrors/gentoo/distfiles
+   SOURCE_URL[4]=http://mirror.datapipe.net/gentoo/distfiles
+   SOURCE_URL[5]=http://gentoo.chem.wisc.edu/gentoo/distfiles
+   SOURCE_URL[6]=http://mirror.internode.on.net/pub/gentoo/distfiles
+      SOURCE_VFY=sha256:3db7ff18cba9274da1d2176fb3c7cbe23926a8e58d5c8e244ad55c62d38ba09e
+        WEB_SITE=http://roy.marples.name/projects/dhcpcd
+         ENTERED=20011126
+         UPDATED=20190517
+           SHORT="DHCP client/daemon that works with @home"
+
+cat << EOF
+dhcpcd is an RFC2131-, RFC2132-, and RFC1541-compliant DHCP client daemon. It
+gets an IP address and other information from the DHCP server, automatically
+configures the network interface, and tries to renew the lease time according
+to RFC2131 or RFC1541.
+EOF

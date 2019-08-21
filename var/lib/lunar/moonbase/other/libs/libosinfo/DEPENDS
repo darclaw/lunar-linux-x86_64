@@ -1,0 +1,16 @@
+depends glib-2
+depends libxslt
+depends libsoup
+depends check
+depends intltool
+depends vala
+
+optional_depends gtk-doc \
+                 "--enable-gtk-doc" \
+                 "--disable-gtk-doc" \
+                 "for building documentation"
+
+optional_depends gobject-introspection \
+                 "--enable-introspection" \
+                 "--disable-introspection" \
+                 "for object introspection"

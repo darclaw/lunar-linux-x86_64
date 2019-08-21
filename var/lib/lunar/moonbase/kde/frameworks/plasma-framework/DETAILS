@@ -1,0 +1,20 @@
+          MODULE=plasma-framework
+         VERSION=5.57.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/frameworks/$(module_version kf5)
+      SOURCE_VFY=sha256:b886aeee6691911ead25e6fd5631fa41ce2330b0fbbdc040717fa576bacae2ca
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=https://projects.kde.org/projects/frameworks/plasma-framework
+         ENTERED=20150205
+         UPDATED=20190415
+           SHORT="foundations that can be used to build a primary user interface"
+
+cat << EOF
+The plasma framework provides the foundations that can be used to build a primary user interface, from graphical to logical components.
+
+The plasma framework provides the following:
+- QML components
+- A C++ library: libplasma
+- Script engines
+
+EOF

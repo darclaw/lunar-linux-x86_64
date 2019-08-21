@@ -1,0 +1,14 @@
+          MODULE=rtmpdump
+         VERSION=2.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$MIRROR_URL
+      SOURCE_VFY=sha256:43301722c92769d0e8884c2ee4ab61ac8c734769e981deb5ccaeed1599cd2e70
+        WEB_SITE=http://rtmpdump.mplayerhq.hu/
+         ENTERED=20100618
+         UPDATED=20181212
+           SHORT="A toolkit for RTMP streams"
+
+cat << EOF
+rtmpdump is a toolkit for RTMP streams. All forms of RTMP are supported,
+including rtmp://, rtmpt://, rtmpe://, rtmpte://, and rtmps://.
+EOF

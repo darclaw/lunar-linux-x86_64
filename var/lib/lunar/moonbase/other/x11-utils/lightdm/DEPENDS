@@ -1,0 +1,25 @@
+depends glib-2
+depends libgcrypt
+depends Linux-PAM
+depends polkit
+depends itstool
+depends libX11
+depends libxcb
+depends libXdmcp
+depends libxklavier
+depends intltool
+
+optional_depends qt5 \
+                 "--enable-liblightdm-qt5" \
+                 "--disable-liblightdm-qt5" \
+                 "Enable library for qt5 based greeters"
+
+optional_depends gtk-doc \
+                 "--enable-gtk-doc" \
+                 "--disable-gtk-doc" \
+                 "For building documentation"
+
+optional_depends gobject-introspection \
+                 "--enable-introspection" \
+                 "--disable-introspection" \
+                 "Enable gobject-introspection"

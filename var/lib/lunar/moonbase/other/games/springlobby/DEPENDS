@@ -1,0 +1,14 @@
+depends cmake
+depends boost
+
+depends wxGTK
+depends libpng
+depends zlib
+depends curl
+
+optional_depends libnotify "-DOPTION_NOTIFY=1" "-DOPTION_NOTIFY=0" "support popup status messages"
+
+optional_depends gettext "-DOPTION_TRANSLATION_SUPPORT=1" "-DOPTION_TRANSLATION_SUPPORT=0" "support localization"
+
+optional_depends alure "-DOPTION_SOUND=1" "-DOPTION_SOUND=0" "support sound output"
+optional_depends openal "" " " "also required for sound output"

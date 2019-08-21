@@ -1,0 +1,19 @@
+          MODULE=net-snmp
+         VERSION=5.8
+          SOURCE=$MODULE-$VERSION.tar.gz
+   SOURCE_URL[0]=$SFORGE_URL/$MODULE
+   SOURCE_URL[1]=ftp://ftp.freesnmp.org/mirrors/$MODULE
+      SOURCE_VFY=sha256:b2fc3500840ebe532734c4786b0da4ef0a5f67e51ef4c86b3345d697e4976adf
+       WEB_SITE=http://www.net-snmp.org
+         ENTERED=20011108
+         UPDATED=20190111
+           SHORT="Net-SNMP SNMP agent, libraries and utilities"
+
+cat << EOF
+net-snmp provides tools and libraries relating to SNMP (the Simple Network
+Management Protocol) including:
+ - An extensible agent
+ - An SNMP library
+ - tools to request or set information from SNMP agents
+ - tools to generate and handle SNMP traps, etc.
+EOF

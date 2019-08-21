@@ -1,0 +1,14 @@
+          MODULE=kdialog
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:2cdd5a65046cfc09246bd1fbc8be818db486e35437f00e20e372d58988f04ace
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=http://utils.kde.org/projects/kgpg/
+         ENTERED=20171201
+         UPDATED=20190418
+           SHORT="display dialog boxes from shell scripts"
+
+cat << EOF
+A utility for displaying dialog boxes from shell scripts.
+EOF

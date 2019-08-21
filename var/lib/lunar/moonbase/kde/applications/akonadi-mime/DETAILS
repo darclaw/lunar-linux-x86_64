@@ -1,0 +1,14 @@
+          MODULE=akonadi-mime
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:b06ca4140b10548b9aecd188bd9b72405af2f4097c80e9b4e9aa3e863750b6da
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=https://community.kde.org/KDE_PIM
+         ENTERED=20171201
+         UPDATED=20190418
+           SHORT="basic email handling"
+
+cat << EOF
+Libaries to handle basic email handling.
+EOF

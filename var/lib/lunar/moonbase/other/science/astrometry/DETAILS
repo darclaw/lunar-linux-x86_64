@@ -1,0 +1,23 @@
+          MODULE=astrometry
+         VERSION=0.77
+          SOURCE=$MODULE.net-$VERSION.tar.gz
+      SOURCE_URL=http://astrometry.net/downloads/
+      SOURCE_VFY=sha256:c33d1379c42599450a857de5d849cef482f7c0fc8b7e873d52973417bad3ad1f
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE.net-$VERSION
+        WEB_SITE=http://astrometry.net/
+         ENTERED=20140715
+         UPDATED=20190404
+           SHORT="astrometric calibration service"
+PSAFE=no
+cat << EOF
+If you have astronomical imaging of the sky with celestial coordinates you do 
+not know?or do not trust?then Astrometry.net is for you. Input an image and 
+we'll give you back astrometric calibration meta-data, plus lists of known 
+objects falling inside the field of view.
+
+We have built this astrometric calibration service to create correct, 
+standards-compliant astrometric meta-data for every useful astronomical image 
+ever taken, past and future, in any state of archival disarray. We hope this 
+will help organize, annotate and make searchable all the world's astronomical 
+information.
+EOF

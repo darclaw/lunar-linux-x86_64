@@ -1,0 +1,2 @@
+# Remove dangling symlinks
+rm -f /usr/bin/pm-{hibernate,suspend,suspend-hybrid}

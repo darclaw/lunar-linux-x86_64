@@ -1,0 +1,17 @@
+/usr
+/usr/bin/as86
+/usr/bin/ld86
+/usr/bin/nm86
+/usr/bin/objdump86
+/usr/bin/size86
+/usr/share
+/usr/share/doc
+/usr/share/doc/bin86
+/usr/share/doc/bin86/ChangeLog
+/usr/share/doc/bin86/README
+/usr/share/doc/bin86/README-0.4
+/usr/share/man/man1/as86.1.gz
+/usr/share/man/man1/ld86.1.gz
+/var/log/lunar/install/bin86-0.16.21
+/var/log/lunar/compile/bin86-0.16.21.xz
+/var/log/lunar/md5sum/bin86-0.16.21

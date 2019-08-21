@@ -1,0 +1,20 @@
+# Remove of gcc internal header is necessary as it "fixes" its own
+# copy of the bn.h include files. This will allow gcc to correctly
+# recompile an openssl app.
+
+rm -rf /usr/lib/gcc-lib/*/$(installed_version gcc)/include/openssl &> /dev/null
+
+# Has to be done BEFORE anything else
+lin -c wget &&
+
+# Recent openssl changes may break ssh undetectable to lunar fix
+if module_installed openssh; then
+  lin -c openssh
+fi
+
+if [ -f /var/state/lunar/migrating.from.libressl ]; then
+  lunar fix $(lvu depends libressl)
+  rm /var/state/lunar/migrating.from.libressl
+else
+  lunar fix $(lvu depends openssl)
+fi

@@ -1,0 +1,20 @@
+          MODULE=attica
+         VERSION=5.57.0
+          SOURCE=attica-$VERSION.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/attica-$VERSION
+      SOURCE_URL=$KDE_URL/stable/frameworks/$(module_version kf5)
+      SOURCE_VFY=sha256:a13682bccaca3529df6e3b54e1d4e48fb3d1654fe1b142701e73ce9fe0b87655
+        WEB_SITE=https://projects.kde.org/projects/kdesupport/attica
+         ENTERED=20150205
+         UPDATED=20190415
+           SHORT="implements the Open Collaboration Services"
+
+cat << EOF
+Attica is a Qt library that implements the Open Collaboration Services API version 1.4.
+The REST API is defined here:
+ http://www.freedesktop.org/wiki/Specifications/open-collaboration-services
+
+It grants easy access to the services such as querying information about persons and contents.
+The library is used in KNewStuff3 as content provider.
+In order to integrate with KDE's Plasma Desktop, a platform plugin exists in kdebase.
+EOF

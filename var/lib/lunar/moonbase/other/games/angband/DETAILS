@@ -1,0 +1,21 @@
+          MODULE=angband
+         VERSION=4.1.3
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://rephial.org/downloads/${VERSION:0:3}/
+      SOURCE_VFY=sha256:9402c4f8da691edbd4567a948c5663e1066bee3fcb4a62fbcf86b5454918406f
+        WEB_SITE=http://www.rephial.org/
+         ENTERED=20050524
+         UPDATED=20181225
+           SHORT="A classic rogue-like game based on the books of JRR Tolkien"
+
+cat << EOF
+Angband is a freeware computer dungeon exploration game based (loosely)
+on the books of J.R.R.Tolkien. You explore a very deep dungeon, kill
+monsters, try to equip yourself with the best weapons and armor you can\
+find, and finally face Morgoth - "The Dark Enemy."
+
+Angband has a very long history. It started 1990 as an improved and
+"Tolkienized" variant of Moria. Moria itself was created in 1985 and was
+inspired by Rogue (from the late 70s). Countless changes were introduced
+by many programmers on the way to the current versions of Angband.
+EOF

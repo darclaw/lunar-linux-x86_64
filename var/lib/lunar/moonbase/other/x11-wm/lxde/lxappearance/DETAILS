@@ -1,0 +1,15 @@
+          MODULE=lxappearance
+         VERSION=0.6.3
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$SFORGE_URL/lxde
+      SOURCE_VFY=sha256:7222d858b8fef4b7967c42142d61e82ded6dd42dc5ef1d59caad775795928b38
+        WEB_SITE=http://lxde.org
+         ENTERED=20090713
+         UPDATED=20170126
+           SHORT="A theme switcher"
+      MAINTAINER=florin@lunar-linux.org
+
+cat << EOF
+LXAppearance is part of LXDE project.
+It's a desktop-independent theme switcher for GTK+.
+EOF

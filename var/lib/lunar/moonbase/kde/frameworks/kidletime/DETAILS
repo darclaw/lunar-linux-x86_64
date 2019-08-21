@@ -1,0 +1,16 @@
+          MODULE=kidletime
+         VERSION=5.57.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/frameworks/$(module_version kf5)
+      SOURCE_VFY=sha256:e99a07f814573526ed5141fc9e4bc2df12298df53a0d2787c3b7a4c3af915665
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=https://projects.kde.org/projects/frameworks/kidletime
+         ENTERED=20150205
+         UPDATED=20190415
+           SHORT="Reporting of idle time of user and system"
+
+cat << EOF
+KIdleTime is a singleton reporting information on idle time. It is useful not
+only for finding out about the current idle time of the PC, but also for getting
+notified upon idle time events, such as custom timeouts, or user activity.
+EOF

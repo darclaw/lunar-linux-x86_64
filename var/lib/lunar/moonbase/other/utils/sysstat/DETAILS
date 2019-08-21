@@ -1,0 +1,17 @@
+          MODULE=sysstat
+         VERSION=12.1.4
+          SOURCE=$MODULE-$VERSION.tar.xz
+   SOURCE_URL[0]=http://pagesperso-orange.fr/sebastien.godard
+   SOURCE_URL[1]=ftp://ibiblio.org/pub/Linux/system/status
+   SOURCE_URL[2]=ftp://ftp.freesoftware.com/pub/linux/sunsite/system/status
+      SOURCE_VFY=sha256:6f628af696d30e5d837a7b84a8fe9739ac45b6bf28c0a9ab40d1e9d7e6d8a16d
+        WEB_SITE=http://perso.wanadoo.fr/sebastien.godard
+         ENTERED=20020812
+         UPDATED=20190423
+           SHORT="System performance monitoring tools"
+
+cat <<EOF
+The sysstat module comes with a set of system-monitoring tools: sadc, sar,
+iostat, sa1, sa2, mpstat. It is usefull to monitor high load machines and
+discovering hardware bottlenecks or other problems
+EOF

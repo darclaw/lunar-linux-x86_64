@@ -1,0 +1,15 @@
+          MODULE=OpenCOLLADA
+         VERSION=1.6.66
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/KhronosGroup/$MODULE/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:3b70781168f83482e69982f3904806242238b350162fea874e49343ea04da583
+        WEB_SITE=http://www.opencollada.org
+         ENTERED=20160509
+         UPDATED=20181105
+           SHORT="A stream based reader and writer library for COLLADA files"
+
+cat << EOF
+A stream based reader and writer library for COLLADA files
+This project is dedicated to join efforts using COLLADA
+within various DCC tools like 3ds Max, Maya, Blender, ...
+EOF

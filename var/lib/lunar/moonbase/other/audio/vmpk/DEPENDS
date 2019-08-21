@@ -1,0 +1,8 @@
+depends qt5
+depends alsa-lib
+depends drumstick
+
+optional_depends "jack" \
+                 "-DENABLE_JACK=on" \
+                 "-DENABLE_JACK=off" \
+                 "for jack midi support"

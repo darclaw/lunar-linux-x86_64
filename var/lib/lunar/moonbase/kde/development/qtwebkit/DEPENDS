@@ -1,0 +1,7 @@
+depends hyphen
+depends libwebp
+depends leveldb
+depends ruby
+depends qt5
+depends gst-plugins-base
+depends gst-plugins-good

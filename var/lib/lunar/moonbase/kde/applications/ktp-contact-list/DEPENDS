@@ -1,0 +1,10 @@
+depends extra-cmake-modules
+depends kdbusaddons
+depends kio
+depends knotifications
+depends kwindowsystem
+depends ki18n
+depends kcmutils
+depends kpeople
+depends telepathy-qt
+depends ktp-common-internals

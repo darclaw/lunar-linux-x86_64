@@ -1,0 +1,3 @@
+if [ ! -f /sbin/fsck ]; then
+  lin util-linux;
+fi

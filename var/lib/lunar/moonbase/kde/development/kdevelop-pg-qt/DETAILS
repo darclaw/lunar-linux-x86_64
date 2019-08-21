@@ -1,0 +1,23 @@
+          MODULE=kdevelop-pg-qt
+         VERSION=2.1.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://download.kde.org/stable/$MODULE/$VERSION/src/
+      SOURCE_VFY=sha256:20d84d25bd40610bd6c0964e4fe0642e56c41b76a65575122dc5196649621e5d
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=http://techbase.kde.org/Development/KDevelop-PG-Qt_Introduction
+            TYPE=cmake
+         ENTERED=20100419
+         UPDATED=20171114
+           SHORT="parser-generator from KDevplatform"
+
+cat << EOF
+KDevelop-PG-Qt is the parser-generator from KDevplatform. It is used for some
+KDevelop-languagesupport-plugins (Ruby, PHP, Java...).
+
+It uses Qt classes internally. There's also the original KDevelop-PG parser,
+which used types from the STL, but has since been superseeded by KDevelop-PG-Qt.
+Most of the features are the same, though it could be that the ...-Qt parser
+generator is more up to date and feature rich than the plain STL style
+generator. The ...-Qt version should be used to write parsers for KDevelop
+language plugins.
+EOF

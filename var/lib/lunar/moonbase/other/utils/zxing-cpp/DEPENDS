@@ -1,0 +1,4 @@
+depends gtk+-3
+depends cmake
+
+optional_depends opencv "" "" "for opencv support" n

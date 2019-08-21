@@ -1,0 +1,17 @@
+          MODULE=libinput
+         VERSION=1.12.6
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://freedesktop.org/software/libinput
+      SOURCE_VFY=sha256:12b4023a3fc683d3d8127db573bdf925a2ef366615042f69c87e57c32a50f45d
+        WEB_SITE=http://wiki.freedesktop.org/www/Software/libinput/
+         ENTERED=20151211
+         UPDATED=20190122
+           SHORT="Handles input devices for display servers and other applications"
+
+cat << EOF
+Libinput is a library to handle input devices in Wayland compositors and to
+provide a generic X.Org input driver. It provides device detection, device
+handling, input device event processing and abstraction so minimize the amount
+of custom input code compositors need to provide the common set of functionality
+that users expect.
+EOF

@@ -1,0 +1,15 @@
+         MODULE=xz
+        VERSION=5.2.4
+         SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://tukaani.org/$MODULE
+      SOURCE_VFY=sha256:3313fd2a95f43d88e44264e6b015e7d03053e681860b0d5d3f9baca79c57b7bf
+        WEB_SITE=http://tukaani.org/xz
+         ENTERED=20090224
+         UPDATED=20180430
+           SHORT="Utils for XZ archive format"
+
+cat << EOF
+XZ Utils (new name for the improved format/tools) is the successor to lzma.
+New suffix, ".xz" replaces ".lzma". Note the better-compressed tar ball name
+has the ".xz" suffix instead of lzma.
+EOF

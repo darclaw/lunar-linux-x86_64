@@ -1,0 +1,16 @@
+          MODULE=gnome-keyring
+         VERSION=3.31.91
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION:0:4}
+      SOURCE_VFY=sha256:a4d90afc4dabe77c6ff8b606588ad782621df8efeb114cbdc619dc4e38a65eba
+        WEB_SITE=http://www.gnome.org
+         ENTERED=20031208
+         UPDATED=20190322
+           SHORT="The GNOME keyring services (daemon and tools)"
+
+cat << EOF
+gnome-keyring is a daemon that is used to store passwords and other sensitive
+information. The program can manage several keyrings, each with its own master
+password, and there is also a session keyring which is never stored to disk,
+hence forgetting when the session ends.
+EOF

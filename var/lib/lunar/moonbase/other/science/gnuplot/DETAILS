@@ -1,0 +1,20 @@
+          MODULE=gnuplot
+         VERSION=5.2.5
+          SOURCE=$MODULE-$VERSION.tar.gz
+         SOURCE2=$MODULE-lua53_compat.patch
+      SOURCE_URL=$SFORGE_URL/$MODULE
+     SOURCE2_URL=$PATCH_URL
+      SOURCE_VFY=sha256:039db2cce62ddcfd31a6696fe576f4224b3bc3f919e66191dfe2cdb058475caa
+     SOURCE2_VFY=sha256:bfd8a61abbf4491c74225cb9fd252619d4fc29751838bcb4c0639ffe05a00695
+        WEB_SITE=http://www.gnuplot.vt.edu/
+         ENTERED=20021015
+         UPDATED=20181103
+           SHORT="Command line program to make scientific graphs"
+
+cat << EOF
+gnuplot is a command-driven interactive function plotting program. It can be
+used to plot functions and data points in both two- and three-dimensional plots
+in many different formats, and will accommodate many of the needs of today's
+scientists for graphic data representation. gnuplot is copyrighted, but freely
+distributable; you don't have to pay for it.
+EOF

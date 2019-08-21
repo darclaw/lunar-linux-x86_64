@@ -1,0 +1,33 @@
+          MODULE=fbreader
+         VERSION=0.99.4
+          SOURCE=$MODULE-sources-$VERSION.tgz
+      SOURCE_URL=https://fbreader.org/files/desktop/
+      SOURCE_VFY=sha256:3d7c31d5ea314589d2a963290ad16f4d3d631a41e802b8b39f8be0c9f71eb8e9
+        WEB_SITE=http://www.fbreader.org
+         ENTERED=20060124
+         UPDATED=20181008
+           SHORT="An e-book reader, supporting many formats"
+PSAFE=no
+cat << EOF
+FBReader is an e-book reader, with the following main features:
+* Supports several formats: fb2, HTML, CHM, plucker, Palmdoc, zTxt
+  (Weasel), TCR (psion), RTF, OEB, OpenReader, mobipocket, plain text.
+* Direct reading from tar, zip, gzip and bzip2 archives. (Multiple
+  books in one archive are supported.)
+* Automatic library building.
+* Automatic encoding detection is supported.
+* Automatically generated contents table.
+* Embedded images support.
+* Footnotes/hyperlinks support.
+* Position indicator.
+* Keeps the last open book and the last read positions for all opened
+  books between runs.
+* List of last-opened books.
+* Automatic hyphenations. Liang's algorithm is used. The same
+  algorithm is used in TeX, and TeX hyphenation patterns are used in
+  FBReader. Patterns for Czech, English, Esperanto, French, German and
+  Russian are included in the current version.
+* Text search.
+* Full-screen mode.
+* Screen rotation by 90, 180 and 270 degrees.
+EOF

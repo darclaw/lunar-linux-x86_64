@@ -1,0 +1,14 @@
+          MODULE=libgudev
+         VERSION=232
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/$VERSION/
+      SOURCE_VFY=sha256:ee4cb2b9c573cdf354f6ed744f01b111d4b5bed3503ffa956cefff50489c7860
+        WEB_SITE=https://wiki.gnome.org/Projects/libgudev/
+         ENTERED=20150620
+         UPDATED=20180106
+           SHORT="GObject bindings for libudev"
+
+cat <<EOF
+This library provides GObject bindings for libudev. It was originally part of
+udev-extras, then udev, then systemd. It's now a project on its own.
+EOF

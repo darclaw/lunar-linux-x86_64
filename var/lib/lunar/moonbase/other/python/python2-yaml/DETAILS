@@ -1,0 +1,17 @@
+          MODULE=python2-yaml
+         VERSION=5.1
+          SOURCE=PyYAML-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/PyYAML-$VERSION
+      SOURCE_URL=http://pyyaml.org/download/pyyaml/
+      SOURCE_VFY=sha256:436bc774ecf7c103814098159fbb84c2715d25980175292c648f2da143909f95
+        WEB_SITE=http://pypi.python.org/pypi/PyYAML
+            TYPE=python2
+         ENTERED=20130415
+         UPDATED=20190525
+           SHORT="YAML parser and emitter for Python"
+
+cat << EOF
+YAML is a data serialization format designed for human readability and
+interaction with scripting languages. PyYAML is a YAML parser and emitter
+for Python.
+EOF

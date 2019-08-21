@@ -1,0 +1,13 @@
+          MODULE=mechanize
+         VERSION=0.2.5
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://wwwsearch.sourceforge.net/mechanize/src/
+      SOURCE_VFY=sha256:2e67b20d107b30c00ad814891a095048c35d9d8cb9541801cebe85684cc84766
+        WEB_SITE=http://wwwsearch.sourceforge.net/mechanize/
+         ENTERED=20090108
+         UPDATED=20160720
+           SHORT="Stateful programmatic web browsing in Python"
+
+cat << EOF
+This is a Python version of the Perl module WWW::Mechanize.
+EOF

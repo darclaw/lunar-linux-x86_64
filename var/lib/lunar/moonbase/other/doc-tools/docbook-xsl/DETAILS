@@ -1,0 +1,15 @@
+          MODULE=docbook-xsl
+         VERSION=1.79.2
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=https://github.com/docbook/xslt10-stylesheets/releases/download/release%2F$VERSION/
+      SOURCE_VFY=sha256:316524ea444e53208a2fb90eeb676af755da96e1417835ba5f5eb719c81fa371
+        WEB_SITE=http://docbook.sourceforge.net/projects/xsl
+         ENTERED=20020703
+         UPDATED=20180915
+           SHORT="XSL stylesheets for the DocBook DTD and its derivatives"
+
+cat << EOF
+XSL is a standard W3C stylesheet language (Extensible Stylesheet Language)
+for both print and online rendering. For more information about XSL, see
+the XSL page at the W3C.
+EOF

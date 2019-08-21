@@ -1,0 +1,15 @@
+          MODULE=libtasn1
+         VERSION=4.13
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://ftp.gnu.org/gnu/$MODULE/
+      SOURCE_VFY=sha256:7e528e8c317ddd156230c4e31d082cd13e7ddeb7a54824be82632209550c8cca
+        WEB_SITE=http://www.gnu.org/software/libtasn1/
+         ENTERED=20020212
+         UPDATED=20180117
+           SHORT="ASN.1 library for gnutls"
+
+cat << EOF
+This is the ASN.1 library used in GNUTLS. More up to date
+information can be found at http://www.gnu.org/software/gnutls
+and http://www.gnutls.org.
+EOF

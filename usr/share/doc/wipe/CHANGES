@@ -1,0 +1,291 @@
+2.3.1:
+fixed Makefile bug! Running make uninstall removed target bin directory.
+
+2.3:
+
+DEFAULTS!
+the default is now one single random pass  <-- MAJOR CHANGE
+special files are no longer deleted by default
+
+support for wiping char devices, such as tape drives
+
+percentage reporting improved (thanks to Jason Tackaberry for patch)
+
+cleanup and exit upon SIGINT
+
+each wiped file prints on a seperate line
+
+skip unnecessary fdatasync()s, unless you want the extra accuracy on the % shown (-e option)
+
+call fsync() on the file after name wipe, in addition to fsync on the directory
+
+if fdatasync() fails, try for O_SYNC and only complain once per file
+
+fixed some off-by-ones
+fixed percentages for non-static wipes
+
+2.2.1:
+added largefile support for linux and solaris (tested on linux)
+
+fixed drill_down(). it was using the wrong length to null term the string
+
+2.2.0:
+removed debian stuff (deprecated)
+stow, rpm, or rpm+alien is recommended.
+
+now builds on solaris 9
+
+cleaned up makefile
+
+fixed type mismatch in blkdev.c, broke on big endian archs
+
+directories are now renamed
+try to fsync() dirs
+
+you can now wipe to stdout
+
+write() wrapper is now more robust
+
+checks the termal's width, for proper line clear and truncation
+
+various minor bugs and typos fixed
+
+Suported:
+Linux, GNU, NetBSD, Solaris 9 (SunOS 5.9)
+
+Doesn't build:
+Mac OS 10.2
+
+2.1.1:
+typo in Makefile.in (Ricardo Branco)
+
+2.1:
+fixed percent reporting (James P. Rutledge)
+
+fixed block dev support (Matthew Kettler)
+
+typos (David M. DesRosiers)
+
+updated autoconf scripts
+wipe will now build on s/390 (Jochen Schmidt)
+
+2.0.1:
+don't rename over an existing file (Tomislav Greguric)
+
+fix debian changelog (pawan)
+
+2.0:
+dedicated to my dog, Cindy.
+
+split wipe.c into seperate modules
+
+removed raw /dev/urandom passes
+
+switched back to the Mersenne Twister - it's much faster and uses much
+less entropy from /dev/urandom
+
+changed a lot of cmd line options, so be sure to read the man page or
+wipe -h
+
+added proper syscall wrappers
+
+improved per-file fault tolerance - a failure during wiping of one
+file doesn't cause the rest to be aborted
+
+1.2.2:
+destroy_blkdev() was trying an ioctl before opening the fd
+block device wiping appears to work in linux; BSD (and other
+unixes) are still untested. let me know if you try it on
+something other than linux.
+
+silent mode is now silent
+
+fixed xor loop
+
+1.2.1:
+fixed missing '_H' in includes.h
+thanks to Peter Monta
+
+1.2.0:
+updated INSTALL
+
+fixed some bugs which would have effected block device
+support - block device support is still untested
+
+adopted new versioning scheme
+
+fixed PATH_MAX and NAME_MAX; should build on solaris now
+
+fixed verbose pathname + percent display
+
+documented secure levels in the man page (and changed them a
+little)
+
+fixed hash io code (hashin_update() and hashout_update())
+there were serious bugs in there, and it's likely that older
+versions were not outputting enough entropy.
+
+from the web site:
+Symptoms: seg faults or "cannot allocate" messages
+Cause: incorrect pointer math
+Result: truncated random hash passes, stack smashes
+
+there are debian scripts now; see INSTALL for more info
+
+Berke Durak beat me into debian, so everything'll come out
+saying 'ya-wipe' instead of 'wipe', just like on freshmeat.
+oh well, i still beat him to sunsite/metalab. ;P
+
+simplified makefile (see INSTALL for new targets)
+
+wipe with no arguments (other than options) prints version
+and copyright
+
+1.0.0:
+
+NOTE: this is an unstable prerelease
+
+files are now mmap()'ed instead of allocating a static buffer
+for the whole file
+
+block device support (untested). you should now be able to wipe
+entire devices. remember, i haven't even tried this yet, so i
+recommend backing up before trying to wipe any devices, just to
+be on the same side.
+
+wipe now prints the filename of the file it's wiping. i haven't
+refined it yet.
+
+added default options to man page
+
+0.58.6:
+fixed integer division bugs which prevented the main loop in
+hashout_update() from running
+
+0.58.5:
+fixed two heap smashing bugs
+removed unnecessary direntcheck(), which was broken anyway
+removed autoconf check for access()
+updated readme
+added PATH_MAX check to wipe.h for systems that don't define it
+
+0.58.4:
+fixed stupid bug that didn't check if the file size was zero
+
+added missing fflush, so now you'll see "100%"
+
+added missing closedir() call in direntcheck, probably never caused
+any problems
+
+added rpm spec file and removed chown stuff from the makefile
+
+0.58.3:
+fixed dirent scan algorithm bug which would make files beginning with
+'.' and '..' invisible
+
+0.58.2:
+ok, everything should really be fixed this time.
+
+added sym link check - sym links will now be seen by wipe, and removed
+also added sockets and fifo's; char and block dev's are skipped by default
+
+xor's are now done a (processor) word at a time, ie, each xor is done 32
+or 64-bits at a time or whatever you're arch is. this should increase
+performance some more.
+
+0.58.1:
+fixed strange malloc() related bug by switching to realloc()  <-- not really fixed,
+fixed problem where directories weren't removed			  see 0.58.4
+
+0.58:
+added man page
+
+switched to tiger hash. big speed improvement.
+
+removed psuedo-random stuff, cuz my code sucked. if there's an easy
+way to get entropy on systems w/o /dev/*random it'll go back in.
+
+-t now sets the tiger hash input buffers size
+-T is no longer used
+
+0.57:
+lots of changes.
+
+added file renaming, cleaned up the code, some minor cosmetic changes,
+and other stuff i can't remember.
+
+0.56beta2:
+minor bug fixes
+
+0.56beta1:
+
+MAJOR: added autoconf, yeah! wipe should be MUCH more portable now.
+
+spelled checked 8)
+added mt19937 pseudo-random generator algorithm by Takuji Nishimura.
+
+added file locks.
+added -z option to only zero-out files. cleaned up the code a little.
+
+0.55beta3:
+
+got rid of all the unneeded struct passing. other minor things.
+
+0.55beta2:
+
+oops, forgot to update usage()
+
+0.55beta1:
+
+full recursion supported
+switched from switch to getopt()
+
+0.54alpha0:
+
+multiple pass support
+shows wipe completion percentage
+command line options using switch
+
+0.53beta0:
+
+added support for /dev/urandom.
+
+0.52beta1:
+
+minor bug fix.
+
+0.52beta0:
+
+i've rewritten the write_pass() and write3_pass() functions. now i just fill
+a buffer w/ the desired bit pattern, then write() it to the file descriptor.
+you'll need enough free contiguous memory to hold a buffer the size of file,
+or it'll fail w/ an out of memory error.
+
+0.45beta2:
+
+added better debugging support. use 'make debug' or add 
+'-DPAUSE_AFTER_WIPE_PASS' to the gcc command to pause after each wipe pass.
+
+0.45beta1:
+
+first (semi) public release.
+
+added write3_pass(), pseudo-random number generation, and added all 35
+write passes.
+
+fixed some memory leaks in error checking if's, that would result if
+it aborted a file wipe due to lack of memory or read errors. probably
+won't have been noticeable unless you where wiping thousands of files,
+though.
+
+0.41alpha1:
+
+added better error handling and exit code status.
+
+0.41alpha0:
+
+basic functionality. performs a single wipe pass of 0x55.
+
+0.40alpha0:
+
+initial code for unbuffered I/O and inode data gathering.

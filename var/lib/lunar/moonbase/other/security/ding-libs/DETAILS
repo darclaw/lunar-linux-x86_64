@@ -1,0 +1,13 @@
+          MODULE=ding-libs
+         VERSION=0.6.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://releases.pagure.org/SSSD/$MODULE/
+      SOURCE_VFY=sha256:a319a327deb81f2dfab9ce4a4926e80e1dac5dcfc89f4c7e548cec2645af27c1
+        WEB_SITE=https://pagure.io/SSSD/ding-libs/
+         ENTERED=20160829
+         UPDATED=20180210
+           SHORT="'D is not GLib' utility libraries"
+
+cat << EOF
+'D is not GLib' utility libraries.
+EOF

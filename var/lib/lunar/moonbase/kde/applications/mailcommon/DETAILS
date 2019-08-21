@@ -1,0 +1,14 @@
+          MODULE=mailcommon
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:cd599079d290f540c83919182eab7e2d236a939a3405d1f882385822fc5d3682
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=https://community.kde.org/KDE_PIM
+         ENTERED=20160505
+         UPDATED=20190418
+           SHORT="support for mail applications"
+
+cat << EOF
+KDE PIM library providing support for mail applications.
+EOF

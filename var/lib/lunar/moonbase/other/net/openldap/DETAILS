@@ -1,0 +1,20 @@
+          MODULE=openldap
+         VERSION=2.4.47
+          SOURCE=$MODULE-$VERSION.tgz
+   SOURCE_URL[0]=https://www.openldap.org/software/download/OpenLDAP/openldap-release/
+   SOURCE_URL[1]=ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/
+      SOURCE_VFY=sha256:f54c5877865233d9ada77c60c0f69b3e0bfd8b1b55889504c650047cc305520b
+        WEB_SITE=http://www.openldap.org
+         ENTERED=20010922
+         UPDATED=20181220
+           SHORT="Fully featured open source LDAP software suite"
+           PSAFE=no
+
+cat << EOF
+The OpenLDAP Project is a collaborative effort to provide a robust,
+commercial-grade, fully featured, open source LDAP software suite. The
+project is managed by a worldwide community of volunteers that use
+the Internet to communicate, plan, and develop OpenLDAP Software and
+its related documentation. OpenLDAP Software provides a complete LDAP
+implementation including server, clients, C SDK, and associated tools.
+EOF

@@ -1,0 +1,18 @@
+          MODULE=screen
+         VERSION=4.6.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://ftp.gnu.org/gnu/screen/
+      SOURCE_VFY=sha256:1b6922520e6a0ce5e28768d620b0f640a6631397f95ccb043b70b91bb503fa3a
+        WEB_SITE=http://www.gnu.org/software/screen/
+         ENTERED=20010922
+         UPDATED=20171023
+           SHORT="Multiplexes a physical terminal"
+
+cat << EOF
+Screen is a full-screen window manager that multiplexes a physical
+terminal between several processes, typically interactive shells.
+Each virtual terminal provides the functions of the DEC VT100
+terminal and, in addition, several control functions from the
+ANSI X3.64 (ISO 6429) and ISO 2022 standards (e.g., insert/delete
+line and support for multiple character sets).
+EOF

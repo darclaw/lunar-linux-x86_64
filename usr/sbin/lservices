@@ -1,0 +1,232 @@
+#!/bin/bash
+############################################################
+#                                                          #
+# lservices - Lunar services management utility            #
+#                                                          #
+############################################################
+#                                                          #
+# Copyright Auke Kok 2004 under GPLv2                      #
+# Copyright Stefan Wold 2012 under GPLv2                   #
+#                                                          #
+############################################################
+
+
+service_is_started() {
+  PIDF=$(grep '^# pidfile: ' /etc/init.d/$1 | cut -d: -f2 | sed 's/ //g' )
+  if [ -z "$PIDF" ] ; then
+    if grep -q '^# processname: ' /etc/init.d/$1 ; then
+      PIDF=/var/run/$(grep '^# processname: ' /etc/init.d/$1 | cut -d: -f2 | sed 's/ //g' ).pid
+    else
+      PIDF=/var/run/$1.pid
+    fi
+  fi
+
+  [ -e "$PIDF" ] && [ -d "/proc/$(cat $PIDF)" ] || pgrep -P 1 "^$1\$" > /dev/null
+}
+
+service_is_enabled() {
+  chkconfig --list | grep -w $1 | grep -qw '[0-9]:on'
+}
+
+service_menu() {(
+  #  stop      stop the service (currently started)
+  # or
+  #  start     start the service (currently stopped)
+  #  remove    remove the service from the startup sequence (currently added)
+  # or
+  #  add       add the service to the startup sequence (currently removed)
+
+  while true ; do
+    PIDF=$(grep '^# pidfile: ' /etc/init.d/$1 | cut -d: -f2 | sed 's/ //g' )
+    if [ -z "$PIDF" ] ; then
+      if grep -q '^# processname: ' /etc/init.d/$1 ; then
+        PIDF=/var/run/$(grep '^# processname: ' /etc/init.d/$1 | cut -d: -f2 | sed 's/ //g' ).pid
+      else
+        PIDF=/var/run/$1.pid
+      fi
+    fi
+    if service_is_started $1 ; then
+      TI1="stop"
+      OP1="stop the service (currently started)"
+    else
+      TI1="start"
+      OP1="start the service (currently stopped)"
+    fi
+    if service_is_enabled $1 ; then
+      TI2="remove"
+      OP2="remove the service from the startup sequence (currently added)"
+    else
+      TI2="add"
+      OP2="add the service to the startup sequence (currently removed)"
+    fi
+    action=`$DIALOG --title " Service actions for \"$1\" " \
+                  --ok-label "Go" \
+                  --cancel-label "Exit" \
+                  --menu ""  0 0 0 \
+  	  	  "$TI1" \
+		  "$OP1" \
+                  "$TI2" \
+		  "$OP2"`
+    if [ $? != 0 ] ; then
+      return
+    fi
+
+    case $action in
+      start  )
+        /etc/init.d/$1 start
+	sleep 3
+      ;;
+      stop   )
+        /etc/init.d/$1 stop
+	sleep 3
+      ;;
+      add    )
+        chkconfig --add $1
+	set_module_config INITDSCRIPTS "$(get_module_config INITDSCRIPT) $1"
+      ;;
+      remove )
+        chkconfig --del $1
+	set_module_config INITDSCRIPTS "$(get_module_config INITDSCRIPTS | sed -e "s/^$1 / /g" -e "s/ $1 / /g" -e "s/^$1\$//g" -e "s/ $1\$/ /g")"
+      ;;
+    esac
+  done
+)}
+
+
+list_initd_services() {
+ (
+  unset IFS
+  for SERVICE in $(grep '^# chkconfig: [^-]' /etc/init.d/* | cut -d: -f1) ; do
+    DESCRIPTION="$(grep '^# description: ' $SERVICE | sed -e 's/^# description: //g' -e 's/\\/.../' -e 's/\t/ /g')"
+    if service_is_enabled ${SERVICE##*/} ; then
+      FLAG="+"
+    else
+      FLAG="-"
+    fi
+    if service_is_started ${SERVICE##*/} ; then
+      FLAG="${FLAG}1"
+    else
+      FLAG="${FLAG}0"
+    fi
+    echo "${SERVICE##*/}"
+    echo "$FLAG $DESCRIPTION"
+  done
+  )
+}
+
+service_menu_systemd() {(
+  #  stop      stop the service (currently started)
+  # or
+  #  start     start the service (currently stopped)
+  #  remove    remove the service from the startup sequence (currently added)
+  # or
+  #  add       add the service to the startup sequence (currently removed)
+
+  while true ; do
+    if systemctl -q is-active $1 2> /dev/null; then
+      TI1="stop"
+      OP1="stop the service (currently started)"
+    else
+      TI1="start"
+      OP1="start the service (currently stopped)"
+    fi
+    if systemctl -q is-enabled $1 ; then
+      TI2="remove"
+      OP2="remove the service from the startup sequence (currently added)"
+    else
+      TI2="add"
+      OP2="add the service to the startup sequence (currently removed)"
+    fi
+    action=`$DIALOG --title " Service actions for \"$1\" " \
+                  --ok-label "Go" \
+                  --cancel-label "Exit" \
+                  --menu ""  0 0 0 \
+                  "$TI1" \
+                  "$OP1" \
+                  "$TI2" \
+                  "$OP2"`
+    if [ $? != 0 ] ; then
+      return
+    fi
+
+    case $action in
+      start)
+        systemctl start $1
+        sleep 3
+        ;;
+      stop)
+        systemctl stop $1
+        sleep 3
+        ;;
+      add)
+        systemctl enable $1
+        ;;
+      remove)
+        systemctl disable $1
+        ;;
+    esac
+  done
+)}
+
+list_systemd_services() {(
+  for SERVICE in $(find $MOONBASE -name "*.service" -o -name "*.socket" | sed 's;.*/;;' | sort | uniq); do
+    echo $SERVICE | grep -q @ && continue
+    [ -f "$SYSTEMDUNITDIR/$SERVICE" ] || continue
+    DESCRIPTION=$(grep 'Description=' $SYSTEMDUNITDIR/$SERVICE | cut -d= -f2-)
+    if systemctl -q is-enabled $SERVICE; then
+      FLAG="+"
+    else
+      FLAG="-"
+    fi
+    if systemctl -q is-active $SERVICE 2> /dev/null; then
+      FLAG+="1"
+    else
+      FLAG+="0"
+    fi
+    echo "$SERVICE"
+    echo "$FLAG $DESCRIPTION"
+  done
+)}
+
+
+main_menu() {
+ while true ; do
+  action=`$DIALOG --title " Service boot configuration "    \
+                  --ok-label "Go"                 \
+		  --cancel-label "Exit"           \
+		  --menu                          \
+		  "( Legend: +=enabled, -=disabled, 1=started, 0=stopped)" \
+		  0 0 0                           \
+		  $(if [ -n "$SYSTEMDUNITDIR" ]; then
+          list_systemd_services
+        else
+          list_initd_services
+        fi)`
+  if [ $? != 0 ] ; then
+    return
+  fi
+  if [ -n "$SYSTEMDUNITDIR" ]; then
+    service_menu_systemd $(echo $action | sed 's/ //g')
+  else
+    service_menu $(echo $action | sed 's/ //g')
+  fi
+ done
+}
+
+. /etc/lunar/config
+[ -n "$BOOTSTRAP" ] && . $BOOTSTRAP
+
+export IFS="$TAB_ENTER_IFS"
+export LC_ALL=C
+
+DIALOG="dialog
+--backtitle
+Lunar Services Management Utility
+--stdout"
+
+# Check if we have systemd and that it is running
+if module_installed systemd && [ -d /run/systemd ]; then
+  SYSTEMDUNITDIR=$(pkg-config systemd --variable=systemdsystemunitdir)
+fi
+
+main_menu

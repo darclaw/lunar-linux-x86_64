@@ -1,0 +1,47 @@
+depends libestr
+depends json-c
+depends librelp
+depends liblogging
+depends libfastjson
+depends systemd
+depends zlib
+
+optional_depends jemalloc \
+                 "--enable-jemalloc" \
+                 "--disable-jemalloc" \
+                 "for jemalloc support"
+
+optional_depends %MYSQL \
+                 "--enable-mysql" \
+                 "--disable-mysql" \
+                 "for MySQL support"
+
+optional_depends postgresql \
+                 "--enable-pgsql" \
+                 "--disable-pgsql" \
+                 "for PostgreSQL support"
+
+optional_depends libdbi \
+                 "--enable-libdbi" \
+                 "--disable-libdbi" \
+                 "for libdbi database support"
+
+optional_depends heimdal \
+                 "--enable-gssapi-krb5" \
+                 "--disable-gssapi-krb5" \
+                 "for kerberos support"
+
+optional_depends net-snmp \
+                 "--enable-snmp" \
+                 "--disable-snmp" \
+                 "for SNMP support"
+
+optional_depends librelp \
+                 "--enable-relp" \
+                 "--disable-relp" \
+                 "for reliable logging (RELP) support"
+
+optional_depends gnutls \
+                 "--enable-gnutls" \
+                 "--disable-gnutls" \
+                 "for GnuTLS support"

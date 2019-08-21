@@ -1,0 +1,4 @@
+depends  python
+depends  ocaml
+depends  qt5
+depends  kdelibs4support

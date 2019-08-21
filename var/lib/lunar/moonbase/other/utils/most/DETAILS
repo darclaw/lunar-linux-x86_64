@@ -1,0 +1,18 @@
+          MODULE=most
+         VERSION=5.0.0a
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=ftp://space.mit.edu/pub/davis/most/
+      SOURCE_VFY=sha1:de9fe30ae405c32f8424f10571839519a25f3043
+        WEB_SITE=ftp://space.mit.edu/pub/davis/most
+         ENTERED=20010922
+         UPDATED=20071019
+           SHORT="pager like more or less"
+
+cat << EOF
+most is a paging program that displays, one windowful at a time, the
+contents of a file on a terminal. It pauses after each windowful and
+prints on the window status line the screen the file name, current line
+number, and the percentage of the file so far displayed. Unlike other
+paging programs, most is capable of displaying an arbitrary number of
+windows as long as each window occupies at least two screen lines.
+EOF

@@ -1,0 +1,4 @@
+depends python2
+depends libxslt
+depends libxml2
+depends texlive

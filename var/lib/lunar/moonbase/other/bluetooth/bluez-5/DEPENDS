@@ -1,0 +1,15 @@
+depends alsa-lib
+depends readline
+depends dbus-glib
+depends libical
+depends psmisc
+
+optional_depends cups \
+                 "--enable-cups" \
+                 "--disable-cups" \
+                 "to enable cups printing support"
+
+optional_depends %UDEV \
+                 "--enable-udev" \
+                 "--disable-udev" \
+                 "for udev/eudev support"

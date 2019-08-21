@@ -1,0 +1,16 @@
+          MODULE=python2-urllib3
+         VERSION=1.25.3
+          SOURCE=urllib3-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/urllib3-$VERSION
+ SOURCE_URL_FULL=https://github.com/urllib3/urllib3/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:fd0376d5a0d8ac633693dcbefc8f4b7acecae81e5aee7c824682cd11b3edb635
+        WEB_SITE=https://github.com/urllib3/urllib3
+            TYPE=python2
+         ENTERED=20181207
+         UPDATED=20190424
+           SHORT="A sanity-friendly HTTP client for Python"
+
+cat << EOF
+Python HTTP library with thread-safe connection pooling,
+file post support, sanity friendly, and more. 
+EOF

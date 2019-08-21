@@ -1,0 +1,19 @@
+          MODULE=ca-certificates
+         VERSION=20180409
+          SOURCE=${MODULE}_$VERSION.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${MODULE}
+      SOURCE_URL=http://cdn-fastly.deb.debian.org/debian/pool/main/c/$MODULE
+      SOURCE_VFY=sha256:7af6f5bfc619fd29cbf0258c1d95107c38ce840ad6274e343e1e0d971fc72b51
+        WEB_SITE=http://packages.qa.debian.org/c/ca-certificates.html
+         ENTERED=20100405
+         UPDATED=20180908
+           SHORT="Common CA certificates"
+
+cat << EOF
+This module includes PEM files of CA certificates to allow SSL-based
+applications to check for the authenticity of SSL connections.
+Please note that certificate authorities whose certificates are included
+in this package are not in any way audited for trustworthiness and RFC 3647
+compliance, and that full responsibility to assess them belongs to the
+local system administrator.
+EOF

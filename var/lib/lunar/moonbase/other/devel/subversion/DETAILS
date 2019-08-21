@@ -1,0 +1,21 @@
+          MODULE=subversion
+         VERSION=1.12.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+   SOURCE_URL[0]=http://www.eu.apache.org/dist/$MODULE
+   SOURCE_URL[1]=http://www.apache.org/dist/$MODULE
+      SOURCE_VFY=sha256:7fae7c73d8a007c107c0ae5eb372bc0bb013dbfe966fcd5c59cd5a195a5e2edf
+        WEB_SITE=http://subversion.apache.org
+         ENTERED=20030126
+         UPDATED=20190513
+           SHORT="A free/open-source version control system"
+           PSAFE=no
+
+cat << EOF
+Subversion is a free/open-source version control system. That is, Subversion
+manages files and directories over time. A tree of files is placed into a
+central repository. The repository is much like an ordinary file server, except
+that it remembers every change ever made to your files and directories.
+This allows you to recover older versions of your data, or examine the history
+of how your data changed. In this regard, many people think of a version control
+system as a sort of time machine.
+EOF

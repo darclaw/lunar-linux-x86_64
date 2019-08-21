@@ -1,0 +1,21 @@
+depends git
+depends scons
+depends curl
+depends json-c
+depends gdal
+depends sqlite
+depends libwebp
+depends boost
+depends icu4c
+depends proj
+depends libxml2
+depends python2-lxml
+depends python2-pillow
+depends python2-nose
+depends freetype2
+depends %JPEG
+depends tiff
+depends harfbuzz
+depends cairomm
+
+optional_depends postgresql "" "" "for database support"

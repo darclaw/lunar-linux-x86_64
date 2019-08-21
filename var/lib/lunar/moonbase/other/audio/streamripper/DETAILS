@@ -1,0 +1,19 @@
+          MODULE=streamripper
+         VERSION=1.64.6
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/$MODULE
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
+      SOURCE_VFY=sha256:c1d75f2e9c7b38fd4695be66eff4533395248132f3cc61f375196403c4d8de42
+        WEB_SITE=http://streamripper.sourceforge.net
+         ENTERED=20070701
+         UPDATED=20090814
+           SHORT="A tool to download a radio-stream"
+
+cat <<EOF
+Streamripper was started sometime back in early 2000. Streamripper
+started as a way to separate tracks via Shoutcast's title-streaming
+feature. This has now been expanded into a much more generic feature,
+where part of the program only tries to "hint" at where one track
+starts and another ends, thus allowing a mp3 decoding engine to scan
+for a silent mark, which is used to find an exact track separation.
+EOF

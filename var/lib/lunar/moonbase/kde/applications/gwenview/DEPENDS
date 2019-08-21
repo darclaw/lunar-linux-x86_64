@@ -1,0 +1,13 @@
+depends %JPEG
+depends libpng
+depends libkexiv2
+depends libkdcraw
+depends kdelibs4support
+depends kactivities-frameworks
+depends lcms2
+depends baloo
+depends kded
+depends kfilemetadata
+depends kdoctools
+
+optional_depends "libkipi" "" "" "various image manipulation and export features"

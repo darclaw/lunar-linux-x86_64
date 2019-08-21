@@ -1,0 +1,5 @@
+default_pre_build &&
+
+sedit 's:/usr/local:/usr:' Makefile &&
+
+ln -sf /usr/bin/rebar rebar

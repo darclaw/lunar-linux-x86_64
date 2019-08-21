@@ -1,0 +1,3 @@
+# Remove dangling symlinks
+cd /usr/bin &&
+rm -f mount.nfs4 umount.nfs umount.nfs4

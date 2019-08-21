@@ -1,0 +1,22 @@
+          MODULE=makeself
+         VERSION=2.4.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/megastep/makeself/archive/release-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-release-$VERSION
+      SOURCE_VFY=sha256:76a8c3f3fad1b55c39ba2904a19e74962151f9481df03091d4e54938bdd13f50
+        WEB_SITE=http://www.megastep.org/makeself/
+         ENTERED=20040520
+         UPDATED=20181105
+           SHORT="Make self-extractable archives"
+
+cat << EOF
+makeself.sh is a small shell script that generates a self-extractable
+tar.gz archive from a directory. The resulting file appears as a shell
+script (many of those have a .run suffix), and can be launched as is.
+The archive will then uncompress itself to a temporary directory and
+an optional arbitrary command will be executed (for example an
+installation script). This is pretty similar to archives generated with
+WinZip Self-Extractor in the Windows world. Makeself archives also
+include checksums for integrity self-validation (CRC and/or MD5
+checksums).
+EOF

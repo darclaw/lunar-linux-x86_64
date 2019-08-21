@@ -1,0 +1,8 @@
+cat $SCRIPT_DIRECTORY/fonts.alias >> /usr/share/fonts/xawtv-fonts/fonts.alias
+cd /usr/share/fonts/xawtv-fonts && mkfontdir
+echo '********************************************************************'
+echo '*                                                                  *'
+echo '*       Please update your font path with "xset fp hash"           *'
+echo '*                                                                  *'
+echo '********************************************************************'
+true

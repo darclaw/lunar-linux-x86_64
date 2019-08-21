@@ -1,0 +1,10 @@
+8fd7478093e50761a320ec68aa45d16f  /usr/include/libusb-1.0/libusb.h
+9b880a31240d3b3356654c22c62a0f22  /usr/lib/libusb-1.0.so.0.1.0
+89c2a3c2213713733c3da9fd7752552a  /usr/lib/pkgconfig/libusb-1.0.pc
+3a86f0597052f3c39c23fec951e3de0e  /usr/share/doc/libusb/ChangeLog
+d0697e131465c2bdd0af3b07a84d2878  /usr/share/doc/libusb/INSTALL
+1421e58eafefa1dce0dbf0120409a0dc  /usr/share/doc/libusb/NEWS
+01b1825fef389f3ba9f529547bcb5766  /usr/share/doc/libusb/README
+a9f0f680db6c03db5d04fe2feb961b3a  /var/log/lunar/install/libusb-1.0.22
+5bb84f16cc2cd7f23d12c3125b2864b7  /var/log/lunar/compile/libusb-1.0.22.xz
+ee6c101b4e92b58cef40aeac25babb80  /var/log/lunar/md5sum/libusb-1.0.22

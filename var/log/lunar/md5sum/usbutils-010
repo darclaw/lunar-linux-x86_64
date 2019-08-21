@@ -1,0 +1,12 @@
+f92214d7973d29a57618d658c3c120a6  /usr/bin/lsusb
+1f3c7f07a24a5b4879a7b070f53cfa3c  /usr/bin/lsusb.py
+637a925edee58c684b5600e54531ee2e  /usr/bin/usb-devices
+018d3a9c2b99555448e26e178d7bac96  /usr/bin/usbhid-dump
+79eb7baa94a3612ef44b8e056a30e8dc  /usr/share/doc/usbutils/NEWS
+24b4fb9a8956d9c4212835b4be8b07d7  /usr/share/man/man1/usb-devices.1.gz
+d459023b4eff6f5993efc3ef87791ab2  /usr/share/man/man8/lsusb.8.gz
+6f9826ee66408aea5f1b8abd603877ec  /usr/share/man/man8/usbhid-dump.8.gz
+039e851361dcd9f4dc96a7bf66d33f1c  /usr/share/usb.ids
+b96ceb17f490d7f58a696beba02692cc  /var/log/lunar/install/usbutils-010
+fb53271d53fc638e932349fa97909d5e  /var/log/lunar/compile/usbutils-010.xz
+bdba816693df8081c8e6c1800dcb7bec  /var/log/lunar/md5sum/usbutils-010

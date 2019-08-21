@@ -1,0 +1,16 @@
+          MODULE=kservice
+         VERSION=5.57.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/frameworks/$(module_version kf5)
+      SOURCE_VFY=sha256:531940baa47273714fbc35941f2ef5fbdb801b7a5ed5fef5a8ff1d86bf1dae14
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=https://projects.kde.org/projects/frameworks/kservice
+         ENTERED=20150205
+         UPDATED=20190415
+           SHORT="plugin framework for desktop services"
+
+cat << EOF
+KService provides a plugin framework for handling desktop services. Services can
+be applications or libraries. They can be bound to MIME types or handled by
+application specific code.
+EOF

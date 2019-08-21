@@ -1,0 +1,15 @@
+          MODULE=signon-ui
+         VERSION=0.17
+          SOURCE=$MODULE-${VERSION}+15.10.20150810-0ubuntu1.tar.bz2
+      SOURCE_URL=https://gitlab.com/accounts-sso/signon-ui/-/archive/0.17+15.10.20150810-0ubuntu1/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-${VERSION}+15.10.20150810-0ubuntu1
+      SOURCE_VFY=sha256:a0c639ade6e19731da5670f70c2ee1cd07d323b5bbf9e2447d6dcb1a7b5a5beb
+        WEB_SITE=https://launchpad.net/online-accounts-signon-ui
+         ENTERED=20151201
+         UPDATED=20190404
+           SHORT="user interface for login process of an online account"
+
+cat << EOF
+UI component responsible for handling the user interactions which can
+happen during the login process of an online account.
+EOF

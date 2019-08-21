@@ -1,0 +1,15 @@
+          MODULE=Sub-Uplevel
+         VERSION=0.2800
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://search.cpan.org/CPAN/authors/id/D/DA/DAGOLDEN
+      SOURCE_VFY=sha256:b4f3f63b80f680a421332d8851ddbe5a8e72fcaa74d5d1d98f3c8cc4a3ece293
+        WEB_SITE=https://search.cpan.org/~dagolden/Sub-Uplevel
+            TYPE=perl
+         ENTERED=20060310
+         UPDATED=20181018
+           SHORT="apparently run a function in a higher stack frame"
+cat << EOF
+Perl module that provides functionality like Tcl's uplevel() function,
+but not quite so dangerous. The idea is just to fool caller(). All the
+really naughty bits of Tcl's uplevel() are avoided.
+EOF

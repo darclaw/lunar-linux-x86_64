@@ -1,0 +1,3 @@
+depends %OSSL
+depends pcsc-lite
+depends pkgconf

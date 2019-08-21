@@ -1,0 +1,4 @@
+depends dbus-glib
+depends hunspell
+depends aspell
+depends git

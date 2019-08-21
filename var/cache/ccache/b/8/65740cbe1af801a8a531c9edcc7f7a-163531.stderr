@@ -1,0 +1,4 @@
+conftest.c: In function 'main':
+conftest.c:133:25: warning: unused variable 'foo' [-Wunused-variable]
+ struct sockaddr_storage foo;
+                         ^~~

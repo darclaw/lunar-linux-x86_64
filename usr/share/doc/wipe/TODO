@@ -1,0 +1,42 @@
+Things to do:
+
+        --	freebsd: fix block devs and file types
+
+	--	fix single quote in man page
+
+	--	follow symlinks when they point to a device
+
+	--	handle changes in window width (need sighandler for that)
+
+        --	show the path instead of just the filename & truncate beginning if too long
+
+	--	display throughput
+
+	--	realpath() might be useful
+
+	--	add more support for systems w/o a random dev
+		use stdin as an alternate entropy source
+
+	--	random length truncations
+		to try and screw with indirect block pointersn and extents
+
+	--	inode/directory scrambling
+		randomly create new files in directory containing target(s)
+		create random (dir local) hard links.
+
+		basically, try to wipe everything in struct stat
+
+	--	switch to a total percentage for all the files selected,
+		kind of like how apt-get does it.
+
+		something like these:
+
+		[blah.txt: 60%] 24%
+
+		blah.txt: 60% [24%]
+
+		[24%] blah.txt: 60%
+
+		probably go with the last example (or maybe the first, or
+		maybe even make it optional).
+

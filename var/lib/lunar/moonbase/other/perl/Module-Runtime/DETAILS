@@ -1,0 +1,13 @@
+          MODULE=Module-Runtime
+         VERSION=0.016
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://search.cpan.org/CPAN/authors/id/Z/ZE/ZEFRAM
+      SOURCE_VFY=sha256:68302ec646833547d410be28e09676db75006f4aa58a11f3bdb44ffe99f0f024
+        WEB_SITE=https://search.cpan.org/~zefram/Module-Runtime
+            TYPE=perl
+         ENTERED=20150705
+         UPDATED=20181018
+           SHORT="runtime module handling"
+cat << EOF
+Runtime module handling.
+EOF

@@ -1,0 +1,6 @@
+default_pre_build &&
+
+cp $SOURCE_CACHE/{$SOURCE,$SOURCE2} . &&
+
+# add trivial support for column output
+sedit 's@(\[0-9\]+):@([0-9]+:[0-9]+):@' $SOURCE

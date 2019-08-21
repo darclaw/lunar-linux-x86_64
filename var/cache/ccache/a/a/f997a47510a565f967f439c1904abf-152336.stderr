@@ -1,0 +1,4 @@
+conftest.c: In function 'main':
+conftest.c:150:15: warning: unused variable 'foo' [-Wunused-variable]
+ struct stat64 foo;
+               ^~~

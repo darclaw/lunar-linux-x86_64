@@ -1,0 +1,14 @@
+          MODULE=konqueror
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:8da6fdd7de037bed79b6341e670a7491d371d084c59fdbefb4ffae0d2da82e4c
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=https://konqueror.org/
+         ENTERED=20171205
+         UPDATED=20190418
+           SHORT="filemanager and web browser"
+
+cat << EOF
+KDE filemanager and web browser.
+EOF

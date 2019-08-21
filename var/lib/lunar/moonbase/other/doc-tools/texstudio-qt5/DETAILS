@@ -1,0 +1,20 @@
+          MODULE=texstudio-qt5
+         VERSION=2.12.14
+          SOURCE=${MODULE%-*}-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/texstudio-org/texstudio/archive/$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${MODULE%-*}-$VERSION
+      SOURCE_VFY=sha256:61df71f368bbf21f865645534f63840fd48dbd2996d6d0188aa26d3b647fede0
+        WEB_SITE=https://github.com/texstudio-org/texstudio
+         ENTERED=20150420
+         UPDATED=20181201
+           SHORT="Qt5 Fork of the LaTeX IDE TexMaker"
+
+cat << EOF
+TexMakerX is a fork of the LaTeX IDE TexMaker, and gives you an
+environment where you can easily create and manage LaTeX documents. It
+provides modern writing support, like interactive spell checking, code
+folding and syntax highlighting. Also, it serves as a starting point
+from where you can easily run all necessary LaTeX tools.
+
+Note: They have renamed this project to TeXstudio.
+EOF

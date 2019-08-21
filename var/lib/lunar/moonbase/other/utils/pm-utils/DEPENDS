@@ -1,0 +1,4 @@
+depends procps
+depends pkgconf
+
+optional_depends xmlto "" "" "for man pages install"

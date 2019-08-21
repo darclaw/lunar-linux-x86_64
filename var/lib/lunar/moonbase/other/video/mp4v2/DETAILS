@@ -1,0 +1,24 @@
+          MODULE=mp4v2
+         VERSION=2.0.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+         SOURCE2=$MODULE-gcc7.patch
+      SOURCE_URL=https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mp4v2
+     SOURCE2_URL=$PATCH_URL
+      SOURCE_VFY=sha256:0319b9a60b667cf10ee0ec7505eb7bdc0a2e21ca7a93db96ec5bd758e3428338
+     SOURCE2_VFY=sha256:2e5c5007d41c565d8ba42aa0b17508da59eab1a91d342650ac68acb1df5930a1
+        WEB_SITE=http://code.google.com/p/mp4v2/
+         ENTERED=20050914
+         UPDATED=20120907
+           SHORT="Create and modify mp4 files"
+
+cat << EOF
+The MP4V2 library provides an API to create and modify mp4 files as defined by
+ISO-IEC:14496-1:2001 MPEG-4 Systems. This file format is derived from Apple's
+QuickTime file format that has been used as a multimedia file format in a
+variety of platforms and applications. It is a very powerful and extensible
+format that can accomodate practically any type of media.
+
+mp4v2 used to be part of the mpeg4ip library (http://mpeg4ip.sourceforge.net/),
+but has been moved into its own maintained library due to a combination of the
+cessation of support of mpeg4ip and the usefulness of this library on its own.
+EOF

@@ -1,0 +1,14 @@
+depends gtk+-3
+depends intltool
+depends meson
+depends vala
+
+optional_depends docbook-xsl \
+                 "-Dman=true" \
+                 "-Dman=false" \
+                 "for building man pages"
+
+optional_depends gtk-doc \
+                 "-Dgtk_doc=true" \
+                 "-Dgtk_doc=false" \
+                 "for building documentation"

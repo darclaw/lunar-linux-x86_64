@@ -1,0 +1,16 @@
+          MODULE=HTML-Parser
+         VERSION=3.72
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://search.cpan.org/CPAN/authors/id/G/GA/GAAS/
+      SOURCE_VFY=sha256:ec28c7e1d9e67c45eca197077f7cdc41ead1bb4c538c7f02a3296a4bb92f608b
+        WEB_SITE=https://search.cpan.org/~gaas/HTML-Parser
+            TYPE=perl
+         ENTERED=20020727
+         UPDATED=20181018
+           SHORT="perl module for working with HTML"
+cat << EOF
+HTML::Entities, HTML::Filter, HTML::HeadParser, HTML::LinkExtor,
+HTML::Parser, HTML::PullParser, HTML::TokeParser
+A perl 5 module which is a toolbox for several kinds of HTML
+manipulations.
+EOF

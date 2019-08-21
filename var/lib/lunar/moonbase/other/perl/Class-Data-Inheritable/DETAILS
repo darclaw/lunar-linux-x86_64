@@ -1,0 +1,16 @@
+          MODULE=Class-Data-Inheritable
+         VERSION=0.08
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://search.cpan.org/CPAN/authors/id/T/TM/TMTM/
+      SOURCE_VFY=sha256:9967feceea15227e442ec818723163eb6d73b8947e31f16ab806f6e2391af14a
+        WEB_SITE=https://metacpan.org/pod/Class::Data::Inheritable
+            TYPE=perl
+         ENTERED=20070310
+         UPDATED=20080309
+           SHORT="Perl module to provide inheritable, overridable class data"
+cat << EOF
+Class::Data::Inheritable is for creating accessor/mutators to class
+data. That is, if you want to store something about your class as a
+whole (instead of about a single object). This data is then inherited by
+your subclasses and can be overriden.
+EOF

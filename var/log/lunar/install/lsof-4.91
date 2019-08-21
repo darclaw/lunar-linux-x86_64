@@ -1,0 +1,13 @@
+/usr
+/usr/bin
+/usr/bin/lsof
+/usr/share
+/usr/share/doc
+/usr/share/doc/lsof
+/usr/share/doc/lsof/README.lsof_4.91
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/lsof.8.gz
+/var/log/lunar/install/lsof-4.91
+/var/log/lunar/compile/lsof-4.91.xz
+/var/log/lunar/md5sum/lsof-4.91

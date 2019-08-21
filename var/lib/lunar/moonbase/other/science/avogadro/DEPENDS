@@ -1,0 +1,4 @@
+depends hdf5
+depends cmake
+depends qt5
+depends avogadrolibs

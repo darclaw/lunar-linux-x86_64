@@ -1,0 +1,17 @@
+          MODULE=julius
+         VERSION=4.3.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://dl.sourceforge.jp/julius/60273/
+      SOURCE_VFY=sha256:4bf77c7b91f4bb0686c375c70bd4f2077e7de7db44f60716af9f3660f65a6253
+        WEB_SITE=http://julius.sourceforge.jp/en_index.php
+         ENTERED=20121209
+         UPDATED=20181121
+           SHORT="continuous speech recognition engine"
+
+cat << EOF
+"Julius" is an open-source high-performance large vocabulary
+continuous speech recognition (LVCSR) decoder software for
+speech-related researchers and developers.  Based on word N-gram and
+triphone context-dependent HMM, it can perform almost real-time
+decoding on most current PCs with small amount of memory.
+EOF

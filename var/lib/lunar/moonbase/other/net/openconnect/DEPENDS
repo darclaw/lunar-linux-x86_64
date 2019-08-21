@@ -1,0 +1,6 @@
+depends zlib
+depends libxml2
+depends libproxy
+depends python2
+
+optional_depends %OSSL "--with-openssl" "--without-openssl" "for Secure Sockets Layer support"

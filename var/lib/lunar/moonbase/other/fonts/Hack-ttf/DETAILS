@@ -1,0 +1,16 @@
+          MODULE=Hack-ttf
+         VERSION=3.003
+          SOURCE=${MODULE%-*}-v$VERSION-ttf.tar.gz
+ SOURCE_URL_FULL=https://github.com/source-foundry/Hack/archive/v${VERSION}.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${MODULE%-*}-$VERSION
+      SOURCE_VFY=sha256:3c6f1a20e86744077e83c9bacf879a5b13f659f1c07e9c5c57d6efc3cbe66c07
+        WEB_SITE=https://sourcefoundry.org/hack/
+         ENTERED=20160801
+         UPDATED=20180320
+           SHORT="typeface base on Bitstream Vera Mono"
+
+cat << EOF
+Hack is designed to be a workhorse typeface for code. It has deep roots in the libre,
+open source typeface community and expands upon the contributions of the Bitstream
+Vera & DejaVu projects.
+EOF

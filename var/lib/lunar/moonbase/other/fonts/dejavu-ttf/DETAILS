@@ -1,0 +1,19 @@
+          MODULE=dejavu-ttf
+         VERSION=2.37
+          SOURCE=dejavu-fonts-ttf-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/dejavu-fonts-ttf-$VERSION
+      SOURCE_URL=$SFORGE_URL/dejavu/
+      SOURCE_VFY=sha256:fa9ca4d13871dd122f61258a80d01751d603b4d3ee14095d65453b4e846e17d7
+        WEB_SITE=http://dejavu.sourceforge.net
+         ENTERED=20060711
+         UPDATED=20161031
+         ARCHIVE=off
+           SHORT="Font family based on the Bitstream Vera Fonts"
+
+cat << EOF
+The DejaVu fonts are a font family based on the Bitstream Vera Fonts release
+1.10. Its purpose is to provide a wider range of characters (see Current
+status page for more information) while maintaining the original look and
+feel through the process of collaborative development (see Authors).
+The family is available as TrueType fonts and also as third-party packages.
+EOF

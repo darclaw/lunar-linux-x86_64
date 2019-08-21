@@ -1,0 +1,4 @@
+depends akonadi-mime
+depends kmime
+depends kcontacts
+

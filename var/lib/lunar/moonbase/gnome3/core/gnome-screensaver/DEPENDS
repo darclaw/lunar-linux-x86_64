@@ -1,0 +1,6 @@
+depends dbus-glib
+depends gnome-desktop
+depends libgnomekbd
+depends intltool
+
+optional_depends gnome-backgrounds "" "" "for GNOME backgrounds image files"

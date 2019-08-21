@@ -1,0 +1,98 @@
+default_pre_build &&
+
+unzip $SOURCE_CACHE/$SOURCE2 &&
+
+# Allow building against system libraries in official builds
+sedit 's/OFFICIAL_BUILD/GOOGLE_CHROME_BUILD/' tools/generate_shim_headers/generate_shim_headers.py &&
+
+# https://crbug.com/skia/6663#c10
+patch_it $SOURCE3 4 &&
+
+# Fixes from Gentoo
+patch_it $SOURCE4 1 &&
+patch_it $SOURCE5 1 &&
+
+# https://bugs.gentoo.org/661880#c21
+patch_it $SOURCE6 1 &&
+
+# https://crbug.com/913220
+patch_it $SOURCE7 1 &&
+
+# https://crbug.com/893950
+sedit 's/\<xmlMalloc\>/malloc/;s/\<xmlFree\>/free/' \
+      third_party/blink/renderer/core/xml/*.cc \
+      third_party/blink/renderer/core/xml/parser/xml_document_parser.cc \
+      third_party/libxml/chromium/libxml_utils.cc
+
+# Remove unsupported compiler flags
+sedit '/"-Wno-defaulted-function-deleted"/d' build/config/compiler/BUILD.gn &&
+
+# Make sure python2 is used
+sedit '1s;python$;&2;' third_party/dom_distiller_js/protoc_plugins/*.py build/util/version.py &&
+
+# Build now requires nodejs
+mkdir -p third_party/node/linux/node-linux-x64/bin &&
+ln -s /usr/bin/node third_party/node/linux/node-linux-x64/bin/node &&
+
+export CHROMIUM_HOME=/usr/lib/$MODULE &&
+
+sedit "s:/bin/echo:/usr/bin/echo:g" build/common.gypi &&
+
+# Google API keys (see http://www.chromium.org/developers/how-tos/api-keys)
+# The keys below are for Lunar Linux use ONLY. If you are maintaining chromium for
+# another distribution, please get your own set of keys.
+google_api_key=AIzaSyDhObDIVsBGV5fleLgLq6ZpfKldIVMvrG4 &&
+google_default_client_id=1081365520390-t7vsmo6kde87fvbjoue2ea412vsjkvu0.apps.googleusercontent.com &&
+google_default_client_secret=mz6fvViZFucQ5QVggWaqOjYX &&
+
+# Remove bundled libraries, we will use system provided ones instead (using arch's approach)
+local _libs _lib &&
+_libs=(ffmpeg fontconfig flac yasm libxslt libwebp libjpeg opus re2 zlib snappy freetype harfbuzz-ng) &&
+for _lib in ${_libs[@]} libjpeg_turbo; do
+  find "third_party/${_lib}" -type f \
+       \! -path "third_party/${_lib}/chromium/*" \
+       \! -path "third_party/${_lib}/google/*" \
+       \! -path "third_party/yasm/run_yasm.py" \
+       \! -regex '.*\.\(gn\|gni\|isolate\)' \
+       -delete
+done &&
+
+python2 build/linux/unbundle/replace_gn_files.py --system-libraries "${_libs[@]}" &&
+
+local _flags=(
+  'custom_toolchain="//build/toolchain/linux/unbundle:default"'
+  'host_toolchain="//build/toolchain/linux/unbundle:default"'
+  'is_official_build=true'
+  'clang_use_chrome_plugins=false'
+  'fatal_linker_warnings=false'
+  'treat_warnings_as_errors=false'
+  'fieldtrial_testing_like_official_build=true'
+  'ffmpeg_branding="Chrome"'
+  'proprietary_codecs=true'
+  'use_sysroot=false'
+  'use_custom_libcxx=false'
+  'linux_use_bundled_binutils=false'
+  'enable_hangout_services_extension=true'
+  'enable_widevine=true'
+  'enable_nacl=false'
+  'enable_swiftshader=false'
+  "google_api_key=\"${google_api_key}\""
+  "google_default_client_id=\"${google_default_client_id}\""
+  "google_default_client_secret=\"${google_default_client_secret}\""
+) &&
+
+for o in $OPTS; do
+  _flags+=( "$o" )
+done &&
+
+export CC=clang &&
+export CXX=clang++ &&
+export AR=ar &&
+export NM=nm &&
+
+# Facilitate deterministic builds (taken from build/config/compiler/BUILD.gn)
+export CFLAGS+='   -Wno-builtin-macro-redefined'
+export CXXFLAGS+=' -Wno-builtin-macro-redefined'
+export CPPFLAGS+=' -D__DATE__=  -D__TIME__=  -D__TIMESTAMP__='
+
+gn gen out/Release --args="${_flags[*]}" --script-executable=/usr/bin/python2

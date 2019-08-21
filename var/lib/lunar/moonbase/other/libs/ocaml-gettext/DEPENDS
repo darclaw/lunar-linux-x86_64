@@ -1,0 +1,5 @@
+depends gettext
+depends ocaml
+depends findlib
+depends ocaml-fileutils
+depends camomile

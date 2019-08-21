@@ -1,0 +1,14 @@
+          MODULE=giflib
+         VERSION=5.1.8
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/giflib
+      SOURCE_VFY=sha256:d105a905df34a7822172d13657cdae3d4b0c8e8c7067ccf05e39a40044f8ca53
+        WEB_SITE=http://giflib.sourceforge.net
+         ENTERED=20070930
+         UPDATED=20190327
+           SHORT="A library for compressed GIF images"
+
+cat << EOF
+A library for reading and writing gif images. This library use LZW
+compression in the gif format (the Unisys patent on it expired in 2004).
+EOF

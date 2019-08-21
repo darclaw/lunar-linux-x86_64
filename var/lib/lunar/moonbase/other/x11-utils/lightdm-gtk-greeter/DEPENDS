@@ -1,0 +1,9 @@
+depends gtk+-3
+depends lightdm
+depends intltool
+depends exo
+
+optional_depends gobject-introspection \
+                 "--enable-introspection" \
+                 "--disable-introspection" \
+                 "for object introspection"

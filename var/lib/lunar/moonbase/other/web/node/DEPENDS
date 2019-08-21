@@ -1,0 +1,17 @@
+depends python2
+depends procps
+depends c-ares
+
+optional_depends libuv "--shared-libuv"   "" "for system installed libuv"
+optional_depends %OSSL "--shared openssl" "" "for system installed openssl"
+optional_depends zlib  "--shared-zlib"    "" "for system installed zlib"
+
+optional_depends icu4c \
+                 "--with-intl=system-icu" "" \
+                 "for system installed icu library"
+
+optional_depends http-parser \
+                 "--shared-http-parser" "" \
+                 "for system installed http-parser"
+
+#depends v8

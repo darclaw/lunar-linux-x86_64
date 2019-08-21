@@ -1,0 +1,20 @@
+          MODULE=fsarchiver
+         VERSION=0.8.5
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://github.com/fdupoux/fsarchiver/releases/download/$VERSION/
+      SOURCE_VFY=sha256:c694f52e42703d7e8c4d56f2db97a8ff5616df1d723429126de97c22217c88fe
+        WEB_SITE=http://www.fsarchiver.org
+         ENTERED=20090925
+         UPDATED=20180713
+           SHORT="A file-system archive tool"
+
+cat << EOF
+FSArchiver is a system tool that allows you to save the contents of a file-
+system to a compressed archive file. The file-system can be restored on a
+partition which has a different size and it can be restored on a different
+file-system. Unlike tar/dar, FSArchiver also creates the file-system when it
+extracts the data to partitions.
+Everything is checksummed in the archive in order to protect the data.
+If the archive is corrupt, you just loose the current file, not the whole
+archive.
+EOF

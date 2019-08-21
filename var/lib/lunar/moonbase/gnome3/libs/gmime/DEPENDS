@@ -1,0 +1,16 @@
+depends libidn2
+depends vala
+depends zlib
+depends pkgconf
+
+optional_depends gpgme "" "" "for GnuPG crypto support"
+
+optional_depends gtk-doc \
+                 "--enable-gtk-doc" \
+                 "--disable-gtk-doc" \
+                 "for building documentation"
+
+optional_depends gobject-introspection \
+                 "--enable-introspection" \
+                 "--disable-introspection" \
+                 "for object introspection"

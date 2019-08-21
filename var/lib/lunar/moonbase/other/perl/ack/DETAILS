@@ -1,0 +1,15 @@
+          MODULE=ack
+         VERSION=v3.0.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/
+      SOURCE_VFY=sha256:8daddb225226b3cd532f8ab9ce4abfd31e651ad300deb7a4e419beb9197c4ded
+        WEB_SITE=http://betterthangrep.com/
+            TYPE=perl
+         ENTERED=20170301
+         UPDATED=20190529
+           SHORT="ack is a tool like grep, optimized for programmers"
+
+cat << EOF
+A Perl-based grep replacement, aimed at programmers with large trees of
+heterogeneous source code
+EOF

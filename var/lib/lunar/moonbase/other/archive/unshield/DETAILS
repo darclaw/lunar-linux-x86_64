@@ -1,0 +1,21 @@
+          MODULE=unshield
+         VERSION=1.4.3
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/twogood/unshield/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:aa8c978dc0eb1158d266eaddcd1852d6d71620ddfc82807fe4bf2e19022b7bab
+        WEB_SITE=https://github.com/twogood/unshield
+         ENTERED=20071126
+         UPDATED=20181105
+           SHORT="InstallShield CAB file unzipper"
+cat << EOF
+Works on both little-endian and big-endian systems
+Separate the implementation in a tool and a library
+Support InstallShield versions 5 and later
+Be able to list contents of InstallShield Cabinet Files
+Be able to extract files from InstallShield Cabinet Files
+Uses a well known open source license (MIT)
+
+There are two types of .CAB files: InstallShield cabinet files and Microsoft
+cabinet files. Unshield only supports the InstallShield cabinets, usually
+named data1.cab, data1.hdr, data2.cab, etc.
+EOF

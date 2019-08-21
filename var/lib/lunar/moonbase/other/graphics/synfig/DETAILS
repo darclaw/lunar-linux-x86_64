@@ -1,0 +1,24 @@
+          MODULE=synfig
+         VERSION=1.2.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/synfig/releases/$VERSION/source
+      SOURCE_VFY=sha256:5f5f7b33483041165f9a63fe4d95eb815971c7444569e574206f6964e83cc2ef
+        WEB_SITE=http://synfig.org/
+         ENTERED=20090916
+         UPDATED=20181010
+           SHORT="A vector based 2D animation package"
+
+cat << EOF
+synfig is a vector based 2D animation package. It is designed to be
+capable of producing feature-film quality animation. It eliminates the
+need for tweening, preventing the need to hand-draw each frame. synfig
+features spatial and temporal resolution independence (sharp and smooth
+at any resolution or framerate), high dynamic range images, and a
+flexible plugin system.
+
+This package contains the renderer used to convert synfig .sif files to
+raster images, videos and other formats. Layer types include geometric,
+gradient, filter, distortion, transformation, fractal and others. Output
+targets include JPEG, PNG, GIF, BMP, PPM, DV, OpenEXR, ffmpeg (MPEG1),
+libavcodec (AVI), imagemagick (MIFF), yuv420p, MNG and others.
+EOF

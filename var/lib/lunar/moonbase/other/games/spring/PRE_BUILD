@@ -1,0 +1,3 @@
+default_pre_build &&
+
+sedit 's@//CMakeLists.txt@/CMakeLists.txt@' rts/build/cmake/Util.cmake

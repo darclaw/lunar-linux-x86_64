@@ -1,0 +1,17 @@
+          MODULE=zziplib
+         VERSION=0.13.69
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/gdraheim/zziplib/archive/v0.13.69.tar.gz
+      SOURCE_VFY=sha256:846246d7cdeee405d8d21e2922c6e97f55f24ecbe3b6dcf5778073a88f120544
+        WEB_SITE=http://zziplib.sourceforge.net/
+         ENTERED=20110313
+         UPDATED=20180318
+           SHORT="A compression library"
+
+cat << EOF
+The zziplib library offers the ability to easily extract data from files
+archived in a single zip file. Applications can bundle files into a
+single zip archive and access them. The implementation is based only on
+the (free) subset of compression with the zlib algorithm which is
+actually used by the zip/unzip tools.
+EOF

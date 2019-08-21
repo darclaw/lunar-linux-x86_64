@@ -1,0 +1,19 @@
+          MODULE=elfutils
+         VERSION=0.176
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=https://sourceware.org/elfutils/ftp/$VERSION/
+      SOURCE_VFY=sha256:eb5747c371b0af0f71e86215a5ebb88728533c3a104a43d4231963f308cd1023
+        WEB_SITE=https://sourceware.org/elfutils/
+         ENTERED=20021102
+         UPDATED=20190226
+           SHORT="Utilities related to ELF (UNIX binaries) objects"
+    USE_WRAPPERS=no
+
+cat << EOF
+Elfutils is a collection of utilities, including ld (a linker), nm (for
+listing symbols from object files), size (for listing the section sizes
+of an object or archive file), strip (for discarding symbols), readelf
+(to see the raw ELF file structures), and elflint (to check for
+well-formed ELF files).  Also included are numerous helper libraries
+which implement DWARF, ELF, and machine-specific ELF handling.
+EOF

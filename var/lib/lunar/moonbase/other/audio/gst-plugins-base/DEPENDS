@@ -1,0 +1,30 @@
+depends gstreamer
+depends liboil
+
+optional_depends iso-codes    "" "--disable-iso-codes"  "for iso-code support"
+optional_depends zlib         "" "--disable-zlib"       "for compression support"
+optional_depends pango        "" "--disable-pango"      "for Pango font rendering support"
+optional_depends alsa-plugins "" "--disable-alsa"       "for ALSA output support"
+optional_depends libogg       "" "--disable-ogg"        "for OGG support"
+optional_depends libvorbis    "" "--disable-vorbis"     "for Vorbis audio codec support"
+optional_depends libtheora    "" "--disable-theora"     "for Theora video codec support"
+optional_depends cdparanoia   "" "--disable-cdparanoia" "for CDDA support"
+optional_depends libvisual    "" "--disable-libvisual"  "for visualization support"
+optional_depends libX11       "" "--disable-x"          "for X plugin support"
+optional_depends libXv        "" "--disable-xvideo"     "for the X11 XVideo extensions"
+optional_depends opus         "" "--disable-opus"       "for interactive speech on internet support"
+
+optional_depends orc "--enable-orc" "" "for runtime compiler support"
+
+optional_depends gtk-doc \
+                 "--enable-gtk-doc" \
+                 "--disable-gtk-doc --disable-gtk-doc-html" \
+                 "for documentation support"
+
+optional_depends gobject-introspection \
+                 "--enable-introspection" \
+                 "--disable-introspection" \
+                 "for introspection support"
+
+# circular depends on qt5
+#optional_depends qt5 "" "" "for Qt 5.x support"

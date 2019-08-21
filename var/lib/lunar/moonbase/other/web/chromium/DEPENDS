@@ -1,0 +1,41 @@
+depends zlib
+depends python
+depends python2
+depends minizip
+depends yasm
+depends ninja
+depends snappy
+depends gperf
+depends re2
+depends xdg-utils
+depends %JPEG
+depends alsa-lib
+depends libxslt
+depends expat
+depends libwebp
+depends gtk+-3
+depends flac
+depends nss
+depends libgnome-keyring
+depends harfbuzz
+depends pango
+depends speex
+depends libXScrnSaver
+depends libexif
+depends speech-dispatcher
+depends git
+depends node
+depends json-glib
+depends opus
+depends icu4c
+depends snappy
+depends lld
+depends fontconfig
+depends ffmpeg
+depends gn
+
+optional_depends cups       "use_cups=true"              "use_cups=false"              "To use system provided cups"
+optional_depends pulseaudio "link_pulseaudio=true use_pulseaudio=true" "use_pulseaudio=false"        "For pulse audio support"
+optional_depends heimdal    "use_kerberos=true"          "use_kerberos=false"          "To use system provided heimdal (kerberos) support"
+optional_depends libu2f-host "" "" "For FIDO U2F authentication support"
+optional_depends gnome-keyring "use_gnome_keyring=true" "use_gnome_keyring=false" "for storing passwords in GNOME keyring"

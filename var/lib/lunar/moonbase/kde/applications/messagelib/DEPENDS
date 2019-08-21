@@ -1,0 +1,5 @@
+depends libgravatar
+depends kidentitymanagement
+depends kmailtransport
+depends kdepim-apps-libs
+depends kmbox

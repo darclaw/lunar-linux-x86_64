@@ -1,0 +1,6 @@
+depends kcmutils
+depends kdnssd
+depends knotifyconfig
+
+optional_depends libvncserver ""  "" "for vncserver support"
+optional_depends freerdp      ""  "" "for freerdp support"

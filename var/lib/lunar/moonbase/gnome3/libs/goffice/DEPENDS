@@ -1,0 +1,25 @@
+depends libxslt
+depends libgsf
+depends cairo
+depends pango
+depends librsvg
+depends gdk-pixbuf
+depends wayland
+depends gtk+-3
+
+optional_depends libspectre "" "" "support embedded EPS"
+
+optional_depends lasem \
+                 "--with-lasem" \
+                 "--without-lasem" \
+                 "for SVG/MathML rendering"
+
+optional_depends gtk-doc \
+                 "--enable-gtk-doc" \
+                 "--disable-gtk-doc" \
+                 "for building documentation"
+
+optional_depends gobject-introspection \
+                 "--enable-introspection" \
+                 "--disable-introspection" \
+                 "for object introspection"

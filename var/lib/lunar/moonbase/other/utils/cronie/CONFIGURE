@@ -1,0 +1,1 @@
+mquery INOTIFY "Enable inotify?" y " --with-inotify" " --without-inotify"

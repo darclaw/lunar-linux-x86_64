@@ -1,0 +1,14 @@
+          MODULE=dolphin
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:f3f45b9048c283252067eebfad8c6e1efc6bc64d43fcba78b933850ea4762375
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=http://kde.org/applications/system/dolphin
+         ENTERED=20151122
+         UPDATED=20190418
+           SHORT="file manager"
+
+cat << EOF
+File manager.
+EOF

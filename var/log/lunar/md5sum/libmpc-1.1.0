@@ -1,0 +1,10 @@
+6982a86ea45f9a8321a1105c7c74fe3e  /usr/include/mpc.h
+8d2c18fa0c8e41dde8c67eeccee06baa  /usr/lib/libmpc.so.3.1.0
+83614369c163a19a2151e520c61b5b8e  /usr/share/doc/libmpc/INSTALL
+25c093931f025b02849add4a08ac5696  /usr/share/doc/libmpc/NEWS
+a54cdb69bcbaa2cfaca1924967e6b687  /usr/share/doc/libmpc/README
+390ff590c99d356d61b576aa8c1e4000  /usr/share/info/dir
+f6600689105eb887a9d39c817906acda  /usr/share/info/mpc.info
+d2064d8d6b80e0d90a3fbf6437eeb4dc  /var/log/lunar/install/libmpc-1.1.0
+50793d10b284b60ba85e6e946a194121  /var/log/lunar/compile/libmpc-1.1.0.xz
+3b986b720081622217919c5dded197e1  /var/log/lunar/md5sum/libmpc-1.1.0

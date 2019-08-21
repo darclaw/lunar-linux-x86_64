@@ -1,0 +1,16 @@
+depends gdk-pixbuf
+depends pango      # needs pango with cairo enabled
+depends libcroco
+depends vala
+depends rustc
+depends intltool
+
+optional_depends gtk-doc \
+                 "--enable-gtk-doc" \
+                 "--disable-gtk-doc" \
+                 "for building documentation"
+
+optional_depends gobject-introspection \
+                 "--enable-introspection" \
+                 "--enable-introspection" \
+                 "for introspection support"

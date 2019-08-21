@@ -1,0 +1,7 @@
+  LUNAR_COMPILER="GCC_8_3"
+    LUNAR_MODULE="lunar"
+LUNAR_ALIAS_UDEV="systemd"
+LUNAR_ALIAS_KMOD="kmod"
+LUNAR_ALIAS_KERNEL_HEADERS="kernel-headers"
+LUNAR_ALIAS_SSL="openssl"
+LUNAR_ALIAS_OSSL="openssl"

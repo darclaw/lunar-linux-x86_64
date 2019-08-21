@@ -1,0 +1,21 @@
+          MODULE=openbox
+         VERSION=3.6.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://icculus.org/$MODULE/releases
+      SOURCE_VFY=sha256:8b4ac0760018c77c0044fab06a4f0c510ba87eae934d9983b10878483bde7ef7
+        WEB_SITE=http://icculus.org/openbox/index.php/Main_Page
+         ENTERED=20040814
+         UPDATED=20150701
+           SHORT="A fast, light-weight, extensible window manager"
+
+cat << EOF
+Openbox works with your applications, and makes your desktop easier to
+manage. This is because the approach to its development was the opposite
+of what seems to be the general case for window managers. Openbox was
+written first to comply with standards and to work properly. Only when
+that was in place did the team turn to the visual interface.
+
+Openbox is fully functional as a stand-alone working environment, or can
+be used as a drop-in replacement for the default window manager in the
+GNOME or KDE desktop environments.
+EOF

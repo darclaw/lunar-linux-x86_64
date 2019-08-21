@@ -1,0 +1,13 @@
+          MODULE=yelp-tools
+         VERSION=3.32.1
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha256:99a7c312a5fcb427870dc198af02801eb0f8ea63317e20110fc0303eb44636e3
+        WEB_SITE=http://www.gnome.org
+         ENTERED=20140413
+         UPDATED=20190508
+           SHORT="Tools for creating Yelp documentation"
+
+cat << EOF
+Tools for creating Yelp documentation.
+EOF

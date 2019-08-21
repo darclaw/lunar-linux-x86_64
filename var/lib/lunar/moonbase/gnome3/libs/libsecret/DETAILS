@@ -1,0 +1,15 @@
+          MODULE=libsecret
+         VERSION=0.18.8
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}/
+      SOURCE_VFY=sha256:3bfa889d260e0dbabcf5b9967f2aae12edcd2ddc9adc365de7a5cc840c311d15
+        WEB_SITE=http://www.gnome.org
+         ENTERED=20130316
+         UPDATED=20190302
+           SHORT="A library for storing and retrieving passwords and other secrets"
+
+cat << EOF
+Libsecret is a library for storing and retrieving passwords and other secrets.
+It communicates with the "Secret Service" using DBus. gnome-keyring and
+ksecretservice are both implementations of a Secret Service.
+EOF

@@ -1,0 +1,5 @@
+depends %OSSL
+depends Linux-PAM
+depends nettle
+depends gnutls
+depends libcap

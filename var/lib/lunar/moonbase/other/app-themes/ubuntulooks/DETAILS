@@ -1,0 +1,13 @@
+          MODULE=ubuntulooks
+         VERSION=0.9.12
+          SOURCE=${MODULE}_${VERSION}.orig.tar.gz
+      SOURCE_URL=http://archive.ubuntu.com/ubuntu/pool/main/u/$MODULE/
+      SOURCE_VFY=sha1:7270727e42e5b1a790c1010e784ad29ac4430348
+        WEB_SITE=http://www.ubuntu.com/
+         ENTERED=20060806
+         UPDATED=20061121
+           SHORT="the Ubuntu created GTK+-2 theme engine"
+
+cat << EOF
+ubuntulooks is the GTK+-2 theme engine created by Ubuntu.
+EOF

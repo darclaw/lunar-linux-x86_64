@@ -1,0 +1,17 @@
+          MODULE=ucl
+         VERSION=1.03
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.oberhumer.com/opensource/ucl/download/
+      SOURCE_VFY=sha256:b865299ffd45d73412293369c9754b07637680e5c826915f097577cd27350348
+        WEB_SITE=http://www.oberhumer.com/opensource/ucl/
+         ENTERED=20020124
+         UPDATED=20170228
+           SHORT="a portable lossless data compression library"
+
+cat << EOF
+UCL is a portable lossless data compression library written in ANSI C.
+UCL implements a number of compression algorithms that achieve an excellent
+compression ratio while allowing *very* fast decompression. Decompression
+requires no additional memory.  As compared to LZO, the UCL algorithms
+achieve a better compression ratio but decompression is a little bit slower.
+EOF

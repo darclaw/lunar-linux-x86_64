@@ -1,0 +1,73 @@
+The preferred way to install wipe is to use something like stow, and put
+it in /usr/local/.
+
+Debian (dpkg):
+
+Build an rpm, then use alien to make a deb. I have removed the Debian
+directory, since (my version of) wipe is not part of Debian.
+
+Redhat (rpm):
+
+1. tar jxvf wipe*.tar.bz2 || (bunzip2 -c wipe*.tar.bz2 | tar xv)
+   cd wipe*/; cp wipe.spec /usr/src/rpm/SPECS/
+   cp wipe*.tar.bz2 /usr/src/rpm/SOURCES/
+
+2. cd /usr/src/rpm/; rpm -ba SPECS/wipe.spec
+
+3. rpm -ivh RPMS/`find . | grep -v noarch`/*wipe*.rpm
+   ls SRPMS/
+
+   to build a source rpm:
+
+   rpm --rebuild *wipe*.src.rpm
+
+Tarball:
+
+to install as root:
+
+   ./configure; make install
+
+or to install on a per user basis:
+
+   ./configure; make install_home
+
+to uninstall:
+
+   make uninstall
+or
+   make -f Makefile.in remove
+
+from ./configure --help:
+
+--enable and --with options recognized:
+  --enable-wall        compile with -ansi -pedantic -Wall -Werror
+  --enable-debug       compile with -g
+  --enable-efence      same as debug, but link the binary with the
+		       electric fence
+
+make targets:
+
+make:
+		compile standard wipe binary w/ -O3
+
+make debug:
+		same as ./configure --enable-debug
+
+make efence:
+		same as ./configure --enable-efence
+
+make install:
+		you must be root to run this. this will install all man pages
+		and put the compiled and stripped wipe binary in /usr/local/bin
+
+make install_home:
+		install wipe for personal use in ~/bin/. does not install man
+		pages.
+
+make info:
+		display file info and link data for wipe binary.
+
+make clean:
+		clean binaries from source tree.
+
+see README and LICENSE for more information.

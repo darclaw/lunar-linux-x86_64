@@ -1,0 +1,19 @@
+          MODULE=XML-LibXML
+         VERSION=2.0132
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF
+      SOURCE_VFY=sha256:721452e3103ca188f5968ab06d5ba29fe8e00e49f4767790882095050312d476
+        WEB_SITE=http://search.cpan.org/~pajas/XML-LibXML
+            TYPE=perl
+         ENTERED=20090328
+         UPDATED=20180408
+           SHORT="Perl binding for libxml2"
+
+cat << EOF
+This module is an interface to libxml2, providing XML and HTML parsers with
+DOM, SAX and XMLReader interfaces, a large subset of DOM Layer 3 interface
+and a XML::XPath-like interface to XPath API of libxml2. The module is split
+into several packages which are not described in this section; unless stated
+otherwise, you only need to use XML::LibXML; in your programs.
+EOF
+

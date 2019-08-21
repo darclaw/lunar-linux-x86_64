@@ -1,0 +1,16 @@
+          MODULE=MIME-Lite
+         VERSION=3.030
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS
+      SOURCE_VFY=sha256:8f39901bc580bc3dce69e10415305e4435ff90264c63d29f707b4566460be962
+        WEB_SITE=http://search.cpan.org/~rjbs/MIME-Lite
+            TYPE=perl
+         ENTERED=20020729
+         UPDATED=20150705
+           SHORT="perl module for generating MIME messages"
+cat << EOF
+MIME-Lite is intended as a simple, standalone module for generating MIME
+messages... specifically, it allows you to output a simple, decent
+single- or multi-part message with text or binary attachments.  It does not
+require that you have the Mail:: or MIME:: modules installed.
+EOF

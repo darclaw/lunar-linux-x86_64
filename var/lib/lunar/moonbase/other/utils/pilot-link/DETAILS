@@ -1,0 +1,15 @@
+          MODULE=pilot-link
+         VERSION=0.12.5
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=https://mirrors.slackware.com/slackware/slackware-14.1/source/l/pilot-link/
+      SOURCE_VFY=sha256:d3f99ec04016b38995fb370265200254710318105c792c017d3aaccfb97a84b2
+        WEB_SITE=http://www.pilot-link.org/
+         ENTERED=20011129
+         UPDATED=20181201
+           SHORT="PalmOS and PC transfer program"
+
+cat << EOF
+The pilot-link suite of tools contains a series of conduits for
+moving information to and from your Palm device and your desktop
+or workstation system.
+EOF

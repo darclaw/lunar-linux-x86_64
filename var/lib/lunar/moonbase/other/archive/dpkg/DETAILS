@@ -1,0 +1,13 @@
+          MODULE=dpkg
+         VERSION=1.19.0.4
+          SOURCE=${MODULE}_${VERSION}.tar.xz
+      SOURCE_URL=http://ftp.debian.org/debian/pool/main/d/dpkg/
+      SOURCE_VFY=sha256:98a66bb19012f9bde848e1e02903fe411dd0b9e61921108ee4323c4167e6990a
+        WEB_SITE=http://packages.qa.debian.org/d/dpkg.html
+         ENTERED=20060131
+         UPDATED=20180104
+           SHORT="Debian package manager"
+
+cat << EOF
+Installs, removes, and provides information about .deb packages
+EOF

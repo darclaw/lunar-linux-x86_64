@@ -1,0 +1,9 @@
+depends python-pygments
+depends python-pexpect
+depends python-pickleshare
+depends python-jedi
+depends python-prompt_toolkit
+depends python-traitlets
+depends python-simplegeneric
+depends python-backcall
+depends sqlite

@@ -1,0 +1,22 @@
+depends dbus-glib
+depends gdbus-codegen
+depends libgcrypt
+depends intltool
+depends vala
+
+optional_depends gnome-keyring "" "" "for key storage service"
+
+optional_depends gobject-introspection \
+                 "--enable-introspection" \
+                 "--disable-introspection" \
+                 "for object introspection"
+
+optional_depends docbook-xsl \
+                 "--enable-manpages" \
+                 "--disable-manpages" \
+                 "for man pages building"
+
+optional_depends gtk-doc \
+                 "--enable-gtk-doc" \
+                 "--disable-gtk-doc" \
+                 "for building documentation"

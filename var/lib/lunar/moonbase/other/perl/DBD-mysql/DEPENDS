@@ -1,0 +1,4 @@
+depends mariadb
+depends DBI
+depends Test-Deep
+depends Devel-CheckLib

@@ -1,0 +1,30 @@
+# WHEN UPDATING THIS MODULE, ALSO UPDATE THE "openmp" MODULE
+          MODULE=llvm
+         VERSION=8.0.0
+          SOURCE=$MODULE-$VERSION.src.tar.xz
+         SOURCE2=cfe-$VERSION.src.tar.xz
+         SOURCE3=clang-tools-extra-$VERSION.src.tar.xz
+SOURCE_DIRECTORY=${BUILD_DIRECTORY}/$MODULE-${VERSION}.src
+      SOURCE_URL=http://llvm.org/releases/$VERSION/
+     SOURCE2_URL=$SOURCE_URL
+     SOURCE3_URL=$SOURCE_URL
+      SOURCE_VFY=sha256:8872be1b12c61450cacc82b3d153eab02be2546ef34fa3580ed14137bb26224c
+     SOURCE2_VFY=sha256:084c115aab0084e63b23eee8c233abb6739c399e29966eaeccfc6e088e0b736b
+     SOURCE3_VFY=sha256:4f00122be408a7482f2004bcf215720d2b88cf8dc78b824abb225da8ad359d4b
+        WEB_SITE=http://www.llvm.org
+         ENTERED=20090128
+         UPDATED=20190328
+           SHORT="Low Level Virtual Machine"
+
+cat << EOF
+LLVM is a robust system, particularly well suited for developing new mid-level
+language-independent analyses and optimizations of all sorts, including those
+that require extensive interprocedural analysis. LLVM is also a great target
+for front-end development for conventional or research programming languages,
+including those which require compile-time, link-time, or run-time optimization
+for effective implementation, proper tail calls or garbage collection.
+
+Clang is a compiler front-end for the C family of languages (C, C++,
+Objective-C and Objective-C++) which can be built as a part of the LLVM
+compiler intrastructure project.
+EOF

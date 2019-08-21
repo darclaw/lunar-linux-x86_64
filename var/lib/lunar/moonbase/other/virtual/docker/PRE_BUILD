@@ -1,0 +1,44 @@
+# Pre-flight check
+
+for opt in \
+  CONFIG_NETFILTER_XT_MATCH_ADDRTYPE \
+  CONFIG_NETFILTER_XT_MATCH_CONNTRACK \
+  CONFIG_DM_THIN_PROVISIONING
+do
+  if ! kernel_option_present $opt; then
+    FAIL=1
+    message "${MESSAGE_COLOR}Required kernel option not present: ${PROBLEM_COLOR}${opt}${DEFAULT_COLOR}${MESSAGE_COLOR}"
+  fi
+done
+
+if [ -n "$FAIL" ]; then
+  message "Please ensure the kernel options above are enabled and try again.${DEFAULT_COLOR}"
+  if ! query "Ignore this warning?" n; then
+    exit 1
+  fi
+fi
+
+default_pre_build &&
+
+# Verify commit ID sanity with upstream docker
+(
+  local cfile local_commit docker_commit
+  for cfile in runc containerd tini proxy; do
+    . "components/engine/hack/dockerfile/install/${cfile}.installer"
+  done
+  for c in RUNC CONTAINERD LIBNETWORK TINI; do
+    local_commit=_${c}_COMMIT
+    docker_commit=${c}_COMMIT
+    if [[ ${!local_commit} != ${!docker_commit} ]]; then
+      message "Invalid commit for ${c}_COMMIT, is ${!local_commit} and should be ${!docker_commit}"
+      return 1
+    fi
+  done
+) &&
+
+# Unpack all packages
+unpack $SOURCE2 &&
+unpack $SOURCE3 &&
+unpack $SOURCE4 &&
+unpack $SOURCE5 &&
+unpack $SOURCE6

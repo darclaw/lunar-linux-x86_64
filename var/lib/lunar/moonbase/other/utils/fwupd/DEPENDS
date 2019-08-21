@@ -1,0 +1,16 @@
+depends gnutls
+depends python-pillow
+depends Sphinx
+depends help2man
+depends gcab
+depends efivar
+depends gpgme
+depends json-glib
+depends libarchive
+depends libgudev
+depends libgusb
+depends libsmbios
+depends libsoup
+depends polkit
+depends shared-mime-info
+depends python-pygobject

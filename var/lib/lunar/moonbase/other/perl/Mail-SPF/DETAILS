@@ -1,0 +1,24 @@
+          MODULE=Mail-SPF
+         VERSION=v2.9.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://cpan.metacpan.org/authors/id/J/JM/JMEHNLE/mail-spf/
+      SOURCE_VFY=sha256:61cb5915f1c7acc7a931ffc1bfc1291bdfac555e2a46eb2391b995ea9ecb6162
+        WEB_SITE=https://search.cpan.org/~jmehnle/Mail-SPF
+            TYPE=perl
+         ENTERED=20100402
+         UPDATED=20181018
+           SHORT="an implementation of Sender Policy Framework"
+
+cat << EOF
+Mail::SPF is an object-oriented Perl implementation of the Sender Policy
+Framework (SPF) e-mail sender authentication system.
+
+This release of Mail::SPF fully conforms to RFC 4408 and passes the 2008.08
+release of the official test-suite.
+
+The Mail::SPF source package includes the following additional tools:
+
+  * spfquery:  A command-line tool for performing SPF checks.
+  * spfd:      A daemon for services that perform SPF checks frequently.
+
+EOF

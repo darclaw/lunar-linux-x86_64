@@ -1,0 +1,16 @@
+          MODULE=units
+         VERSION=2.18
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$GNU_URL/$MODULE/
+      SOURCE_VFY=sha256:64959c231c280ceb4f3e6ae6a19b918247b6174833f7f1894704c444869c4678
+        WEB_SITE=http://www.gnu.org/software/units/units.html
+         ENTERED=20020410
+         UPDATED=20181025
+           SHORT="Converts values between different systems of units"
+
+cat << EOF
+GNU units converts between different systems of units.  It can handle
+multiplicative scale changes as well as nonlinear conversions, such as
+Fahrenheit to Celsius. Over 2000 units definitions are included in a
+well-annotated data file.
+EOF

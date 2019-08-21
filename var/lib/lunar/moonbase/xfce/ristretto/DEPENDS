@@ -1,0 +1,5 @@
+depends xfconf
+depends libxfce4ui
+depends libexif
+depends dbus-glib
+

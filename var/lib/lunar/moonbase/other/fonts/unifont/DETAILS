@@ -1,0 +1,18 @@
+          MODULE=unifont
+         VERSION=12.1.02
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://ftp.gnu.org/gnu/unifont/unifont-$VERSION/
+      SOURCE_VFY=sha256:e812dcf032f0e7a7bb57b98767277701c1d3d0675f5d034f2bf495efa9ed8d8b
+        WEB_SITE=http://unifoundry.com
+         ENTERED=20160906
+         UPDATED=20190602
+           SHORT="TrueType version of the GNU Unifont"
+ARCHIVE=off
+cat << EOF
+GNU Unifont is part of the GNU Project. This page contains the latest release of
+GNU Unifont, with glyphs for every printable code point in the Unicode 9.0 Basic
+Multilingual Plane (BMP). The BMP occupies the first 65,536 code points of the
+Unicode space, denoted as U+0000..U+FFFF. There is also growing coverage of the
+Supplemental Multilingual Plane (SMP), in the range U+010000..U+01FFFF, and of
+Michael Everson's ConScript Unicode Registry (CSUR).
+EOF

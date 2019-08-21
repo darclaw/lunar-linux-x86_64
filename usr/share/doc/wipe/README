@@ -1,0 +1,78 @@
+wipe (aka ya-wipe) by Tom Vier <nester@users.sf.net>
+
+See INSTALL for installation instructions and LICENSE for license
+and warranty.
+
+Wipe is a secure file wiping utility. There are some low level issues
+that must be taken into consideration. One of these is that there must
+be some sort of write barrier between passes. Wipe uses fdatasync(2)
+(or fsync(2)) as a write barrier, or if fsync(2) isn't available, the
+file is opened with the O_DSYNC or O_SYNC flag. For wipe to be
+effective, each pass must be completely written. To ensure this, the
+drive must support some form of a write barrier, write cache flush, or
+write cache disabling. SCSI supports ordered command tags, has a force
+media access bit for commands, and write cache can be disable on mode
+page 8. IDE/ATA drives support write cache flushes and write cache
+disabling. Unfortunetly, not all drives actually disable write cache
+when asked to. Those drives are broken. Write caching should always be
+disabled, unless your system is battery backed and always powers down
+cleanly. See this thread from the linux kernel list:
+
+http://www.uwsg.iu.edu/hypermail/linux/kernel/0103.0/0331.html
+
+Under linux, the mount option "mand" must be used (see
+linux/Documentation/mandatory.txt) for mandatory file locks to be
+enabled. Wipe should make it extremely difficult for all but the most
+determined person(s) to recover the original plaintext data. Utilities
+such as PGP and the GNU Privacy Guard provide strong encryption, but
+encryption is useless if the original plaintext can be recovered. When
+using PGP and GPG, temporary files that are disk-backed should be
+stored on an encrypted file system. That way, the plaintext never hits
+the platters. Wipe is designed for situations where an encrypted file
+system isn't practical.
+
+Making the following assumptions:
+
+1. at least one of Peter Guttman's patterns is correct for the device
+   you're wiping
+
+2. the patterns are actually being written to the media
+
+3. the correct sectors are being written to
+
+it's likely that wipe will make it more difficult to recover the
+original data.
+
+Those assumptions are respectively incorrect if:
+
+1. writing to a drive that uses a newer encoding scheme
+
+2. the passes are being buffered and merged by the drive electronics,
+   controller or the OS
+
+3. you're wiping a file in a log structured file system or any FS that
+   doesn't overwrite the file's previously allocated sectors
+
+   or the drive has reassigned one or more sectors due to errors
+
+If you're using LFS or something like it, the only way to wipe the
+file's previous contents (from userspace) is to wipe the whole
+partition. The more practical solution is for wiping to be done by the
+FS. Unfortunely, this has it's own problem; wiping is IO intense and
+synchronis.
+
+Some programs are vulnerable to symlink races. To avoid this problem
+with wipe, only wipe files in directories that are not writable by
+untrusted users.
+
+Wipe uses /dev/urandom, or if unavailable, /dev/random, as a source
+for entropy. The Mersenne Twister PRNG is used for speed. The MT site
+is at:
+
+http://www.math.keio.ac.jp/~matumoto/emt.html
+
+For more information on the secure deletion of magnetic media and
+solid state storage devices (such as DRAM) see the USENIX article by
+Peter Gutmann at:
+
+http://www.cs.auckland.ac.nz/~pgut001/secure_del.html

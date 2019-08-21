@@ -1,0 +1,20 @@
+          MODULE=TECkit
+         VERSION=2.5.8
+          SOURCE=v${VERSION}.tar.gz
+      SOURCE_URL=https://github.com/silnrsi/teckit/archive/
+      SOURCE_VFY=sha256:0ea52b1304f430aaebff99fec355bc7e4ad75b16ba58959fae5079627f925f93
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/teckit-${VERSION}
+        WEB_SITE=http://scripts.sil.org/cms/scripts/page.php?&cat_id=TECkit
+         ENTERED=20110225
+         UPDATED=20181007
+           SHORT="Text Encoding Conversion toolkit"
+
+cat << EOF
+TECkit is a low-level toolkit intended to be used by other applications
+that need to perform encoding conversions (e.g. when importing legacy
+data into a Unicode-based application). The primary component of the
+TECkit package is therefore a library that performs conversions -- this
+is the TECkit engine. The engine relies on mapping tables in a specific
+binary format. There is a compiler that creates such tables from a
+human-readable mapping description (a simple text file).
+EOF

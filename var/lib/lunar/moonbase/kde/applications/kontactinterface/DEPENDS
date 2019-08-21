@@ -1,0 +1,4 @@
+depends python2
+depends kcoreaddons
+depends kparts
+depends kxmlgui

@@ -1,0 +1,4 @@
+depends kactivities-frameworks
+depends tidy
+depends libktorrent
+depends libmms

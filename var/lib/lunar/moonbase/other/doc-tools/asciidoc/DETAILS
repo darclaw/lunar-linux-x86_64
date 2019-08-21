@@ -1,0 +1,19 @@
+          MODULE=asciidoc
+         VERSION=8.6.10
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/asciidoc/asciidoc/archive/${VERSION}.tar.gz
+      SOURCE_VFY=sha256:9e52f8578d891beaef25730a92a6e723596ddbd07bfe0d2a56486fcf63a0b983
+        WEB_SITE=http://www.methods.co.nz/asciidoc/
+         ENTERED=20121224
+         UPDATED=20180813
+           SHORT="Text based document generation"
+
+cat <<EOF
+AsciiDoc is a text document format for writing notes, documentation,
+articles, books, ebooks, slideshows, web pages, man pages and
+blogs. AsciiDoc files can be translated to many formats including HTML,
+PDF, EPUB, man page.
+AsciiDoc is highly configurable: both the AsciiDoc source file
+syntax and the backend output markups (which can be almost any type
+of SGML/XML markup) can be customized and extended by the user.
+EOF

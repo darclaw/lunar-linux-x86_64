@@ -1,0 +1,15 @@
+          MODULE=gtkspell3
+         VERSION=3.0.10
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://sourceforge.net/projects/gtkspell/files/$VERSION/
+      SOURCE_VFY=sha256:b040f63836b347eb344f5542443dc254621805072f7141d49c067ecb5a375732
+        WEB_SITE=http://gtkspell.sourceforge.net
+         ENTERED=20130606
+         UPDATED=20180922
+           SHORT="gtk based widget for spell checking support"
+
+cat << EOF
+GtkSpell provides MSWord/MacOSX-style highlighting of misspelled words
+in a GtkTextView widget as you type. Right-clicking a misspelled word
+pops up a menu of suggested replacements. Supports gtk+-2 and gtk+-3.
+EOF

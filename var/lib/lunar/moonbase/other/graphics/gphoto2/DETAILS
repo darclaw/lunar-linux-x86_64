@@ -1,0 +1,16 @@
+          MODULE=gphoto2
+         VERSION=2.5.20
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/gphoto
+      SOURCE_VFY=sha256:a36f03b50a8f040f185cbc757f957f03dc05a9210907199e6919ef3f970248f6
+        WEB_SITE=http://www.gphoto.org
+         ENTERED=20021007
+         UPDATED=20181106
+           SHORT="A digital camera software application for Unix-like systems"
+
+cat << EOF
+gPhoto2 is a free, redistributable, ready to use set of digital camera software
+applications for Unix-like systems, written by a whole team of dedicated
+volunteers around the world. It supports more than 700 cameras. gPhoto2 is a
+complete rewrite of the gphoto program.
+EOF

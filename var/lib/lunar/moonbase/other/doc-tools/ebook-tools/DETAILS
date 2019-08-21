@@ -1,0 +1,14 @@
+            MODULE=ebook-tools
+           VERSION=0.2.2
+            SOURCE=$MODULE-$VERSION.tar.gz
+        SOURCE_URL=$SFORGE_URL/$MODULE
+        SOURCE_VFY=sha256:cbc35996e911144fa62925366ad6a6212d6af2588f1e39075954973bbee627ae
+          WEB_SITE=http://sourceforge.net/project/showfiles.php?group_id=206526
+              TYPE=cmake
+           ENTERED=20080701
+           UPDATED=20181127
+             SHORT="Tools for accessing and converting various ebook file formats"
+
+cat << EOF
+Tools for accessing and converting various ebook file formats
+EOF

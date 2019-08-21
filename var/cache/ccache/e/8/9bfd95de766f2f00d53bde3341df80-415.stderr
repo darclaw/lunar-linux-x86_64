@@ -1,0 +1,7 @@
+conftest.c: In function 'main':
+conftest.c:175:18: warning: pointer targets in initialization of 'signed char *' from 'char *' differ in signedness [-Wpointer-sign]
+ signed char *s = ""
+                  ^~
+conftest.c:175:14: warning: unused variable 's' [-Wunused-variable]
+ signed char *s = ""
+              ^

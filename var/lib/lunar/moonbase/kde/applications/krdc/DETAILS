@@ -1,0 +1,15 @@
+          MODULE=krdc
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:2a1ac548992eaaff82cafe386eef0a611b96f06ce3887a363b25d6ca17c6eacc
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=http://www.kde.org/applications/internet/krdc/
+         ENTERED=20140720
+         UPDATED=20190418
+           SHORT="view or control the desktop session on another machine"
+
+cat << EOF
+KRDC is a client application that allows you to view or even control the desktop
+session on another machine that is running a compatible server. VNC and RDP is supported.
+EOF

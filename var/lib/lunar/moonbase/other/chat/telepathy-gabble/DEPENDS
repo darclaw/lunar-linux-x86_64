@@ -1,0 +1,5 @@
+depends python2
+depends libnice
+depends libsoup
+depends libxslt
+depends telepathy-glib

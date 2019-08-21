@@ -1,0 +1,5 @@
+depends python2
+depends cron-common
+depends kio
+depends extra-cmake-modules
+depends kdoctools

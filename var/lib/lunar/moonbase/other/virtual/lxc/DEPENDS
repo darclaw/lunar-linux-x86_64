@@ -1,0 +1,15 @@
+depends python-setuptools
+depends perl
+depends libcap
+depends libseccomp
+depends rsync
+depends wget
+
+optional_depends dnsmasq "" "" "for lxc-net.service"
+optional_depends lua     "" "" "for lxc-top"
+
+# broken
+#optional_depends docbook2X \
+#                 "--enable-doc" \
+#                 "--disable-doc" \
+#                 "build man-pages"

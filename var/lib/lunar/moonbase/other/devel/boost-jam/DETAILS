@@ -1,0 +1,13 @@
+          MODULE=boost-jam
+         VERSION=3.1.18
+          SOURCE=$MODULE-$VERSION.tgz
+      SOURCE_URL=$SFORGE_URL/boost
+      SOURCE_VFY=sha1:3f2fe83add40691b9a5f9ebe5ea8a2264a808370
+        WEB_SITE=http://www.boost.org
+         ENTERED=20041115
+         UPDATED=20100619
+           SHORT="An alternative to make based on FTJam"
+
+cat << EOF
+Boost Jam is a build tool based on FTJam. It used by the boost project.
+EOF

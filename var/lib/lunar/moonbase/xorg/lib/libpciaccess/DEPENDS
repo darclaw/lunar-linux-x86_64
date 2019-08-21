@@ -1,0 +1,6 @@
+depends util-macros
+
+optional_depends zlib \
+                 "--with-zlib" \
+                 "--without-zlib" \
+                 "for compressed pci.ids read support"

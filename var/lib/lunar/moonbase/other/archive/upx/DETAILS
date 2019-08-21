@@ -1,0 +1,27 @@
+          MODULE=upx
+         VERSION=3.95-src
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://github.com/upx/upx/releases/download/v${VERSION%-*}/
+      SOURCE_VFY=sha256:3b0f55468d285c760fcf5ea865a070b27696393002712054c69ff40d8f7f5592
+        WEB_SITE=http://github.com/upx/upx/
+         ENTERED=20021220
+         UPDATED=20181002
+           SHORT="Ultimate Packer for eXecutables"
+
+cat << EOF
+UPX is a free, portable, extendable, high-performance executable packer for
+several different executable formats. It achieves an excellent compression
+ratio and offers very fast decompression. Your executables suffer no memory
+overhead or other drawbacks.
+UPX can pack a number of executable formats:
+    atari/tos
+    djgpp2/coff
+    dos/com
+    dos/exe
+    dos/sys
+    linux/386
+    rtm32/pe
+    tmt/adam
+    watcom/le (supporting DOS4G, PMODE/W, DOS32a and CauseWay)
+    win32/pe
+EOF

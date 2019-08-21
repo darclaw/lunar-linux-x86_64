@@ -1,0 +1,15 @@
+          MODULE=libnftnl
+         VERSION=1.1.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://netfilter.org/projects/$MODULE/files/
+       SOURCE_VFY=sha256:5d6a65413f27ec635eedf6aba033f7cf671d462a2afeacc562ba96b19893aff2
+        WEB_SITE=http://netfilter.org/projects/libnftnl/
+         ENTERED=20160321
+         UPDATED=20180614
+        SHORT="Netfilter library interface to the nf_tables subsystem"
+
+cat << EOF
+libnftnl is a userspace library providing a low-level netlink API to the
+in-kernel nf_tables subsystem. The library libnftnl has been previously
+known as libnftables.
+EOF

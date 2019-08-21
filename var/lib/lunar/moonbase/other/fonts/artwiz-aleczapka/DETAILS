@@ -1,0 +1,14 @@
+          MODULE=artwiz-aleczapka
+         VERSION=en-1.3
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/artwizaleczapka/
+      SOURCE_VFY=sha1:81e711b5f00816c57e205c9e60f69237c709679d
+        WEB_SITE=http://artwizaleczapka.sourceforge.net/
+         ENTERED=20030927
+         UPDATED=20041007
+           SHORT="set of (improved) artwiz fonts."
+
+cat << EOF
+A set of Artwiz Aleczapko fonts.
+EOF
+

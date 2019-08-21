@@ -1,0 +1,34 @@
+OLD_VER=`get_module_config OLD_VER`
+CATALOGDIR="/usr/share/sgml/$MODULE-$VERSION"
+CATALOGDIR_OLD="/usr/share/sgml/$MODULE-$OLD_VER"
+CENTRALIZED="/etc/sgml/catalog"
+
+if ! [ -e "$CENTRALIZED" ]; then
+  echo "Creating $CENTRALIZED"
+  mkdir -p /etc/sgml
+  touch $CENTRALIZED
+fi &&
+
+# Now we are handling the update
+if [ ! -z $OLD_VER ]; then
+  /usr/bin/install-catalog --remove $CENTRALIZED $CATALOGDIR_OLD/catalog
+  /usr/bin/install-catalog --remove $CENTRALIZED $CATALOGDIR_OLD/pubtext/catalog
+  /usr/bin/install-catalog --remove $CENTRALIZED $CATALOGDIR_OLD/contrib/catalog
+  /usr/bin/install-catalog --remove $CENTRALIZED $CATALOGDIR_OLD/unicode/catalog
+fi
+
+/usr/bin/install-catalog --remove $CENTRALIZED $CATALOGDIR/catalog
+/usr/bin/install-catalog --remove $CENTRALIZED $CATALOGDIR/pubtext/catalog
+/usr/bin/install-catalog --remove $CENTRALIZED $CATALOGDIR/contrib/catalog
+/usr/bin/install-catalog --remove $CENTRALIZED $CATALOGDIR/unicode/catalog
+
+/usr/bin/install-catalog --add $CENTRALIZED $CATALOGDIR/catalog
+/usr/bin/install-catalog --add $CENTRALIZED $CATALOGDIR/pubtext/catalog
+/usr/bin/install-catalog --add $CENTRALIZED $CATALOGDIR/unicode/catalog
+/usr/bin/install-catalog --remove $CENTRALIZED $CENTRALIZED
+
+if ! grep -q "/usr/share/sgml/$MODULE-$VERSION" $CENTRALIZED; then
+  /usr/bin/install-catalog -r $CENTRALIZED $CATALOGDIR
+fi
+
+unset_module_config OLD_VER

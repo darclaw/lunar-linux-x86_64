@@ -1,0 +1,14 @@
+          MODULE=svgpart
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:6dbec1dcb6853c06f7cb10677a2c99678b398b4a658eb4206a146f24b0fa158a
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=http://www.kde.org
+         ENTERED=20110813
+         UPDATED=20190418
+           SHORT="KPart component to display SVG images"
+
+cat << EOF
+KPart component to display SVG images in Gwenview and in any other KDE application which uses the KPart system.
+EOF

@@ -1,0 +1,4 @@
+depends ncurses
+depends zlib
+depends bzip2
+depends gettext

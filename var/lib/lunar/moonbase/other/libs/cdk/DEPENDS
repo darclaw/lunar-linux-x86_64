@@ -1,0 +1,4 @@
+depends libtool
+
+optional_depends "ncurses" " --with-ncurses --with-ncursesw" "" "for ncurses/ncursesw support"
+optional_depends "%X"      "--with-x"                        "" "for X Window System support"

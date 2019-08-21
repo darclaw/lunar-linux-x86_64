@@ -1,0 +1,18 @@
+depends libnl3
+depends pciutils
+depends %OSSL
+
+optional_depends pcre "" "--without-pcre" "for pcre process searching in the agent"
+
+optional_depends python2-setuptools \
+                 "--with-python-modules" "" \
+                 "for the python modules support" n
+
+optional_depends perl \
+                 "--with-perl-modules --enable-embedded-perl --enable-shared" "" \
+                 "for embed perl in the SNMP agent and install perl SNMP modules" n
+
+# broken
+#optional_depends lm_sensors \
+#                 "--with-mib-modules=ucd-snmp/lmSensors,ucd-snmp/lmsensorsMib" ""\
+#                 "for sensors reading support"

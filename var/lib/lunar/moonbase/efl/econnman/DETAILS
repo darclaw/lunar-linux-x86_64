@@ -1,0 +1,13 @@
+          MODULE=econnman
+         VERSION=1.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://download.enlightenment.org/rel/apps/econnman
+      SOURCE_VFY=sha1:0189769dae9fbf2d675946817f44e6ccee7bda3a
+        WEB_SITE=http://enlightenment.org/
+         ENTERED=20130102
+         UPDATED=20140106
+           SHORT="EFL connman frontend"
+
+cat <<EOF
+Manage your internet connections using ConnMan and EFL.
+EOF

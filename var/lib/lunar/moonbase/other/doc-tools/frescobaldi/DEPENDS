@@ -1,0 +1,6 @@
+depends python
+depends PyQt5
+depends python-poppler-qt5
+depends tango-icon-theme
+depends lilypond
+depends python-ly

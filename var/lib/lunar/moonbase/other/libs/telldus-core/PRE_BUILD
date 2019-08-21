@@ -1,0 +1,7 @@
+default_pre_build &&
+
+# Do not overwrite configs if exist
+patch_it $SOURCE2 1 &&
+
+# Various fixes
+patch_it $SOURCE3 1

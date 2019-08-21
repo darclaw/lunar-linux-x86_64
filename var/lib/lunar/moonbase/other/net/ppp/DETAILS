@@ -1,0 +1,18 @@
+          MODULE=ppp
+         VERSION=2.4.7
+          SOURCE=$MODULE-$VERSION.tar.gz
+   SOURCE_URL[0]=http://samba.org/ftp/ppp
+   SOURCE_URL[1]=ftp://ftp.fu-berlin.de/unix/linux/mirrors/gentoo/distfiles
+      SOURCE_VFY=sha256:02e0a3dd3e4799e33103f70ec7df75348c8540966ee7c948e4ed8a42bbccfb30
+        WEB_SITE=http://www.samba.org/ppp
+         ENTERED=20010922
+         UPDATED=20181105
+           SHORT="A server/client for for point to point protocol"
+
+cat << EOF
+PPP Daemon for Linux, Solaris 2, *BSD, SunOS 4, Digital Unix, SVR4,
+NeXTStep, and Ultrix. This allows Unix machines to connect to the
+internet through dialup lines, using the PPP protocol, as a PPP server
+or client. Works with 'chat', 'dip', and 'diald', among (many) others.
+Supports IP, TCP, UDP and (for Linux) IPX (Novell).
+EOF

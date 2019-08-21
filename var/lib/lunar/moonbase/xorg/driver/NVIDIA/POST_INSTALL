@@ -1,0 +1,5 @@
+# Clean up
+rm -rf $SOURCE_DIRECTORY
+
+# Migration code from old renaming of /usr/lib/xorg/modules/extensions/libglx.so
+lunar fix xorg-server

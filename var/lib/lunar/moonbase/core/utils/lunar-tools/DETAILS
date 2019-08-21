@@ -1,0 +1,22 @@
+          MODULE=lunar-tools
+         VERSION=2014.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://lunar-linux.org/lunar/lunar-tools
+      SOURCE_VFY=sha256:f861e1f02aaf25a68a5842bd341f38cf083270e7623a512df48460494ebd6b44
+        WEB_SITE=http://lunar-linux.org/
+         ENTERED=20041029
+         UPDATED=20140913
+           SHORT="A collection of lunar tools"
+cat << EOF
+Lunar-tools is a package with non-vital tools that help you perform
+certain system tasks. Currently it lists the following tools:
+
+lnet       network administration tool
+lservices  start/stop and add/remove startup services
+luser      user and group administration tool
+lids       file integrity and permission monitoring tool
+lmodules   handle your kernel modules
+clad       cluster administration tool
+ltime      set your timezone
+installkernel  installs kernels using the kernel 'make install'
+EOF

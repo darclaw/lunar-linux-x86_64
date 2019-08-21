@@ -1,0 +1,21 @@
+          MODULE=i3status
+         VERSION=2.12
+          SOURCE=$MODULE-$VERSION.tar.bz2
+         SOURCE2=i3status-2.11-pulseaudio.patch
+      SOURCE_URL=http://i3wm.org/i3status
+     SOURCE2_URL=$PATCH_URL
+      SOURCE_VFY=sha256:6fc6881536043391ab4bed369d956f99d1088965d8bcebed18d1932de3ba791a
+     SOURCE2_VFY=sha256:27ed5a938ecece3336f916f31fe2996ea65e1f14a4730084a34cb773b4cdd333
+        WEB_SITE=http://i3wm.org/i3status
+         ENTERED=20131228
+         UPDATED=20180711
+           SHORT="i3status is a small program for generating a status bar"
+
+cat <<EOF
+i3status is a small program for generating a status bar for i3bar, dzen2,
+xmobar or similar programs. It is designed to be very efficient by issuing a
+very small number of system calls, as one generally wants to update such a
+status line every second. This ensures that even under high load, your status
+bar is updated correctly. Also, it saves a bit of energy by not hogging your
+CPU as much as spawning the corresponding amount of shell commands would.
+EOF

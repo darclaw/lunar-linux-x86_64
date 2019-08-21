@@ -1,0 +1,18 @@
+       MODULE=advancecomp
+      VERSION=1.20
+       SOURCE=$MODULE-$VERSION.tar.gz
+   SOURCE_URL=https://github.com/amadvance/advancecomp/releases/download/v$VERSION
+   SOURCE_VFY=sha256:590a447cfc7ab3a37ec707e13967a0046a81a888c561ebaff5415b1e946da67b
+     WEB_SITE=http://advancemame.sourceforge.net/comp-readme.html
+      ENTERED=20150221
+      UPDATED=20151124
+        SHORT="Recompress ZIP, GZ, PNG and MNG files"
+
+cat << EOF
+AdvanceCOMP is a collection of recompression utilities for your .ZIP archives,
+.PNG snapshots, .MNG video clips and .GZ files.
+It's mainly intended for recompressing your rom, snapshot and clip collection
+of emulated games. The main features are:
+  Recompress ZIP, GZ, PNG and MNG files using the Deflate 7-Zip implementation.
+  Recompress MNG files using Delta and Move optimization.
+EOF

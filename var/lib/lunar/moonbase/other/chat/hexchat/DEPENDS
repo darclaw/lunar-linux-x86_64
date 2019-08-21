@@ -1,0 +1,56 @@
+depends autoconf-archive
+depends iso-codes
+depends pciutils
+depends dbus-glib
+depends pango
+depends intltool
+depends meson
+
+if [ "$ENABLE_GUI" == "y" ]; then
+  depends desktop-file-utils
+  depends gtk+-2
+fi
+
+optional_depends %OSSL \
+                 "-Dwith-ssl=true"  \
+                 "-Dwith-ssl=false" \
+                 "enable support for openSSL"
+
+optional_depends python \
+                 "-Dwith-python=python3" \
+                 "-Dwith-python=false" \
+                 "enable support for Python 3.x plugins"
+
+#Fails build on version 2.14.2
+#optional_depends perl \
+#                 "-Dwith-perl=true" \
+#                 "-Dwith-perl=false" \
+#                 "enable support for perl plugins"
+
+if module_installed luajit; then
+   optional_depends lua \
+                    "-Dwith-lua=luajit" \
+                    "-D-with-lua=false" \
+                    "enable support for lua plugins"
+
+else
+   optional_depends lua \
+                    "-Dwith-lua=lua" \
+                    "-D-with-lua=false" \
+                    "enable support for lua plugins"
+fi
+
+optional_depends libnotify \
+                 "-Dwith-libnotify=true" \
+                 "-Dwith-libnotify=false" \
+                 "enable support for notifications"
+
+optional_depends libcanberra \
+                 "-Dwith-libcanberra=true" \
+                 "-Dwith-libcanberra=false" \
+                 "enable support for sounds"
+
+optional_depends libproxy \
+                 "-Dwith-libproxy=true" \
+                 "-Dwith-libproxy=false" \
+                 "enable proxy support"

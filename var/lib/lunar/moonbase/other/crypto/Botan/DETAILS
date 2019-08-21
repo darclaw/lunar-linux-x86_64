@@ -1,0 +1,17 @@
+          MODULE=Botan
+         VERSION=2.8.0
+          SOURCE=$MODULE-$VERSION.tgz
+      SOURCE_URL=http://botan.randombit.net/releases/
+      SOURCE_VFY=sha256:e7159b127e91e0c158245d61c638c50d443ec7b440b6b0161328c47b3aba3960
+        WEB_SITE=https://botan.randombit.net/
+         ENTERED=20160805
+         UPDATED=20181027
+           SHORT="Crypto and TLS for C++11"
+
+cat << EOF
+Botan (Japanese for peony) is a cryptography library written in C++11 and
+released under the permissive Simplified BSD license.
+
+It contains TLS client and server implementation, X.509 certificates, ECDSA,
+AES, GCM, ChaCha20Poly1305, McEliece, bcrypt and other useful tools.
+EOF

@@ -1,0 +1,78 @@
+depends gtk+-3
+depends libSM
+
+#depends adwaita-icon-theme
+#depends gnome-icon-theme-symbolic
+#depends desktop-file-utils
+
+optional_depends dconf   "" "" "to save user settings"
+optional_depends gsfonts "" "" "for URW+Postcript core 35 fonts"
+
+optional_depends gnome-desktop \
+                 "--enable-libgnome-desktop"  \
+                 "--disable-libgnome-desktop" \
+                 "for GNOME desktop support"
+
+optional_depends nautilus \
+                 "--enable-nautilus"  \
+                 "--disable-nautilus" \
+                 "for GNOME nautilus file manager support"
+
+optional_depends dbus-glib \
+                 "--enable-dbus" \
+                 "--disable-dbus" \
+                 "for DBus support"
+
+optional_depends poppler \
+                 "--enable-pdf"  \
+                 "--disable-pdf" \
+                 "for pdf file support"
+
+optional_depends libarchive \
+                 "--enable-comics"  \
+                 "--disable-comics" \
+                 "for comics file support"
+
+optional_depends gst-plugins-base \
+                 "--enable-multimedia"  \
+                 "--disable-multimedia" \
+                 "for multimedia support"
+
+optional_depends tiff \
+                 "--enable-tiff" \
+                 "--disable-tiff" \
+                 "for multi-page TIFF files support"
+
+optional_depends djvulibre \
+                 "--enable-djvu" \
+                 "--disable-djvu" \
+                 "for DjVu files support"
+
+optional_depends libspectre \
+                 "--enable-ps" \
+                 "--disable-ps" \
+                 "for with PostScript support"
+
+optional_depends texlive \
+                 "--enable-dvi"  \
+                 "--disable-dvi" \
+                 "for DVI back-end support"
+
+optional_depends t1lib \
+                 "--enable-t1lib" "" \
+                 "for Type 1 fonts in DVI"
+
+optional_depends gnome-keyring \
+                 "--with-keyring"  \
+                 "--without-keyring" \
+                 "for keyring support"
+
+optional_depends gtk-doc \
+                 "--enable-gtk-doc" \
+                 "--disable-gtk-doc" \
+                 "for documentation building"
+
+optional_depends gobject-introspection \
+                 "--enable-introspection" \
+                 "--disable-introspection" \
+                 "for introspection support"

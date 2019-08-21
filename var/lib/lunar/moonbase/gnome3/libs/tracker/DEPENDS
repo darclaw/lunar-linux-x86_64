@@ -1,0 +1,16 @@
+depends sqlite
+depends icu4c
+depends libffi
+depends libsoup
+depends json-glib
+depends libseccomp
+depends util-linux
+depends vala
+depends meson
+depends intltool
+depends gobject-introspection
+
+optional_depends gtk-doc \
+                 "-D docs=true" \
+                 "-D docs=false" \
+                 "for building documentation"

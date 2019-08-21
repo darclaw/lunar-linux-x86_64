@@ -1,0 +1,4 @@
+depends cmake
+depends wxGTK
+depends libxml
+depends maxima

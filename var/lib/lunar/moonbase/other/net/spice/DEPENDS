@@ -1,0 +1,28 @@
+depends alsa-lib
+depends spice-protocol
+depends python2-pyparsing
+depends python2-six
+depends %JPEG
+depends pixman
+depends libXrandr
+depends libXinerama
+depends libXfixes
+depends %OSSL
+depends zlib
+
+optional_depends cyrus-sasl "--with-sasl" "--without-sasl" "for SASL authentication support"
+
+optional_depends celt051 \
+                 "--enable-celt051" \
+                 "--disable-celt051" \
+                 "for celt audio communication support"
+
+optional_depends libcacard \
+                 "--enable-smartcard=yes" \
+                 "--enable-smartcard=no" \
+                 "for smartcard support"
+
+optional_depends lz4 \
+                 "--enable-lz4=yes" \
+                 "--enable-lz4=no" \
+                 "for LZ4 compression support"

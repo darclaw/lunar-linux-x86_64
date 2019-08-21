@@ -1,0 +1,29 @@
+# NOTE: This is straight from the ImageMagick devs: Lunar should not be using
+# the x.y.z-0 releases. Instead, ONLY when x.y.z-0 is released, then we
+# should version bump to x.y.(z-1)-(highest). That version is always
+# kept on the ftp.imagemagick.org site and should be considered STABLE!!!
+          MODULE=ImageMagick
+         VERSION=7.0.8-48
+          SOURCE=$MODULE-$VERSION.tar.xz
+   SOURCE_URL[0]=$MIRROR_URL
+   SOURCE_URL[1]=https://www.imagemagick.org/download/
+   SOURCE_URL[2]=http://mirror.checkdomain.de/imagemagick
+   SOURCE_URL[3]=ftp://ftp.nluug.nl/pub/ImageMagick
+   SOURCE_URL[4]=ftp://gd.tuwien.ac.at/pub/graphics/ImageMagick
+      SOURCE_VFY=sha256:e9cf8d166614ab07253f36f236b8fd4832683414f6a961a64ebad357fb6a92a4
+        WEB_SITE=http://www.imagemagick.org
+         ENTERED=20010922
+         UPDATED=20190603
+           SHORT="Automated and interactive manipulation of images"
+
+cat << EOF
+ImageMagick (TM) is a package for the automated and interative manipulation of
+images. It supports the display and interactive manipulation of images when used
+with the X Window System. Although the software is copyrighted, it is available
+for free and can be redistributed without fee. ImageMagick may be used as a
+component of both open source and proprietary applications. ImageMagick compiles
+and runs under Unix, Linux, Windows '95 and later, Apple MacOS, and Compaq VMS.
+Binary packages are available for most operating systems.
+Application programming interfaces (APIs) are provided to support development of
+image processing applications in the C, C++, and Perl languages.
+EOF

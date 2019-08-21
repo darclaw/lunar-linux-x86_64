@@ -1,0 +1,22 @@
+          MODULE=unifdef
+         VERSION=2.11
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://dotat.at/prog/unifdef/
+      SOURCE_VFY=sha256:e8483c05857a10cf2d5e45b9e8af867d95991fab0f9d3d8984840b810e132d98
+        WEB_SITE=http://dotat.at/prog/unifdef/
+         ENTERED=20060924
+         UPDATED=20170409
+           SHORT="Remove preprocessor definitions"
+
+cat << EOF
+Unifdef is useful for removing #ifdef'ed lines from a file while
+otherwise leaving the file alone. You specify which symbols are
+defined or undefined with -D and -U flags, and unifdef removes
+the corresponding ifdefs, and the enclosed code if appropriate.
+
+It's especially useful for removing those "#ifdef BROKEN" and
+"#ifdef PRIVATE" clauses from code before you release it. Unifdef
+acts on #ifdef, #ifndef, #else, and #endif lines, and it knows
+only enough about C and C++ to know when one of these is inactive
+because it is inside a comment, or a single or double quote.
+EOF

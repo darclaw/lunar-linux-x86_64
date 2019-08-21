@@ -1,0 +1,18 @@
+          MODULE=installwatch
+         VERSION=0.8.0rc6
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://github.com/lunar-linux/installwatch/releases/download/v$VERSION
+      SOURCE_VFY=sha256:174a5f2132be59dfb156b5ef2312def46445faacf14de50683e5ca30c641bd7c
+        WEB_SITE=https://github.com/lunar-linux/installwatch
+         ENTERED=20011230
+         UPDATED=20190528
+           SHORT="utility for tracking files from installation of software"
+
+cat << EOF
+Installwatch is a simple utility which keeps track of which files are
+created and modified during the installation of a new program. It's
+fast and easy to use. It doesn't require a "pre-install" phase
+because it monitors processes while they run. Installwatch works with
+every dynamically linked ELF program, by intercepting system calls
+that cause file system alterations.
+EOF

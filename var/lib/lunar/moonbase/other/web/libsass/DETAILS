@@ -1,0 +1,16 @@
+          MODULE=libsass
+         VERSION=3.5.5
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/sass/libsass/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:487ca58f1dfdc4055079af04f0ad120747385d3b3926b1c8f46e4b00540fdb70
+        WEB_SITE=https://github.com/sass/libsass/
+         ENTERED=20180624
+         UPDATED=20190130
+           SHORT="A C/C++ implementation of a Sass compiler"
+
+cat << EOF
+Sass is a CSS pre-processor language to add on exciting, new, awesome features
+to CSS. LibSass is a C++ port of the original Ruby Sass CSS compiler with a C
+API. You can expect LibSass to be a lot faster than Ruby Sass and on par or
+faster than the best alternative CSS compilers around.
+EOF

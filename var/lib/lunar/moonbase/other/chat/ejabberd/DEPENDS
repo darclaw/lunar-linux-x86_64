@@ -1,0 +1,4 @@
+depends zlib
+depends %OSSL
+depends expat
+depends erlang

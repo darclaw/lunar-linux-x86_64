@@ -1,0 +1,4 @@
+depends freetype2
+depends libXft
+depends libXinerama
+depends fontconfig

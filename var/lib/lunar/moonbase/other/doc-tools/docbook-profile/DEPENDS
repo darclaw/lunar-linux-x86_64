@@ -1,0 +1,9 @@
+depends docbook-sgml
+depends docbook-xsl
+depends docbook-xml
+depends docbook-dsssl
+depends rarian
+
+optional_depends docbook-utils     "" "" "Utilis to convert docbook to various formats"
+optional_depends docbook-dsssl-doc "" "" "Docs about the modular docbook stylesheets"
+optional_depends linuxdoc-tools    "" "" "Old linuxdoc tools. You may or may not need them!"

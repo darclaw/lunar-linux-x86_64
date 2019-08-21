@@ -1,0 +1,16 @@
+9473c8f909ac677fa4606646e4bf59ea  /usr/bin/ed
+7ee1c42c8afd7a5fb6cccc6fa45c08de  /usr/bin/red
+dd17870a44434e34de95b0e64961938b  /usr/share/doc/ed/ChangeLog
+b1c645dd3ec8a43fcafb2cf58bdb53d8  /usr/share/doc/ed/doc/ed.1
+e016ea9917dd126638df456138278f1b  /usr/share/doc/ed/doc/ed.info
+8c80b347dd311c0a269e892f7fef64a2  /usr/share/doc/ed/doc/ed.texi
+072910d553f79906db69fa7c0e956bba  /usr/share/doc/ed/doc/fdl.texi
+19dd201fc01d887935621e7c9f6e3569  /usr/share/doc/ed/INSTALL
+3b346e3251dd0bcd964e98a7ca6e955b  /usr/share/doc/ed/NEWS
+6879612c672449127382a8baee040a4a  /usr/share/doc/ed/README
+765cf419721a722415a9dd9b64d3731a  /usr/share/info/dir
+e016ea9917dd126638df456138278f1b  /usr/share/info/ed.info
+43376ace18b4f08f399b8d910adc2d2d  /usr/share/man/man1/ed.1.gz
+258b2b454a23cab8d27e2ecf7ee3f9ab  /var/log/lunar/install/ed-1.15
+ad681629958f2c6374edaf9668a6c28b  /var/log/lunar/compile/ed-1.15.xz
+173a2a829bab90cdbcc6d0f3ef59447b  /var/log/lunar/md5sum/ed-1.15

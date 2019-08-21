@@ -1,0 +1,15 @@
+          MODULE=proj
+         VERSION=5.2.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://download.osgeo.org/proj/
+      SOURCE_VFY=sha256:ef919499ffbc62a4aae2659a55e2b25ff09cccbbe230656ba71c6224056c7e60
+        WEB_SITE=http://trac.osgeo.org/proj/
+         ENTERED=20180515
+         UPDATED=20181130
+        REPLACES=proj-4
+           SHORT="Cartographic Projections library"
+cat << EOF
+Proj and invproj perform respective forward and inverse transformation of
+cartographic data to or from cartesian data with a wide range of selectable
+projection functions.
+EOF

@@ -1,0 +1,24 @@
+          MODULE=R
+         VERSION=3.6.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+#Note: Automatic redirection to servers worldwide, currently sponsored by Rstudio
+      SOURCE_URL=https://cloud.r-project.org/src/base/R-3/
+      SOURCE_VFY=sha256:36fcac3e452666158e62459c6fc810adc247c7109ed71c5b6c3ad5fc2bf57509
+        WEB_SITE=http://www.r-project.org
+         ENTERED=20021010
+         UPDATED=20190427
+           SHORT="Language and environment for statistical computing and graphics"
+
+cat << EOF
+R is a GNU project which is similar to the S language and environment which was
+developed at Bell Laboratories (formerly AT&T, now LucentiTechnologies) by John
+Chambers and colleagues. R can be considered as a different implementation of
+S. There are some important differences, but much code written for S runs
+unaltered under R.
+
+R provides a wide variety of statistical (linear and nonlinear modeling,
+classical statistical tests, time-series analysis, classification, clustering,
+...) and graphical techniques, and is highly extensible. The S language is often
+the vehicle of choice for research in statistical methodology, and R provides an
+Open Source route to participation in that activity.
+EOF

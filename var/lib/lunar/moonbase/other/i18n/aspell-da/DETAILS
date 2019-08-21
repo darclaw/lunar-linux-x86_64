@@ -1,0 +1,14 @@
+          MODULE=aspell-da
+            LANG=da
+         VERSION=0.50.1-0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$GNU_URL/aspell/dict/$LANG/
+      SOURCE_VFY=sha256:6725aa3f9699fc2ce46033ed3a7c4ef486b7fcbcd0462e6c19514da525a7c0f6
+        WEB_SITE=http://aspell.net/
+         ENTERED=20011028
+         UPDATED=20070526
+           SHORT="Danish aspell dictionary"
+
+cat << EOF
+Danish aspell dictionary.
+EOF

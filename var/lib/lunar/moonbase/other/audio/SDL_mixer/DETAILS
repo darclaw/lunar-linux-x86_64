@@ -1,0 +1,19 @@
+          MODULE=SDL_mixer
+         VERSION=1.2.12
+          SOURCE=$MODULE-$VERSION.tar.gz
+         SOURCE2=timidity.tar.gz
+      SOURCE_URL=http://www.libsdl.org/projects/$MODULE/release
+     SOURCE2_URL=http://www.libsdl.org/projects/$MODULE/timidity
+      SOURCE_VFY=sha256:1644308279a975799049e4826af2cfc787cad2abb11aa14562e402521f86992a
+     SOURCE2_VFY=sha256:ee7c59bb5d5fae206d53eef0e82b5ed739e7cbf69252a3754024f8f52ebe77aa
+        WEB_SITE=http://www.libsdl.org/projects/SDL_mixer
+         ENTERED=20010922
+         UPDATED=20120116
+           SHORT="A SDL based, multi-channel audio mixer library"
+
+cat << EOF
+SDL_mixer is a sample multi-channel audio mixer library.  It supports any
+number of simultaneously playing channels of 16 bit stereo audio, plus a
+single channel of music, mixed by the popular MikMod MOD, Timidity MIDI,
+Ogg Vorbis, and SMPEG MP3 libraries.
+EOF

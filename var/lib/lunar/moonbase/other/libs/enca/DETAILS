@@ -1,0 +1,15 @@
+          MODULE=enca
+         VERSION=1.19
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://dl.cihar.com/$MODULE/
+      SOURCE_VFY=sha256:3a487eca40b41021e2e4b7a6440b97d822e6532db5464471f572ecf77295e8b8
+        WEB_SITE=http://cihar.com/software/enca/
+         ENTERED=20060124
+         UPDATED=20180218
+           SHORT="Extremely Naive Charset Analyser"
+
+cat << EOF
+Enca an Extremely Naive Charset Analyser. It detects character set and
+encoding of text files and can also convert them to other encodings.
+The charset detecing functionality is also available as a library.
+EOF

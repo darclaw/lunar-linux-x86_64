@@ -1,0 +1,13 @@
+          MODULE=time
+         VERSION=1.9
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$GNU_URL/$MODULE/
+      SOURCE_VFY=sha256:fbacf0c81e62429df3e33bda4cee38756604f18e01d977338e23306a3e3b521e
+        WEB_SITE=http://www.gnu.org/software/time/time.html
+         ENTERED=20021017
+         UPDATED=20180520
+           SHORT="GNU time"
+
+cat << EOF
+time is the GNU time.
+EOF

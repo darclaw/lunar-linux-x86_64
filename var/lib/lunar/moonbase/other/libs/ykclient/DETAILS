@@ -1,0 +1,13 @@
+          MODULE=ykclient
+         VERSION=2.15
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://opensource.yubico.com/yubico-c-client/releases/
+      SOURCE_VFY=sha256:f461cdefe7955d58bbd09d0eb7a15b36cb3576b88adbd68008f40ea978ea5016
+        WEB_SITE=http://yubico.com/
+         ENTERED=20131006
+         UPDATED=20160422
+           SHORT="Library written in C for validating YubiKey OTPs against YubiCloud"
+
+cat <<EOF
+Library written in C for validating YubiKey OTPs against YubiCloud.
+EOF

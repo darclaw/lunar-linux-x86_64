@@ -1,0 +1,24 @@
+          MODULE=gtk\+-2
+         VERSION=24.32
+          SOURCE=$MODULE.$VERSION.tar.xz
+         SOURCE2=$MODULE-xid_collision.patch.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE.$VERSION
+   SOURCE_URL[0]=$GNOME_URL/sources/gtk+/${MODULE#*-}.${VERSION%.*}
+   SOURCE_URL[1]=http://ftp.gtk.org/pub/gtk/${MODULE#*-}.${VERSION%.*}
+     SOURCE2_URL=$PATCH_URL
+      SOURCE_VFY=sha256:b6c8a93ddda5eabe3bfee1eb39636c9a03d2a56c7b62828b359bf197943c582e
+     SOURCE2_VFY=sha256:5b6dd1788c5ca1fedf205a48aa04cc546e3c47a7e4fccf28997af428c6b5e6ea
+        WEB_SITE=http://www.gtk.org
+         ENTERED=20020313
+         UPDATED=20180123
+           SHORT="A multi-platform toolkit for creating GUIs"
+
+cat << EOF
+GTK+ is a multi-platform toolkit for creating graphical user interfaces.
+Offering a complete set of widgets, GTK+-2 is suitable for projects
+ranging from small one-off tools to complete application suites.
+GTK+-2 has been designed from the ground up to support a range of
+languages, not only C/C++. Using GTK+-2 from languages such as Perl
+and Python (especially in combination with the Glade GUI builder)
+provides an effective method of rapid application development.
+EOF

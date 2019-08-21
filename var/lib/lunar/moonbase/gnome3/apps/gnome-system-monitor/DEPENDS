@@ -1,0 +1,4 @@
+depends gnome-icon-theme
+depends librsvg
+depends libgtop
+depends gtkmm3

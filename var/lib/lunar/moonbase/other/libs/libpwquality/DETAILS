@@ -1,0 +1,15 @@
+          MODULE=libpwquality
+         VERSION=1.4.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=https://github.com/libpwquality/libpwquality/releases/download/libpwquality-$VERSION/
+      SOURCE_VFY=sha256:1de6ff046cf2172d265a2cb6f8da439d894f3e4e8157b056c515515232fade6b
+        WEB_SITE=https://github.com/libpwquality/libpwquality
+         ENTERED=20151123
+         UPDATED=20171201
+           SHORT="provide common functions for password quality checking"
+cat << EOF
+The libpwquality library purpose is to provide common functions for password quality
+checking and also scoring them based on their apparent randomness. The library also
+provides a function for generating random passwords with good pronounceability.
+The library supports reading and parsing of a configuration file.
+EOF

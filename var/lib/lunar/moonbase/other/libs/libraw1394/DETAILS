@@ -1,0 +1,17 @@
+          MODULE=libraw1394
+         VERSION=2.1.2
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://www.kernel.org/pub/linux/libs/ieee1394/
+      SOURCE_VFY=sha256:03ccc69761d22c7deb1127fc301010dd13e70e44bb7134b8ff0d07590259a55e
+        WEB_SITE=http://www.dennedy.org/libraw1394
+         ENTERED=20030909
+         UPDATED=20160419
+           SHORT="library interface for FireWire devices"
+
+cat << EOF
+libraw1394 is the only supported interface to the kernel side raw1394 of
+the Linux IEEE-1394 subsystem, which provides direct access to the
+connected 1394 buses to user space. Through libraw1394/raw1394,
+applications can directly send to and receive from other nodes without
+requiring a kernel driver for the protocol in question.
+EOF

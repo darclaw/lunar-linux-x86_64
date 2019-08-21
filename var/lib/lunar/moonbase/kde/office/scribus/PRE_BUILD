@@ -1,0 +1,7 @@
+default_pre_build &&
+
+. /etc/profile.d/qt5.rc &&
+
+sed -e 's|#!/usr/bin/python|#!/usr/bin/python2|' \
+    -e 's|#!/usr/bin/env python|#!/usr/bin/env python2|' \
+    -i scribus/plugins/scriptplugin/{samples,scripts}/*

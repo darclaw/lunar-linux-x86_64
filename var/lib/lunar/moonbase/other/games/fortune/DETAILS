@@ -1,0 +1,16 @@
+          MODULE=fortune
+         VERSION=mod-2.6.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+   SOURCE_URL=https://github.com/shlomif/fortune-mod/archive/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${MODULE}-mod-${MODULE}-${VERSION}
+      SOURCE_VFY=shas256:89223bb649ea62b030527f181539182d6a17a1a43b0cc499a52732b839f7b691
+        WEB_SITE=http://www.redellipse.net/code/fortune
+         ENTERED=20011116
+         UPDATED=20190124
+           SHORT="The Fortune Cookie Program"
+
+cat << EOF
+Fortune is a program which randomly pulls quotations from a large database
+(16,422 at current count). Fortune started out life as a part of NetBSD,
+but has been ported to and enhanced for the Linux platform.
+EOF

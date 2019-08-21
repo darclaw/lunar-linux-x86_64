@@ -1,0 +1,5 @@
+depends python2
+depends kcodecs
+depends kconfig
+depends kcoreaddons
+depends ki18n

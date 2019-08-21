@@ -1,0 +1,7 @@
+depends ncurses
+depends libidn
+depends zlib
+
+optional_depends %OSSL   "--with-ssl"    "" "encryption (HTTPS) support"
+optional_depends gettext "--enable-nls"  "" "for NLS support"
+optional_depends gnutls  "--with-gnutls" "" "for EXPERIMENTAL gnutls support"

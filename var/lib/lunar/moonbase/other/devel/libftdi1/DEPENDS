@@ -1,0 +1,18 @@
+depends pkgconf
+depends libusb
+depends cmake
+
+optional_depends boost \
+                 "-DFTDIPP=ON" \
+                 "-DFTDIPP=OFF" \
+                 "Build C++ binding library libftdi1++"
+
+optional_depends python2 \
+                 "-DPYTHON_BINDINGS=ON" \
+                 "-DPYTHON_BINDINGS=OFF" \
+                 "Build python2 bindings"
+
+optional_depends confuse \
+                 "-DFTDI_EEPROM=ON" \
+                 "-DFTDI_EEPROM=OFF" \
+                 "Build ftdi_eeprom"

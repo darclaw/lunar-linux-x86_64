@@ -1,0 +1,9 @@
+cd /usr/share/fonts/xawtv-fonts && mkfontdir
+cat /usr/share/fonts/xawtv-fonts/fonts.alias | grep -v '-ets-teletext-' > /usr/share/fonts/xawtv-fonts/.fonts.alias
+mv /usr/share/fonts/xawtv-fonts/.fonts.alias /usr/share/fonts/xawtv-fonts/fonts.alias
+echo '********************************************************************'
+echo '*                                                                  *'
+echo '*       Please update your font path with "xset fp hash"           *'
+echo '*                                                                  *'
+echo '********************************************************************'
+true

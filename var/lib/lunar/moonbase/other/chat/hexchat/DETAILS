@@ -1,0 +1,19 @@
+          MODULE=hexchat
+         VERSION=2.14.2
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://dl.hexchat.net/hexchat/
+      SOURCE_VFY=sha256:7792b9e52560fbd3e10d75bfb5d138a20913a87771d676d296547f1b4ac09618
+        WEB_SITE=http://hexchat.github.io/
+         ENTERED=20141207
+         UPDATED=20180830
+           SHORT="An IRC client based on XChat"
+
+cat << EOF
+HexChat is an IRC client based on XChat. HexChat was originally called XChat-WDK
+which in turn was a successor of freakschat.
+Features - Easy to use and customizable interface - Cross-platform on Windows,
+OS X, and Unix-like OSes - Highly scriptable with Python and Perl - Translated
+in multiple languages - Fully open source and actively developed - Multi-network
+with auto-connect, join, and identify - Spellcheck, Proxies, SASL, DCC support
+and more
+EOF

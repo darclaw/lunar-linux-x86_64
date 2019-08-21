@@ -1,0 +1,11 @@
+6eeaf711d38a5ec6088cd81215823918  /usr/bin/as86
+36b297889d95c378c827f35492a59c26  /usr/bin/ld86
+438ff9a6f28f24d38fb1456060749e50  /usr/bin/objdump86
+7d00ddbcbdf358ba8f0d74954ad2e5eb  /usr/share/doc/bin86/ChangeLog
+10a69fd0ebbeb8ea58a6558c9ebad660  /usr/share/doc/bin86/README
+c2eda2a9c8ce1351fffb1a87b8153438  /usr/share/doc/bin86/README-0.4
+e3b24b2b3ba5d2cde80e9809ae4b0f0b  /usr/share/man/man1/as86.1.gz
+7c43742df046ff5742432be6f669c1e0  /usr/share/man/man1/ld86.1.gz
+7f4886755cf696578c74555d800c00ac  /var/log/lunar/install/bin86-0.16.21
+3b5bc76a6157ea2c006906d7a3755461  /var/log/lunar/compile/bin86-0.16.21.xz
+700d53501e52fd0c61ae6954928ad06c  /var/log/lunar/md5sum/bin86-0.16.21

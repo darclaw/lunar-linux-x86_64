@@ -1,0 +1,19 @@
+          MODULE=bind
+         VERSION=9.15.0
+          SOURCE=bind-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/bind-$VERSION
+      SOURCE_URL=http://ftp.isc.org/isc/bind9/$VERSION/
+      SOURCE_VFY=sha256:ee9a18d8be7bcbb3928c9c96a71ea08ed045bfe57d3ef74f06f6177bbbb2560f
+        WEB_SITE=http://www.isc.org/products/BIND
+         ENTERED=20050513
+         UPDATED=20190516
+           SHORT="Collection of BIND related client programs"
+           PSAFE=no
+
+cat << EOF
+bind-utils is not a separate package, it is a collection of the client side
+programs that are included with BIND. The BIND package includes the client side
+programs nslookup, dig and host. If you install BIND server, these programs will
+be installed automatically. This module is for those users who don't need the
+complete BIND server, but need these client side applications.
+EOF

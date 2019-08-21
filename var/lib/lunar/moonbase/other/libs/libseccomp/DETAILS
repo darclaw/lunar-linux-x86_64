@@ -1,0 +1,17 @@
+          MODULE=libseccomp
+         VERSION=2.4.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/seccomp/libseccomp/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:36aa502c0461ae9efc6c93ec2430d6badd9bf91ecbe73806baf7b7c6f687ab4f
+        WEB_SITE=http://sourceforge.net/projects/libseccomp/
+         ENTERED=20130413
+         UPDATED=20190603
+           SHORT="Enhanced seccomp library"
+
+cat << EOF
+The libseccomp library provides and easy to use, platform independent, interface
+to the Linux Kernel's syscall filtering mechanism: seccomp. The libseccomp API
+is designed to abstract away the underlying BPF based syscall filter language
+and present a more conventional function-call based filtering interface that
+should be familiar to, and easily adopted by application developers.
+EOF

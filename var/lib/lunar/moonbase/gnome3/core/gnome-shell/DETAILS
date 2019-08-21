@@ -1,0 +1,14 @@
+          MODULE=gnome-shell
+         VERSION=3.32.2
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha256:e5561b0d5c1fb3b0b66e99f1ad7f2f9db918ee953897f4eac6ae5c8d6d9bd42a
+        WEB_SITE=http://www.gnome.org/gnome-3
+         ENTERED=20180913
+         UPDATED=20190519
+           SHORT="GNOME system power information and statistics"
+
+cat << EOF
+GNOME Power Manager is a session daemon for the GNOME desktop environment that
+makes it easy to manage your laptop or desktop system.
+EOF

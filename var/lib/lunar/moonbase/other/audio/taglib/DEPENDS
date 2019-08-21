@@ -1,0 +1,3 @@
+depends boost
+depends cmake
+depends zlib

@@ -1,0 +1,14 @@
+a43c4622a9e1085f8b264e09f35db40d  /usr/bin/file
+b0569883dd196f65e47a73e1287b55a5  /usr/include/magic.h
+578a61e487b321b830dc9aea0bb1ee0a  /usr/lib/libmagic.so.1.0.0
+bffd1d4d2b57b32f178143e548daab68  /usr/share/doc/file/ChangeLog
+974f8ebfb787af664ca683a3cb6b71b5  /usr/share/doc/file/INSTALL
+a225a19fe107d0d4a6982bdc235a9414  /usr/share/doc/file/NEWS
+e2330681245b047d0f424ab6481e1659  /usr/share/doc/file/README
+3003c5b99bc64e4f28f2f2cf724334bc  /usr/share/man/man1/file.1.gz
+bdccfe255d5c73516bcc91bb83937b6b  /usr/share/man/man3/libmagic.3.gz
+d93145754f20d30f4cd68f32d9f98fba  /usr/share/man/man4/magic.4.gz
+6f273eb1cc5f75eed8d2bb606d214567  /usr/share/misc/magic.mgc
+d6f4accc1a77a7a626d89332bf83951b  /var/log/lunar/install/file-5.37
+7fd2164ab15eed488b2bc9291bf40456  /var/log/lunar/compile/file-5.37.xz
+e1e2c5c4a2c9df7896bd2ea05dcbd9cc  /var/log/lunar/md5sum/file-5.37

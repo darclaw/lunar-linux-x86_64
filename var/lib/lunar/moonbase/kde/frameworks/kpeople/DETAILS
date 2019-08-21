@@ -1,0 +1,14 @@
+          MODULE=kpeople
+         VERSION=5.57.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/frameworks/$(module_version kf5)
+      SOURCE_VFY=sha256:7c239b80b7976e3bfa46338e05a048aecb9c1972548dc33cc8a17e66eb08a85c
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=https://projects.kde.org/projects/frameworks/kpeople
+         ENTERED=20150410
+         UPDATED=20190415
+           SHORT="access to all contacts"
+
+cat << EOF
+Provides access to all contacts and aggregates them by person.
+EOF

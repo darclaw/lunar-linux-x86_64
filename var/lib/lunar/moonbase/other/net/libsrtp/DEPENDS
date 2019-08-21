@@ -1,0 +1,7 @@
+depends libnl3
+depends libpcap
+depends procps
+
+optional_depends %OSSL \
+                 "--enable-openssl" ""\
+                 "for SSL support"

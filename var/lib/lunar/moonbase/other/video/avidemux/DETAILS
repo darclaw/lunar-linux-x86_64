@@ -1,0 +1,19 @@
+          MODULE=avidemux
+         VERSION=2.7.1
+          SOURCE=$MODULE\_$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/$MODULE
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE\_$VERSION
+      SOURCE_VFY=sha256:3ccd784a329c8957c6741923549fdfb70f3b96d087aeb514f3d52e1cd281e995
+        WEB_SITE=http://fixounet.free.fr/avidemux
+         ENTERED=20040922
+         UPDATED=20180606
+           SHORT="A graphical tool to edit video"
+           PSAFE=no
+
+cat << EOF
+Avidemux is a graphical tool to edit video. It can open AVI, openDML, MPEG,
+Nuppelvideo, and BMPs. Most common codecs are supported (M-JPEG, MPEG, DivX,
+Xvid, huffyuv, WMA, etc.) thanks to libavcodec and libmpeg2. Video can be
+edited, cut, appended, filtered (resize/ crop/denoise), and re-encoded to
+either AVI (DivX/Xvid) or MPEG 1/2.
+EOF

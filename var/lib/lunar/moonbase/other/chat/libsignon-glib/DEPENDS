@@ -1,0 +1,3 @@
+depends gtk-doc
+depends signond
+depends gobject-introspection

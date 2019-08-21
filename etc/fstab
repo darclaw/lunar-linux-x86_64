@@ -1,0 +1,6 @@
+# /etc/fstab: static file system information.
+# <file system> <mount point> <type> <options> <dump> <pass>
+
+
+UUID=2b02dda1-55f1-4fbd-ba68-cfb90ae97790	/	ext4	defaults	0 1
+/swapfile	swap	swap	defaults		0 0

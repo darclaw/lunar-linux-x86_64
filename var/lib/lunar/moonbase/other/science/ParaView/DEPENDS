@@ -1,0 +1,27 @@
+depends zlib
+depends %JPEG
+depends libogg
+depends libpng
+depends glew
+depends tiff
+depends expat
+depends freetype2
+depends boost
+depends protobuf
+depends netcdf
+depends libxml2
+depends python-matplotlib
+depends python-numpy
+depends python-pygments
+depends jsoncpp
+depends mesa-lib
+depends cmake
+depends hdf5
+
+# build with the internal VTK for now
+#depends vtk
+optional_depends qt5    "-DPARAVIEW_BUILD_QT_GUI=1"  "-DPARAVIEW_BUILD_QT_GUI=0"  "Build Qt5 GUI" y
+
+optional_depends ffmpeg "-DPARAVIEW_ENABLE_FFMPEG=1 -DVTK_USE_FFMPEG_ENCODER=1" \
+                        "-DPARAVIEW_ENABLE_FFMPEG=0 -DVTK_USE_FFMPEG_ENCODER=0" \
+                        "For FFMPEG video support" y

@@ -1,0 +1,23 @@
+          MODULE=unrtf
+         VERSION=0.21.9
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$GNU_URL/$MODULE
+      SOURCE_VFY=sha256:22a37826f96d754e335fb69f8036c068c00dd01ee9edd9461a36df0085fb8ddd
+        WEB_SITE=http://www.gnu.org/software/unrtf/unrtf.html
+         ENTERED=20060930
+         UPDATED=20160804
+           SHORT="convert to HTML LaTeX and other formats"
+
+cat << EOF
+UnRTF is a command-line program written in C which converts documents in
+Rich Text (.rtf) format to HTML, LaTeX, PostScript, and other formats.
+Converting to HTML, it supports a number of features of Rich Text Format:
+
+Changes in the text's font, size, weight (bold), and slant (italic)
+Underlines and strikethroughs
+Partial support for text shadowing, outlining, embossing, or engraving
+Capitalizations
+Superscripts and subscripts
+Expanded and condensed text
+Changes in the foreground and background colors
+EOF

@@ -1,0 +1,8 @@
+depends cmake
+
+optional_depends alsa-lib   "" "" "for alsa-lib support"
+optional_depends pulseaudio "" "" "for pulseaudio support"
+optional_depends jack       "" "" "for jack audio mixer support"
+optional_depends portaudio  "" "" "for portaudio support"
+optional_depends SDL_sound  "" "" "for SDL sound support"
+optional_depends fluidsynth "" "" "for fluidsynth support"

@@ -1,0 +1,3 @@
+default_pre_build &&
+
+sedit '/AM_CFLAGS/s:-Werror::g' src/Makefile.{am,in}

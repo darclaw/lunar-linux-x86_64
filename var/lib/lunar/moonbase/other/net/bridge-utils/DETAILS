@@ -1,0 +1,17 @@
+          MODULE=bridge-utils
+         VERSION=1.6
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://www.kernel.org/pub/linux/utils/net/$MODULE/
+      SOURCE_VFY=sha256:cc67efb5d5fb8928a6569b3fade2b4042ec17da04678dab127d96b46489e26c8
+        WEB_SITE=http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge
+         ENTERED=20060531
+         UPDATED=20161019
+           SHORT="Contains bridge-utils for a Linux bridge"
+
+cat << EOF
+A Linux bridge is more powerful than a pure hardware bridge because it
+can also filter and shape traffic. A bridge transparently relays traffic
+between multiple network interfaces. In plain English this means that
+a bridge connects two or more physical Ethernets together to form one
+bigger (logical) Ethernet.
+EOF

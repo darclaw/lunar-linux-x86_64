@@ -1,0 +1,4 @@
+depends fuse
+depends Filesys-Statvfs
+depends Lchown
+depends Unix-Mknod

@@ -1,0 +1,19 @@
+          MODULE=jansson
+         VERSION=2.12
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://www.digip.org/jansson/releases/
+      SOURCE_VFY=sha256:645d72cc5dbebd4df608d33988e55aa42a7661039e19a379fcbe5c79d1aee1d2
+        WEB_SITE=http://www.digip.org/jansson/
+         ENTERED=20131103
+         UPDATED=20181207
+           SHORT="C library for encoding, decoding and manipulating JSON data"
+
+cat << EOF
+Jansson is a C library for encoding, decoding and manipulating JSON
+data. It features:
+  - Simple and intuitive API and data model
+  - Comprehensive documentation
+  - No dependencies on other libraries
+  - Full Unicode support (UTF-8)
+  - Extensive test suite.
+EOF

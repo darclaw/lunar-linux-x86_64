@@ -1,0 +1,20 @@
+          MODULE=zfs-utils
+         VERSION=0.7.13
+          SOURCE=zfs-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/zfs-$VERSION
+      SOURCE_URL=http://github.com/zfsonlinux/zfs/releases/download/zfs-$VERSION/
+      SOURCE_VFY=sha256:d23f0d292049b1bc636d2300277292b60248c0bde6a0f4ba707c0cb5df3f8c8d
+      MAINTAINER=ratler@lunar-linux.org
+        WEB_SITE=http://zfsonlinux.org/
+         LICENSE=cddl
+         ENTERED=20130212
+         UPDATED=20190305
+           SHORT="The ZFS file system utilities"
+
+cat << EOF
+ZFS is an advanced file system and volume manager which was originally developed
+for Solaris.
+It has been successfully ported to FreeBSD and now there is a functional Linux
+ZFS kernel port too. The port currently includes a fully functional and stable
+SPA, DMU, and ZVOL with a ZFS Posix Layer (ZPL) on the way.
+EOF

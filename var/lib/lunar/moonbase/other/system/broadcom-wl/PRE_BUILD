@@ -1,0 +1,6 @@
+mk_source_dir &&
+validate_source_dir &&
+cd $SOURCE_DIRECTORY &&
+unpack $SOURCE
+
+sedit "/BRCM_WLAN_IFNAME/s:eth:wlan:" src/wl/sys/wl_linux.c

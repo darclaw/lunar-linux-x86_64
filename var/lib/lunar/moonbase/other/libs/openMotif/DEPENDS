@@ -1,0 +1,6 @@
+depends libXmu
+depends libXp
+depends libXft
+depends xbitmaps
+depends %JPEG
+depends libpng

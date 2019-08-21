@@ -1,0 +1,7 @@
+default_pre_build &&
+
+cd $SOURCE_DIRECTORY &&
+
+unpack $SOURCE2 &&
+
+sedit "s/local\///" timidity/config.h

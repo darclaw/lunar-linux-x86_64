@@ -1,0 +1,26 @@
+          MODULE=HTTP-Cache-Transparent
+         VERSION=1.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://search.cpan.org/CPAN/authors/id/M/MA/MATTIASH
+      SOURCE_VFY=sha256:6622e1b5e5af952b1711aea247bdcb1b91c2aac0f11f32f819a2d07e11dd2845
+        WEB_SITE=https://search.cpan.org/~mattiash/HTTP-Cache-Transparent
+            TYPE=perl
+         ENTERED=20090328
+         UPDATED=20181018
+           SHORT="Perl module to cache the result of http get-requests"
+
+cat << EOF
+Perl module to cache the result of http get-requests persistently.
+
+An implementation of http get that keeps a local cache of fetched
+pages to avoid fetching the same data from the server if it hasn't
+been updated. The cache is stored on disk and is thus persistent
+between invocations.
+
+Uses the http-headers If-Modified-Since and ETag to let the server
+decide if the version in the cache is up-to-date or not.
+
+The cache is implemented by modifying the LWP::UserAgent class to
+seamlessly cache the result of all requests that can be cached.
+EOF
+

@@ -1,0 +1,16 @@
+          MODULE=bashdb
+         VERSION=4.4-1.0.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/$MODULE/
+      SOURCE_VFY=sha256:bf603b6ee1f60c10861dcb1fef73a10f924327b5ff05cf41e2290f3edc1e6284
+        WEB_SITE=http://bashdb.sourceforge.net/
+         ENTERED=20160426
+         UPDATED=20181209
+           SHORT="A debugger for Bash scripts"
+
+cat << EOF
+The Bash Debugger Project is a source-code debugger for bash that follows the
+gdb command syntax. The version 4.0 series is a complete rewrite of the
+previous series along the lines of my other POSIX shell debuggers and other
+debuggers mentioned below.
+EOF

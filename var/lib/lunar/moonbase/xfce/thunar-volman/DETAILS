@@ -1,0 +1,14 @@
+          MODULE=thunar-volman
+         VERSION=0.8.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://archive.xfce.org/src/apps/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha1:fa76fa0089f85f23b1efbdfb76a70039de7f7e8b
+        WEB_SITE=http://goodies.xfce.org/projects/thunar-plugins/thunar-volman
+         ENTERED=20070123
+         UPDATED=20150228
+           SHORT="Automatic management of removable drives and media"
+
+cat << EOF
+The Thunar Volume Manager is an extension for the Thunar file manager,
+which enables automatic management of removable drives and media.
+EOF

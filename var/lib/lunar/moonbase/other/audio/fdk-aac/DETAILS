@@ -1,0 +1,13 @@
+          MODULE=fdk-aac
+         VERSION=0.1.6
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://downloads.sourceforge.net/opencore-amr/
+      SOURCE_VFY=sha256:aab61b42ac6b5953e94924c73c194f08a86172d63d39c5717f526ca016bed3ad
+        WEB_SITE=http://sourceforge.net/projects/opencore-amr/
+         ENTERED=20161029
+         UPDATED=20180415
+           SHORT="Fraunhofer FDK AAC codec library"
+
+cat << EOF
+Modified library of Fraunhofer AAC decoder and encoder.
+EOF

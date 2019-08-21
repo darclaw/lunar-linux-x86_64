@@ -1,0 +1,5 @@
+depends python2
+depends grantlee-qt5
+depends extra-cmake-modules
+depends kdeclarative
+depends ktexteditor

@@ -1,0 +1,29 @@
+          MODULE=libev
+         VERSION=4.25
+          SOURCE=$MODULE-$VERSION.tar.gz
+    SOURCE_URL[0]=http://dist.schmorp.de/libev/
+    SOURCE_URL[1]=http://dist.schmorp.de/libev/Attic
+    SOURCE_URL[2]=https://fossies.org/linux/misc/
+      SOURCE_VFY=sha256:78757e1c27778d2f3795251d9fe09715d51ce0422416da4abb34af3929c02589
+        WEB_SITE=http://libev.schmorp.de/
+         ENTERED=20131223
+         UPDATED=20190308
+           SHORT="A high-performance event loop"
+
+cat << EOF
+High-performance (see benchmark) event loop that is loosely modelled
+after libevent, but without its limitations and bugs. It is used in
+GNU Virtual Private Ethernet, rxvt-unicode, auditd, the Deliantra
+MORPG Server and Client, and many other programs.
+ Features include child/pid watchers, periodic timers
+ based on wallclock (absolute) time (in addition to timers
+ using relative timeouts), as well as epoll/kqueue/event
+ ports/inotify/eventfd/signalfd support, fast timer management,
+ time jump detection and correction, and ease-of-use.
+
+It can be used as a libevent replacement using its emulation API or
+directly embedded into your programs without the need for complex
+configuration support. A full-featured and well-documented perl
+interface is also available.
+
+EOF

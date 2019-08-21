@@ -1,0 +1,16 @@
+          MODULE=cairo
+         VERSION=1.16.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://cairographics.org/releases/
+      SOURCE_VFY=sha256:5e7b29b3f113ef870d1e3ecf8adf21f923396401604bda16d44be45e66052331
+        WEB_SITE=http://cairographics.org
+         ENTERED=20040506
+         UPDATED=20190217
+           SHORT="A multi-platform 2D vector graphics library"
+
+cat << EOF
+Cairo is a vector graphics library designed to provide high-quality display
+and print output.
+Currently supported output targets include the X Window System, OpenGL (via
+glitz), in-memory image buffers, and image files (PNG and PostScript).
+EOF

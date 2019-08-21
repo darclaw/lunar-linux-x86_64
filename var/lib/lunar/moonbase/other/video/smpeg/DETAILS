@@ -1,0 +1,16 @@
+          MODULE=smpeg
+         VERSION=0.4.5
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=ftp://ftp.vim.org/vol/2/vectorlinux/VL64-7.0/source/sourceVL/$MODULE/$VERSION/src/
+      SOURCE_VFY=sha256:1839c12e88d5dbbc767a7b94eeab2aa3efe4f0eebb7eb7c7240270ba93689a2b
+        WEB_SITE=http://www.lokigames.com/development/smpeg.php3
+         ENTERED=20010922
+         UPDATED=20130818
+           SHORT="A general purpose MPEG video/audio player"
+
+cat << EOF
+SMPEG is a general purpose MPEG video/audio player for Linux based on
+the mpeg_play and SPLAY MPEG decoders. It interfaces with the Simple
+DirectMedia Layer (SDL) to provide cross-platform MP3 playback for
+games.
+EOF

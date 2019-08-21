@@ -1,0 +1,17 @@
+I:8027773
+E:ID_NET_NAME_MAC=enx525400a6942f
+E:ID_NET_NAME_PATH=enp0s3
+E:ID_NET_NAME_SLOT=ens3
+E:ID_BUS=pci
+E:ID_VENDOR_ID=0x8086
+E:ID_MODEL_ID=0x100e
+E:ID_PCI_CLASS_FROM_DATABASE=Network controller
+E:ID_PCI_SUBCLASS_FROM_DATABASE=Ethernet controller
+E:ID_VENDOR_FROM_DATABASE=Intel Corporation
+E:ID_MODEL_FROM_DATABASE=82540EM Gigabit Ethernet Controller (QEMU Virtual Machine)
+E:ID_PATH=pci-0000:00:03.0
+E:ID_PATH_TAG=pci-0000_00_03_0
+E:ID_NET_DRIVER=e1000
+E:ID_NET_LINK_FILE=/usr/lib/systemd/network/99-default.link
+E:SYSTEMD_ALIAS=/sys/subsystem/net/devices/ens3
+G:systemd

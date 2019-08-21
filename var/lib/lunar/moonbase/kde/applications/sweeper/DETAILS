@@ -1,0 +1,19 @@
+          MODULE=sweeper
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:7ed57321ba601725291e1cfa6cdfe2060ad0405d42124dc8d8d44d137b852f72
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=http://www.kde.org/applications/utilities/sweeper/
+         ENTERED=20120125
+         UPDATED=20190418
+           SHORT="system cleaner"
+
+cat << EOF
+Sweeper helps to clean unwanted traces the user leaves on the systemd
+and to regain disk space removing unused temporary files.
+
+    It can remove web-related traces: cookies, history, cache
+    It can remove the image thumbnails cache
+    It can also clean the applications and documentes history
+EOF

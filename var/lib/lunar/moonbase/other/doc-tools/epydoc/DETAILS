@@ -1,0 +1,18 @@
+          MODULE=epydoc
+         VERSION=3.0.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/$MODULE/$VERSION/
+      SOURCE_VFY=sha256:d4e5c8d90937d01b05170f592c1fa9b29e9ed0498dfe7f0eb2a3af61725b6ad1
+        WEB_SITE=http://epydoc.sourceforge.net/
+         ENTERED=20030514
+         UPDATED=20181127
+           SHORT="A tool for generating API documentation for Python modules"
+
+cat << EOF
+Epydoc is a tool for generating API documentation for Python modules,
+based on their docstrings. For an example of epydoc's output, see
+the API documentation for epydoc itself (html, pdf). A lightweight
+markup language called epytext can be used to format docstrings,
+and to add information about specific fields, such as parameters and
+instance variables.
+EOF

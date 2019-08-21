@@ -1,0 +1,7 @@
+depends solid
+depends kconfig
+depends kdoctools
+depends kcoreaddons
+depends threadweaver
+depends kio
+depends plasma-framework

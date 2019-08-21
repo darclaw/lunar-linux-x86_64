@@ -1,0 +1,4 @@
+depends grantleetheme
+depends pimcommon
+depends libkleo
+depends kdoctools

@@ -1,0 +1,13 @@
+          MODULE=cuetools
+         VERSION=1.4.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/svend/cuetools/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:24a2420f100c69a6539a9feeb4130d19532f9f8a0428a8b9b289c6da761eb107
+        WEB_SITE=https://github.com/svend/cuetools
+         ENTERED=20081128
+         UPDATED=20180916
+           SHORT="Cuetools work with .TOC and .CUE CD image description files"
+
+cat << EOF
+cuetools is a set of utilities for working with cue files and toc files.
+EOF

@@ -1,0 +1,15 @@
+          MODULE=htop
+         VERSION=2.2.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://hisham.hm/$MODULE/releases/$VERSION/
+      SOURCE_VFY=sha256:d9d6826f10ce3887950d709b53ee1d8c1849a70fa38e91d5896ad8cbc6ba3c57
+        WEB_SITE=http://hisham.hm/htop/index.php?page=main
+         ENTERED=20040927
+         UPDATED=20180411
+           SHORT="An interactive process viewer"
+
+cat << EOF
+htop is an interactive, text-mode (ncurses) process viewer. That has many
+advantages over the standard top, like being able to scroll vertically and
+horizontally, faster start time, and mouse operations.
+EOF

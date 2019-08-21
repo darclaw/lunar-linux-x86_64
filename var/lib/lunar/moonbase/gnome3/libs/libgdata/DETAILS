@@ -1,0 +1,15 @@
+          MODULE=libgdata
+         VERSION=0.17.9
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}/
+      SOURCE_VFY=sha256:85c4f7674c0098ffaf060ae01b6b832cb277b3673d54ace3bdedaad6b127453a
+        WEB_SITE=http://live.gnome.org/libgdata
+         ENTERED=20091006
+         UPDATED=20170930
+           SHORT="Gnome's GData protocol library"
+
+cat << EOF
+Libgdata is a GLib-based library for accessing online service APIs using the
+GData protocol - most notably, Google's services. It provides APIs to access
+the common Google services, and has full asynchronous support.
+EOF

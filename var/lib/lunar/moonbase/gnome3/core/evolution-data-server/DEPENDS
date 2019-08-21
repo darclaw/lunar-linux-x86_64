@@ -1,0 +1,50 @@
+depends boost
+depends db
+depends nss
+depends libical
+# depends gperf  #provided by systemd
+
+optional_depends libcanberra \
+                 "-DENABLE_CANBERRA=ON" \
+                 "-DENABLE_CANBERRA=OFF" \
+                 "for canberra support"
+
+optional_depends libgweather \
+                 "-DENABLE_WEATHER=ON" \
+                 "-DENABLE_WEATHER=OFF" \
+                 "for libgweather support"
+
+optional_depends libgdata \
+                 "-DENABLE_GOOGLE=ON" \
+                 "-DENABLE_GOOGLE=OFF" \
+                 "for google accounts support"
+
+optional_depends gnome-online-accounts \
+                 "-DENABLE_GOA=ON" \
+                 "-DENABLE_GOA=OFF" \
+                 "for enabling vala bindings"
+
+optional_depends vala \
+                 "-DENABLE_VALA_BINDINGS=ON" \
+                 "-DENABLE_VALA_BINDINGS=OFF" \
+                 "for enabling vala bindings"
+
+optional_depends krb5 \
+                 "-DWITH_KRB5=ON" \
+                 "-DWITH_KRB5=OFF" \
+                 "for Kerberos support"
+
+optional_depends openldap \
+                 "-DWITH_OPENLDAP=ON" \
+                 "-DWITH_OPENLDAP=OFF" \
+                 "for ldap support"
+
+optional_depends gtk-doc \
+                 "-DENABLE_GTK_DOC=ON" \
+                 "-DENABLE_GTK_DOC=OFF" \
+                 "for building documentation"
+
+optional_depends gobject-introspection \
+                 "-DENABLE_INTROSPECTION=ON" \
+                 "-DENABLE_INTROSPECTION=OFF" \
+                 "for object introspection"

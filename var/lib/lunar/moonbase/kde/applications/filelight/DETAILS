@@ -1,0 +1,14 @@
+          MODULE=filelight
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:22eaa8f0e9e69652240554687b2cecb55449e67caac6055c2d868f3089d835ad
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=http://methylblue.com/filelight/
+         ENTERED=20120125
+         UPDATED=20190418
+           SHORT="interactive map of disk usage on your computer"
+
+cat << EOF
+An interactive map of concentric, segmented rings that help visualise disk usage on your computer.
+EOF

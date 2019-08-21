@@ -1,0 +1,18 @@
+          MODULE=taglib
+         VERSION=1.11.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+   SOURCE_URL[0]=http://$MODULE.github.io/releases/
+   SOURCE_URL[1]=http://developer.kde.org/~wheeler/files/src/
+   SOURCE_URL[2]=$MIRROR_URL
+      SOURCE_VFY=sha256:b6d1a5a610aae6ff39d93de5efd0fdc787aa9e9dc1e7026fa4c961b26563526b
+        WEB_SITE=http://developer.kde.org/~wheeler/taglib.html
+         ENTERED=20040331
+         UPDATED=20170114
+           SHORT="Reading and editing the meta-data of several popular audio formats"
+
+cat << EOF
+TagLib is a library for reading and editing the meta-data of several
+popular audio formats. Currently it supports both ID3v1 and ID3v2 for
+MP3 files, Ogg Vorbis comments and ID3 tags and Vorbis comments in FLAC
+files.
+EOF

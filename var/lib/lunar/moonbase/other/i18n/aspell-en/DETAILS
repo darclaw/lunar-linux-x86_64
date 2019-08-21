@@ -1,0 +1,15 @@
+          MODULE=aspell-en
+            LANG=en
+         VERSION=2018.04.16-0
+          SOURCE=aspell6-en-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/aspell6-en-$VERSION
+      SOURCE_VFY=sha256:f11071e74b0c0753f4afabf024941a5c3a96bafe3879211ebd47bc34e76fbd2f
+      SOURCE_URL=$GNU_URL/aspell/dict/$LANG/
+        WEB_SITE=http://aspell.net/
+         ENTERED=20021127
+         UPDATED=20180823
+           SHORT="English (US, British, Canadian) aspell dictionary"
+
+cat << EOF
+English (US, British, Canadian) aspell dictionary.
+EOF

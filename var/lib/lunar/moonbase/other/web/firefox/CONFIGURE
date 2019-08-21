@@ -1,0 +1,1 @@
+mquery PGO "Build with Profile Guided Optimization? (Requires firefox to be compiled within a running instance of X)" n "" "--disable-tests"

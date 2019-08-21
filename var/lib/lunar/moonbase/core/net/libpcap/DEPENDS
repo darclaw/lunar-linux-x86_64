@@ -1,0 +1,12 @@
+depends flex
+depends libnl3
+
+optional_depends libusb \
+                 "--enable-usb" \
+                 "--disable-usb" \
+                 "enable usb support"
+
+optional_depends bluez-5 \
+                 "--enable-bluetooth" \
+                 "--disable-bluetooth" \
+                 "enable bluetooth support"

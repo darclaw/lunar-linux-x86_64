@@ -1,0 +1,20 @@
+          MODULE=krb5
+         VERSION=1.16.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
+      SOURCE_URL=https://web.mit.edu/kerberos/dist/$MODULE/${VERSION::4}
+        WEB_SITE=https://web.mit.edu/kerberos/www/
+      SOURCE_VFY=sha256:9f721e1fe593c219174740c71de514c7228a97d23eb7be7597b2ae14e487f027
+         ENTERED=20020218
+         UPDATED=20190507
+           SHORT="A network security protocol"
+           PSAFE="no"
+
+cat << EOF
+Kerberos was created by MIT as a solution to network security problems.
+The Kerberos protocol uses strong cryptography so that a client can prove its
+identity to a server (and vice versa) across an insecure network connection.
+After a client and server has used Kerberos to prove their identity, they can
+also encrypt all of their communications to assure privacy and data integrity
+as they go about their business.
+EOF

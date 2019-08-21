@@ -1,0 +1,13 @@
+/usr
+/usr/bin/pbunzip2
+/usr/bin/pbzcat
+/usr/bin/pbzip2
+/usr/share
+/usr/share/doc
+/usr/share/doc/pbzip2
+/usr/share/doc/pbzip2/ChangeLog
+/usr/share/doc/pbzip2/README
+/usr/share/man/man1/pbzip2.1.gz
+/var/log/lunar/install/pbzip2-1.1.13
+/var/log/lunar/compile/pbzip2-1.1.13.xz
+/var/log/lunar/md5sum/pbzip2-1.1.13

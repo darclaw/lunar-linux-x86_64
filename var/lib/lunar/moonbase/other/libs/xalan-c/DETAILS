@@ -1,0 +1,18 @@
+           MODULE=xalan-c
+          VERSION=1.11
+           SOURCE=xalan_c-$VERSION-src.tar.gz
+       SOURCE_URL=http://www.eu.apache.org/dist/xalan/xalan-c/sources
+      SOURCE_VFY=sha256:4f5e7f75733d72e30a2165f9fdb9371831cf6ff0d1997b1fb64cdd5dc2126a28
+         WEB_SITE=http://xml.apache.org/xalan-c
+          ENTERED=20071004
+          UPDATED=20130324
+            SHORT="XSLT processor written in C++"
+            PSAFE=no
+
+cat << EOF
+Xalan is an XSLT processor for transforming XML documents into HTML,
+text, or other XML document types. Xalan-C++ is a robust implementation
+of the W3C Recommendations for XSL Transformations (XSLT) and the XML Path
+Language (XPath). It works with a compatible release of the Xerces-C++
+XML parser.
+EOF

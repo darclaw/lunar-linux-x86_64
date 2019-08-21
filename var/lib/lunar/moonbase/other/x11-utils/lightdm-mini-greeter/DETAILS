@@ -1,0 +1,14 @@
+          MODULE=lightdm-mini-greeter
+         VERSION=0.3.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/prikhi/lightdm-mini-greeter/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:6276b5ce6c97b7685788a41969c01335007cfc0163d9d6fd16462cff70622831
+        WEB_SITE=https://github.com/prikhi/lightdm-mini-greeter/
+         ENTERED=20180126
+         UPDATED=20190325
+           SHORT="A Minimal, Configurable, Single-User GTK3 LightDM Greeter"
+
+cat <<EOF
+A minimal but highly configurable single-user GTK3 greeter for LightDM.
+Inspired by the SLiM Display Manager & LightDM GTK3 Greeter.
+EOF

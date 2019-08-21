@@ -1,0 +1,14 @@
+          MODULE=gradle
+         VERSION=5.4.1
+          SOURCE=$MODULE-$VERSION-all.zip
+      SOURCE_URL=https://services.gradle.org/distributions/
+      SOURCE_VFY=sha25:14cd15fc8cc8705bd69dcfa3c8fefb27eb7027f5de4b47a8b279218f76895a91
+        WEB_SITE=https://gradle.org/
+         ENTERED=20180307
+         UPDATED=20190522
+           SHORT="A powerful build system for the JVM"
+
+cat <<EOF
+Gradle is an open-source build automation tool focused on flexibility and
+performance. Gradle build scripts are written using a Groovy or Kotlin DSL.
+EOF

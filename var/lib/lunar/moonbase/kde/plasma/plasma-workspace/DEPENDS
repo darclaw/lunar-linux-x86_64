@@ -1,0 +1,27 @@
+depends libXdamage
+depends xmessage
+depends xprop
+depends xrdb
+depends xsetroot
+depends extra-cmake-modules
+depends breeze
+depends kded
+depends kjsembed
+depends knewstuff
+depends knotifyconfig
+depends ktexteditor
+depends libkscreen
+depends libqalculate
+depends milou
+depends prison
+depends baloo
+depends kdoctools
+depends krunner
+depends kwin
+depends kxmlrpcclient
+depends libksysguard
+depends kwayland-frameworks
+
+optional_depends gpsd "" "" "for geolocation support"
+optional_depends networkmanager-qt "" "" "for newwork manager support"
+optional_depends kde-cli-tools "" "" "For better interaction with the system{PROBLEM_COLOR}, say no on first install of plasma-workspace.${DEFAULT_COLOR}"

@@ -1,0 +1,23 @@
+          MODULE=make
+         VERSION=4.2.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+   SOURCE_URL[0]=$GNU_URL/$MODULE
+   SOURCE_URL[1]=ftp://ftp.gnu.org/pub/gnu/$MODULE
+      SOURCE_VFY=sha256:d6e262bf3601b42d2b1e4ef8310029e1dcf20083c5446b4b7aa67081fdffc589
+        WEB_SITE=http://make.paulandlesley.org
+         ENTERED=20010922
+         UPDATED=20181104
+           SHORT="make generates executables and other non-source programs"
+
+cat << EOF
+make - Generates executables and other non-source programs.
+Make examines a set of related files, determines which of them are out
+of date, and runs just the commands necessary to bring them back up to
+date. Make is typically used to compile and link programs, but it can be
+useful in many other situations as well.
+Make reads a file called a 'makefile' to learn how the files in your
+program are put together. It may also contain rules to install the
+product, clear up the workspace, generate distribution packages, or
+other tasks. When you write a program, you should also create a makefile
+for it so that it is possible to use Make to build and install it.
+EOF

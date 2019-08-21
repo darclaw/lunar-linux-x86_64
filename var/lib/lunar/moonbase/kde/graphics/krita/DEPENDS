@@ -1,0 +1,16 @@
+depends hicolor-icon-theme
+depends boost
+depends curl
+depends exiv2
+depends fftw3
+depends gsl
+depends OpenColorIO
+depends kio
+depends openexr
+depends poppler
+depends eigen3
+depends Vc
+depends extra-cmake-modules
+depends kitemmodels
+
+optional_depends libheif "" "" "for ISO/IEC 23008-12:2017 HEIF file format decoder and encoder support"

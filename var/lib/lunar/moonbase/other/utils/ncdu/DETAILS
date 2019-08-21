@@ -1,0 +1,16 @@
+          MODULE=ncdu
+         VERSION=1.14
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://dev.yorhel.nl/download/
+      SOURCE_VFY=sha256:c694783aab21e27e64baad314b7c1ff34541bfa219fe9645ef6780f1c5558c44
+        WEB_SITE=http://dev.yorhel.nl/ncdu/
+         ENTERED=20070724
+         UPDATED=20190307
+           SHORT="A ncurses based 'du' equivalent"
+
+cat << EOF
+ncdu is an NCurses version of the famous old 'du' unix command. It provides
+a fast and easy interface to your harddrive. Where is your disk space going?
+Why is your home directory that large? ncdu can answer those questions for
+you in just a matter of seconds.
+EOF

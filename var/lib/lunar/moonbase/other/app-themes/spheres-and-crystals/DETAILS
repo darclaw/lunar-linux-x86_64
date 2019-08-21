@@ -1,0 +1,12 @@
+          MODULE=spheres-and-crystals
+         VERSION=0.7
+          SOURCE=$MODULE-$VERSION.tar.gz
+   SOURCE_URL[0]=$SFORGE_URL/librsvg/
+        WEB_SITE=http://librsvg.sourceforge.net
+         ENTERED=20030203
+         UPDATED=20030409
+           SHORT="Spheres and Crystal svg theme for Gnome 2"
+      MAINTAINER=nhudson2367@earthlink.net
+cat << EOF
+Spheres and Crystal SVG Themes for Gnome 2
+EOF

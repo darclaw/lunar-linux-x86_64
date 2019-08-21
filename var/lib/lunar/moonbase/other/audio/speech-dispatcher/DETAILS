@@ -1,0 +1,13 @@
+          MODULE=speech-dispatcher
+         VERSION=0.9.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://github.com/brailcom/speechd/releases/download/$VERSION/
+      SOURCE_VFY=sha256:37c040e39c3ac8da755d4901c93b7666fdb4c85856fdf5e6d159e769a1286f99
+        WEB_SITE=http://devel.freebsoft.org/speechd#lists
+         ENTERED=20110507
+         UPDATED=20190513
+           SHORT="Common interface to speech synthesis"
+
+cat << EOF
+Common interface to speech synthesis.
+EOF

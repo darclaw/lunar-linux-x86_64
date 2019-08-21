@@ -1,0 +1,6 @@
+depends gtk+-3
+depends json-glib
+depends libsoup
+depends libnotify
+depends toxcore
+depends vala

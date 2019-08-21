@@ -1,0 +1,15 @@
+          MODULE=freetype2
+         VERSION=2.10.0
+          SOURCE=freetype-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/freetype-$VERSION
+   SOURCE_URL[0]=$SFORGE_URL/freetype
+   SOURCE_URL[1]=http://savannah.nongnu.org/download/freetype
+      SOURCE_VFY=sha256:fccc62928c65192fff6c98847233b28eb7ce05f12d2fea3f6cc90e8b4e5fbe06
+        WEB_SITE=http://www.freetype.org/
+         ENTERED=20010922
+         UPDATED=20190326
+           SHORT="A free, quality, portable font engine"
+
+cat << EOF
+A Free, Quality, and Portable Font Engine.
+EOF

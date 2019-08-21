@@ -1,0 +1,13 @@
+          MODULE=Compress-Zlib
+         VERSION=2.015
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://www.cpan.org/authors/id/P/PM/PMQS/
+      SOURCE_VFY=sha256:9b4c6fde1c972016fcbea1f019d143261ac0f5410652ea91571d7eedd22831cc
+        WEB_SITE=https://search.cpan.org/search?dist=Compress-Zlib
+            TYPE=perl
+         ENTERED=20030309
+         UPDATED=20090628
+           SHORT="Perl interface to zlib"
+cat << EOF
+Perl interface to zlib
+EOF

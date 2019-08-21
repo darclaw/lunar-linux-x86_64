@@ -1,0 +1,6 @@
+depends gsl
+depends kdelibs4support
+depends khtml
+depends knewstuff
+depends libqalculate
+depends eigen3

@@ -1,0 +1,15 @@
+          MODULE=libosinfo
+         VERSION=1.4.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://releases.pagure.org/libosinfo
+      SOURCE_VFY=sha256:a29e61a82b1a5727b145403914812273dfa033a0c07a15500078726bb3b84165
+        WEB_SITE=http://libosinfo.org/
+         ENTERED=20140920
+         UPDATED=20190418
+           SHORT="GObject based library API for managing information about operating systems"
+
+cat << EOF
+GObject based library API for managing information about operating
+systems, hypervisors and the (virtual) hardware devices they can
+support.
+EOF

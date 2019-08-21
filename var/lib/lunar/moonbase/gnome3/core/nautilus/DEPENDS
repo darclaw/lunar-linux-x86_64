@@ -1,0 +1,15 @@
+depends dconf
+depends gnome-desktop
+depends libexif
+depends gvfs
+depends desktop-file-utils
+depends gnome-icon-theme
+depends gnome-autoar
+depends libnotify
+depends tracker
+depends meson
+
+optional_depends gexiv2 \
+                 "-Dextensions=true" \
+                 "-Dextensions=false" \
+                 "Build extension support on nautilus"

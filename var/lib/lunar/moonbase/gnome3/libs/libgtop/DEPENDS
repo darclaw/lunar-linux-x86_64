@@ -1,0 +1,8 @@
+depends glib-2
+depends libXau
+depends intltool
+
+optional_depends gobject-introspection \
+                 "--enable-introspection" \
+                 "--disable-introspection" \
+                 "for object introspection"

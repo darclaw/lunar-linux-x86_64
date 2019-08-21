@@ -1,0 +1,14 @@
+          MODULE=i7z
+         VERSION=0.27.2
+          SOURCE=${MODULE}-${VERSION}.tar.gz
+      SOURCE_URL=http://i7z.googlecode.com/files/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
+      SOURCE_VFY=sha256:a7f72d65732c17eef0df4f284927fe744fc650075f2364c51c9497534d8f47f1
+        WEB_SITE=http://code.google.com/p/i7z/
+         ENTERED=20140106
+         UPDATED=20140106
+           SHORT="A better i7 (and now i3, i5) reporting tool for Linux"
+
+cat <<EOF
+A better i7 (and now i3, i5) reporting tool for Linux.
+EOF

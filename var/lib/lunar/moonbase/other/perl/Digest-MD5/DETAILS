@@ -1,0 +1,13 @@
+          MODULE=Digest-MD5
+         VERSION=2.55
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://search.cpan.org/CPAN/authors/id/G/GA/GAAS
+      SOURCE_VFY=sha256:03b198a2d14425d951e5e50a885d3818c3162c8fe4c21e18d7798a9a179d0e3c
+        WEB_SITE=https://search.cpan.org/~gaas/Digest-MD5
+            TYPE=perl
+         ENTERED=20020507
+         UPDATED=20181018
+           SHORT="perl interface to the MD5 Algorithm"
+cat << EOF
+Digest-MD5 is the perl interface to the MD5 Algorithm
+EOF

@@ -1,0 +1,14 @@
+ce645f8377079c70a3f751d35a6789ed  /usr/bin/m4
+7b4d4d1394fd78ee7680c5f9c94b6847  /usr/share/doc/m4/ChangeLog
+4de4498b1bf8fd628ba9ecd623086425  /usr/share/doc/m4/ChangeLog-2014
+f2766448e74c24bd1c1c5d12466093ae  /usr/share/doc/m4/INSTALL
+81ff1fed93ad9b81b8a849221786a519  /usr/share/doc/m4/NEWS
+1587b09977cb60de66d28b2953093999  /usr/share/doc/m4/README
+e672811325056af7e845967e9ab21f8f  /usr/share/info/dir
+4f70b7495e8c390efe111e847bc0dfed  /usr/share/info/m4.info
+772bfabb4e13e0ec60d999ebc42d6b6d  /usr/share/info/m4.info-1
+13a649b653001a6ed422900a37ff42ef  /usr/share/info/m4.info-2
+9709a0e75147cde5f17e69f1fdce7a5f  /usr/share/man/man1/m4.1.gz
+cf3158534da61b1a6aa75d7652c287e6  /var/log/lunar/install/m4-1.4.18
+c66189770f28e0f593de92bd7bf18fdf  /var/log/lunar/compile/m4-1.4.18.xz
+e3fb9580a3662b2cbb365c2a5fe49878  /var/log/lunar/md5sum/m4-1.4.18

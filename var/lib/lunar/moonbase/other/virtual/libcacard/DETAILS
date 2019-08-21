@@ -1,0 +1,16 @@
+          MODULE=libcacard
+         VERSION=2.6.1
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://www.spice-space.org/download/libcacard/
+      SOURCE_VFY=sha256:6276c6a2bd018bf14f1b97260fff093b4a2325a9177be4fc6be7c1a9e204def0
+        WEB_SITE=http://www.spice-space.org/page/Libcacard/
+         ENTERED=20160214
+         UPDATED=20180905
+           SHORT="A library thar provides emulation of smart cards"
+
+cat <<EOF
+CAC (Common Access Card) library
+This library provides emulation of smart cards to a virtual card reader running
+in a guest virtual machine. It implements DoD CAC standard with separate pki
+containers (compatible coolkey), using certificates read from NSS.
+EOF

@@ -1,0 +1,14 @@
+          MODULE=amarok
+         VERSION=v2.9.0
+          SOURCE=$MODULE-${VERSION}.tar.xz
+ SOURCE_URL_FULL=git://git.kde.org/amarok.git
+#      SOURCE_VFY=sha256:5718e1a1c3b1d57c247883cd09bed281ffa35f780ec69b6b7c376956bad1b33d
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=http://amarok.kde.org
+         ENTERED=20080414
+         UPDATED=20181011
+           SHORT="KDE-based audio player"
+
+cat << EOF
+Amarok is a KDE-based audio player which supports GStreamer and xine.
+EOF

@@ -1,0 +1,5 @@
+depends automake
+depends libtool
+
+# circular depend with gettext via acl, sed, ncurses
+#depends gettext

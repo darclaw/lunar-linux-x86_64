@@ -1,0 +1,19 @@
+          MODULE=kmediaplayer
+         VERSION=5.57.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/frameworks/$(module_version kf5)/portingAids
+      SOURCE_VFY=sha256:521dcb4b3f9a67203e9eac27b8d777cb22557861b9fae0006c2aecda96d9bad4
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=https://projects.kde.org/projects/frameworks/kmediaplayer
+         ENTERED=20150205
+         UPDATED=20190415
+           SHORT="provides a common interface for KParts that can play media files"
+
+cat << EOF
+KMediaPlayer builds on the KParts framework to provide a common interface for
+KParts that can play media files.
+
+This framework is a porting aid. It is not recommended for new projects, and
+existing projects that use it are advised to port away from it, and use plain
+KParts instead.
+EOF

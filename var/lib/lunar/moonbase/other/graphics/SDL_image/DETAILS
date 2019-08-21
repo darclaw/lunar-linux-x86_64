@@ -1,0 +1,15 @@
+          MODULE=SDL_image
+         VERSION=1.2.12
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.libsdl.org/projects/$MODULE/release
+      SOURCE_VFY=sha256:0b90722984561004de84847744d566809dbb9daf732a9e503b91a1b5a84e5699
+        WEB_SITE=http://www.libsdl.org/projects/SDL_image
+         ENTERED=20010922
+         UPDATED=20120124
+           SHORT="A simple library to load images as SDL surfaces"
+
+cat << EOF
+SDL_image is a simple library to load images of various formats as SDL
+surfaces. It supports BMP, PPM, XPM, PCX, GIF, JPEG, PNG, and TGA
+formats.
+EOF

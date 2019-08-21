@@ -1,0 +1,3 @@
+depends farstream
+depends telepathy-glib
+depends dbus-glib

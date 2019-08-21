@@ -1,0 +1,26 @@
+          MODULE=parted
+         VERSION=3.2
+          SOURCE=$MODULE-$VERSION.tar.xz
+         SOURCE2=$MODULE-3.2-devmapper.patch.xz
+         SOURCE3=$MODULE-fat16_crash.patch.xz
+   SOURCE_URL[0]=$GNU_URL/$MODULE
+   SOURCE_URL[1]=ftp://ftp.gnu.org/gnu/$MODULE
+   SOURCE2_URL=$PATCH_URL
+   SOURCE3_URL=$PATCH_URL
+      SOURCE_VFY=sha256:858b589c22297cacdf437f3baff6f04b333087521ab274f7ab677cb8c6bb78e4
+      SOURCE2_VFY=sha256:3576111326d643d5ae1acb9cc296b11d8c6430215a52ebfc287a70dc229546d9
+      SOURCE3_VFY=sha256:77e1cc03be81dd70420744e7afc2ce64877b2fdcad361411655cb795869f53ea
+        WEB_SITE=http://www.gnu.org/software/parted
+         ENTERED=20010922
+         UPDATED=20180906
+           SHORT="create, destroy, resize, and copy partitions"
+
+cat << EOF
+GNU Parted allows you to create, destroy, resize, and copy partitions.
+Supported partition types include ext2 and FAT (FAT 16 and FAT32)
+file systems and Linux swap devices.  Supported disk labels include
+MD-DOS and PC98 partition tables.  Sun and BSD disk labels,
+Macintosh partition maps, and raw access.  Parted is useful for
+creating space and for new operating systems, reorganizing disk usage,
+copying data between hard disks, and disk imaging.
+EOF

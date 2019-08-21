@@ -1,0 +1,20 @@
+          MODULE=Net-Ident
+         VERSION=1.24
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://search.cpan.org/CPAN/authors/id/T/TO/TODDR/
+      SOURCE_VFY=sha256:5f5f1142185a67b87406a3fb31f221564f61838a70ef4c07284a66c55e82ad05
+        WEB_SITE=http://search.cpan.org/~jpc/Net-Ident
+            TYPE=perl
+         ENTERED=20100414
+         UPDATED=20150705
+           SHORT="lookup the username on the remote end of a TCP/IP connection"
+
+cat << EOF
+Net::Ident is a module that looks up the username on the
+remote side of a TCP/IP connection through the ident
+(auth/tap) protocol described in RFC1413 (which supersedes
+RFC931). Note that this requires the remote site to run a
+daemon (often called identd) to provide the requested
+information, so it is not always available for all TCP/IP
+connections.
+EOF

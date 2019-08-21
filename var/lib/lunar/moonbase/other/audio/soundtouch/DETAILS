@@ -1,0 +1,21 @@
+          MODULE=soundtouch
+         VERSION=2.1.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=git+https://gitlab.com/soundtouch/soundtouch
+#SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE
+#      SOURCE_VFY=sha256:
+        WEB_SITE=http://www.surina.net/soundtouch
+         ENTERED=20051018
+         UPDATED=20181126
+           SHORT="An audio processing library"
+
+cat << EOF
+SoundTouch is an open-source audio processing library for changing the Tempo,
+Pitch and Playback Rates of audio streams or files:
+    * Tempo (time-stretch): Changes the sound to play at faster or slower
+    speed than original, without affecting the sound pitch.
+    * Pitch (key) : Changes the sound pitch or key, without affecting the
+    sound tempo or speed.
+    * Playback Rate : Changes both the sound tempo and pitch, as if an LP
+    disc was played at wrong RPM rate.
+EOF

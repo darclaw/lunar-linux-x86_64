@@ -1,0 +1,96 @@
+#!/bin/bash
+
+############################################################
+#                                                          #
+# ltime - Lunar Timezone Management Utility                #
+#                                                          #
+############################################################
+#                                                          #
+# Parts of it are Copyright Auke Kok 2006 under GPLv2      #
+# Modified for Lunar Linux by Moritz Heiber                #
+#                                                          #
+############################################################
+
+show_timezones()
+{
+    for ITEM in `LANG=C ls --hide=[a-z]* $LOCALTIME/$1`; do
+        echo "$ITEM"
+        if [ -d $LOCALTIME/$1/$ITEM ]; then
+            echo "Directory"
+        else
+            echo "Timezone"
+        fi
+    done
+}
+
+
+timezone_menu()
+{
+    LOCALTIME=/usr/share/zoneinfo
+    TITLE="Time Zone Selection Menu"
+    HELP="Select timezone or directory"
+    ZONE=""
+
+    while
+      TIMEZONES=`show_timezones ${ZDIR:-$ZONE}`  &&
+      if [ -n "$ZDIR" ]; then
+        T="$TITLE - $ZDIR"
+      fi
+      ZONE=`$DIALOG  --title  "${T:-$TITLE}"  \
+                     --menu             \
+                     "$HELP"            \
+                     0 0 0              \
+                     $TIMEZONES`        &&
+      [[ -d $LOCALTIME/$ZDIR/$ZONE || -d $LOCALTIME/$ZONE ]] &&
+      ZDIR+="$ZONE/"
+      do
+        true
+    done
+
+    if [ -n "$ZDIR" ]; then
+      ZONE="$ZDIR$ZONE"
+    fi
+
+    if [ -f "$LOCALTIME/$ZONE" ]; then
+        ln -sf $LOCALTIME/$ZONE /etc/localtime
+
+        # Systemd encourage UTC use and this code write unsupported sysvinit files
+        # thus we disable it if systemd is detected
+        if ! module_installed systemd ; then
+          TITLE="GMT or Local"
+          HELP="Does the hardware clock store time in GMT or local?"
+
+          CLOCK=`$DIALOG --title "$TITLE"   \
+                         --menu "$HELP"     \
+                         0 0 0              \
+                         "GMT"    ""        \
+                         "Local"  ""`       &&
+          case $CLOCK in
+            GMT) HWCLOCK="--utc" ;;
+            Local) HWCLOCK="--localtime" ;;
+          esac
+          (
+            echo "#!/bin/sh"
+            echo "/sbin/hwclock --hctosys $HWCLOCK"
+          ) > /etc/init.d/localtime
+          chmod 0755 /etc/init.d/localtime
+          ln -sf /etc/init.d/localtime /etc/rcS.d/S15localtime
+          break
+        fi
+    fi
+}
+
+. /etc/lunar/config
+[ -n "$BOOTSTRAP" ] && . $BOOTSTRAP
+
+export IFS="$TAB_ENTER_IFS"
+
+DIALOG="dialog
+--backtitle
+Lunar Timezone Management Utility
+--stdout"
+
+root_check;
+enviro_check;
+timezone_menu;
+clear;

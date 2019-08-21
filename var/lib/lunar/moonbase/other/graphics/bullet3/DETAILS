@@ -1,0 +1,13 @@
+          MODULE=bullet3
+         VERSION=2.88
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/bulletphysics/bullet3/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:21c135775527754fc2929db1db5144e92ad0218ae72840a9f162acb467a7bbf9
+        WEB_SITE=https://github.com/bulletphysics/bullet3
+         ENTERED=20140302
+         UPDATED=20190103
+           SHORT="A 3D Collision Detection and Rigid Body Dynamics Library for games and animation"
+
+cat << EOF
+A 3D Collision Detection and Rigid Body Dynamics Library for games and animation.
+EOF

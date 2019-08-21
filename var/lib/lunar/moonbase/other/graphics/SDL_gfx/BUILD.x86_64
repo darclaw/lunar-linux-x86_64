@@ -1,0 +1,5 @@
+unset CFLAGS &&
+
+OPTS+=" --disable-mmx --disable-static" &&
+
+default_build

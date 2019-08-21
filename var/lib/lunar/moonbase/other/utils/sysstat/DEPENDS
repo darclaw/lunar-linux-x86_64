@@ -1,0 +1,6 @@
+depends gettext
+
+optional_depends lm_sensors \
+                 "--enable-sensors" \
+                 "--disable-sensors" \
+                 "for sensors support"

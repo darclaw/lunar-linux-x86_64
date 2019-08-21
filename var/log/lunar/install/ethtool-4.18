@@ -1,0 +1,16 @@
+/usr
+/usr/sbin
+/usr/sbin/ethtool
+/usr/share
+/usr/share/doc
+/usr/share/doc/ethtool
+/usr/share/doc/ethtool/ChangeLog
+/usr/share/doc/ethtool/INSTALL
+/usr/share/doc/ethtool/NEWS
+/usr/share/doc/ethtool/README
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/ethtool.8.gz
+/var/log/lunar/install/ethtool-4.18
+/var/log/lunar/compile/ethtool-4.18.xz
+/var/log/lunar/md5sum/ethtool-4.18

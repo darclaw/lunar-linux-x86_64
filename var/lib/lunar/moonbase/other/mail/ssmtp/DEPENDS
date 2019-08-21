@@ -1,0 +1,3 @@
+depends inetutils
+
+optional_depends %OSSL "--enable-ssl" "--disable-ssl" "for SSL encrypting"

@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+host=x86_64-pc-linux-gnu
+mtcflags=
+mtlibs=-lpthread
+
+Name: gpg-error
+Description: GPG Runtime
+Version: 1.36
+Cflags: 
+Libs: -lgpg-error
+URL: https://www.gnupg.org/software/libgpg-error/index.html

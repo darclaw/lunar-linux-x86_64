@@ -1,0 +1,16 @@
+          MODULE=lm_sensors
+         VERSION=3.5.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/lm-sensors-${VERSION//\./-}
+ SOURCE_URL_FULL=https://github.com/groeck/lm-sensors/archive/V${VERSION//\./-}.tar.gz
+      SOURCE_VFY=sha256:f671c1d63a4cd8581b3a4a775fd7864a740b15ad046fe92038bcff5c5134d7e0
+        WEB_SITE=http://www.lm-sensors.org
+         ENTERED=20011021
+         UPDATED=20181130
+           SHORT="Hardware health monitoring tools"
+
+cat << EOF
+lm_sensors provides essential tools for monitoring the hardware health
+of Linux systems containing hardware health monitoring hardware such as
+the LM78 and LM75.
+EOF

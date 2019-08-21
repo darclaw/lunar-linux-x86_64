@@ -1,0 +1,14 @@
+          MODULE=c-ares
+         VERSION=1.15.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://c-ares.haxx.se/download/
+      SOURCE_VFY=sha256:6cdb97871f2930530c97deb7cf5c8fa4be5a0b02c7cea6e7c7667672a39d6852
+        WEB_SITE=http://c-ares.haxx.se/
+         ENTERED=20071025
+         UPDATED=20181024
+           SHORT="Asynchronous DNS request and name resolv library"
+
+cat << EOF
+c-ares is a C library that performs DNS request and name resolves
+asynchronously.
+OF

@@ -1,0 +1,21 @@
+          MODULE=zeromq
+         VERSION=4.2.5
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://github.com/zeromq/libzmq/releases/download/v${VERSION}/
+      SOURCE_VFY=sha256:cc9090ba35713d59bb2f7d7965f877036c49c5558ea0c290b0dcc6f2a17e489f
+        WEB_SITE=http://www.zeromq.org/
+            TYPE=cmake
+         ENTERED=20130529
+         UPDATED=20180904
+           SHORT="Intelligent transport layer socket library"
+
+cat << EOF
+ZeroMQ:
+  Connect your code in any language, on any platform.
+  Carries messages across inproc, IPC, TCP, TIPC, multicast.
+  Smart patterns like pub-sub, push-pull, and router-dealer.
+  High-speed asynchronous I/O engines, in a tiny library.
+  Backed by a large and active open source community.
+  Supports every modern language and platform.
+  Build any architecture: centralized, distributed, small, or large.
+EOF

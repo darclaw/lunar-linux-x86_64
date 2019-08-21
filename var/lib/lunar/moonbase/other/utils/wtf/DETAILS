@@ -1,0 +1,13 @@
+          MODULE=wtf
+         VERSION=20071004
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.mu.org/~mux/$MODULE/
+      SOURCE_VFY=sha256:bd287c7f3a563392345fdd372283c9c7cd1582e9998a9756830e8d24440b9a37
+        WEB_SITE=http://www.mu.org/~mux/$MODULE/
+         ENTERED=20040713
+         UPDATED=20160414
+           SHORT="Translates acronyms for you"
+
+cat << EOF
+This application's sole purpose is to be an acronym translator.
+EOF

@@ -1,0 +1,16 @@
+          MODULE=duc
+         VERSION=1.4.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://github.com/zevv/duc/releases/download/$VERSION/
+      SOURCE_VFY=sha256:f4e7483dbeca4e26b003548f9f850b84ce8859bba90da89c55a7a147636ba922
+        WEB_SITE=http://duc.zevv.nl/
+         ENTERED=20160723
+         UPDATED=20181009
+           SHORT="Duc, a library and suite of tools for inspecting disk usage"
+
+cat << EOF
+Duc is a collection of tools for indexing, inspecting and visualizing
+disk usage. Duc maintains a database of accumulated sizes of directories
+of the file system, and allows you to query this database with some
+tools, or create fancy graphs showing you where your bytes are.
+EOF

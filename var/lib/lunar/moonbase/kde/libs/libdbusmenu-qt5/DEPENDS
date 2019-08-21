@@ -1,0 +1,3 @@
+depends qt5
+
+optional_depends "doxygen" "" "-DWITH_DOC=0" "to build documentation"

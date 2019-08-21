@@ -1,0 +1,4 @@
+depends hicolor-icon-theme
+depends knotifications
+depends kxmlgui
+

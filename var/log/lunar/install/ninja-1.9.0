@@ -1,0 +1,16 @@
+/usr
+/usr/bin/ninja
+/usr/share
+/usr/share/doc
+/usr/share/doc/ninja
+/usr/share/doc/ninja/doc
+/usr/share/doc/ninja/doc/dblatex.xsl
+/usr/share/doc/ninja/doc/docbook.xsl
+/usr/share/doc/ninja/doc/doxygen.config
+/usr/share/doc/ninja/doc/manual.asciidoc
+/usr/share/doc/ninja/doc/README.md
+/usr/share/doc/ninja/doc/style.css
+/usr/share/doc/ninja/README
+/var/log/lunar/install/ninja-1.9.0
+/var/log/lunar/compile/ninja-1.9.0.xz
+/var/log/lunar/md5sum/ninja-1.9.0

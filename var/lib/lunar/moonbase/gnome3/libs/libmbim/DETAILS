@@ -1,0 +1,14 @@
+          MODULE=libmbim
+         VERSION=1.18.2
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://www.freedesktop.org/software/$MODULE/
+      SOURCE_VFY=sha256:7723f2ca2286c5286ffba7331cb4520099982e55355a7af6f45bdce6b5d39268
+        WEB_SITE=https://www.freedesktop.org/wiki/Software/libmbim/
+         ENTERED=20140413
+         UPDATED=20190412
+           SHORT="MBIM modem protocol helper library"
+
+cat << EOF
+libmbim is a glib-based library for talking to WWAN modems and devices which speak
+the Mobile Interface Broadband Model (MBIM) protocol.
+EOF

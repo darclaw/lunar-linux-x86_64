@@ -1,0 +1,4 @@
+depends db
+
+optional_depends xmlto "" "" "for xml/xsl support"
+optional_depends gsl   "" "" "for additional math based matching support"

@@ -1,0 +1,40 @@
+          MODULE=liblqr
+         VERSION=0.4.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/carlobaldassi/liblqr/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:1019a2d91f3935f1f817eb204a51ec977a060d39704c6dafa183b110fd6280b0
+        WEB_SITE=http://liblqr.wikidot.com/en:start
+         ENTERED=20091223
+         UPDATED=20181020
+           SHORT="Liquid Rescale Library"
+
+cat << EOF
+The library takes images in plain array format as input and converts them to a
+multi-size representation.
+
+Following is a list of features:
+
+    * Easy to use and fully documented API
+    * Supports color depths from 8 bits per channel to 64 bits per channel
+    * Support for different color models: grayscale, RGB, CMY and their variants
+       and even custom ones
+    * Areas in the image can be marked for preservation or discard, or for
+      additional seam rigidity
+    * Once the image has been fully processed, the scaling can be done in
+      real-time. In fact, the information can be saved and read out later
+      without any further processing
+    * The resizing is done with a single function which automatically performs
+      all the necessary operations; it can also work in successive steps
+      without wasting computational time
+    * Possibility to tune the carving operation by letting the seams be less
+      connected, or more rigid, or both (the rigidity can be modulated on a
+      local basis)
+    * Can export and import the visibility map (the seams)
+    * Other images can be attached and undergo the same carving process as the
+      parent image
+    * The automatic feature detection algorithm can be tuned by selecting among
+      different energy functions, and easily defining cusom ones
+    * Reports progress through a customizable interface
+    * A signalling system permits to handle errors cleanly
+    * Portable to all major OS's
+EOF

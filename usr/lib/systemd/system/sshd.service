@@ -1,0 +1,14 @@
+[Unit]
+Description=OpenSSH Daemon - daemon version
+Wants=sshd-keys.service
+After=sshd-keys.service network.target
+
+[Service]
+ExecStart=/usr/sbin/sshd -D
+ExecReload=/usr/bin/kill -HUP $MAINPID
+KillMode=process
+Restart=always
+StandardOutput=syslog
+
+[Install]
+WantedBy=multi-user.target

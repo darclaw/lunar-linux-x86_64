@@ -1,0 +1,15 @@
+               MODULE=Candido-Engine-Xfwm4
+              VERSION=0.10
+               SOURCE=$MODULE.tar.bz2
+     SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE/
+           SOURCE_URL=$SFORGE_URL/candido.berlios/
+           SOURCE_VFY=sha256:e878f5ae7412852a4c9827c64d5bd321bdb4d2100d4c7885b20722facf04947b
+             WEB_SITE=http://candido.berlios.de/
+              ENTERED=20060712
+              UPDATED=20060712
+                SHORT="Candido themes for Xfwm4"
+           MAINTAINER=jannis@lunar-linux.org
+
+cat << EOF
+Candido themes for Xfwm4 (window manager of Xfce).
+EOF

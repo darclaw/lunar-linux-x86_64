@@ -1,0 +1,14 @@
+          MODULE=kamera
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:b6b5891e886f543140d1ea6775ec1f1f4575e698d34af04fd65acbafa7e42392
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=http://www.kde.org
+         ENTERED=20110813
+         UPDATED=20190418
+           SHORT="kamera"
+
+cat << EOF
+kamera
+EOF

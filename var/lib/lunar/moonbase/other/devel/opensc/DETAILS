@@ -1,0 +1,16 @@
+          MODULE=opensc
+         VERSION=0.19.0
+          SOURCE=${MODULE}-${VERSION}.tar.gz
+      SOURCE_URL_FULL=https://github.com/OpenSC/OpenSC/archive/$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/OpenSC-$VERSION
+      SOURCE_VFY=sha256:c0b803ba36aac9b5fef7f249adb9dffaf3f298db85304531b6a0574519743cf2
+        WEB_SITE="https://github.com/OpenSC/OpenSC/wiki"
+         ENTERED=20131012
+         UPDATED=20181130
+           SHORT="Libraries and applications to access smartcards"
+cat << EOF
+OpenSC provides a set of libraries and utilities to work with
+smart cards. Its main focus is on cards that support cryptographic
+operations, and facilitate their use in security applications such
+as authentication, mail encryption and digital signatures.
+EOF

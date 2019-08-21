@@ -1,0 +1,15 @@
+# if you bump this module bump the libfm-extra module too please. thank you.
+
+          MODULE=libfm
+         VERSION=1.3.1
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$SFORGE_URL/pcmanfm
+      SOURCE_VFY=sha256:96b1244bde41ca0eef0332cfb5c67bb16725dfd102128f3e6f74fadc13a1cfe4
+        WEB_SITE=http://pcmanfm.sourceforge.net
+         ENTERED=20101020
+         UPDATED=20181222
+           SHORT="The core library of pcmanfm"
+
+cat << EOF
+The core library of pcmanfm.
+EOF

@@ -1,0 +1,13 @@
+          MODULE=sratom
+         VERSION=0.6.2
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://download.drobilla.net/
+      SOURCE_VFY=sha256:0a514a55d6b6cb7b5d6f32d1dcb78a1e6e54537fa22fce533e4ef6adf240e853
+        WEB_SITE=http://drobilla.net/software/sratom/
+         ENTERED=20180113
+         UPDATED=20180919
+           SHORT="lv2 Atom RDF serailization"
+
+cat << EOF
+A lv2 Atom RDF serialization library.
+EOF

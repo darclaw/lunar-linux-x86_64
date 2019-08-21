@@ -1,0 +1,18 @@
+          MODULE=xclip
+         VERSION=0.13
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/astrand/xclip/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:ca5b8804e3c910a66423a882d79bf3c9450b875ac8528791fb60ec9de667f758
+        WEB_SITE=http://sourceforge.net/projects/xclip/
+         ENTERED=20160430
+         UPDATED=20160914
+           SHORT="Command line interface to the X11 clipboard"
+
+cat << EOF
+xclip is a command line utility that is designed to run on any system with an
+X11 implementation. It provides an interface to X selections ("the clipboard")
+from the command line. It can read data from standard in or a file and place it
+in an X selection for pasting into other X applications. xclip can also print
+an X selection to standard out, which can then be redirected to a file or
+another program.
+EOF

@@ -1,0 +1,18 @@
+# DON'T BUMP! 6.x is licensed with AGPL which is officially incompatible with GPL
+# and e.g. openldap fails to build because of that
+          MODULE=db
+         VERSION=5.3.28
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://download.oracle.com/berkeley-db
+      SOURCE_VFY=sha1:fa3f8a41ad5101f43d08bc0efb6241c9b6fc1ae9
+        WEB_SITE=http://www.oracle.com/database/berkeley-db/index.html
+         ENTERED=20020318
+         UPDATED=20140201
+           SHORT="A high-performace, embedded database library"
+
+cat << EOF
+Berkeley DB is a programmatic toolkit that provides fast, reliable,
+scalable, and mission-critical database support in software ranging from
+applications running on hand-held appliances to enterprise-scale
+servers.
+EOF

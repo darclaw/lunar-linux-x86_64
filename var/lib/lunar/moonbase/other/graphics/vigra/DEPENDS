@@ -1,0 +1,23 @@
+depends zlib
+depends libpng
+depends %JPEG
+depends boost
+depends python-nose
+depends fftw3
+depends tiff
+depends cmake
+
+optional_depends Sphinx \
+                 "-DPYTHON_SPHINX=ON" \
+                 "-DPYTHON_SPHINX=OFF" \
+                 "for document generation support"
+
+optional_depends openexr \
+                 "-DWITH_OPENEXR=ON" \
+                 "-DWITH_OPENEXR=OFF" \
+                 "for high dynamic-range support, ${PROBLEM_COLOR}Must say yes if using hugin${DEFAULT_COLOR}"
+
+optional_depends hdf5 \
+                 "-DWITH_HDF5=ON" \
+                 "-DWITH_HDF5=OFF" \
+                 "For data model, library, and file format support"

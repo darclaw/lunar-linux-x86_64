@@ -1,0 +1,17 @@
+          MODULE=acpid
+         VERSION=2.0.31
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$SFORGE_URL/${MODULE}2
+      SOURCE_VFY=sha256:fc9dc669ed85d9a1739aa76915e0667c6697c5431160f8dfb253046c6a072cc3
+        WEB_SITE=http://sourceforge.net/projects/acpid2/
+         ENTERED=20031102
+         UPDATED=20181116
+           SHORT="An ACPI event monitor daemon"
+
+cat << EOF
+This is Ted Felix's <http://www.tedfelix.com> branch of the acpid project
+which includes support for netlink and the input layer.
+/proc/acpi/event is a deprecated kernel interface for ACPI events. Newer
+kernels rely on netlink and the input layer to send ACPI-related events.
+This branch of acpid uses these new interfaces.
+EOF

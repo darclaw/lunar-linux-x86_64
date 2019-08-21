@@ -1,0 +1,20 @@
+           MODULE=procmail
+         VERSION=3.22
+          SOURCE=$MODULE-${VERSION}.tar.gz
+      SOURCE_URL=http://www.procmail.org/
+      SOURCE_VFY=sha256:087c75b34dd33d8b9df5afe9e42801c9395f4bf373a784d9bc97153b0062e117
+        WEB_SITE=http://www.procmail.org/
+      MAINTAINER=nhudson@speakeasy.net
+         ENTERED=20011101
+         UPDATED=20190224
+           SHORT="A mail sorter"
+
+cat << EOF
+The procmail and formail mail processing package can be used to
+create mail-servers, mailing lists, sort your incoming mail into
+separate folders/files (real convenient when subscribing to one or
+more mailing lists or for prioritising your mail), preprocess your
+mail, start any programs upon mail arrival (e.g. to generate
+different chimes on your workstation for different types of mail) or
+selectively forward certain incoming mail automatically to someone.
+EOF

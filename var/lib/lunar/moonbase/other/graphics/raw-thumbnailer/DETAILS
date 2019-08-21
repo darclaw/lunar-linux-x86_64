@@ -1,0 +1,13 @@
+          MODULE=raw-thumbnailer
+         VERSION=0.2.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/erlendd/raw-thumbnailer/archive/0.2.1.tar.gz
+      SOURCE_VFY=sha256:7ed435ba10ca9677f42d161b7468eb2236882a0ca75a2335cf40b06b8f946458
+        WEB_SITE=https://github.com/erlendd/raw-thumbnailer
+         ENTERED=20080723
+         UPDATED=20110505
+           SHORT="Generates thumbnails of raw image files"
+
+cat << EOF
+A simple program that generates thumbnails of digital camera raw image files.
+EOF

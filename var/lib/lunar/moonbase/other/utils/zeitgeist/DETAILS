@@ -1,0 +1,22 @@
+          MODULE=zeitgeist
+         VERSION=1.0.1
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://launchpad.net/zeitgeist/${VERSION%.*}/${VERSION}/+download/
+      SOURCE_VFY=sha256:7de6a8e7b8aed33490437e522a9bf2e531681118c8cd91c052d554bbe64435bd
+        WEB_SITE=http://zeitgeist-project.com/
+         ENTERED=20110411
+         UPDATED=20180301
+           SHORT="A service which logs the users activities and events"
+
+cat << EOF
+Zeitgeist is a service which logs the users activities and events, anywhere
+from files opened to websites visited and conversations had.
+It makes this information readily available for other applications to use. It
+is able to establish relationships between items based on similarity and usage
+patterns.
+The service consists:
+    Engine
+    Extensions
+    API
+    Dataproviders
+EOF

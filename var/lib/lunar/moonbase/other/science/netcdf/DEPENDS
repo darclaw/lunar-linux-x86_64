@@ -1,0 +1,2 @@
+optional_depends hdf5 "--enable-netcdf-4" "--disable-netcdf-4" "build netcdf-4 module"
+optional_depends zlib "" "" "for file compression support(required for netcdf-4)"

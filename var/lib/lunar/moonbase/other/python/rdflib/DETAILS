@@ -1,0 +1,20 @@
+          MODULE=rdflib
+         VERSION=4.2.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_URL_FULL=https://github.com/RDFLib/rdflib/archive/${VERSION}.tar.gz
+      SOURCE_VFY=sha256:a362926f77624a8abfb93042c28607f49445d003792d5271cd07f0610ab16033
+        WEB_SITE=https://rdflib.readthedocs.org/en/stable/
+            TYPE=python2
+         ENTERED=20110411
+         UPDATED=20180803
+           SHORT="Python library for working with RDF"
+
+cat << EOF
+RDFLib is a Python library for working with RDF, a simple yet powerful language
+for representing information.
+
+The library contains parsers and serializers for RDF/XML, N3, NTriples, Turtle, 
+TriX and RDFa. The library presents a Graph interface which can be backed by any
+one of a number of store implementations, including, memory, MySQL, Redland, 
+SQLite, Sleepycat, ZODB and SQLObject.
+EOF

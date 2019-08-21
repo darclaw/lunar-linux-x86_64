@@ -1,0 +1,23 @@
+          MODULE=pugixml
+         VERSION=1.9
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/zeux/pugixml/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:7ac060048bf00da4b3902cf411f0ba9f048cdc5580eed1f5a27ff51be4a38243
+        WEB_SITE=http://pugixml.org/
+         ENTERED=20160731
+         UPDATED=20180419
+           SHORT="C++ XML processing library"
+
+cat << EOF
+pugixml is a light-weight C++ XML processing library. It features:
+
+DOM-like interface with rich traversal/modification capabilities
+
+Extremely fast non-validating XML parser which constructs the DOM
+tree from an XML file/buffer
+
+XPath 1.0 implementation for complex data-driven tree queries
+
+Full Unicode support with Unicode interface variants and automatic
+encoding conversions
+EOF

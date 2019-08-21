@@ -1,0 +1,4 @@
+mquery GRAPHICS "enable graphics mode? (you have to use libpng later)" \
+                n \
+                "--enable-graphics" \
+                "--disable-graphics"

@@ -1,0 +1,14 @@
+          MODULE=pidgin-otr
+         VERSION=4.0.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://otr.cypherpunks.ca/
+      SOURCE_VFY=sha256:f4b59eef4a94b1d29dbe0c106dd00cdc630e47f18619fc754e5afbf5724ebac4
+        WEB_SITE=http://otr.cypherpunks.ca
+         ENTERED=20140507
+         UPDATED=20160310
+           SHORT="Off-the-Record Messaging for Pidgin"
+
+cat << EOF
+This is a plugin for Pidgin 2.x which implements Off-the-Record Messaging over
+any IM network Pidgin supports.
+EOF

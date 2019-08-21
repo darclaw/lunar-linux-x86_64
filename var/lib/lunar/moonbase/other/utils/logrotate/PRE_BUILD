@@ -1,0 +1,6 @@
+default_pre_build &&
+
+# Use /usr/bin instead of /bin
+sedit 's:"/bin:"/usr/bin:g' config.h.in &&
+
+./autogen.sh

@@ -1,0 +1,15 @@
+          MODULE=vobcopy
+         VERSION=1.2.0-7
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/barak/vobcopy/archive/debian/$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-debian-$VERSION
+      SOURCE_VFY=sha256:d6cbd27105259427e8c9b9ffdc58a37f14dedd0c404e971d7b0f083baefece99
+        WEB_SITE=https://github.com/barak/vobcopy
+         ENTERED=20060506
+         UPDATED=20181121
+        SHORT="A tool for making a backup copy of DVDs"
+
+cat << EOF
+Vobcopy is a tool for making unencrypted copies of DVDs on your
+harddrive.
+EOF

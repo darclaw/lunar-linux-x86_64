@@ -1,0 +1,6 @@
+I:7914280
+E:ID_PCI_CLASS_FROM_DATABASE=Display controller
+E:ID_PCI_SUBCLASS_FROM_DATABASE=VGA compatible controller
+E:ID_PCI_INTERFACE_FROM_DATABASE=VGA controller
+E:ID_VENDOR_FROM_DATABASE=Red Hat, Inc.
+E:ID_MODEL_FROM_DATABASE=QXL paravirtual graphic card (QEMU Virtual Machine)

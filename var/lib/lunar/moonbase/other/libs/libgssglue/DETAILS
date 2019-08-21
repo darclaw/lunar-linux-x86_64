@@ -1,0 +1,15 @@
+          MODULE=libgssglue
+         VERSION=0.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.citi.umich.edu/projects/nfsv4/linux/$MODULE/
+      SOURCE_VFY=sha256:3f791a75502ba723e5e85e41e5e0c711bb89e2716b7c0ec6e74bd1df6739043a
+        WEB_SITE=http://www.citi.umich.edu/projects/nfsv4/linux/
+         ENTERED=20140510
+         UPDATED=20160829
+           SHORT="Exports a gssapi interface"
+
+cat << EOF
+This library exports a gssapi interface, but doesn't implement any gssapi
+mechanisms itself; instead it calls gssapi routines in other libraries,
+depending on the mechanism.
+EOF

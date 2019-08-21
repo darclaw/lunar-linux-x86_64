@@ -1,0 +1,14 @@
+          MODULE=librpcsecgss
+         VERSION=0.19
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.citi.umich.edu/projects/nfsv4/linux/$MODULE/
+      SOURCE_VFY=sha256:0cafb86b67e5eb4c89e8abaaad9165298946bc164d258e8925fc6dc1fa913abd
+        WEB_SITE=http://www.citi.umich.edu/projects/nfsv4/linux/
+         ENTERED=20140510
+         UPDATED=20160829
+           SHORT="Library for RPCSECGSS support"
+
+cat << EOF
+This library implements rpcsec_gss (RFC 2203) which allows secure rpc
+communication using gss-api security mechanisms.
+EOF

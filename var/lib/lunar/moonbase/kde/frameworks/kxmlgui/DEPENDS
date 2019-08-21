@@ -1,0 +1,13 @@
+depends python2
+depends extra-cmake-modules
+depends attica
+depends kconfig
+depends kcoreaddons
+depends kitemviews
+depends kwidgetsaddons
+depends ki18n
+depends kwindowsystem
+depends kglobalaccel
+depends kconfigwidgets
+depends kiconthemes
+depends ktextwidgets

@@ -1,0 +1,15 @@
+          MODULE=clasp
+         VERSION=3.2.0
+          SOURCE=$MODULE-$VERSION-source.tar.gz
+      SOURCE_URL=$SFORGE_URL/potassco/$MODULE/$VERSION
+      SOURCE_VFY=sha256:eafb050408b586d561cd828aec331b4d3b92ea7a26d249a02c4f39b1675f4e68
+        WEB_SITE=http://potassco.sf.net
+         ENTERED=20120512
+         UPDATED=20160913
+           SHORT="Answer set solver for (extended) normal logic programs"
+
+cat << EOF
+clasp is an answer set solver for (extended) normal logic programs. It
+combines the high-level modeling capacities of answer set programming (ASP)
+with state-of-the-art techniques from the area of Boolean constraint solving.
+EOF

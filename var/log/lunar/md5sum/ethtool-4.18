@@ -1,0 +1,9 @@
+66b14451f62b85c2091f530741a72ebd  /usr/sbin/ethtool
+fbef47c9e24f38291d69a5f7414087df  /usr/share/doc/ethtool/ChangeLog
+d0697e131465c2bdd0af3b07a84d2878  /usr/share/doc/ethtool/INSTALL
+3576a840966bb9f09c5832b735febe40  /usr/share/doc/ethtool/NEWS
+3c8a36b0eb263e2ee9e8e6d334cb09bc  /usr/share/doc/ethtool/README
+285dc2df78559c7f358caaa40c01dd0c  /usr/share/man/man8/ethtool.8.gz
+c056a4e589c78404342aa8c54627cf3a  /var/log/lunar/install/ethtool-4.18
+42931c2039c7bef8c76f559090ef4513  /var/log/lunar/compile/ethtool-4.18.xz
+b28a6754731e3b008ce28a0ad90f727f  /var/log/lunar/md5sum/ethtool-4.18

@@ -1,0 +1,7 @@
+depends boost
+depends ncurses
+depends libmpdclient
+depends meson
+
+optional_depends lirc "-Dlirc=enabled" "-Dlirc=disabled" "for remote control support"
+optional_depends Sphinx "-Ddocumentation=enabled" "-Ddocumentation=disabled" "build documentation"

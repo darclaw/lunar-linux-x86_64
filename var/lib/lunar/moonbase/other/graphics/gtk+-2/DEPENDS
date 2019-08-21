@@ -1,0 +1,28 @@
+depends gdk-pixbuf
+depends atk
+depends pango
+depends cairo
+depends shared-mime-info
+depends desktop-file-utils
+
+# needed by X gdk target
+depends libXcomposite
+depends libXcursor
+depends libXrandr
+depends libXi
+depends libXdamage
+
+optional_depends libXinerama \
+                 "--enable-xinerama" \
+                 "--disable-xinerama" \
+                 "for xinerama support" y
+
+optional_depends cups \
+                 "--enable-cups" \
+                 "--disable-cups" \
+                 "for Common Unix Printing System backed"
+
+optional_depends gobject-introspection \
+                 "--enable-introspection" \
+                 "--disable-introspection" \
+                 "for gobject introspection" y

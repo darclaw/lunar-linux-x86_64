@@ -1,0 +1,17 @@
+          MODULE=spice-gtk
+         VERSION=0.36
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://spice-space.org/download/gtk/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
+      SOURCE_VFY=sha256:7126c3584df12d40dcf4970f5f46fafd65b757620f911687e549f7da5c8fd7cd
+        WEB_SITE=http://spice-space.org/
+         ENTERED=20130203
+         UPDATED=20190310
+           SHORT="a GTK+2 and GTK+3 SPICE widget"
+PSAFE=no
+
+cat <<EOF
+spice-gtk is a GTK+2 and GTK+3 SPICE widget. It features glib-based
+objects for SPICE protocol parsing and a gtk widget for embedding
+the SPICE display into other applications such as virt-manager.
+EOF

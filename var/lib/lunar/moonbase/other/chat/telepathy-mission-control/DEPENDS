@@ -1,0 +1,14 @@
+depends dconf
+depends libxslt
+depends telepathy-glib
+
+optional_depends NetworkManager \
+                 "--with-connectivity=nm" \
+                 "--with-connectivity=no" \
+                 "for network connectivity support"
+
+optional_depends gtk-doc \
+                 "--enable-gtk-doc" \
+                 "--disable-gtk-doc" \
+                 "for documentation generation"
+

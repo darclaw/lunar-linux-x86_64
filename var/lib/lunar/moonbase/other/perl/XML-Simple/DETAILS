@@ -1,0 +1,15 @@
+          MODULE=XML-Simple
+         VERSION=2.25
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://search.cpan.org/CPAN/authors/id/G/GR/GRANTM/
+      SOURCE_VFY=sha256:531fddaebea2416743eb5c4fdfab028f502123d9a220405a4100e68fc480dbf8
+        WEB_SITE=https://search.cpan.org/dist/XML-Simple/
+            TYPE=perl
+         ENTERED=20060421
+         UPDATED=20181018
+           SHORT="XML::Simple perl module"
+
+cat << EOF
+XML::Simple perl module
+Easy API to maintain XML (esp config files)
+EOF

@@ -1,0 +1,22 @@
+depends dconf
+depends gtk+-3
+depends gnome-icon-theme
+depends libexif
+depends lcms2
+depends desktop-file-utils
+depends gsettings-desktop-schemas
+depends exempi
+depends librsvg
+depends intltool
+depends libpeas
+depends meson
+
+optional_depends gtk-doc \
+                 "-Denable-gtk-doc=true" \
+                 "-Denable-gtk-doc=false" \
+                 "for GTK documentation"
+
+optional_depends gobject-introspection \
+                 "-Denable-introspection=true" \
+                 "-Denable-introspection=false" \
+                 "for object introspection"

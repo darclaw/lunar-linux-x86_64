@@ -1,0 +1,16 @@
+          MODULE=luatex
+         VERSION=0.79.1
+          SOURCE=$MODULE-beta-$VERSION-source.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-beta-$VERSION
+      SOURCE_URL=ftp://tug.org/historic/systems/luatex-beta/
+      SOURCE_VFY=sha1:eab997f9dc4d3577238c4591a7c2fe030bfee2c2
+        WEB_SITE=http://www.luatex.org/
+         ENTERED=20101002
+         UPDATED=20140923
+           SHORT="An extended version of pdfTeX using Lua"
+
+cat << EOF
+The LuaTeX project's main objective is to provide an open and
+configurable variant of TeX, while at the same time offering downward
+compatibility.
+EOF

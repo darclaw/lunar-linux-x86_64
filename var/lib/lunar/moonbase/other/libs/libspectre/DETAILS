@@ -1,0 +1,14 @@
+            MODULE=libspectre
+           VERSION=0.2.8
+            SOURCE=$MODULE-$VERSION.tar.gz
+        SOURCE_URL=https://libspectre.freedesktop.org/releases
+        SOURCE_VFY=sha256:65256af389823bbc4ee4d25bfd1cc19023ffc29ae9f9677f2d200fa6e98bc7a8
+          WEB_SITE=https://www.freedesktop.org/wiki/Software/libspectre/
+           ENTERED=20080701
+           UPDATED=20180812
+             SHORT="A small library for rendering Postscript documents"
+
+cat << EOF
+libspectre is a small library for rendering Postscript documents. It provides a
+convenient easy to use API for handling and rendering Postscript documents.
+EOF

@@ -1,0 +1,14 @@
+          MODULE=OpenCSG
+         VERSION=1.4.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.opencsg.org
+      SOURCE_VFY=sha256:d952ec5d3a2e46a30019c210963fcddff66813efc9c29603b72f9553adff4afb
+        WEB_SITE=http://www.opencsg.org
+         ENTERED=20160414
+         UPDATED=20180121
+           SHORT="image-based CSG rendering using OpenGL"
+PSAFE=no
+cat << EOF
+OpenCSG is a library that does image-based CSG
+(Constructive Solid Geometry) rendering using OpenGL.
+EOF

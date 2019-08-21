@@ -1,0 +1,19 @@
+          MODULE=phpMyAdmin
+         VERSION=4.8.5
+         RELEASE=$VERSION-all-languages
+          SOURCE=$MODULE-$RELEASE.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$RELEASE
+      SOURCE_URL=http://files.phpmyadmin.net/phpMyAdmin/$VERSION/
+      SOURCE_VFY=sha256:d7ab5df4e464d7ba17bf2a42da7d7f26dad45c34bf321ac8ae7d2ed748413913
+        WEB_SITE=http://www.phpmyadmin.net/home_page
+         ENTERED=20040912
+         UPDATED=20190126
+           SHORT="A php web interface to administrate MySQL tables"
+
+cat << EOF
+phpMyAdmin is a tool written in PHP intended to handle the administration of
+MySQL over the Web. Currently it can create and drop databases, create/drop/
+alter tables, delete/edit/add fields, execute any SQL statement, manage keys
+on fields, manage privileges,export data into various formats and is available
+in 47 languages.
+EOF

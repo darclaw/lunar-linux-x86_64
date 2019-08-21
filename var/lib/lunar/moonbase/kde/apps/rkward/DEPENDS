@@ -1,0 +1,4 @@
+depends R
+depends qt5
+depends knotifications
+depends ki18n

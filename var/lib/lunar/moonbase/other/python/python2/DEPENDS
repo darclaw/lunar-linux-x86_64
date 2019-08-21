@@ -1,0 +1,6 @@
+depends %OSSL
+depends expat
+depends libffi
+depends bzip2
+depends zlib
+depends pkgconf

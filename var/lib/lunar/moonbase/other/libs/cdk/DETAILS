@@ -1,0 +1,15 @@
+          MODULE=cdk
+         VERSION=5.0-20180306
+          SOURCE=$MODULE-$VERSION.tgz
+      SOURCE_URL=ftp://ftp.invisible-island.net/cdk/
+      SOURCE_VFY=sha256:cca9e345c6728c235eb3188af9266327c09c01da124a30b0cbd692ac08c6ebd0
+        WEB_SITE=http://dickey.his.com/cdk/
+         ENTERED=20060423
+         UPDATED=20180919
+           SHORT="A lib that contains ready to use widgets for curses programs"
+
+cat << EOF
+Cdk stands for 'Curses Development Kit' and it currently contains 21 ready
+to use widgets which facilitate the speedy development of full screen
+curses programs.
+EOF

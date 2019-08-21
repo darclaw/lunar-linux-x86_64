@@ -1,0 +1,11 @@
+depends hicolor-icon-theme
+depends telepathy-logger-qt
+depends telepathy-accounts-signon
+depends extra-cmake-modules
+depends telepathy-qt
+depends kaccounts-integration
+depends knotifyconfig
+depends kpeople
+depends ktexteditor
+depends libotr
+depends kdoctools

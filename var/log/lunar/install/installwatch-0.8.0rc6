@@ -1,0 +1,14 @@
+/
+/usr
+/usr/bin
+/usr/bin/installwatch
+/usr/lib
+/usr/lib/installwatch.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/installwatch
+/usr/share/doc/installwatch/INSTALL
+/usr/share/doc/installwatch/README
+/var/log/lunar/install/installwatch-0.8.0rc6
+/var/log/lunar/compile/installwatch-0.8.0rc6.xz
+/var/log/lunar/md5sum/installwatch-0.8.0rc6

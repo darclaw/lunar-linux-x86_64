@@ -1,0 +1,13 @@
+          MODULE=Thunar
+         VERSION=1.8.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://archive.xfce.org/src/xfce/thunar/${VERSION%.*}
+      SOURCE_VFY=sha256:96fabaa68db32f513e9bcb34fa2a26c1462127727fad0bc25a8a5ba9aab4c12c
+        WEB_SITE=http://thunar.xfce.org
+         ENTERED=20060407
+         UPDATED=20180816
+           SHORT="File manager for xfce"
+
+cat << EOF
+Thunar is the default file manager for Xfce.
+EOF

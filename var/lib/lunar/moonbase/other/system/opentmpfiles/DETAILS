@@ -1,0 +1,14 @@
+          MODULE=opentmpfiles
+         VERSION=0.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/OpenRC/opentmpfiles/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:4fa6a78600b1d67d34c441919e5e62ad181af358d9353ce380f515d623177ecb
+        WEB_SITE=https://github.com/openrc/opentmpfiles
+         ENTERED=20171106
+         UPDATED=20181119
+           SHORT="An utility for handling systemd-style tmpfiles.d settings"
+
+cat << EOF
+A standalone utility written to process systemd-style tmpfiles.d files so that
+they can be handled on systems with or without systemd installed.
+EOF

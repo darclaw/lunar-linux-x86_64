@@ -1,0 +1,21 @@
+          MODULE=abs-guide
+         VERSION=6.6
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$MIRROR_URL
+      SOURCE_VFY=sha256:c67c905c735185db74fc6fe69314cc1902554b6f96a610c45bd01e35be53e146
+        WEB_SITE=http://tldp.org/LDP/abs/html
+         ENTERED=20020723
+         UPDATED=20140308
+           SHORT="An in-depth exploration of the gentle art of shell scripting"
+         ARCHIVE=off
+
+cat << EOF
+This tutorial assumes no previous knowledge of scripting or programming,
+but progresses rapidly toward an intermediate/advanced level of
+instruction all the while sneaking in little snippets of UNIX wisdom
+and lore. It serves as a textbook, a manual for self-study, and a
+reference and source of knowledge on shell scripting techniques. The
+exercises and heavily-commented examples invite active reader
+participation, under the premise that the only way to really learn
+scripting is to write scripts.
+EOF

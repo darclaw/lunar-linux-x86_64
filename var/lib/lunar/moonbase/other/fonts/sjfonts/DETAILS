@@ -1,0 +1,14 @@
+          MODULE=sjfonts
+         VERSION=2.0.2
+          SOURCE=$MODULE.$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/$MODULE
+      SOURCE_VFY=sha1:cc875a9ecb9f300fa8cb012f4d89b5409cb509a7
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
+        WEB_SITE=http://sjfonts.sourceforge.net
+         ENTERED=20110810
+         UPDATED=20110827
+           SHORT="some juicy fonts"
+
+cat << EOF
+Some juicy fonts
+EOF

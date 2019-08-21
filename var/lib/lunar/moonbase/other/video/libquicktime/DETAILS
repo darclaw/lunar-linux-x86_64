@@ -1,0 +1,14 @@
+          MODULE=libquicktime
+         VERSION=1.2.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/$MODULE
+      SOURCE_VFY=sha256:1c53359c33b31347b4d7b00d3611463fe5e942cae3ec0fefe0d2fd413fd47368
+        WEB_SITE=http://libquicktime.sourceforge.net
+         ENTERED=20060420
+         UPDATED=20180731
+           SHORT="Handles Apple's QuickTime media format"
+
+cat << EOF
+Libquicktime is a portable library for handling Apple's QuickTime
+media format.
+EOF

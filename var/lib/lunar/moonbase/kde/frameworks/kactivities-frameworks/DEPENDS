@@ -1,0 +1,3 @@
+depends boost
+depends extra-cmake-modules
+depends kwindowsystem

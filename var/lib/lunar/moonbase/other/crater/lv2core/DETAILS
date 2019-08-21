@@ -1,0 +1,16 @@
+          MODULE=lv2core
+         VERSION=6.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://lv2plug.in/spec/
+      SOURCE_VFY=sha256:b05429f1cade75ad559a72d65d78a927f9718e074e3aeb9698510403a4e52309
+        WEB_SITE=http://lv2plug.in/
+         ENTERED=20110828
+         UPDATED=20120212
+           SHORT="LV2 is a plugin standard for audio systems"
+
+cat << EOF
+LV2 is a plugin standard for audio systems.
+LV2 is a successor of LADSPA that aims to remain simple yet adds
+extensibility which enables more advanced plugin functionality
+(e.g. MIDI or graphical interfaces).
+EOF

@@ -1,0 +1,15 @@
+          MODULE=optipng
+         VERSION=0.7.7
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/project/optipng/OptiPNG/$MODULE-$VERSION
+      SOURCE_VFY=sha256:4f32f233cef870b3f95d3ad6428bfe4224ef34908f1b42b0badf858216654452
+        WEB_SITE=http://optipng.sourceforge.net/
+         ENTERED=20150216
+         UPDATED=20180101
+           SHORT="PNG optimizer"
+
+cat << EOF
+OptiPNG is a PNG optimizer that recompresses image files to a smaller size, without losing any information.
+This program also converts external formats (BMP, GIF, PNM and TIFF) to optimized PNG, and performs PNG 
+integrity checks and corrections. 
+EOF

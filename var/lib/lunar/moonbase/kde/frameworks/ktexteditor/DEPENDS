@@ -1,0 +1,10 @@
+depends perl
+depends libgit2
+depends extra-cmake-modules
+depends kconfig
+depends sonnet
+depends ki18n
+depends karchive
+depends kguiaddons
+depends kiconthemes
+depends kparts

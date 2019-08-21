@@ -1,0 +1,23 @@
+          MODULE=ParaView
+         VERSION=5.6.0
+          SOURCE=$MODULE-v$VERSION.tar.gz
+      SOURCE_URL=http://paraview.org/files/v${VERSION%.*}/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-v$VERSION
+      SOURCE_VFY=sha256:cb8c4d752ad9805c74b4a08f8ae6e83402c3f11e38b274dba171b99bb6ac2460
+        WEB_SITE=http://www.paraview.org/
+            TYPE=cmake
+         ENTERED=20101121
+         UPDATED=20181207
+           SHORT="data analysis and visualization application"
+
+cat << EOF
+ParaView is an open-source, multi-platform data analysis and visualization
+application. ParaView users can quickly build visualizations to analyze their
+data using qualitative and quantitative techniques. The data exploration can be
+done interactively in 3D or programmatically using ParaView's batch processing
+capabilities.
+
+ParaView was developed to analyze extremely large datasets using distributed
+memory computing resources. It can be run on supercomputers to analyze datasets
+of terascale as well as on laptops for smaller data.
+EOF

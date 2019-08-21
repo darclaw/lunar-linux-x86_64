@@ -1,0 +1,17 @@
+          MODULE=libtorrent
+         VERSION=0.13.6
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/rakshasa/libtorrent/archive/${VERSION}.tar.gz
+      SOURCE_VFY=sha256:bf963ac6e73e194a2cd87ebdf809988b5b3d6244bb7cd43d7d0c4852fc501524
+        WEB_SITE=http://rakshasa.github.io/rtorrent/
+         ENTERED=20060704
+         UPDATED=20170917
+           SHORT="A BitTorrent library written in C++"
+
+cat << EOF
+libtorrent is a BitTorrent library written in C++ with a focus on high
+performance and good code. The library differentiates itself from
+other implementations by transfering directly from file pages to the
+network stack.  On high-bandwidth connections it is able to seed at 3
+times the speed of the official client.
+EOF

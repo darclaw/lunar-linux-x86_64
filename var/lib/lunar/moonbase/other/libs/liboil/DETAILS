@@ -1,0 +1,19 @@
+           MODULE=liboil
+          VERSION=0.3.17
+           SOURCE=$MODULE-$VERSION.tar.gz
+       SOURCE_URL=http://liboil.freedesktop.org/download
+       SOURCE_VFY=sha1:f9d7103a3a4a4089f56197f81871ae9129d229ed
+         WEB_SITE=http://liboil.freedesktop.org
+          ENTERED=20050602
+          UPDATED=20100218
+            SHORT="library of simple functions optimized for various CPUs"
+
+cat << EOF
+Liboil is a library of simple functions that are optimized for various
+CPUs. These functions are generally loops implementing simple algorithms,
+such as converting an array of N integers to floating-point numbers or
+multiplying and summing an array of N numbers. Such functions are
+candidates for significant optimization using various techniques,
+especially by using extended instructions provided by modern CPUs
+(Altivec, MMX, SSE, etc.).
+EOF

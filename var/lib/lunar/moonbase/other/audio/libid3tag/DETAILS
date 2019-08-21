@@ -1,0 +1,13 @@
+          MODULE=libid3tag
+         VERSION=0.15.1b
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=ftp://ftp.mars.org/pub/mpeg/
+      SOURCE_VFY=sha256:63da4f6e7997278f8a3fef4c6a372d342f705051d1eeb6a46a86b03610e26151
+        WEB_SITE=http://www.underbit.com/products/mad/
+         ENTERED=20031130
+         UPDATED=20040218
+        SHORT="ID3 Tag Library"
+
+cat << EOF
+ID3 Tag Library for MP3 Files
+EOF

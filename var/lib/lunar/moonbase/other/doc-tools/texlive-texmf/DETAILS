@@ -1,0 +1,17 @@
+          MODULE=texlive-texmf
+         VERSION=20180414
+          SOURCE=texlive-${VERSION}-texmf.tar.xz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${SOURCE/.tar.xz}
+      SOURCE_URL=ftp://tug.org/texlive/historic/2018/
+      SOURCE_VFY=sha256:bae2fa05ea1858b489f8138bea855c6d65829cf595c1fb219c5d65f4fe8b1fad
+        WEB_SITE=http://www.tug.org/texlive/
+         ENTERED=20100731
+         UPDATED=20180830
+         ARCHIVE=off
+       LDD_CHECK=off
+           SHORT="TeX Live metafont package"
+cat << EOF
+Metafont package from the TeX Live distribution.
+
+Warning: the tarball.xz is approx 1.1Gb - make sure you have space!
+EOF

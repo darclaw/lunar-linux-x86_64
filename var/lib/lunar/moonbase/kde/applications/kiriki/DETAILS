@@ -1,0 +1,14 @@
+          MODULE=kiriki
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:feb7b4fce0e6b1749bddd254a46a5d34bf5584a3d60aef460816380141ad630e
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=http://www.kde.org/applications/games/kiriki/
+         ENTERED=20140720
+         UPDATED=20190418
+           SHORT="Yahtzee-like Dice Game"
+
+cat << EOF
+Kiriki is an addictive and fun dice game, designed to be played by as many as six players.
+EOF

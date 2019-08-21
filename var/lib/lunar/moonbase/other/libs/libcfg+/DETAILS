@@ -1,0 +1,18 @@
+          MODULE=libcfg+
+         VERSION=0.7.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://opensource.platon.org/projects/download.php?id=136/
+      SOURCE_VFY=sha256:f9486c8e05d5e0248fa79360e941d5997da55e05149a9d42cb1308b0f37661d7
+        WEB_SITE=http://opensource.platon.org/projects/main_page.php?project_id=3
+         ENTERED=20110407
+         UPDATED=20180920
+           SHORT="command line and configuration file parsing library"
+
+cat << EOF
+libcfg+ is a C library that features multi- command line and configuration
+file parsing. It is possible to set up various special properties such as
+quoting characters, deliminator strings, file comment prefixes, multi-line
+postfixes, and more. It supports many data types such as booleans, integers,
+decimal numbers, strings with many additional data type flags
+(such as multiple values for a single option).
+EOF

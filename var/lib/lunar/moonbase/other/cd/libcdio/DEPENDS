@@ -1,0 +1,9 @@
+depends pkgconf
+depends ncurses
+
+optional_depends cdparanoia "" "" "for digital audio extraction"
+
+optional_depends libcddb \
+                 "--enable-cddb"  \
+                 "--disable-cddb" \
+                 "for CDDB lookup support"

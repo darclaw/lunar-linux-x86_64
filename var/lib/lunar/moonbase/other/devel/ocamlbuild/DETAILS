@@ -1,0 +1,15 @@
+          MODULE=ocamlbuild
+         VERSION=0.12.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/ocaml/ocamlbuild/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:d9de56aa961f585896844b24c6f7695a9e7ad9d00263fdfe50a17f38b13b9ce1
+        WEB_SITE=https://ocaml.org/learn/tutorials/ocamlbuild/
+         ENTERED=20161021
+         UPDATED=20180925
+           SHORT="build tool for ocaml"
+
+cat << EOF
+OCamlbuild’s job is to determine the sequence of calls to
+the compiler — with the right set of command-line flags —
+needed to build your OCaml-centric software project.
+EOF

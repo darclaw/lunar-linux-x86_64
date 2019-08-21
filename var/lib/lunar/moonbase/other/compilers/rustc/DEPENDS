@@ -1,0 +1,7 @@
+depends perl
+depends python
+depends curl
+depends libffi
+depends jemalloc
+
+optional_depends valgrind "" "" "for valgrind support"

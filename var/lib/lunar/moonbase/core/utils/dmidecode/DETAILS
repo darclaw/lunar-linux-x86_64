@@ -1,0 +1,17 @@
+          MODULE=dmidecode
+         VERSION=3.2
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://download.savannah.nongnu.org/releases/$MODULE/
+      SOURCE_VFY=sha256:077006fa2da0d06d6383728112f2edef9684e9c8da56752e97cd45a11f838edd
+        WEB_SITE=https://www.nongnu.org/dmidecode/
+      MAINTAINER=ratler@lunar-linux.org
+         ENTERED=20040629
+         UPDATED=20180917
+           SHORT="Tool for dumping a computer's DMI (SMBIOS) in a human-readable format"
+
+cat << EOF
+dmidecode, a tool for dumping a computer's DMI (some say SMBIOS) table
+contents in a human-readable format. This table contains a description of
+the system's hardware components, as well as other useful pieces of
+information such as serial numbers and BIOS revision.
+EOF

@@ -1,0 +1,22 @@
+          MODULE=clucene
+         VERSION=2.3.3.4
+          SOURCE=$MODULE-core-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/clucene/clucene-core-unstable/${VERSION%.*.*}/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-core-$VERSION
+      SOURCE_VFY=sha256:ddfdc433dd8ad31b5c5819cc4404a8d2127472a3b720d3e744e8c51d79732eab
+        WEB_SITE=http://clucene.sourceforge.net/
+            TYPE=cmake
+         ENTERED=20070802
+         UPDATED=20151130
+           SHORT="Indexing and searching API"
+
+cat << EOF
+CLucene is a high-performance, scalable, cross platform, full-featured,
+open-source indexing and searching API. It is written in C++. CLucene
+is a port of the very popular Java Lucene text search engine API.
+Specifically, CLucene is the guts of a search engine, the hard stuff.
+You write the easy stuff, the UI and the process of selecting and parsing
+your data files to pump them into the search engine yourself.
+CLucene aims to be a good alternative to Java Lucene when performance really
+matters or if you want to stick to good old C++.
+EOF

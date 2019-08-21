@@ -1,0 +1,18 @@
+          MODULE=snappy
+         VERSION=1.1.7
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://github.com/google/$MODULE/archive/$VERSION/
+      SOURCE_VFY=sha256:3dfa02e873ff51a11ee02b9ca391807f0c8ea0529a4924afa645fbf97163f9d4
+        WEB_SITE=http://google.github.io/snappy/
+         ENTERED=20140104
+         UPDATED=20171119
+           SHORT="A fast compressor/decompressor library"
+
+cat << EOF
+Snappy is a compression/decompression library. It does not aim for maximum
+compression, or compatibility with any other compression library; instead,
+it aims for very high speeds and reasonable compression. For instance,
+compared to the fastest mode of zlib, Snappy is an order of magnitude faster
+for most inputs, but the resulting compressed files are anywhere from 20% to
+100% bigger.
+EOF

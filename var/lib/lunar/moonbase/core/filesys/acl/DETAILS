@@ -1,0 +1,15 @@
+          MODULE=acl
+         VERSION=2.2.53
+          SOURCE=$MODULE-$VERSION.tar.gz
+   SOURCE_URL[0]=https://download.savannah.nongnu.org/releases/$MODULE/
+   SOURCE_URL[1]=http://mirrors.zerg.biz/nongnu/acl
+      SOURCE_VFY=sha256:06be9865c6f418d851ff4494e12406568353b891ffe1f596b34693c387af26c7
+        WEB_SITE=http://oss.sgi.com/projects/xfs
+         ENTERED=20020531
+         UPDATED=20130619
+           SHORT="POSIX access control list"
+           PSAFE=no
+
+cat << EOF
+acl is the access control list for Linux.
+EOF

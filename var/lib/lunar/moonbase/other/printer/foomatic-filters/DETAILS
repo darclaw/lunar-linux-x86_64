@@ -1,0 +1,16 @@
+          MODULE=foomatic-filters
+         VERSION=4.0.17
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://www.openprinting.org/download/foomatic/
+     SOURCE2_URL=$MIRROR_URL
+      SOURCE_VFY=sha256:a2e2e53e502571e88eeb9010c45a0d54671f15707ee104f5c9c22b59ea7a33e3
+        WEB_SITE=http://www.linux-foundation.org/en/OpenPrinting/Database/Foomatic
+         ENTERED=20041116
+         UPDATED=20160719
+           SHORT="Printer filters for foomatic"
+
+cat << EOF
+The universal print filter "foomatic-rip", used by spoolers to convert
+PostScript job data into the printer's native format as described by a
+printer/driver-specific PPD file.
+EOF

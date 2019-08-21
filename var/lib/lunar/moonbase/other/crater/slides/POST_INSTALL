@@ -1,0 +1,7 @@
+centralized=/etc/sgml/catalog
+if [ ! -d /etc/sgml ]; then
+  mkdir /etc/sgml
+fi
+
+/usr/bin/install-catalog --add $centralized /usr/share/xml/slides-$VERSION/xcatalog
+/usr/bin/install-catalog --remove $centralized $centralized

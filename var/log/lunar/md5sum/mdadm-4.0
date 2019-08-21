@@ -1,0 +1,15 @@
+6e56f1cce3cf006e95c9a125d1b4cb37  /sbin/mdadm
+6ce8f0fb8698404e554d7e147bc3f692  /sbin/mdmon
+d333ef00fedbbf5ec6e877cd16128205  /usr/lib/systemd/system/mdadm.service
+c36fcdfda6a97a9e55f265ceb18d75bc  /usr/lib/udev/rules.d/63-md-raid-arrays.rules
+5de7d0b70cd948d00bb38ca75ad5f288  /usr/lib/udev/rules.d/64-md-raid-assembly.rules
+72e299a34b656cbc8a7dd17bc92a13ac  /usr/share/doc/mdadm/ChangeLog
+8b7d8dcafc79dce30671acafb2a32344  /usr/share/doc/mdadm/INSTALL
+bc78e924cdb48c6048ca59be8cbc2865  /usr/share/doc/mdadm/README.initramfs
+2cd6654e35885419d96297947798f04e  /usr/share/man/man4/md.4.gz
+703d8427c2e0112dcac345ef6fa331bd  /usr/share/man/man5/mdadm.conf.5.gz
+034e7bae0e1414f8b23ee4df5a9f60cf  /usr/share/man/man8/mdadm.8.gz
+e380811cefadc6aa38849aac28ec65e3  /usr/share/man/man8/mdmon.8.gz
+147e96375eebe93246bfabaec1408cb0  /var/log/lunar/install/mdadm-4.0
+18bd834683ba15d8d82e308df3d82897  /var/log/lunar/compile/mdadm-4.0.xz
+46ae11b0a45fc9418f31e00b79d963b3  /var/log/lunar/md5sum/mdadm-4.0

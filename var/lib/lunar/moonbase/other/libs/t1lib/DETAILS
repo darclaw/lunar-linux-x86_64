@@ -1,0 +1,15 @@
+          MODULE=t1lib
+         VERSION=5.1.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+   SOURCE_URL[0]=http://www.ibiblio.org/pub/Linux/libs/graphics/
+   SOURCE_URL[1]=ftp://sunsite.unc.edu/pub/Linux/libs/graphics/
+      SOURCE_VFY=sha256:821328b5054f7890a0d0cd2f52825270705df3641dbd476d58d17e56ed957b59
+        WEB_SITE=http://www.ibiblio.org/pub/Linux/libs/graphics/!INDEX.html
+         ENTERED=20010923
+         UPDATED=20110224
+           SHORT="Allows applications to rasterize Type1 fonts"
+
+cat << EOF
+t1lib is a library written in C which implements functions for generating
+bitmaps from Adobe Type 1 fonts.
+EOF

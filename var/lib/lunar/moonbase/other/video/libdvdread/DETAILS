@@ -1,0 +1,18 @@
+         MODULE=libdvdread
+        VERSION=6.0.0
+         SOURCE=$MODULE-$VERSION.tar.bz2
+     SOURCE_URL=https://download.videolan.org/pub/videolan/libdvdread/$VERSION/
+     SOURCE_VFY=sha256:b33b1953b4860545b75f6efc06e01d9849e2ea4f797652263b0b4af6dd10f935
+       WEB_SITE=https://www.videolan.org/developers/libdvdnav.html
+        ENTERED=20010927
+        UPDATED=20180120
+          SHORT="library for reading DVD video disks"
+
+cat << EOF
+libdvdread provides a simple foundation for reading DVD video disks.
+It provides the functionality that is required to access many DVDs.  It
+parses IFO files, reads NAV-blocks, and performs CSS authentication and
+descrambling.
+
+Note; vlc-2.x wants this one instead of the one from chalmers.
+EOF

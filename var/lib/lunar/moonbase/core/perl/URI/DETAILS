@@ -1,0 +1,17 @@
+          MODULE=URI
+         VERSION=1.76
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/
+      SOURCE_VFY=sha256:b2c98e1d50d6f572483ee538a6f4ccc8d9185f91f0073fd8af7390898254413e
+        WEB_SITE=http://search.cpan.org/dist/URI/
+            TYPE=perl
+         ENTERED=20020727
+         UPDATED=20190111
+           SHORT="A perl module for using Uniform Resource Identifiers"
+
+cat << EOF
+URI:
+A perl module which implements the URI class. Objects of this class represent
+"Uniform Resource Identifier references" as specified in RFC 2396 (and updated
+by RFC 2732).
+EOF

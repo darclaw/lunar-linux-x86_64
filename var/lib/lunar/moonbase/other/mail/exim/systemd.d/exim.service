@@ -1,0 +1,12 @@
+[Unit]
+Description=Exim Mail Transport Agent
+After=network.target
+Conflicts=postfix.service
+
+[Service]
+PrivateTmp=true
+PIDFile=/var/run/exim.pid
+ExecStart=/usr/bin/exim -bd -q30m
+
+[Install]
+WantedBy=multi-user.target

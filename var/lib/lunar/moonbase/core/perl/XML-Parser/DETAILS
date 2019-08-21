@@ -1,0 +1,13 @@
+          MODULE=XML-Parser
+         VERSION=2.44
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://cpan.metacpan.org/authors/id/T/TO/TODDR/
+      SOURCE_VFY=sha256:1ae9d07ee9c35326b3d9aad56eae71a6730a73a116b9fe9e8a4758b7cc033216
+        WEB_SITE=http://search.cpan.org/search?dist=XML-Parser
+            TYPE=perl
+         ENTERED=20030529
+         UPDATED=20150405
+           SHORT="PERL module for parsing XML documents"
+cat << EOF
+PERL modules for parsing XML documents
+EOF

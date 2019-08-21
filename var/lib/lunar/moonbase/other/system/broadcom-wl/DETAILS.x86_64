@@ -1,0 +1,15 @@
+          MODULE=broadcom-wl
+         VERSION=6.30.223.271
+          SOURCE=hybrid-v35_64-nodebug-pcoem-${VERSION//./_}.tar.gz
+      SOURCE_URL=https://docs.broadcom.com/docs-and-downloads/docs/linux_sta/
+    SOURCE10_URL=$PATCH_URL
+      SOURCE_VFY=sha256:5f79774d5beec8f7636b59c0fb07a03108eef1e3fd3245638b20858c714144be
+    SOURCE10_VFY=sha256:ad7a7763157e846a062be597830458541e7830ca59410bf242518d103a0321ce
+        WEB_SITE=https://www.broadcom.com/support/802.11
+         ENTERED=20180120
+         UPDATED=20180209
+           SHORT="Broadcom 802.11abgn hybrid Linux networking device driver"
+
+cat << EOF
+Broadcom 802.11abgn hybrid Linux networking device driver.
+EOF

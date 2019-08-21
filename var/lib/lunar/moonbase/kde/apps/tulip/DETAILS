@@ -1,0 +1,23 @@
+          MODULE=tulip
+         VERSION=5.2.1_src
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/auber/tulip/tulip-${VERSION%_*}/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-${VERSION%_*}
+      SOURCE_VFY=sha256:7e7237993f91a0450c056f04a5222436fe829573c7f5b23b5207c5ac8dc7152f
+   MODULE_PREFIX=${QT5_PREFIX:-/usr}
+        WEB_SITE=http://tulip.labri.fr/TulipDrupal/
+         ENTERED=20100507
+         UPDATED=20181120
+           SHORT="Graph visualization software"
+
+cat << EOF
+The research by the information visualization community shows clearly that using
+a visual representation of data-sets enables faster analysis by the end users.
+Tulip, created by David AUBER, is a contribution of the area of information
+visualization. Even if the Tulip framework allows the visualization, the drawing
+and the edition of small graphs, all the parts of the framework have been built
+in order to be able to visualize graphs having more than 1.000.000 elements.
+Such a visualization system must draw and display huge graphs, allows the
+navigation through geometric operations as well as the extraction of subgraphs
+and the enhancement of the results obtained by filtering.
+EOF

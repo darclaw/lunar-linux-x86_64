@@ -1,0 +1,18 @@
+depends pkgconf
+
+optional_depends "zlib" "" "" "for ZLIB support"
+
+optional_depends "%JPEG"                \
+                 "--with-jpeg"          \
+                 "--without-jpeg"       \
+                 "for JPEG support"
+
+optional_depends "tiff"                 \
+                 "--with-tiff"          \
+                 "--without-tiff"       \
+                 "for TIFF support"
+
+optional_depends python2               \
+                 "--with-python"        \
+                 "--without-python"     \
+                 "for python extension"

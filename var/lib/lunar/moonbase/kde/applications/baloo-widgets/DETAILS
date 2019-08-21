@@ -1,0 +1,13 @@
+          MODULE=baloo-widgets
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:ab3d83bb1f2007620273d1a3eb580d821e0655aaf7e3efd2dc81087a24d1c275
+        WEB_SITE=https://community.kde.org/Baloo
+         ENTERED=20140713
+         UPDATED=20190418
+           SHORT="framework for searching and managing metadata"
+
+cat << EOF
+A framework for searching and managing metadata.
+EOF

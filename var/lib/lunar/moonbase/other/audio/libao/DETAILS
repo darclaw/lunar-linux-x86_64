@@ -1,0 +1,15 @@
+          MODULE=libao
+         VERSION=1.2.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/xiph/libao/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:df8a6d0e238feeccb26a783e778716fb41a801536fe7b6fce068e313c0e2bf4d
+        WEB_SITE=http://www.xiph.org/vorbis
+         ENTERED=20010922
+         UPDATED=20180207
+           SHORT="way to easily add cross-platform audio output to your program"
+
+cat << EOF
+libao is a way to easily add cross-platform audio output to your program.
+Output devices are implemented as dynamic plugins, and support for OSS, ESD,
+ALSA, aRTs, Solaris, and Irix outputs are currently supported.
+EOF

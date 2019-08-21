@@ -1,0 +1,16 @@
+          MODULE=fping
+         VERSION=4.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.fping.org./dist/
+      SOURCE_VFY=sha256:67eb4152b98ad34f99d2eec4e1098a0bb52caf13c0c89cd147349d08190fe8ce
+        WEB_SITE=http://www.fping.org/
+         ENTERED=20020205
+         UPDATED=20170428
+          SHORT="A utility to ping multiple hosts at once"
+
+cat << EOF
+fping is different from ping in that you can specify any number of
+hosts on the command line, or specify a file containing the lists of
+hosts to ping. Unlike ping, fping is meant to be used in scripts and
+its output is easy to parse.
+EOF

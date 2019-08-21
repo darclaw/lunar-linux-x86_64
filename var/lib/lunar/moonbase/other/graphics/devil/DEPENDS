@@ -1,0 +1,9 @@
+depends cmake
+depends libpng
+depends libjpeg-turbo
+depends lcms2
+depends jasper
+
+optional_depends openexr "" "" "for high dynamic-range support"
+optional_depends libmng  "" "" "for MNG format support"
+optional_depends tiff    "" "" "for MNG format support"

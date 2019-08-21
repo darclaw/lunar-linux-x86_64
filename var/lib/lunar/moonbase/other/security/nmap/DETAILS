@@ -1,0 +1,23 @@
+          MODULE=nmap
+         VERSION=7.70
+          SOURCE=$MODULE-$VERSION.tar.bz2
+         SOURCE2=configure-libnl.diff
+      SOURCE_URL=http://nmap.org/dist
+     SOURCE2_URL=http://seclists.org/nmap-dev/2010/q2/att-606
+      SOURCE_VFY=sha256:847b068955f792f4cc247593aca6dc3dc4aae12976169873247488de147a6e18
+     SOURCE2_VFY=sha256:4928497b052b20026994ad591f69a9697fd3d09af90731f9abb738943f0fe812
+        WEB_SITE=http://nmap.org
+         ENTERED=20010922
+         UPDATED=20180321
+           SHORT="A utility for network exploration or security auditing"
+
+cat << EOF
+Nmap is a utility for network exploration or security auditing. It
+supports ping scanning (determine which hosts are up), many port
+scanning techniques (determine what services the hosts are offering),
+and TCP/IP fingerprinting (remote host operating system identification).
+Nmap also offers flexible target and port specification, decoy scanning,
+determination of TCP sequence predictability characteristics, sunRPC
+scanning, reverse-identd scanning, and more. Console and X-Window
+versions are available.
+EOF

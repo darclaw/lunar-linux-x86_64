@@ -1,0 +1,120 @@
+export            PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11/bin
+
+export        DIALOGRC=/etc/lunar/dialogrc
+
+          CONFIG_CACHE=/etc/lunar/local
+          LOCAL_CONFIG=/etc/lunar/local/config
+        DEPENDS_CONFIG=/etc/lunar/local/depends
+        LOCAL_EXCLUDED=/etc/lunar/local/excluded
+               MIRRORS=/etc/lunar/mirrors
+
+         LUNAR_MODULES="lunar"
+
+       BUILD_DIRECTORY=/usr/src
+    DOCUMENT_DIRECTORY=/usr/share/doc
+
+        DEFAULT_PREFIX=/usr
+
+             BOOTSTRAP=/var/lib/lunar/bootstrap
+              EXCLUDED=/var/lib/lunar/excluded
+              MOONBASE=/var/lib/lunar/moonbase
+             PROTECTED=/var/lib/lunar/protected
+                  SOLO=/var/lib/lunar/solo
+             FUNCTIONS=/var/lib/lunar/functions
+                 MENUS=/var/lib/lunar/menu
+             SUSTAINED=/var/lib/lunar/sustained
+            PLUGIN_DIR=/var/lib/lunar/plugins
+
+       SOUND_DIRECTORY=/var/lib/lunar/sound
+           SOUND_THEME=startrek
+
+          ACTIVITY_LOG=/var/log/lunar/activity
+          INSTALL_LOGS=/var/log/lunar/install
+          COMPILE_LOGS=/var/log/lunar/compile
+           MD5SUM_LOGS=/var/log/lunar/md5sum
+         INSTALL_QUEUE=/var/log/lunar/queue/install
+          REMOVE_QUEUE=/var/log/lunar/queue/remove
+       COMPRESS_METHOD=xz
+
+        DEPENDS_STATUS=/var/state/lunar/depends
+ DEPENDS_STATUS_BACKUP=/var/state/lunar/depends.backup
+         DEPENDS_CACHE=/var/state/lunar/depends.cache
+         MODULE_STATUS=/var/state/lunar/packages
+  MODULE_STATUS_BACKUP=/var/state/lunar/packages.backup
+          MODULE_INDEX=/var/state/lunar/module.index
+     REPLACEMENT_INDEX=/var/state/lunar/replacement.index
+
+         INSTALL_CACHE=/var/cache/lunar
+          SOURCE_CACHE=${SOURCE_CACHE:-/var/spool/lunar}
+
+#  Override the following variables in /etc/lunar/local/config
+#  Or by exporting them before installing or removing.
+
+              ARCHIVE=${ARCHIVE:-on}
+              AUTOFIX=${AUTOFIX:-on}
+            AUTOPRUNE=${AUTOPRUNE:-on}
+         MAIL_REPORTS=${MAIL_REPORTS:-off}
+             PRESERVE=${PRESERVE:-on}
+                 REAP=${REAP:-on}
+                ADMIN=${ADMIN:-root}
+                SOUND=${SOUND:-off}
+              SUSTAIN=${SUSTAIN:-on}
+         VIEW_REPORTS=${VIEW_REPORTS:-off}
+               VOYEUR=${VOYEUR:-on}
+              GARBAGE=${GARBAGE:-on}
+         PROMPT_DELAY=${PROMPT_DELAY:-150}
+        PROBE_EXPIRED=${PROBE_EXPIRED:-on}
+       LUNAR_PRIORITY="+10"
+
+            LDD_CHECK=${LDD_CHECK:-on}
+           FIND_CHECK=${FIND_CHECK:-on}
+         MD5SUM_CHECK=${MD5SUM_CHECK:-on}
+            SYM_CHECK=${SYM_CHECK:-off}
+
+              GNU_URL=https://ftpmirror.gnu.org
+              KDE_URL=https://download.kde.org
+            GNOME_URL=https://download.gnome.org
+           KERNEL_URL=https://cdn.kernel.org
+           SFORGE_URL=https://downloads.sourceforge.net/sourceforge
+          XFREE86_URL=http://ftp.xfree86.org/pub/XFree86
+             XORG_URL=https://www.x.org/releases
+          LRESORT_URL=http://download.lunar-linux.org/lunar/cache
+           NVIDIA_URL=https://download.nvidia.com/XFree86
+
+      MOONBASE_URL[0]=http://lunar-linux.org/lunar/
+      MOONBASE_URL[1]=http://download.lunar-linux.org/lunar/
+
+            PATCH_URL=http://download.lunar-linux.org/lunar/patches/
+           MIRROR_URL=http://download.lunar-linux.org/lunar/mirrors/
+
+              TRACKED="/bin /boot /etc /lib /sbin /usr /var /opt/lunar"
+
+               TMPDIR=${TMPDIR:-/tmp}
+
+              DEFAULT="\e[0m"
+                 BOLD="\e[1m"
+                BLACK="\e[30m"
+                  RED="\e[31m"
+                GREEN="\e[32m"
+               YELLOW="\e[33m"
+                 BLUE="\e[34m"
+               VIOLET="\e[35m"
+                 CYAN="\e[36m"
+                WHITE="\e[37m"
+
+         MODULE_COLOR="${WHITE}${BOLD}\e[40m"
+        VERSION_COLOR="${WHITE}${BOLD}\e[40m"
+          QUERY_COLOR="${YELLOW}${BOLD}"
+            LRM_COLOR="${YELLOW}${BOLD}"
+          CHECK_COLOR="${CYAN}"
+      RESURRECT_COLOR="${GREEN}${BOLD}"
+           FILE_COLOR="${GREEN}${BOLD}"
+        SYMLINK_COLOR="${CYAN}${BOLD}"
+        PROBLEM_COLOR="${RED}${BOLD}"
+        MESSAGE_COLOR="${CYAN}"
+        DEFAULT_COLOR="${DEFAULT}"
+
+        TAB_ENTER_IFS=$'\t\n'
+        ENTER_IFS=$'\n'
+        STANDARD_IFS=$' \t\n'
+

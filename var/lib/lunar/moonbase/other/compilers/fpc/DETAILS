@@ -1,0 +1,13 @@
+          MODULE=fpc
+         VERSION=3.0.4.i386-linux
+          SOURCE=$MODULE-$VERSION.tar
+      SOURCE_URL=$SFORGE_URL/freepascal/Linux/${VERSION%.*}/
+      SOURCE_VFY=sha256:aa6da9a58d155bbaa71aaa7f414d64b02b3e450dc23eed7c161eac6d547fae17
+        WEB_SITE=http://freepascal.org
+         ENTERED=20130819
+         UPDATED=20171128
+           SHORT="The Free Pascal Compiler"
+
+cat << EOF
+FPC is an open source compiler for Pascal and Object Pascal.
+EOF

@@ -1,0 +1,18 @@
+          MODULE=caribou
+         VERSION=0.4.21
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION:0:3}/
+      SOURCE_VFY=sha256:9c43d9f4bd30f4fea7f780d4e8b14f7589107c52e9cb6bd202bd0d1c2064de55
+        WEB_SITE=http://live.gnome.org/Caribou/
+         ENTERED=20130210
+         UPDATED=20190322
+           SHORT="A text entry and UI navigation application for Gtk+-3"
+
+cat <<EOF
+Caribou is a text entry and UI navigation application being developed as an
+alternative to the Gnome On-screen Keyboard. The overarching goal for Caribou
+is to create a usable solution for people whose primary way of accessing a
+computer is a switch device. The initial goal is to make an in-place on-screen
+keyboard suitable for people who can use a mouse but not a hardware keyboard.
+This on-screen keyboard may also be useful for touch screen or tablet users.
+EOF

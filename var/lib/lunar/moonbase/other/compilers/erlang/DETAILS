@@ -1,0 +1,18 @@
+          MODULE=erlang
+         VERSION=22.0.1
+          SOURCE=OTP-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/otp-OTP-$VERSION
+      SOURCE_URL=http://github.com/erlang/otp/archive/
+      SOURCE_VFY=sha256:694f133abfca3c7fb8376b223ea484413bcd16b82354f178fba798f37335f163
+        WEB_SITE=http://www.erlang.org
+         ENTERED=20021120
+         UPDATED=20190524
+           SHORT="General-purpose programming language and runtime environment"
+
+cat << EOF
+Erlang is a general-purpose programming language and runtime environment.
+Erlang has built-in support for concurrency, distribution and fault tolerance.
+Erlang is used in several large telecommunication systems from Ericsson.
+The most popular implementation of Erlang is available as open source from the
+open source erlang site.
+EOF

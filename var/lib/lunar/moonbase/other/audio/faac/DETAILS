@@ -1,0 +1,14 @@
+          MODULE=faac
+         VERSION=1.29.9.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/faac/
+      SOURCE_VFY=sha256:d45f209d837c49dae6deebcdd87b8cc3b04ea290880358faecf5e7737740c771
+        WEB_SITE=http://www.audiocoding.com/
+         ENTERED=20050308
+         UPDATED=20180215
+           SHORT="ISO AAC audio encoder"
+
+cat << EOF
+FAAC - Freeware Advanced Audio Coder
+FAAC is based on the ISO MPEG-4 reference code.
+EOF

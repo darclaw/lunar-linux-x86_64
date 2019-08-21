@@ -1,0 +1,35 @@
+          MODULE=calcdate
+         VERSION=2.1
+          SOURCE=calcdate.c
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE
+      SOURCE_URL=http://download.lunar-linux.org/lunar/mirrors/
+      SOURCE_VFY=sha256:81c386a0bab20f558d65eab18d028091573518d3010b2ef3046c9ece5be39843
+        WEB_SITE=http://download.lunar-linux.org
+         ENTERED=20020624
+         UPDATED=20020705
+           SHORT="A simple utility to help you calculate dates while scripting"
+
+cat << EOF
+Calcdate is a simple utility to help you calculate dates while scripting.
+
+Program:        calcdate
+
+Synopsis:       calcdate yyyymmdd { -o [-]offset | -d yyyymmdd }
+
+Purpose:        Calculate the target date when given an initial date and an
+                offset in days, or the difference between two dates when
+                given two dates.
+
+Options:        There are two options as listed below.  One or the other must
+                be entered.
+
+                -o [-]offset    Allows the user to enter an offset (in days)
+                                and returns the initial date plus the offset.
+                                Negative offsets are permitted.
+
+                -d yyyymmdd     Allows the user to enter a second date, and
+                                returns the difference between the two dates
+                                relative to the first date.
+
+Updated by Terry Chan <tchan@lunar-linux.org> to use 4 digit years 20020705
+EOF

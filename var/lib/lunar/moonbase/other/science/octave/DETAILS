@@ -1,0 +1,17 @@
+          MODULE=octave
+         VERSION=4.4.1
+          SOURCE=$MODULE-$VERSION.tar.lz
+      SOURCE_URL=$GNU_URL/$MODULE/
+      SOURCE_VFY=sha256:1e6e3a72b4fd4b4db73ccb9f3046e4f727201c2e934b77afb04a804d7f7c4d4b
+        WEB_SITE=http://www.octave.org/
+         ENTERED=20030604
+         UPDATED=20180819
+           SHORT="Numerical computation suite mostly compatible with MATLAB"
+
+cat << EOF
+Octave is a high-level interactive language, primarily intended for numerical
+computations that is mostly compatible with MATLAB. Octave can do arithmetic
+for real and complex scalars and matrices, solve sets of nonlinear algebraic
+equations, integrate functions over finite and infinite intervals, and integrate
+systems of ordinary differential and differential-algebraic equations.
+EOF

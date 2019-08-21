@@ -1,0 +1,27 @@
+          MODULE=mythtv
+         VERSION=29.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+         SOURCE2=$MODULE-$VERSION-freetype2.patch
+ SOURCE_URL_FULL=https://github.com/MythTV/mythtv/archive/v$VERSION.tar.gz
+     SOURCE2_URL=$PATCH_URL
+      SOURCE_VFY=sha256:e40ec8111d39fd059a9ec741b10016683bcc66ee3b33c4cdaab93d60851f5d3e
+     SOURCE2_VFY=sha256:4451cbb28513e03cc2f62c50581daeb436d027f8a0968ba5d99a3b05da103343
+        WEB_SITE=http://www.mythtv.org
+         ENTERED=20040304
+         UPDATED=20181125
+           SHORT="PVR suite"
+
+cat << EOF
+MythTV is a PVR program that records video, pauses live tv, and through
+the various add-ons, it can have:
+
+Built-in web browser
+DVD Player/Ripper
+Image viewer
+Game frontend (xmame, snes, nes, pc)
+Music player
+RSS news feed reader
+Pre-recorded video player
+Weather forecast display
+Web interface to various mythtv functions
+EOF

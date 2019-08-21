@@ -1,0 +1,16 @@
+          MODULE=clingo
+         VERSION=5.3.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/potassco/clingo/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:b0d406d2809352caef7fccf69e8864d55e81ee84f4888b0744894977f703f976
+        WEB_SITE=http://potassco.org/clingo
+         ENTERED=20120512
+         UPDATED=20180629
+           SHORT="Grounder and solver for first-order logic programs"
+
+cat << EOF
+Clingo combines the projects gringo and clasp into one executable.
+gringo is a grounder for first order answer set programs that
+outputs SMODELS format programs.
+clasp solves such programs and enumerates respective answer sets.
+EOF

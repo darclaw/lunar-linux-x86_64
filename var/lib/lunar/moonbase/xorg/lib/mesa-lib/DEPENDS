@@ -1,0 +1,39 @@
+depends expat
+depends elfutils
+depends libgcrypt
+depends libdrm
+depends libXxf86vm
+depends libXdamage
+depends libxshmfence
+depends libxml2
+depends dbus-glib
+depends %UDEV
+
+if [[ $GALLIUM == y ]]; then
+  depends llvm
+fi
+
+optional_depends libXvMC \
+                 "--enable-xvmc" \
+                 "--disable-xvmc" \
+                 "for XVideo Motion Compensation support"
+
+optional_depends lm_sensors \
+                 "--enable-lmsensors" \
+                 "--disable-lmsensors" \
+                 "for hardware sensors monitoring support"
+
+optional_depends libomxil-bellagio \
+                 "--enable-omx-bellagio" \
+                 "--disable-omx-bellagio" \
+                 "for OpenMAX Integration Layer API support"
+
+optional_depends libunwind \
+                 "--enable-libunwind" \
+                 "--disable-libunwind" \
+		 "for backtracing support"
+
+optional_depends libva             "" "" "for Intel DRI video acceleration support"
+optional_depends libvdpau          "" "" "for NVIDIA (or nouveau) VDPAU support"
+optional_depends wayland-protocols "" "" "for Wayland windowing protocol support" n
+optional_depends libXxf86misc      "" "" "for some old binary compatibility" n

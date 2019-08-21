@@ -1,0 +1,5 @@
+depends %OSSL
+depends libpcap
+
+# circular depend on dnssec-anchors
+#optional_depends dnssec-anchors "" "" "install support for DNSSEC trust anchors for the root zone" y

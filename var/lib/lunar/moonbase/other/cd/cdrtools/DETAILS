@@ -1,0 +1,21 @@
+          MODULE=cdrtools
+         VERSION=3.02
+          SOURCE=$MODULE-${VERSION}a09.tar.bz2
+      SOURCE_URL=$SFORGE_URL/$MODULE/
+      SOURCE_VFY=sha256:aa28438f458ef3f314b79f2029db27679dae1d5ffe1569b6de57742511915e81
+        WEB_SITE=http://cdrtools.sourceforge.net/private/cdrecord.html
+         ENTERED=20010922
+         UPDATED=20171225
+           SHORT="Creates home-burned CDs/DVDs/BDs with a CD-R/CD-RW/DVD/Blu-ray recorder"
+PSAFE=no
+
+cat << EOF
+cdrtools, formerly Cdrecord creates home-burned CDs with a CD-R/CD-RW
+recorder. It works as a burn engine for several applications. Cdrecord
+supports CD recorders from many different vendors; all SCSI-3/mmc and
+ATAPI/mmc compliant drives should also work. Supported features include
+IDE/ATAPI, parallel-port, and SCSI drives, audio CDs, data CDs, and
+mixed CDs, full multi-session support, CD-RWs (rewritable), TAO, DAO and
+human-readable error messages. Cdrecord includes remote SCSI support and
+can access local or remote CD-writers.
+EOF

@@ -1,0 +1,13 @@
+          MODULE=DateTime-Locale
+         VERSION=1.23
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/
+      SOURCE_VFY=sha256:3a5a81e742da96d89b408e40f8bf4b21150663d8a5eb9dad7865db582193c015
+        WEB_SITE=https://search.cpan.org/~drolsky/DateTime-Locale
+            TYPE=perl
+         ENTERED=20111008
+         UPDATED=20181018
+           SHORT="Localization support for DateTime.pm"
+cat << EOF
+Localization support for DateTime.pm.
+EOF

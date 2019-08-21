@@ -1,0 +1,4 @@
+conftest.c: In function 'main':
+conftest.c:92:5: warning: unused variable 'i' [-Wunused-variable]
+ int i = errno
+     ^

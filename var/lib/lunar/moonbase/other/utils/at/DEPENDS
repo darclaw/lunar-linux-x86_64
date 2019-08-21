@@ -1,0 +1,5 @@
+depends flex
+depends bison
+
+# it needes an MTA
+depends ssmtp

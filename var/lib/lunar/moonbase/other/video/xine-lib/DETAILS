@@ -1,0 +1,17 @@
+          MODULE=xine-lib
+         VERSION=1.2.9
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$SFORGE_URL/xine/
+      SOURCE_VFY=sha256:32b34e8049feb762d75a551d5d2cdb56c396fdd83e35b9b7de5fd08e498e948d
+        WEB_SITE=http://www.xine-project.org/
+         ENTERED=20010927
+         UPDATED=20180111
+           SHORT="Free video player with VDPAU"
+
+cat << EOF
+xine is a free video player which plays mpeg-2 and mpeg-1 video, DVDs
+(unlocked/unencrypted only), video CDs, SVCDs, and AVI files (using
+Win32 codecs) with synchronized audio and video, and optionally
+fullscreen using the Xv extensions. This xine-lib offers VDPAU
+hardware decoding and postprocessing.
+EOF

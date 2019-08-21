@@ -1,0 +1,15 @@
+          MODULE=setconf
+         VERSION=0.7.6
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://setconf.roboticoverlords.org/
+      SOURCE_VFY=sha256:98bd51861f0141508a20a81fc325204e9500f3b7305bc518f62bf5af91db8486
+        WEB_SITE=http://setconf.roboticoverlords.org/
+            TYPE=python3
+         ENTERED=20150729
+         UPDATED=20190322
+           SHORT="Utility for easily changing settings in configuration files"
+
+cat << EOF
+setconf is a small utility that can be used for changing settings in
+configuration textfiles.
+EOF

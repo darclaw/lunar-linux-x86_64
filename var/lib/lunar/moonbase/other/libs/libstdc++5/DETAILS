@@ -1,0 +1,19 @@
+          MODULE=libstdc++5
+         VERSION=3.3.6
+          SOURCE=gcc-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/gcc-$VERSION
+   SOURCE_URL[0]=$GNU_URL/gcc/gcc-$VERSION
+   SOURCE_URL[1]=ftp://ftp.gnu.org/pub/gnu/gcc/gcc-$VERSION
+   SOURCE_URL[2]=http://www.online-mirror.org/gcc/gcc-$VERSION
+      SOURCE_VFY=sha256:1c1aa533c67e9da5e55ed4f5736258dc753466bd716bdae3fb88fb66e6ff1d7f
+        WEB_SITE=http://gcc.gnu.org
+         ENTERED=20041215
+         UPDATED=20080716
+           PSAFE=no
+           SHORT="Backwards compatible libstdc++ v5"
+
+cat << EOF
+This is the backwards compatible libstdc++ v5 from gcc-3.3.x. It's
+provided solely to support running binary applications that explicitly
+require the old version to be available. You should not need this normally.
+EOF

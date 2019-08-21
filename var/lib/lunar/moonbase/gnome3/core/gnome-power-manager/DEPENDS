@@ -1,0 +1,5 @@
+depends intltool
+depends dconf
+depends upower
+depends hicolor-icon-theme
+depends meson

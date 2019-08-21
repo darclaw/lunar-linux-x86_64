@@ -1,0 +1,11 @@
+depends libnih
+
+optional_depends help2man "" "" "for manpages build and install" n
+
+optional_depends systemd \
+                 "--with-init-script=systemd" \
+                 "" "for systemd support"
+
+optional_depends openrc \
+                 "--with-init-script=openrc" \
+                 "" "for openrc support"

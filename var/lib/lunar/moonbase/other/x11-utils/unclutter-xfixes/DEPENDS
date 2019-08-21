@@ -1,0 +1,6 @@
+depends libev
+depends libX11
+depends libXfixes
+
+# asciidoc needed by Makefile to generate man pages
+depends asciidoc

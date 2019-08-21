@@ -1,0 +1,5 @@
+# This is private data. Do not parse.
+LLMNR=yes
+MDNS=no
+SERVERS=10.107.102.1
+DOMAINS=lxd

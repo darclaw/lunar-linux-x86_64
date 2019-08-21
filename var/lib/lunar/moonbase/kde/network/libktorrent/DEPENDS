@@ -1,0 +1,5 @@
+depends boost
+depends qt5
+depends qca2
+depends extra-cmake-modules
+depends kio

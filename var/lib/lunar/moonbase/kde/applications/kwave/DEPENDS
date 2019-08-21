@@ -1,0 +1,12 @@
+depends  audiofile
+depends  fftw3
+depends  hicolor-icon-theme
+depends  extra-cmake-modules
+depends  alsa-utils
+depends  libsamplerate
+depends  opus
+depends  id3lib
+depends  libmad
+depends  flac
+depends  libvorbis
+depends  kio

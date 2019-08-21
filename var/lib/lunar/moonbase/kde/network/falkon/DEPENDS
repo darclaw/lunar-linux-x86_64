@@ -1,0 +1,7 @@
+depends cmake
+depends extra-cmake-modules
+depends qt5
+depends kconfig
+depends ki18n
+
+optional_depends gnome-keyring "" "" "for keyring support"

@@ -1,0 +1,28 @@
+          MODULE=Net-Netmask
+         VERSION=1.9104
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://cpan.metacpan.org/authors/id/J/JM/JMASLAK/
+      SOURCE_VFY=sha256:7efc6c544b76ee3923a4f3bf82d2b20ca7452e55cfd05ec65789fceab716919e
+        WEB_SITE=https://search.cpan.org/search?query=Net-netmask
+            TYPE=perl
+         ENTERED=20021228
+         UPDATED=20181018
+      MAINTAINER=csm@moongroup.com
+           SHORT="Net-Netmask parses and understands IPv4 CIDR blocks."
+cat << EOF
+
+Net::Netmask parses and understands IPv4 CIDR blocks. It's built with
+an object-oriented interface. Nearly all functions are methods that
+operate on a Net::Netmask object.
+
+There are methods that provide the nearly all bits of information
+about a network block that you might want.
+
+There are also functions to put a network block into a table and then
+later lookup network blocks by IP address in that table. There are
+functions to turn a IP address range into a list of CIDR blocks. There
+are functions to turn a list of CIDR blocks into a list of IP
+addresses.
+
+There is a function for sorting by text IP address.
+EOF

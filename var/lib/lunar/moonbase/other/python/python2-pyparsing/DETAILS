@@ -1,0 +1,18 @@
+          MODULE=python2-pyparsing
+         VERSION=2.4.0
+          SOURCE=pyparsing_$VERSION.tar.gz
+      SOURCE_URL=https://github.com/pyparsing/pyparsing/archive/
+     SOURCE_VFY=sha256:e4454c439f52b3236047fdcc85c821a43182948f6043c278ea537b9e0db3fefb
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/pyparsing-pyparsing_$VERSION
+        WEB_SITE=http://pyparsing.wikispaces.com/
+            TYPE=python2
+         ENTERED=20120727
+         UPDATED=20190423
+           SHORT="A general python parsing module"
+
+cat << EOF
+pyparsing is a general parsing module for Python.
+Grammars are implemented directly in the client code using parsing
+objects, instead of externally, as with lex/yacc-type tools.
+Includes simple examples for parsing SQL, CORBA IDL, and 4-function math.
+EOF

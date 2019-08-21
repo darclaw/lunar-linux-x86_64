@@ -1,0 +1,16 @@
+          MODULE=dosfstools
+         VERSION=4.1
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://github.com/$MODULE/$MODULE/releases/download/v$VERSION/
+        WEB_SITE=http://github.com/dosfstools/dosfstools/
+      SOURCE_VFY=sha256:e6b2aca70ccc3fe3687365009dd94a2e18e82b688ed4e260e04b7412471cc173
+         ENTERED=20011217
+         UPDATED=20170311
+           SHORT="Utilities to create and check MS-DOS filesystems under Linux"
+
+cat << EOF
+Utilities to create and check MS-DOS filesystems under Linux.
+Includes :
+  mkdosfs mkfs.msdos mkfs.vfat
+  dosfsck fsck.msdos fsck.vfat
+EOF

@@ -1,0 +1,19 @@
+          MODULE=wine
+         VERSION=4.9
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://dl.winehq.org/wine/source/4.x/
+      SOURCE_VFY=sha256:91848e22fff3cb17db7fe7d727d714d21c5d4229dd460b5d1506753021fc799b
+        WEB_SITE=http://www.winehq.com
+         ENTERED=20010925
+         UPDATED=20190526
+           SHORT="Runs Microsoft Windows programs"
+
+cat << EOF
+Wine Is Not an Emulator. It is an alternative implementation of the Windows and
+Win32 APIs. Wine provides both a development toolkit (Winelib) for porting
+legacy Windows sources to Unix and a program loader, allowing unmodified
+Windows 3.1/95/NT binaries to run under Intel Unixes. Wine does not require
+Microsoft Windows, as it is a completely alternative implementation consisting
+of 100% Microsoft-Free code, but it can optionally use native system DLLs if
+they are available.
+EOF

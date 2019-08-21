@@ -1,0 +1,18 @@
+          MODULE=racket
+         VERSION=7.3
+          SOURCE=$MODULE-$VERSION-src.tgz
+      SOURCE_URL=http://download.racket-lang.org/installers/$VERSION/
+      SOURCE_VFY=sha256:d49b11de4aa8f62d23d096134d4246f6cbd7a1da326645fecc072d28ad38c040
+        WEB_SITE=http://racket-lang.org/
+         ENTERED=20150711
+         UPDATED=20190516
+           SHORT="A Scheme like language with DrRacket IDE"
+
+cat << EOF
+Racket is a full-spectrum programming language. It goes beyond Lisp and Scheme
+with dialects that support objects, types, laziness, and more. Racket enables
+programmers to link components written in different dialects, and it empowers
+programmers to create new, project-specific dialects. Racket's libraries
+support applications from web servers and databases to GUIs and charts.
+Formerly known as PLT Scheme.
+OF

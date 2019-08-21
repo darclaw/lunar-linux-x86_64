@@ -1,0 +1,19 @@
+          MODULE=OpenImageIO-oiio
+         VERSION=1.8.13
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/oiio-Release-${VERSION}
+ SOURCE_URL_FULL=https://github.com/OpenImageIO/oiio/archive/Release-$VERSION.tar.gz
+      SOURCE_VFY=sha256:24b93ebe6cc31aa92d3246b65ec66fcf626af32fcd4b04847c7f23c8e2adcabd
+        WEB_SITE=http://www.openimageio.org/
+         ENTERED=20130329
+         UPDATED=20180822
+           SHORT="library for reading and writing images"
+
+cat << EOF
+OpenImageIO is a library for reading and writing images, and a bunch of related
+classes, utilities, and applications. There is a particular emphasis on formats
+and functionality used in professional, large-scale animation and visual effects
+work for film.
+OpenImageIO is used extensively in animation and VFX studios all over the world,
+and is also incorporated into several commercial products.
+EOF

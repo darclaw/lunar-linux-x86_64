@@ -1,0 +1,13 @@
+          MODULE=libaio
+         VERSION=0.3.112
+          SOURCE=${MODULE}_$VERSION.orig.tar.xz
+      SOURCE_URL=http://ftp.de.debian.org/debian/pool/main/liba/libaio/
+      SOURCE_VFY=sha256:f69e5800425f4ea957426693ac09f9896bb993db5490fa021644454adcc72a32
+        WEB_SITE=http://www.kernel.org/pub/linux/kernel/people/andrea/libaio/
+         ENTERED=20090611
+         UPDATED=20190411
+           SHORT="The Linux-native asynchronous I/O library"
+
+cat << EOF
+The Linux-native asynchronous I/O facility (aio) library.
+EOF

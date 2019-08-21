@@ -1,0 +1,22 @@
+          MODULE=anyremote
+         VERSION=6.7.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/$MODULE
+      SOURCE_VFY=sha256:89133105d026b908216205f2f49c2566b8e81f0d272a08f6899b6061c85682c3
+        WEB_SITE=http://anyremote.sourceforge.net/
+         ENTERED=20100123
+         UPDATED=20180417
+           SHORT="A remote control service"
+
+cat << EOF
+The overall goal of this project is to provide remote control service on Linux
+through Bluetooth, InfraRed, Wi-Fi or just TCP/IP connection. anyRemote supports
+wide range of modern cell phones like Nokia, SonyEricsson, Motorola and others.
+
+It was developed as thin communication layer between Bluetooth (or IR, Wi-Fi)
+capabled phone and Linux, and in principle could be configured to manage almost
+any software.
+
+anyRemote is console application, but in addition there are GUI front ends for
+Gnome and KDE.
+EOF

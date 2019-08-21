@@ -1,0 +1,14 @@
+          MODULE=openscad
+         VERSION=2015.03-3
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://github.com/openscad/openscad/archive/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$MODULE-$VERSION
+      SOURCE_VFY=sha256:7816d095db9107325dd78102dd4b972c6cd931a92e28b13ff4d20425bb2c123e
+        WEB_SITE=http://www.openscad.org
+         ENTERED=20160414
+         UPDATED=20181211
+           SHORT="create solid 3D CAD objects"
+
+cat << EOF
+OpenSCAD is a software for creating solid 3D CAD objects.
+EOF

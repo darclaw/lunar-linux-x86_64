@@ -1,0 +1,23 @@
+          MODULE=partclone
+         VERSION=0.2.89
+          SOURCE=${MODULE}_${VERSION}.orig.tar.gz
+      SOURCE_URL=$SFORGE_URL/$MODULE/testing
+      SOURCE_VFY=sha256:25fe77774e4e5a50501a0c3796833f7b5a129dc60555eb833806be83a58f5219
+        WEB_SITE=http://www.partclone.org
+         ENTERED=20121001
+         UPDATED=20181007
+           SHORT="Smartly backup partitions"
+
+cat << EOF
+Partclone is a project like the well-known backup utility "Partition Image"
+a.k.a. partimage. Partclone provides utilities to backup used blocks and
+designed for higher compatibility of the file system by using supported
+libraries, like e2fslibs.
+
+Supports LInux, Windows, Mac, FreeBSD, ESX file system backup/restore.
+Supports btrfs, ext2/3/4, jfs, xfs, reiserfs, and reiser4 for linux file
+systems.
+Supports fat and ntfs for Windows file systems.
+Supports ufs for FreeBSD file system.
+Support vmfs for ESX vmware server
+EOF

@@ -1,0 +1,10 @@
+8c8d956ea9a129a3db156911fddb887d  /usr/bin/efibootdump
+dee7658039e881818ed81293f2eca29a  /usr/bin/efibootmgr
+681b72fe63c6e0553dc327ab7abc72be  /usr/share/doc/efibootmgr/INSTALL
+4bc6b161f310b277d8478ac69bcaaf69  /usr/share/doc/efibootmgr/README
+e63469d4f0a32aba18d52c59c2733080  /usr/share/doc/efibootmgr/README.md
+9b578ffc40d8c5668e4c9f6eefbb5cf9  /usr/share/man/man8/efibootdump.8.gz
+887a5bf8057cdb8c2d0d56472098fd2a  /usr/share/man/man8/efibootmgr.8.gz
+b96417168d4c02c27f9a82963ebddb21  /var/log/lunar/install/efibootmgr-17
+df8dadef6e4c97eb768c0ba99cbb0e4e  /var/log/lunar/compile/efibootmgr-17.xz
+c0e5ae03f465d4c23c6099dd61f222ae  /var/log/lunar/md5sum/efibootmgr-17

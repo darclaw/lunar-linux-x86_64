@@ -1,0 +1,16 @@
+          MODULE=libidn
+         VERSION=1.35
+          SOURCE=$MODULE-$VERSION.tar.gz
+   SOURCE_URL[0]=$GNU_URL/$MODULE/
+   SOURCE_URL[1]=http://ftp.gnu.org/gnu/$MODULE/
+      SOURCE_VFY=sha256:f11af1005b46b7b15d057d7f107315a1ad46935c7fcdf243c16e46ec14f0fe1e
+        WEB_SITE=http://www.gnu.org/software/libidn
+         ENTERED=20041220
+         UPDATED=20180914
+           SHORT="Implementation of the Stringprep, Punycode and IDNA specifications"
+
+cat << EOF
+GNU Libidn is an implementation of the Stringprep, Punycode and IDNA
+specifications defined by the IETF Internationalized Domain Names (IDN)
+working group, used for internationalized domain names.
+EOF

@@ -1,0 +1,18 @@
+          MODULE=psutils
+         VERSION=20180414
+          SOURCE=texlive-$VERSION-source.tar.xz
+      SOURCE_URL=ftp://tug.org/texlive/historic/2018/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/texlive-$VERSION-source
+      SOURCE_VFY=sha256:fe0036d5f66708ad973cdc4e413c0bb9ee2385224481f7b0fb229700a0891e4e
+        WEB_SITE=http://www.tug.org/texlive/
+         ENTERED=20010922
+         UPDATED=20181008
+           SHORT="Utilities for manipulating PostScript files"
+
+cat << EOF
+A small set of invaluable utilities for manipulating PostScript files by
+selecting certain pages, re-ordering pages to facilitate printing books,
+changing the paper size, fitting several pages on a single sheet, etc.
+This package also includes some utilities to "fix" some broken
+PostScript formats.
+EOF

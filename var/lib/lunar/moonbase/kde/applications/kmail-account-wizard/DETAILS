@@ -1,0 +1,14 @@
+          MODULE=kmail-account-wizard
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:640d63ceca23644e2f358c7117eb54daa0fffc669628398f7930fe273d7944a9
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=https://community.kde.org/KDE_PIM
+         ENTERED=20171205
+         UPDATED=20190418
+           SHORT="kmail account wizard"
+
+cat << EOF
+Kmail account wizard.
+EOF

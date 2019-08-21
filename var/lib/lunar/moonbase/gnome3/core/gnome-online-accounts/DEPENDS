@@ -1,0 +1,21 @@
+depends gcr
+depends json-glib
+depends libnotify
+depends libsecret
+depends rest
+depends docbook-xsl
+depends webkit2gtk3
+depends intltool
+
+optional_depends krb5 \
+                 "--enable-kerberos" "" \
+                 "for Kerberos support"
+
+optional_depends telepathy-glib \
+                 "--enable-telepathy" "" \
+                 "for telepathy support"
+
+optional_depends gobject-introspection \
+                 "--enable-introspection" \
+                 "--disable-introspection" \
+                 "for object introspection"

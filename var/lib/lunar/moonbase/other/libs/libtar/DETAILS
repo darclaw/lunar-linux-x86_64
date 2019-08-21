@@ -1,0 +1,21 @@
+          MODULE=libtar
+         VERSION=1.2.20
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://pkgbuild.com/~giovanni/$MODULE
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE
+      SOURCE_VFY=sha256:43c5f50e6b4398c8be35d6f3abee26064c3f26174715b60004576792e3283353
+        WEB_SITE=http://repo.or.cz/w/libtar.git
+         ENTERED=20091116
+         UPDATED=20151119
+           SHORT="manipulate POSIX tar files"
+
+cat << EOF
+libtar is a C library for manipulating POSIX tar files. It handles adding and
+extracting files to/from a tar archive.
+
+NOTE: The original author has temporarily turned over maintanence to
+Chris Frey. The orignal version of this would cause vlc to crap out on
+some unresolved symbols (IIRC). Anyway we should be using this for the
+duration. VLC is the only module using libtar.
+
+EOF

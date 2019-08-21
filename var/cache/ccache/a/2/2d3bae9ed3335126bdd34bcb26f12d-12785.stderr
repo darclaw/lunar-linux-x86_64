@@ -1,0 +1,4 @@
+conftest.c: In function 'main':
+conftest.c:162:1: warning: implicit declaration of function 'syscall' [-Wimplicit-function-declaration]
+ syscall(SYS_fallocate, 0, 0, (loff_t)0, (loff_t)0);
+ ^~~~~~~

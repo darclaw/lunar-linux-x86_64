@@ -1,0 +1,20 @@
+          MODULE=help2man
+         VERSION=1.47.8
+          SOURCE=$MODULE-$VERSION.tar.xz
+   SOURCE_URL[0]=$GNU_URL/$MODULE
+   SOURCE_URL[1]=ftp://ftp.gnu.org/gnu/$MODULE
+      SOURCE_VFY=sha256:528f6a81ad34cbc76aa7dce5a82f8b3d2078ef065271ab81fda033842018a8dc
+        WEB_SITE=http://www.gnu.org/software/help2man
+         ENTERED=20090108
+         UPDATED=20181031
+           SHORT="A utility that converts help output to a man page"
+
+cat << EOF
+help2man is a tool for automatically generating simple manual pages from
+program output.
+It is intended to provide an easy way for software authors to include a manual
+page in their distribution without having to maintain that document.
+Given a program which produces resonably standard --help and --version outputs,
+help2man will attempt to re-arrange that output into something which resembles
+a manual page.
+EOF

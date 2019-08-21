@@ -1,0 +1,14 @@
+          MODULE=gambit
+         VERSION=4.9.3
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/feeley/gambit/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:a5e4e5c66a99b6039fa7ee3741ac80f3f6c4cff47dc9e0ff1692ae73e13751ca
+        WEB_SITE=http://gambitscheme.org/
+         ENTERED=20151015
+         UPDATED=20190213
+           SHORT="Scheme R5RS interpreter and compiler (via C)"
+
+cat << EOF
+The Gambit Scheme system is a complete, portable, efficient and reliable
+implementation of the Scheme programming language.
+EOF

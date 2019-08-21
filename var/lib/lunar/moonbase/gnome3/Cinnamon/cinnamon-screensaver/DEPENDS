@@ -1,0 +1,10 @@
+depends dbus-glib
+depends libgnomekbd
+depends webkit2gtk3
+depends cinnamon-desktop
+depends cinnamon-translations
+
+optional_depends systemd \
+                 "--with-systemd" \
+                 "--without-systemd" \
+                 "for systemd support"

@@ -1,0 +1,3 @@
+depends pkgconf
+depends systemd
+depends python2

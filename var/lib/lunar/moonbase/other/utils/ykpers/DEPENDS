@@ -1,0 +1,5 @@
+depends libyubikey
+depends libusb
+depends pkgconf
+
+optional_depends json-c "--with-json" "--without-json" "for JSON YCFG support"

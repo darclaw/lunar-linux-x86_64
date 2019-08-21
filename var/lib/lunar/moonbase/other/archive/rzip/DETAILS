@@ -1,0 +1,16 @@
+          MODULE=rzip
+         VERSION=2.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://rzip.samba.org/ftp/$MODULE/
+      SOURCE_VFY=sha256:4bb96f4d58ccf16749ed3f836957ce97dbcff3e3ee5fd50266229a48f89815b7
+        WEB_SITE=http://rzip.samba.org/
+         ENTERED=20101121
+         UPDATED=20180823
+           SHORT="rzip is a compression program, similar in functionality to gzip or bzip2"
+
+cat << EOF
+rzip is a compression program, similar in functionality to gzip or
+bzip2, but able to take advantage long distance redundencies in
+files, which can sometimes allow rzip to produce much better
+compression ratios than other programs.
+EOF

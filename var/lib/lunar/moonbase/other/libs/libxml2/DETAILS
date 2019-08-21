@@ -1,0 +1,18 @@
+          MODULE=libxml2
+         VERSION=2.9.9
+          SOURCE=$MODULE-$VERSION.tar.gz
+   SOURCE_URL[0]=http://xmlsoft.org/sources/
+   SOURCE_URL[1]=ftp://xmlsoft.org/$MODULE
+      SOURCE_VFY=sha256:94fb70890143e3c6549f265cee93ec064c80a84c42ad0f23e85ee1fd6540a871
+        WEB_SITE=http://xmlsoft.org/
+         ENTERED=20010922
+         UPDATED=20190123
+           SHORT="XML version 2 parser for Gnome"
+
+cat << EOF
+The libXML library allows you to manipulate XML files. It offers SAX or DOM
+tree generation interfaces. It supports XML and HTML (real-world ones) parsing,
+flexible DTD validation, XPath, XPointer-XInclude, and pull and push modes with
+FTP and HTTP modules. It's written in C and should be fairly portable.
+The design is modular; most of the extensions can be compiled out.
+EOF

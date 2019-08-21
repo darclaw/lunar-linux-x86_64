@@ -1,0 +1,22 @@
+util.c: In function 'set_modtime':
+util.c:147:14: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   switch_step++;
+   ~~~~~~~~~~~^~
+In file included from util.c:152:
+case_N.h:28:2: note: here
+  case 1:
+  ^~~~
+util.c:157:14: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   switch_step++;
+   ~~~~~~~~~~~^~
+In file included from util.c:161:
+case_N.h:31:2: note: here
+  case 2:
+  ^~~~
+util.c:163:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   if (preserve_times & PRESERVE_LINK_TIMES) {
+      ^
+In file included from util.c:170:
+case_N.h:34:2: note: here
+  case 3:
+  ^~~~

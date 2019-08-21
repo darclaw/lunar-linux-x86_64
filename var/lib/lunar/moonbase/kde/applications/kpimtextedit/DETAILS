@@ -1,0 +1,14 @@
+          MODULE=kpimtextedit
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:b4c640ee8ae5c4356bc26819763721580ca87477eb39258c1eaacdffbfc5311a
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=http://techbase.kde.org/Getting_Started/Build/KDE4/Troubleshooting
+         ENTERED=20151122
+         UPDATED=20190418
+           SHORT="textedit with PIM-specific features"
+
+cat << EOF
+A textedit with PIM-specific features.
+EOF

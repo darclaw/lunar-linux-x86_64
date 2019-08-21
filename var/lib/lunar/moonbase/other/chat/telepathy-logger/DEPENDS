@@ -1,0 +1,7 @@
+depends intltool
+depends dconf
+depends libxslt
+depends libxml2
+depends sqlite
+depends telepathy-glib
+depends gobject-introspection

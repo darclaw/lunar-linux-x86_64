@@ -1,0 +1,13 @@
+          MODULE=phonon-backend-vlc
+         VERSION=0.10.2
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://download.kde.org/stable/phonon/$MODULE/$VERSION/
+      SOURCE_VFY=sha256:490915d02b64143ee1372511b675671e57c386c50c4cec04771ed8740bc67298
+        WEB_SITE=http:phonon.kde.org
+         ENTERED=20100404
+         UPDATED=20190420
+           SHORT="phonon-vlc backend"
+
+cat << EOF
+phonon-vlc backend.
+EOF

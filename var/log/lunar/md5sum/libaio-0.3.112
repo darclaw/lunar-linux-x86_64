@@ -1,0 +1,9 @@
+b24adabb6d959b1778fbb19e5ddf1ca6  /usr/include/libaio.h
+f0a589979973f0a10b1e13b49904bd0b  /usr/lib/libaio.a
+eb316019761b9dd66ddbd431019305c9  /usr/lib/libaio.so.1.0.1
+01ce083534f615fcccc02d7c33967bb2  /usr/share/doc/libaio/ChangeLog
+6c85426a7833e8f46e03bb2457c70e3e  /usr/share/doc/libaio/INSTALL
+cda7271fd8e1c7b6dbafd383fd21c805  /usr/share/doc/libaio/README.md
+6ea978d1eeff3e023683574123a5ff2e  /var/log/lunar/install/libaio-0.3.112
+649b981e1eefbc4c2656dec673c87535  /var/log/lunar/compile/libaio-0.3.112.xz
+ec7e198a667a6b98b8dbab43060da983  /var/log/lunar/md5sum/libaio-0.3.112

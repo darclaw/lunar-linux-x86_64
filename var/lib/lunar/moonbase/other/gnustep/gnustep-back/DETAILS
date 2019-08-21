@@ -1,0 +1,13 @@
+          MODULE=gnustep-back
+         VERSION=0.24.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=ftp://ftp.gnustep.org/pub/gnustep/core/
+      SOURCE_VFY=sha256:5fc2ed70076d1cd9d51bf3ad85c71a42bfd29e3fd7c22421cc1de739695c3d62
+        WEB_SITE=http://gnustep.org/
+         ENTERED=20130909
+         UPDATED=20141117
+           SHORT="GNUstep Backend Package"
+
+cat << EOF
+The generic back-end package of the GNUstep project.
+EOF

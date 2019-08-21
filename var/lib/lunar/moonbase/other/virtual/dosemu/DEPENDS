@@ -1,0 +1,16 @@
+depends ImageMagick
+depends slang
+depends SDL
+depends libXxf86vm
+
+optional_depends gpm \
+                 "" "--without-gpm" \
+                 "for mouse support within the CLI"
+
+optional_depends alsa-lib \
+                  "" "--without-alsa" \
+                  "for alsa sound support"
+
+optional_depends libsndfile \
+                 "" "--without-sndfile" \
+                  "for sound file support"

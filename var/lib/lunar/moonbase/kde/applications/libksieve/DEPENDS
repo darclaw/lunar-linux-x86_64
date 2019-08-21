@@ -1,0 +1,5 @@
+depends kidentitymanagement
+depends kmailtransport
+depends pimcommon
+depends kdoctools
+depends kdesignerplugin

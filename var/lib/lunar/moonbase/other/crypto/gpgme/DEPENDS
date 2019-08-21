@@ -1,0 +1,5 @@
+depends libtool
+depends gnupg
+depends libgpg-error
+
+optional_depends qt5 "" "" "for Qt bindings"

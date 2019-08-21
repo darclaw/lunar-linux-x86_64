@@ -1,0 +1,11 @@
+[Unit]
+Description=Telldus TellStick daemon
+
+[Service]
+Type=forking
+ExecStart=/usr/sbin/telldusd
+PIDFile=/run/telldusd.pid
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

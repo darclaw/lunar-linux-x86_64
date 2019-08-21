@@ -1,0 +1,27 @@
+          MODULE=x264-snapshot
+         VERSION=20181105-2245
+          SOURCE=$MODULE-$VERSION.tar.bz2
+   SOURCE_URL[0]=https://download.videolan.org/pub/videolan/x264/snapshots/
+   SOURCE_URL[1]=ftp://ftp.videolan.org/pub/videolan/x264/snapshots/
+      SOURCE_VFY=sha256:f4f909938feba50a62d7518df024c69ad2aff7a1b094b0959c7464f518f1e0be
+        WEB_SITE=http://www.videolan.org/developers/x264.html
+         ENTERED=20080928
+         UPDATED=20190329
+           SHORT="A library for encoding H264/AVC video streams"
+
+cat << EOF
+x264 is a free library for encoding H264/AVC video streams. Encoder features
+CAVLC/CABAC
+Multi-references
+Intra: all macroblock types (16x16, 8x8, and 4x4 with all predictions)
+Inter P: all partitions (from 16x16 down to 4x4)
+Inter B: partitions from 16x16 down to 8x8 (including skip/direct)
+Ratecontrol: constant quantizer, single or multipass ABR, optional VBV
+Scene cut detection
+Adaptive B-frame placement
+B-frames as references / arbitrary frame order
+8x8 and 4x4 adaptive spatial transform
+Lossless mode
+Custom quantization matrices
+Parallel encoding of multiple slices
+EOF

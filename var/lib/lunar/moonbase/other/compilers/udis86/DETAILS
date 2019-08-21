@@ -1,0 +1,26 @@
+          MODULE=udis86
+         VERSION=1.7.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/$MODULE
+      SOURCE_VFY=sha256:9c52ac626ac6f531e1d6828feaad7e797d0f3cce1e9f34ad4e84627022b3c2f4
+        WEB_SITE=http://udis86.sourceforge.net
+         ENTERED=20090511
+         UPDATED=20180121
+           SHORT="A minimalistic disassembler library"
+
+cat << EOF
+Udis86 is an easy-to-use minimalistic disassembler library (libudis86) for the
+x86 and AMD64 (x86-64) range of instruction set architectures. The primary
+intent of the design and development of udis86 is to aid software development
+projects that entail binary code analysis.
+   1. Full support for the x86 and x86-64 (AMD64) range of instruction set
+      architectures.
+   2. Full support for all AMD-V, INTEL-VMX, MMX, SSE, SSE2, SSE3, FPU(x87), and
+      AMD 3Dnow! instructions.
+   3. Supports 16bit, 32bit, and 64bit disassembly modes.
+   4. Supports instruction meta-data using XML based decode tables.
+   5. Generates output in AT&T or INTEL assembler language syntaxes.
+   6. Supports flexbile input methods: File, Buffer, and Hooks.
+   7. Thread-safe and Reentrant.
+   8. Clean and very easy-to-use API.
+EOF

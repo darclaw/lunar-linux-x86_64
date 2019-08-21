@@ -1,0 +1,17 @@
+          MODULE=open-iscsi
+         VERSION=2.0.876
+          SOURCE=${MODULE}-${VERSION}.tar.gz
+ SOURCE_URL_FULL=https://github.com/open-iscsi/open-iscsi/archive/$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
+      SOURCE_VFY=sha256:9f01327d5e100ed794dc5083fc18dc4a06a0c29c77b252e21abd1b8f56edd9a7
+        WEB_SITE="http://www.open-iscsi.org/"
+      MAINTAINER=ratler@lunar-linux.org
+         ENTERED=20110517
+         UPDATED=20180531
+           SHORT="A high performance, transport independent, multi-platform implementation of RFC3720"
+LUNAR_RESTART_SERVICES=off
+
+cat <<EOF
+Open-iSCSI is a high performance, transport independent, multi-platform
+implementation of RFC3720
+EOF

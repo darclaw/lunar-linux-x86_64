@@ -1,0 +1,2 @@
+depends firejail
+depends qt5

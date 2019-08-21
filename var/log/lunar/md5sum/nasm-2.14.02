@@ -1,0 +1,11 @@
+c1376cf266618fa1f0db118fd658a352  /usr/bin/nasm
+2115798e2758b883a7360eb3e8735ddf  /usr/bin/ndisasm
+ac9c2eee4b00936b0f3ba96684083680  /usr/share/doc/nasm/ChangeLog
+3064764f084d27be8cd29d0852ba575e  /usr/share/doc/nasm/CHANGES
+ce4673d18f995d431bbd1cbd1ea6e72d  /usr/share/doc/nasm/INSTALL
+b755ca626aed563e987c0f6c400a3176  /usr/share/doc/nasm/README
+acdf757b32d37f1f408fbea5f95cbf1f  /usr/share/man/man1/nasm.1.gz
+19eae2e37bd717fff6932d734602a51a  /usr/share/man/man1/ndisasm.1.gz
+43f403a191786d588c0bf49995bedc0a  /var/log/lunar/install/nasm-2.14.02
+f68fc1c0db051c7080356b01e312662b  /var/log/lunar/compile/nasm-2.14.02.xz
+03fcd436db94d02d35957126fd537229  /var/log/lunar/md5sum/nasm-2.14.02

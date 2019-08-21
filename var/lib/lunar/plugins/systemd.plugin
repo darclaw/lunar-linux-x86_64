@@ -1,0 +1,200 @@
+#!/bin/bash
+#############################################################
+#                                                           #
+# systemd.plugin - handling of systemd service files        #
+#                                                           #
+#############################################################
+#                                                           #
+# Copyright 2011 by Auke Kok under GPLv2                    #
+# Parts Copyrighted 2012-2018 by Stefan Wold under GPLv2    #
+#                                                           #
+#############################################################
+
+
+plugin_systemd_configure()
+{
+  local SERVICES SERVICE_FLAGGED SERVICE SYSTEMD_SERVICES DESC
+  debug_msg "plugin_systemd_configure ($@)"
+
+  SYSTEMD_SERVICES=$(get_module_config SYSTEMD_SERVICES)
+
+  SERVICES=""
+  if [[ -d $SCRIPT_DIRECTORY/systemd.d ]]; then
+    SERVICES="$SERVICES $(ls $SCRIPT_DIRECTORY/systemd.d/)"
+  fi
+  if [[ -f $SCRIPT_DIRECTORY/systemd_units ]]; then
+    SERVICES="$SERVICES $(fgrep ':' $SCRIPT_DIRECTORY/systemd_units | awk -F': ' '{ print $1 }')"
+  fi
+
+  if [[ -n "$SERVICES" ]]; then
+    for SERVICE in $SERVICES; do
+      # don't ask for '@' services - these should always be installed but
+      # never linked directly. Also ask for new or renamed services.
+      if echo $SERVICE | grep -q @ || echo $SYSTEMD_SERVICES | egrep -q "(^| )-?$SERVICE( |$)"; then
+        if systemctl -q is-enabled $SERVICE &> /dev/null ; then
+          SYSTEMD_SERVICES=$(echo $SYSTEMD_SERVICES | sed -r "s;(^| )-?($SERVICE)( |$);\1\2\3;")
+        else
+          SYSTEMD_SERVICES=$(echo $SYSTEMD_SERVICES | sed -r "s;(^| )-?($SERVICE)( |$);\1-\2\3;")
+        fi
+        continue
+      fi
+      if [[ -f $SCRIPT_DIRECTORY/systemd.d/$SERVICE ]]; then
+        DESC=$(sed -n "s/Description=\(.*\)/\1/p" $SCRIPT_DIRECTORY/systemd.d/$SERVICE)
+      else
+        DESC=$(sed -n "s/^$SERVICE: \(.*\)/\1/p" $SCRIPT_DIRECTORY/systemd_units)
+      fi
+      message "${MESSAGE_COLOR}$SERVICE: $DESC${DEFAULT_COLOR}"
+      if query "Invoke $SERVICE via systemd automatically at boot ?"  y
+      then
+        SYSTEMD_SERVICES+=" $SERVICE"
+      else
+        SYSTEMD_SERVICES+=" -$SERVICE"
+        # ignore output here - this is likely to hit "not found" errors
+        systemctl disable $SERVICE &> /dev/null
+        systemctl stop $SERVICE &> /dev/null
+      fi
+    done
+  fi
+
+  # Look for renamed or removed services and stop and disable them.
+  # If we don't do it here it will be too late and there will be rogue
+  # processes left behind after a successful install
+  for SERVICE_FLAGGED in $SYSTEMD_SERVICES; do
+    SERVICE=$(echo $SERVICE_FLAGGED | sed "s;^-;;")
+    if ! echo $SERVICES | egrep -q "(^| )$SERVICE( |$)"; then
+      verbose_msg "Stopping removed service ($SERVICE)"
+      systemctl stop $SERVICE &> /dev/null
+      systemctl disable $SERVICE &> /dev/null
+      SYSTEMD_SERVICES=$(echo $SYSTEMD_SERVICES | sed -r "s;(^| )-?$SERVICE( |$);\2;")
+    fi
+  done
+
+  if echo "$SYSTEMD_SERVICES" | grep -q "[^ ]"; then
+    set_module_config "SYSTEMD_SERVICES" "$SYSTEMD_SERVICES"
+  else
+    unset_module_config "SYSTEMD_SERVICES"
+  fi
+
+  return 2
+}
+
+
+plugin_systemd_post_build()
+{
+  local SERVICES SERVICE SYSTEMDUNITDIR TOUCHME
+  debug_msg "plugin_systemd_post_install ($@)"
+
+  local SYSTEMDUNITDIR=$(pkg-config systemd --variable=systemdsystemunitdir)
+
+  if [[ -d $SCRIPT_DIRECTORY/systemd.d ]]; then
+    invoke_installwatch
+    verbose_msg "handling systemd.d services"
+    cd $SCRIPT_DIRECTORY/systemd.d
+    SERVICES=$(ls -1)
+
+    for SERVICE in $SERVICES; do
+      /usr/bin/install -g 0 -o 0 -m 0644 $SERVICE $SYSTEMDUNITDIR/$SERVICE
+    done
+    cd $SCRIPT_DIRECTORY
+    devoke_installwatch
+  fi
+
+  systemctl daemon-reload &> /dev/null
+
+  for SERVICE in $SYSTEMD_SERVICES; do
+    if echo $SERVICE | grep -q ^-; then
+      continue;
+    fi
+    systemctl -q disable $SERVICE
+    invoke_installwatch
+
+    # Necessary to track enabled services with installwatch
+    # due to how systemctl creates symlinks
+    TOUCHME=$(systemctl enable $SERVICE 2>&1 | cut -d' ' -f3)
+    if [[ -n "$TOUCHME" ]]; then
+      touch -h $TOUCHME
+    fi
+    devoke_installwatch
+  done
+
+  return 2
+}
+
+plugin_systemd_restart_services() {
+  local SERVICE
+  debug_msg "plugin_systemd_restart_services ($@)"
+
+  # start-or-restart it
+  for SERVICE in $SYSTEMD_SERVICES; do
+    if echo $SERVICE | grep -q ^-; then
+      continue;
+    fi
+    if [[ "${LUNAR_RESTART_SERVICES:=on}" == "on" ]]; then
+      systemctl restart $SERVICE
+    fi
+  done
+
+  return 2
+}
+
+plugin_systemd_tmpfilesd_post_build() {
+  local FILE SYSTEMDTEMPFILES
+  debug_msg "plugin_systemd_tmpfilesd_post_build ($@)"
+
+  SYSTEMDTEMPFILES=$(pkg-config systemd --variable=prefix)/lib/tmpfiles.d
+
+  if [[ -d $SCRIPT_DIRECTORY/tmpfiles.d ]]; then
+    verbose_msg "handling systemd tmpfiles.d files"
+
+    for FILE in $SCRIPT_DIRECTORY/tmpfiles.d/*; do
+      invoke_installwatch
+      /usr/bin/install -g 0 -o 0 -m 0644 $FILE $SYSTEMDTEMPFILES/
+      devoke_installwatch
+      systemd-tmpfiles --create $FILE
+    done
+  fi
+
+  return 2
+}
+
+plugin_systemd_disable_services_pre_remove() {
+  local SYSTEMD_SERVICES SERVICE SERVICE_FLAGGED
+  debug_msg "plugin_systemd_disable_services_pre_remove ($@)"
+
+  SYSTEMD_SERVICES=$(get_module_config SYSTEMD_SERVICES)
+  for SERVICE_FLAGGED in $SYSTEMD_SERVICES; do
+    SERVICE=$(echo $SERVICE_FLAGGED | sed "s;^-;;")
+    verbose_msg "Stopping and disabling systemd service ($SERVICE)"
+    systemctl stop $SERVICE &> /dev/null
+    systemctl disable $SERVICE &> /dev/null
+  done
+
+  return 2
+}
+
+plugin_systemd_sysusersd_post_build() {
+  local FILE SYSTEMDUSERSDIR
+  debug_msg "plugin_systemd_sysusersd_post_build ($@)"
+
+  SYSTEMDUSERSDIR=$(pkg-config systemd --variable=prefix)/lib/sysusers.d
+
+  if [[ -d $SCRIPT_DIRECTORY/sysusers.d ]]; then
+    verbose_msg "handling systemd sysusers.d files"
+
+    for FILE in $SCRIPT_DIRECTORY/sysusers.d/*; do
+      invoke_installwatch
+      /usr/bin/install -g 0 -o 0 -m 0644 $FILE $SYSTEMDUSERSDIR/
+      devoke_installwatch
+      systemd-sysusers $FILE
+    done
+  fi
+
+  return 2
+}
+
+plugin_register BUILD_CONFIGURE plugin_systemd_configure
+plugin_register BUILD_POST_BUILD plugin_systemd_post_build
+plugin_register BUILD_POST_BUILD plugin_systemd_tmpfilesd_post_build
+plugin_register BUILD_POST_BUILD plugin_systemd_sysusersd_post_build
+plugin_register BUILD_POST_INSTALL plugin_systemd_restart_services
+plugin_register BUILD_PRE_REMOVE plugin_systemd_disable_services_pre_remove

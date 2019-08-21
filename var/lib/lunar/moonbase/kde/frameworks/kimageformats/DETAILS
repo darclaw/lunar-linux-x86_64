@@ -1,0 +1,17 @@
+          MODULE=kimageformats
+         VERSION=5.57.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/frameworks/$(module_version kf5)
+      SOURCE_VFY=sha256:d7ce6c4737ae2846f015633e7479b60460d960a3a578777c2a884d499bd6cc14
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=https://projects.kde.org/projects/frameworks/kimageformats
+         ENTERED=20150205
+         UPDATED=20190415
+           SHORT="allow QImage to support extra file formats"
+
+cat << EOF
+This framework provides additional image format plugins for QtGui.  As
+such it is not required for the compilation of any other software, but
+may be a runtime requirement for Qt-based software to support certain
+image formats.
+EOF

@@ -1,0 +1,17 @@
+        MODULE=libXinerama
+       VERSION=1.1.4
+        SOURCE=$MODULE-$VERSION.tar.bz2
+    SOURCE_URL=$XORG_URL/individual/lib/
+    SOURCE_VFY=sha256:0008dbd7ecf717e1e507eed1856ab0d9cf946d03201b85d5dcf61489bb02d720
+ MODULE_PREFIX=${X11R7_PREFIX:-/usr}
+      WEB_SITE=http://www.x.org
+       ENTERED=20060120
+       UPDATED=20180710
+         SHORT="The X.Org XINERAMA extension protocol library"
+
+cat << EOF
+libXinerama provides access to the XINERAMA extension of the X protocol.
+The XINERAMA extension allows for multiple screens attached to a single display
+to be treated as belonging together. It also allows desktop applications a
+better idea of the monitor layout.
+EOF

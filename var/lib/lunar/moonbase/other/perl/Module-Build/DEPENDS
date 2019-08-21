@@ -1,0 +1,4 @@
+depends CPAN-Meta
+depends Archive-Zip
+depends inc-latest
+depends PAR-Dist

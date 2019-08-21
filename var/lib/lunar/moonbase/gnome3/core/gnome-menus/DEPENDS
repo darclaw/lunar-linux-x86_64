@@ -1,0 +1,7 @@
+depends python2
+depends intltool
+
+optional_depends gobject-introspection \
+                 "--enable-introspection" \
+                 "--disable-introspection" \
+                 "for object introspection"

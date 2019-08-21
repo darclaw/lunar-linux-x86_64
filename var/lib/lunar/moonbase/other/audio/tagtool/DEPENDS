@@ -1,0 +1,3 @@
+depends libglade
+depends id3lib
+depends libvorbis

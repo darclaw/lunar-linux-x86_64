@@ -1,0 +1,14 @@
+          MODULE=PerlIO-eol
+         VERSION=0.17
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/
+      SOURCE_VFY=sha256:cecccbfe4545b1965d112a86298dffe50d6806180090c6bec7d757b68fb85eb9
+        WEB_SITE=https://metacpan.org/pod/PerlIO::eol
+            TYPE=perl
+         ENTERED=20070310
+         UPDATED=20181018
+           SHORT="PerlIO layer for normalizing line endings"
+cat << EOF
+This PerlIO layer normalizes any of CR, LF, CRLF and Native into the
+designated line ending.
+EOF

@@ -1,0 +1,17 @@
+          MODULE=normalize
+         VERSION=0.7.7
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://savannah.nongnu.org/download/$MODULE/
+      SOURCE_VFY=sha256:ef9d8558515cc942518981d3db8fa2490fba6d6b5b74e0a3b75336fbc66c6bd8
+        WEB_SITE=http://normalize.nongnu.org/
+         ENTERED=20011217
+         UPDATED=20060826
+      MAINTAINER=csm@moongroup.com
+           SHORT="audio file volume normalizer"
+
+cat << EOF
+normalize is a tool for adjusting the volume of audio files to a
+standard level. This is useful for things like creating mixed CD's
+and mp3 collections, where different recording levels on different
+albums can cause the volume to vary greatly from song to song.
+EOF

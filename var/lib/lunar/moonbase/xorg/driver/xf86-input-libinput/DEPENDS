@@ -1,0 +1,2 @@
+depends libinput
+depends xorg-server

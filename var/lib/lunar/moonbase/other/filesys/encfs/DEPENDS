@@ -1,0 +1,9 @@
+depends cmake
+depends fuse
+depends boost
+
+optional_depends %OSSL "" "" "for SSL encryption options"
+
+optional_depends tinyxml2 \
+                 "-DUSE_INTERNAL_TINYXML=OFF" "" \
+                 "for system XML2 parser suport"

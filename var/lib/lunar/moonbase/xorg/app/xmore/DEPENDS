@@ -1,0 +1,4 @@
+depends libXaw
+depends libSM
+depends libICE
+depends libXdmcp

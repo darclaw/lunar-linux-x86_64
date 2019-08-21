@@ -1,0 +1,20 @@
+         MODULE=SDL_gfx
+        VERSION=2.0.26
+         SOURCE=$MODULE-$VERSION.tar.gz
+     SOURCE_URL=http://www.ferzkopp.net/Software/$MODULE-2.0
+     SOURCE_VFY=sha256:7ceb4ffb6fc63ffba5f1290572db43d74386cd0781c123bc912da50d34945446
+       WEB_SITE=http://www.ferzkopp.net/joomla/content/view/19/14
+        ENTERED=20020112
+        UPDATED=20170331
+          SHORT="High quality graphics library"
+
+cat << EOF
+The SDL_gfx library offers several components: Graphic Primitives,
+Rotozoomer, Framerate control, and MMX image filters. The Primitives
+component provides basic drawing routines: pixels, hlines, vlines,
+lines, aa-lines, rectangles, circles, ellipses, polygons, and an 8x8
+pixmap font for drawing onto any SDL Surface. Full alpha blending,
+hardware surface locking, and all surface depths are supported. The
+Rotozoomer can use interpolation for high quality output.
+EOF
+

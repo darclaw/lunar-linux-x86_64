@@ -1,0 +1,10 @@
+depends exiv2
+depends extra-cmake-modules
+depends phonon
+depends libkdcraw
+depends libkgeomap
+depends libkipi
+depends kdoctools
+depends kparts
+depends libkexiv2
+depends plasma-framework

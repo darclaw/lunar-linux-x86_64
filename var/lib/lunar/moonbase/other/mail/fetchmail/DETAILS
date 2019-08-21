@@ -1,0 +1,17 @@
+          MODULE=fetchmail
+         VERSION=6.3.26
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$SFORGE_URL/$MODULE/branch_6.3
+      SOURCE_VFY=sha256:79b4c54cdbaf02c1a9a691d9948fcb1a77a1591a813e904283a8b614b757e850
+        WEB_SITE=http://fetchmail.berlios.de
+         ENTERED=20010922
+         UPDATED=20190224
+           SHORT="A full-featured remote-mail retrieval and forwarding utility"
+
+cat << EOF
+Fetchmail is a remote mail retrieval and forwarding utility intended to
+be used over on-demand TCP/IP links (such as SLIP or PPP connections).
+It supports every remote-mail protocol now in use on the Internet:
+POP2, POP3, RPOP, APOP, KPOP, all flavors of IMAP, ETRN, and ODMR. It
+can even support IPv6 and IPSEC.
+EOF

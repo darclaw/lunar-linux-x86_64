@@ -1,0 +1,14 @@
+/usr
+/usr/bin
+/usr/bin/diffstat
+/usr/share
+/usr/share/doc
+/usr/share/doc/diffstat
+/usr/share/doc/diffstat/CHANGES
+/usr/share/doc/diffstat/README
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/diffstat.1.gz
+/var/log/lunar/install/diffstat-1.62
+/var/log/lunar/compile/diffstat-1.62.xz
+/var/log/lunar/md5sum/diffstat-1.62

@@ -1,0 +1,16 @@
+          MODULE=lz4
+         VERSION=1.9.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/lz4/lz4/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:f8377c89dad5c9f266edc0be9b73595296ecafd5bfa1000de148096c50052dc4
+        WEB_SITE=http://www.lz4.org/
+         ENTERED=20140619
+         UPDATED=20190424
+           SHORT="Very fast lossless compression algorithm"
+
+cat << EOF
+LZ4 is a very fast lossless compression algorithm, providing compression speed
+at 400 MB/s per core, scalable with multi-cores CPU.
+It also features an extremely fast decoder, with speed in multiple GB/s per
+core, typically reaching RAM speed limits on multi-core systems.
+EOF

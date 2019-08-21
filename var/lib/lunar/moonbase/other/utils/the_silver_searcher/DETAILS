@@ -1,0 +1,15 @@
+          MODULE=the_silver_searcher
+         VERSION=2.1.0
+          SOURCE=the_silver_searcher-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/ggreer/the_silver_searcher/archive/${VERSION}.tar.gz
+      SOURCE_VFY=sha256:cb416a0da7fe354a009c482ae709692ed567f8e7d2dad4d242e726dd7ca202f0
+        WEB_SITE=https://github.com/ggreer/the_silver_searcher
+         ENTERED=20150302
+         UPDATED=20180310
+           SHORT="A really fast code searching tool"
+
+cat << EOF
+The Silver Searcher is a tool for searching code. It started off as a clone of
+Ack, but their feature sets have since diverged slightly. In typical usage, it
+is 5-10x faster than Ack.
+EOF

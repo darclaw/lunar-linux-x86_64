@@ -1,0 +1,17 @@
+          MODULE=darktable
+         VERSION=2.4.4
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://github.com/darktable-org/darktable/releases/download/release-$VERSION
+      SOURCE_VFY=sha256:964320b8c9ffef680fa0407a6ca16ed5136ad1f449572876e262764e78acb04d
+        WEB_SITE=http://www.darktable.org
+         ENTERED=20111109
+         UPDATED=20180826
+           SHORT="An image darkroom"
+
+cat << EOF
+darktable is an open source photography workflow application and RAW
+developer. A virtual lighttable and darkroom for photographers. It
+manages your digital negatives in a database, lets you view them
+through a zoomable lighttable and enables you to develop raw images
+and enhance them.
+EOF

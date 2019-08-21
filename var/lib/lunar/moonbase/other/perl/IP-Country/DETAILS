@@ -1,0 +1,25 @@
+          MODULE=IP-Country
+         VERSION=2.28
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://search.cpan.org/CPAN/authors/id/N/NW/NWETTERS
+      SOURCE_VFY=sha256:88db833a5ab22ed06cb53d6f205725e3b5371b254596053738885e91fa105f75
+        WEB_SITE=http://search.cpan.org/dist/IP-Country
+            TYPE=perl
+         ENTERED=20090810
+         UPDATED=20150705
+           SHORT="Fast lookup of country codes from IP addresses"
+
+cat << EOF
+Finding the home country of a client using only the IP address can be
+difficult. Looking up the domain name associated with that address can
+provide some help, but many IP addresses are not reverse-mapped to any
+useful domain, and the most common domain (.com) offers no help when
+looking for the country.
+
+This module comes bundled with a database of countries where various IP
+addresses have been assigned. Although the country of assignment will
+probably be the country associated with a large ISP rather than the
+client herself, this is probably good enough for most log analysis
+applications, and under tests has proved to be as accurate as
+reverse-DNS and WHOIS lookup.
+EOF

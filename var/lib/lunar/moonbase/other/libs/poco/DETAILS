@@ -1,0 +1,16 @@
+            MODULE=poco
+           VERSION=1.9.0
+            SOURCE=$MODULE-$VERSION-release.tar.gz
+        SOURCE_URL=https://github.com/pocoproject/poco/archive/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$MODULE-$VERSION-release
+        SOURCE_VFY=sha256:45ec5c759d2ad02bb812745f6cb585aa04af025c921b1bb4bdefa108ce4f1756
+          WEB_SITE=http://pocoproject.org
+           ENTERED=20130417
+           UPDATED=20180919
+             SHORT="C++ library for network-based applications"
+
+cat << EOF
+Modern, powerful open source C++ class libraries and frameworks
+for building network- and internet-based applications that run
+on desktop, server, mobile and embedded systems.
+EOF

@@ -1,0 +1,5 @@
+default_pre_build &&
+
+# regenerate Makefile.in since patch.d/ modifies it
+autoconf &&
+automake --add-missing --force-missing --copy

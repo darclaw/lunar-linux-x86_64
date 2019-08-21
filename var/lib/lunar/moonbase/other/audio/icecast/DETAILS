@@ -1,0 +1,15 @@
+          MODULE=icecast
+         VERSION=2.4.3
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://downloads.us.xiph.org/releases/$MODULE/
+      SOURCE_VFY=sha256:c85ca48c765d61007573ee1406a797ae6cb31fb5961a42e7f1c87adb45ddc592
+        WEB_SITE=http://www.icecast.org
+         ENTERED=20020209
+         UPDATED=20170212
+           SHORT="opensource streaming radio server"
+
+cat << EOF
+Icecast is an internet audio broadcasting system based on Ogg Vorbis
+audio technology. It allows almost anyone to broadcast an audio stream
+to as many people as their bandwidth can support.
+EOF

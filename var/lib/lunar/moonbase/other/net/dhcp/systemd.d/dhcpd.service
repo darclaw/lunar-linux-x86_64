@@ -1,0 +1,12 @@
+[Unit]
+Description=DHCPv4 Server Daemon
+After=network.target
+
+[Service]
+EnvironmentFile=/etc/config.d/dhcpd
+ExecStart=/usr/sbin/dhcpd -f -4 -cf /etc/dhcpd.conf --no-pid $DHCPD_ARGS
+ProtectSystem=full
+ProtectHome=on
+
+[Install]
+WantedBy=multi-user.target

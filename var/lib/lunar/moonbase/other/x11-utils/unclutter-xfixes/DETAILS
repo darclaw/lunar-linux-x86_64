@@ -1,0 +1,17 @@
+          MODULE=unclutter-xfixes
+         VERSION=1.5
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/Airblader/$MODULE/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:35c75ad24be989dd6708db1d9ce9b2a2f814b80638c0633cdb075c6df090ed11
+        WEB_SITE=https://github.com/Airblader/unclutter-xfixes
+         ENTERED=20160111
+         UPDATED=20190413
+           SHORT="hides your mouse cursor when inactive"
+
+cat << EOF
+This is a rewrite of the popular tool unclutter,
+but using the x11-xfixes extension.
+
+The tools hides the mouse cursor whenever it has been
+inactive for some time.
+EOF

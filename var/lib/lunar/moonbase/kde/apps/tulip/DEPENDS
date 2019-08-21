@@ -1,0 +1,13 @@
+depends glew
+depends cmake
+depends freetype2
+depends ftgl
+depends %JPEG
+depends libpng
+depends libxml2
+depends python2
+depends Sphinx
+depends yajl
+depends qt5
+
+optional_depends "quazip" "" "" "Use system quazip For C++ wrapper zip file support"

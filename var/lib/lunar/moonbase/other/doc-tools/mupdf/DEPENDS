@@ -1,0 +1,8 @@
+depends freetype2
+depends %JPEG
+depends openjpeg-2
+depends jbig2dec
+depends libXext
+depends mesa-lib
+depends desktop-file-utils
+depends curl

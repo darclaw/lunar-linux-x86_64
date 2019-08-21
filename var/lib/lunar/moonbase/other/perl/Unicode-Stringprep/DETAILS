@@ -1,0 +1,21 @@
+          MODULE=Unicode-Stringprep
+         VERSION=1.105
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://search.cpan.org/CPAN/authors/id/C/CF/CFAERBER
+      SOURCE_VFY=sha1:8d977441cb94a4fec52605b933957eaa8ed638a2
+        WEB_SITE=http://search.cpan.org/~cfaerber/Unicode-Stringprep
+         ENTERED=20100414
+         UPDATED=20141021
+           SHORT="Preparation of Internationalized Strings (RFC 3454)"
+
+cat << EOF
+This module implements the stringprep framework for preparing
+Unicode text strings in order to increase the likelihood that
+string input and string comparison work in ways that make sense
+for typical users throughout the world.  The stringprep protocol
+is useful for protocol identifier values, company and personal
+names, internationalized domain names, and other text strings.
+The stringprep framework does not specify how protocols should
+prepare text strings. Protocols must create profiles of
+stringprep in order to fully specify the processing options.
+EOF

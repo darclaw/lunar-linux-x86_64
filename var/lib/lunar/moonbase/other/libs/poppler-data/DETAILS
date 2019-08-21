@@ -1,0 +1,15 @@
+          MODULE=poppler-data
+         VERSION=0.4.9
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://poppler.freedesktop.org
+      SOURCE_VFY=sha256:1f9c7e7de9ecd0db6ab287349e31bf815ca108a5a175cf906a90163bdbe32012
+        WEB_SITE=http://poppler.freedesktop.org
+         ENTERED=20060624
+         UPDATED=20180425
+           SHORT="Extra encoding files for poppler"
+
+cat << EOF
+poppler-data includes extra encoding files for the poppler PDF render
+library. This package allows poppler to correctly render various
+encodings such as CJK and Cyrillic.
+EOF

@@ -1,0 +1,110 @@
+# Using minimal --enables, because MPlayer's build system is FLAKY.
+depends freetype2
+depends yasm
+
+optional_depends DirectFB \
+                 "--enable-directfb" \
+                 "--disable-directfb" \
+                 "to use DirectFB support"
+
+optional_depends SDL \
+                 "--enable-sdl" \
+                 "--disable-sdl" \
+                 "to use SDL to output video signal"
+
+optional_depends libcaca \
+                 "--enable-caca" \
+                 "--disable-caca" \
+                 "enable ASCII video output support"
+
+optional_depends libdvdread \
+                 "" "--disable-dvdread" \
+                 "use system library to read DVDs"
+
+optional_depends alsa-utils \
+                 "--enable-alsa" \
+                 "--disable-alsa" \
+                 "for ALSA sound support"
+
+optional_depends mpg123 \
+                 "--enable-mpg123 --extra-libs=-lmpg123" \
+                 "--disable-mpg123" \
+                 "for mp3 audio format"
+
+optional_depends libvorbis \
+                 "" "--disable-libvorbis" \
+                 "to use ogg audio format"
+
+optional_depends faad2 \
+                 "--enable-faad" \
+                 "--disable-faad" \
+                 "for external FAAD2 (MPA/AAC) support"
+
+optional_depends libtheora \
+                 "--enable-theora" \
+                 "--disable-theora" \
+                 "for OGG/Theora Video Playback"
+
+optional_depends libcdio-paranoia \
+                 "--enable-cdparanoia" \
+                 "--disable-cdparanoia --disable-libcdio" \
+                 "for cdparanoia support"
+
+optional_depends libXvMC \
+                 "--enable-xvmc" \
+                 "--disable-xvmc" \
+                 "for hardware XvMC acceleration"
+
+optional_depends libvdpau \
+                 "--enable-vdpau" \
+                 "--disable-vdpau" \
+                 "for vdpau hardware acceleration"
+
+optional_depends gtk+-2 \
+                 "--enable-gui" \
+                 "--disable-gui" \
+                 "for MPlayer GTK gui support"
+
+optional_depends amrnb \
+                 "--enable-libopencore_amrnb" \
+                 "--disable-libopencore_amrnb" \
+                 "AMR narrowband support"
+
+optional_depends amrwb \
+                 "--enable-libopencore_amrwb" \
+                 "--disable-libopencore_amrwb" \
+                 "AMR wideband support"
+
+optional_depends mpeg2dec \
+                 "" "--disable-libmpeg2" \
+                 "use system library for mpeg-1 and mpeg-2 support"
+
+# MPlayer needs to use x264 *via* ffmpeg
+optional_depends ffmpeg \
+                 "--enable-x264 --extra-libs=-lx264" \
+                 "--disable-x264" \
+                 "use ffmpeg (with e.g. x264-snapshot)"
+
+optional_depends libbs2b \
+                 "--enable-libbs2b --extra-cflags=-I/usr/include/bs2b/ --extra-libs=-lbs2b" \
+                 "--disable-libbs2b" \
+                 "for better sound via headphones"
+
+optional_depends fribidi \
+                 "" "--disable-fribidi" \
+                 "support right-to-left scripts"
+
+optional_depends libass \
+                 "--enable-ass" \
+                 "--disable-ass" \
+                 "ASS subtitle support"
+
+optional_depends MPlayer-essentials "" "" "installs gcc-3.3.6 for dlls"
+optional_depends MPlayer-all        "" "" "to install more foreign codecs"
+
+## live removed the obsolete synchronous client interface
+## which MPlayer still requires
+#optional_depends live555 \
+#                 "" "--disable-live" \
+#                 "for RTP/RTCP, RTSP, SIP support"
+

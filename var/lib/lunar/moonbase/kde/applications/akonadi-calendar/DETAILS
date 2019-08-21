@@ -1,0 +1,21 @@
+          MODULE=akonadi-calendar
+         VERSION=19.04.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/applications/$VERSION/src
+      SOURCE_VFY=sha256:5a2897a1e96897159a3e2980f407c4c225434efd45167ad699a14aaa2ec445fd
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=http://techbase.kde.org/Getting_Started/Build/KDE4/Troubleshooting
+         ENTERED=20151122
+         UPDATED=20190418
+           SHORT="A PIM layer for KDE 4.x"
+
+cat << EOF
+Akonadi is a PIM layer, which provides an asynchronous API to access
+all kind of PIM data (e.g. mails, contacts, events, todos etc.).
+It consists of several processes (generally called the Akonadi server)
+and a library (called client library) which encapsulates the
+communication between the client and the server.
+This directory contains the sources of the Akonadi server and all the
+infrastructure that is needed to build the client libraries and the
+application which want to make use of Akonadi.
+EOF

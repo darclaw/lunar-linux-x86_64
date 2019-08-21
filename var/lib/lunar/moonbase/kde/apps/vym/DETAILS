@@ -1,0 +1,18 @@
+          MODULE=vym
+         VERSION=2.7.0
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/$MODULE
+      SOURCE_VFY=sha256:703a8d870d39752d83d5a47d81a640b65e902c726e2f14ad379b1fe72876d9e6
+        WEB_SITE=http://www.insilmaril.de/vym/
+         ENTERED=20101205
+         UPDATED=20190416
+      MAINTAINER=brebs@lunar-linux.org
+           SHORT="View Your Mind"
+
+cat << EOF
+VYM (View Your Mind) is a tool to generate and manipulate mindmaps
+which show your thoughts. Such maps can help you to improve your
+creativity and effectiveness. You can use them for time management, to
+organize tasks, to get an overview over complex contexts, to sort your
+ideas etc.
+EOF

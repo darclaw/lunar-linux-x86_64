@@ -1,0 +1,4 @@
+depends lapack
+depends glpk
+
+optional_depends "intel-tbb" "" "" "Use threaded building blocks"

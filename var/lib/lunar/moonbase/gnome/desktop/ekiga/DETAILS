@@ -1,0 +1,16 @@
+          MODULE=ekiga
+         VERSION=4.0.1
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha1:da489d3aed19272016d297314abdcde42a1af0fb
+        WEB_SITE=http://ekiga.org
+         ENTERED=20070315
+         UPDATED=20130428
+           SHORT="Open source VoIP"
+
+cat << EOF
+Ekiga (formely known as GnomeMeeting) is an open source VoIP and video
+conferencing application for GNOME. Ekiga uses both the H.323 and SIP
+protocols. It supports many audio and video codecs, and is interoperable
+with other SIP compliant software and also with Microsoft NetMeeting.
+EOF

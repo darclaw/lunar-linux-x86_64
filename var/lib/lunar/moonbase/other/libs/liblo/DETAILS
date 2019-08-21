@@ -1,0 +1,14 @@
+           MODULE=liblo
+          VERSION=0.29
+           SOURCE=$MODULE-$VERSION.tar.gz
+       SOURCE_URL=$SFORGE_URL/$MODULE/$VERSION
+       SOURCE_VFY=sha256:ace1b4e234091425c150261d1ca7070cece48ee3c228a5612d048116d864c06a
+         WEB_SITE=http://liblo.sourceforge.net/
+          ENTERED=20060613
+          UPDATED=20180920
+            SHORT="Open Sound Control protocol implementation"
+
+cat << EOF
+liblo is an implementation of the Open Sound Control protocol
+for POSIX systems.
+EOF

@@ -1,0 +1,18 @@
+          MODULE=hunspell
+         VERSION=1.7.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
+ SOURCE_URL_FULL=http://github.com/hunspell/hunspell/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:bb27b86eb910a8285407cf3ca33b62643a02798cf2eef468c0a74f6c3ee6bc8a
+        WEB_SITE=http://hunspell.github.io/
+         ENTERED=20071017
+         UPDATED=20181118
+           SHORT="A spell checker"
+
+cat << EOF
+Hunspell is the default spell checker of OpenOffice.org office suite and
+expectant spell checker of Mozilla Firefox and Thunderbird.
+Its main features are Unicode support, the ability to function with
+MySpell dictionaries since it's based on MySpell and rich morphological
+features.
+EOF

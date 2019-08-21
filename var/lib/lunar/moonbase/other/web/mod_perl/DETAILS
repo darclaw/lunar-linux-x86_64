@@ -1,0 +1,18 @@
+          MODULE=mod_perl
+         VERSION=2.0.10
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://apache.org/dist/perl
+      SOURCE_VFY=sha256:d1cf83ed4ea3a9dfceaa6d9662ff645177090749881093051020bf42f9872b64
+        WEB_SITE=http://perl.apache.org
+         ENTERED=20010922
+         UPDATED=20161028
+           PSAFE=no
+           SHORT="Incoporates PERL into the Apache HTTP server"
+
+cat << EOF
+The Apache/Perl integration project brings together the full power of
+the Perl programming language and the Apache HTTP server. With mod_perl
+it is possible to write Apache modules entirely in Perl. In addition,
+the persistent interpreter embedded in the server avoids the overhead of
+starting an external interpreter and the penalty of Perl start-up time.
+EOF

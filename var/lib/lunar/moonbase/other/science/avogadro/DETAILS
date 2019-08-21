@@ -1,0 +1,17 @@
+          MODULE=avogadro
+         VERSION=1.91.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/OpenChemistry/avogadroapp/archive/$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/${MODULE}app-$VERSION
+      SOURCE_VFY=sha256:3bbe130027a75116de1d5c48dd7e97ff0fa8a785a96c500767bd4965f52e20df
+        WEB_SITE=https://www.openchemistry.org/
+         ENTERED=20090411
+         UPDATED=20180913
+           SHORT="an advanced molecular editor"
+
+cat << EOF
+Avogadro is an advanced molecular editor designed for cross-platform use in
+computational chemistry, molecular modeling, bioinformatics, materials science,
+and related areas. It offers flexible rendering and a powerful plugin
+architecture.
+EOF

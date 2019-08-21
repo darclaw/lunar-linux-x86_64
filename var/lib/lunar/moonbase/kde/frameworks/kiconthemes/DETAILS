@@ -1,0 +1,25 @@
+          MODULE=kiconthemes
+         VERSION=5.57.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/frameworks/$(module_version kf5)
+      SOURCE_VFY=sha256:09abb03a97027948a1116bfb2ca9842d3f8fb2def83b0b02aaed194dd5bd16f3
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=https://projects.kde.org/projects/frameworks/kiconthemes
+         ENTERED=20150205
+         UPDATED=20190415
+           SHORT="icon gui utilities"
+
+cat << EOF
+This library contains classes to improve the handling of icons
+in applications using the KDE Frameworks. Provided are:
+
+- KIconDialog: Dialog class to let the user select an icon
+    from the list of installed icons.
+- KIconButton: Custom button class that displays an icon.
+    When clicking it, the user can change it using the icon dialog.
+- KIconEffect: Applies various colorization effects to icons,
+    which can be used to create selected/disabled icon images.
+
+Other classes in this repository are used internally by the icon
+theme configuration dialogs, and should not be used by applications.
+EOF

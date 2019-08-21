@@ -1,0 +1,13 @@
+depends cups
+depends extra-cmake-modules
+depends kconfigwidgets
+depends kdbusaddons
+depends kcoreaddons
+depends kiconthemes
+depends kcmutils
+depends ki18n
+depends knotifications
+depends kio
+depends kwindowsystem
+
+depends plasma-framework

@@ -1,0 +1,15 @@
+          MODULE=libwpg
+         VERSION=0.3.3
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$SFORGE_URL/$MODULE
+      SOURCE_VFY=sha256:99b3f7f8832385748582ab8130fbb9e5607bd5179bebf9751ac1d51a53099d1c
+        WEB_SITE=http://libwpg.sourceforge.net/
+         ENTERED=20080318
+         UPDATED=20190104
+           SHORT="work with WordPerfect Graphics"
+
+cat << EOF
+Libwpg project is a collection of library and tools to work with graphics in
+WPG (WordPerfect Graphics) format. WPG is the format used among others in
+Corel sofware, such as WordPerfect(tm) and Presentations(tm).
+EOF

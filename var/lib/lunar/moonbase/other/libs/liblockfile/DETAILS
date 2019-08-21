@@ -1,0 +1,14 @@
+          MODULE=liblockfile
+         VERSION=1.14
+          SOURCE=${MODULE}_$VERSION.orig.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE
+      SOURCE_URL=http://ftp.debian.org/debian/pool/main/libl/liblockfile/
+      SOURCE_VFY=sha256:ab40d4a3e8cbc204f7e87fea637a4e4ddf9a1149aaa0a723a4267febd0b1d060
+        WEB_SITE=http://packages.debian.org/unstable/libs/liblockfile1/
+         ENTERED=20131012
+         UPDATED=20180219
+           SHORT="A library with NFS-safe locking functions"
+
+cat <<EOF
+A library with NFS-safe locking functions.
+EOF

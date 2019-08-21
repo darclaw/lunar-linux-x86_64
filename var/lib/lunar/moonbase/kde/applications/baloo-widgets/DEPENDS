@@ -1,0 +1,3 @@
+depends baloo
+depends kfilemetadata
+depends kio

@@ -1,0 +1,9 @@
+# This is private data. Do not parse
+PRIORITY=30
+LEVEL_PREFIX=1
+FORWARD_TO_SYSLOG=0
+FORWARD_TO_KMSG=0
+FORWARD_TO_CONSOLE=0
+STREAM_ID=ca1a18ad3eb14f469a819937177f1690
+IDENTIFIER=wpa_supplicant
+UNIT=wpa_supplicant.service

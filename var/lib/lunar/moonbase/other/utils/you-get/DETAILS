@@ -1,0 +1,15 @@
+          MODULE=you-get
+         VERSION=0.4.1181
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/soimort/you-get/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:f879fe94d727c69eced2104a56844ae93494f891d8f8db5fec4fe05b562d0b38
+        WEB_SITE=https://you-get.org
+         ENTERED=20160816
+         UPDATED=20181201
+           SHORT="A tiny command-line media download utility"
+
+cat << EOF
+You-get is a tiny conmand-line utility to download media
+contents (videos, audios, images) from the Web, in case
+there is no other handy way to do it.
+EOF

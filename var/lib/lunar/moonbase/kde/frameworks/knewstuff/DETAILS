@@ -1,0 +1,16 @@
+          MODULE=knewstuff
+         VERSION=5.57.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/frameworks/$(module_version kf5)
+      SOURCE_VFY=sha256:6a9d77a62b036b4ed0f32ffaa9f204db1403030d01dbe8fb055d02361db2f981
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=https://projects.kde.org/projects/frameworks/knewstuff
+         ENTERED=20150205
+         UPDATED=20190415
+           SHORT="downloading and sharing additional application data"
+
+cat << EOF
+The KNewStuff library implements collaborative data sharing for
+applications. It uses libattica to support the Open Collaboration Services
+specification.
+EOF

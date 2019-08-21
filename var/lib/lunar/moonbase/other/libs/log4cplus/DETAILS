@@ -1,0 +1,15 @@
+          MODULE=log4cplus
+         VERSION=1.2.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/$MODULE/
+     SOURCE_VFY=sha256:31c58e93aefb155780ed0b81d312d6827308135bc847a6eef183c251da137f04
+        WEB_SITE=http://sourceforge.net/p/log4cplus/wiki/Home/
+         ENTERED=20160930
+         UPDATED=20180920
+           SHORT="A C++ logger very close to Java's log4j"
+
+cat << EOF
+log4cplus is a simple to use C++ logging API providing thread-safe, flexible
+and arbitrarily granular control over log management and configuration.
+It is modelled after the Java log4j API.
+EOF

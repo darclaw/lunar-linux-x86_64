@@ -1,0 +1,4 @@
+depends hicolor-icon-theme
+depends boost
+depends akonadi-contacts
+depends kdoctools

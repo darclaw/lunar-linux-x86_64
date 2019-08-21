@@ -1,0 +1,23 @@
+          MODULE=lash
+         VERSION=0.6.0~rc2
+          SOURCE=$MODULE-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-${VERSION%~*}.594
+      SOURCE_URL=http://download.savannah.gnu.org/releases/lash/
+      SOURCE_VFY=sha256:3c1eb2bd88e1a0722dea5c24be4ede1d80848c963d41751973fae73c47dfe18b
+        WEB_SITE=http://lash.nongnu.org/
+         ENTERED=20070610
+         UPDATED=20180516
+           SHORT="session management system for JACK and ALSA"
+
+cat << EOF
+LASH is a session management system for JACK and ALSA audio applications
+on GNU/Linux. It is an implementation of a proposal that originated
+from this discussion. Its aim is to allow you to have many different
+audio programs running at once, to save their setup, close them down
+and then easily reload the setup at some other time. LASH doesn't deal
+with any kind of audio data itself; it just runs programs, deals with
+saving/loading (arbitrary) data and connects different kinds of virtual
+audio ports together (currently JACK and ALSA sequencer ports). It can
+also be used to move entire sessions between computers, or post sessions
+on the Internet for download.
+EOF

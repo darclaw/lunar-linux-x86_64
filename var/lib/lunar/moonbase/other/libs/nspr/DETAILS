@@ -1,0 +1,15 @@
+          MODULE=nspr
+         VERSION=4.21
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://ftp.mozilla.org/pub/mozilla.org/$MODULE/releases/v${VERSION}/src
+      SOURCE_VFY=sha256:15ea32c7b100217b6e3193bc03e77f485d9bf7504051443ba9ce86d1c17c6b5a
+        WEB_SITE=http://www.mozilla.org/projects/nspr
+         ENTERED=20100104
+         UPDATED=20180908
+           SHORT="Netscape Portable Runtime (NSPR)"
+
+cat << EOF
+This provides a platform-neutral API for system level and libc like functions.
+The API is used in the Mozilla clients and many of Red Hat's, Sun's, and other
+software offerings.
+EOF

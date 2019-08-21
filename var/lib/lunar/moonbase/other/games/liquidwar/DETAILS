@@ -1,0 +1,18 @@
+           MODULE=liquidwar
+          VERSION=5.6.4
+           SOURCE=$MODULE-$VERSION.tar.gz
+    SOURCE_URL[0]=http://savannah.nongnu.org/download/$MODULE/
+    SOURCE_URL[1]=http://www.ufoot.org/archive/
+       SOURCE_VFY=sha256:32c52e4588e8e723f907ef43703b4ddf009e8ff1f29555c09bcc1f70bf5b93a3
+         WEB_SITE=http://www.ufoot.org/liquidwar/
+          ENTERED=20040216
+          UPDATED=20181225
+            SHORT="A unique multiplayer wargame"
+
+cat << EOF
+Liquid War is a unique multiplayer wargame. Its rules are truely original
+and have been invented by Thomas Colcombet. You control an army of liquid
+and have to try and eat your opponents. A single player mode is
+available, but the game is definitely designed to be multiplayer, and has
+network support.
+EOF

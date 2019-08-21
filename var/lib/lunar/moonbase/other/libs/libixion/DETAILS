@@ -1,0 +1,14 @@
+          MODULE=libixion
+         VERSION=0.14.1
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=https://kohei.us/files/ixion/src/
+      SOURCE_VFY=sha256:6ad1384fcf813083c6d981a16b2643c953f9bac4c2caf1ed1682921d9b69ed91
+        WEB_SITE=https://gitlab.com/ixion/ixion/
+         ENTERED=20180131
+         UPDATED=20180920
+           SHORT="A general purpose formula parser & interpreter"
+
+cat << EOF
+Ixion is a general purpose formula parser & interpreter that can calculate
+multiple named targets, or "cells".
+EOF

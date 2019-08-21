@@ -1,0 +1,16 @@
+          MODULE=quesoglc
+         VERSION=0.7.2
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/$MODULE
+      SOURCE_VFY=sha256:54fef2ee685172df344d06ff4699a441143b87abed0d514524adc4f89ba4c931
+        WEB_SITE=http://quesoglc.sourceforge.net
+         ENTERED=20090606
+         UPDATED=20090606
+           SHORT="An implementation of the OpenGL Character Renderer"
+
+cat << EOF
+QuesoGLC is a free implementation of the OpenGL Character Renderer (GLC).
+QuesoGLC is based on the FreeType library, provides Unicode support and
+is designed to be easily ported to any platform that supports both
+FreeType and the OpenGL API.
+EOF

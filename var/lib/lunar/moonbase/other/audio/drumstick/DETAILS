@@ -1,0 +1,17 @@
+          MODULE=drumstick
+         VERSION=1.1.1
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=$SFORGE_URL/$MODULE
+      SOURCE_VFY=sha256:367743764c8f5c6e40bb19b9581f083da2881b9c9516d6b3b247e5644dee7c2b
+        WEB_SITE=http://drumstick.sourceforge.net/
+         ENTERED=20150531
+         UPDATED=20180331
+           SHORT="C++ MIDI libraries using Qt5 objects, idioms and style"
+
+cat << EOF
+Drumstick is a set C++ MIDI libraries using Qt5 objects, idioms and style. It contains a C++
+wrapper around the ALSA library sequencer interface; ALSA sequencer provides software support 
+for MIDI technology on Linux. A complementary library provides classes for SMF (Standard MIDI
+files: .MID/.KAR), Cakewalk (.WRK), and Overture (.OVE) file formats processing. 
+A multiplatform realtime MIDI I/O library is also provided since release 1.0.
+EOF

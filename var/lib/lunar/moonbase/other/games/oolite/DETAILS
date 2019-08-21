@@ -1,0 +1,18 @@
+          MODULE=oolite
+         VERSION=1.88
+          SOURCE=$MODULE-source-$VERSION.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-source-$VERSION
+      SOURCE_URL=https://github.com/OoliteProject/oolite/releases/download/$VERSION/
+      SOURCE_VFY=sha256:298abec5f9192b121003bf8d84fbf22eb137e5ce66f1a1469ca24fd582ab97e9
+        WEB_SITE=http://www.oolite.org
+         ENTERED=20120714
+         UPDATED=20181225
+           SHORT="A space simulator game"
+
+cat << EOF
+Oolite is a space simulator game.
+What's the point of the game?
+  To fly from planet to planet, buying and selling goods,
+  shooting pirates or committing acts of piracy. There's no
+  goal other than perhaps to achieve the rank of ELITE.
+EOF

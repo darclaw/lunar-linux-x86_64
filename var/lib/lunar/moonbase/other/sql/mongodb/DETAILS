@@ -1,0 +1,27 @@
+          MODULE=mongodb
+         VERSION=4.0.5
+          SOURCE=$MODULE-src-r$VERSION.tar.gz
+      SOURCE_URL=http://downloads.mongodb.org/src
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-src-r$VERSION
+      SOURCE_VFY=sha256:d967098fc91d105cdb0f400c8b837e5c2795c3638d7720392bc47afb1efe1c10
+        WEB_SITE=http://www.mongodb.org/
+         ENTERED=20101205
+         UPDATED=20181230
+           SHORT="A scalable, high-performance, key-values, document-oriented database"
+
+cat << EOF
+MongoDB bridges the gap between key-value stores (which are fast and
+highly scalable) and traditional RDBMS systems (which provide rich
+queries and deep functionality).
+MongoDB (from "humongous") is a scalable, high-performance, open
+source, document-oriented database. Written in C++, MongoDB features:
+- Document-oriented storage
+- Full Index Support
+- Replication & High Availability
+- Auto-Sharding
+- Querying
+- Fast In-Place Updates
+- Map/Reduce
+- GridFS
+- Commercial Support
+EOF

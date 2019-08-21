@@ -1,0 +1,6 @@
+depends vte3
+depends libvirt-python
+depends libvirt-glib
+depends python-requests
+depends libosinfo
+depends intltool

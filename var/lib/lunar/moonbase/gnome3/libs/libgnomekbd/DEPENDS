@@ -1,0 +1,8 @@
+depends dconf
+depends libxklavier
+depends intltool
+
+optional_depends gobject-introspection \
+                 "--enable-introspection" \
+                 "--disable-introspection" \
+                 "for object introspection"

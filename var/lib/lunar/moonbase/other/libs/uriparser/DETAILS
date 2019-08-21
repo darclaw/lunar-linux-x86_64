@@ -1,0 +1,15 @@
+           MODULE=uriparser
+          VERSION=0.9.3
+           SOURCE=$MODULE-$VERSION.tar.bz2
+       SOURCE_URL=https://github.com/uriparser/uriparser/releases/download/$MODULE-$VERSION/
+       SOURCE_VFY=sha256:28af4adb05e811192ab5f04566bebc5ebf1c30d9ec19138f944963d52419e28f
+         WEB_SITE=http://uriparser.sourceforge.net/
+          ENTERED=20140802
+          UPDATED=20190429
+            SHORT="URI parsing and handling library"
+
+cat << EOF
+uriparser is a strictly RFC 3986 compliant URI parsing and handling library written
+in C. uriparser is cross-platform, fast, supports Unicode and is licensed under the
+New BSD license.
+EOF

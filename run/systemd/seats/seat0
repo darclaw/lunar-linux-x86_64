@@ -1,0 +1,9 @@
+# This is private data. Do not parse.
+IS_SEAT0=1
+CAN_MULTI_SESSION=1
+CAN_TTY=1
+CAN_GRAPHICAL=1
+ACTIVE=c1
+ACTIVE_UID=0
+SESSIONS=c1
+UIDS=0

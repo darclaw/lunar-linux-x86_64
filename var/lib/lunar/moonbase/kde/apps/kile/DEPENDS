@@ -1,0 +1,8 @@
+depends poppler
+depends extra-cmake-modules
+depends okular
+depends ktexteditor
+depends khtml
+depends kinit
+depends kdoctools
+

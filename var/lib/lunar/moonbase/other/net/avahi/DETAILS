@@ -1,0 +1,16 @@
+          MODULE=avahi
+         VERSION=0.7
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/lathiat/avahi/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:fd45480cef0559b3eab965ea3ad4fe2d7a8f27db32c851a032ee0b487c378329
+        WEB_SITE=http://avahi.org
+         ENTERED=20060808
+         UPDATED=20170712
+           SHORT="A service discovery on a local network"
+
+cat << EOF
+Avahi is a system which facilitates service discovery on a local network.
+This means that you can plug your laptop or computer into a network and
+instantly be able to view other people who you can chat with, find printers
+to print to or find files being shared.
+EOF

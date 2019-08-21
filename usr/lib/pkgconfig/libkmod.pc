@@ -1,0 +1,11 @@
+prefix=
+exec_prefix=
+libdir=/lib
+includedir=/usr/include
+
+Name: libkmod
+Description: Library to deal with kernel modules
+Version: 26
+Libs: -L${libdir} -lkmod
+Libs.private: -L/lib -llzma  -L/lib -lz 
+Cflags: -I${includedir}

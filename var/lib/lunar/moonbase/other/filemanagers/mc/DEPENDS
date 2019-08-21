@@ -1,0 +1,37 @@
+depends glib-2
+depends ncurses
+depends libssh2
+depends tar
+
+optional_depends slang \
+                 "--with-screen=slang" \
+                 "--with-screen=ncurses" \
+                 "for slang as interface instead of ncurses" n
+
+optional_depends pcre \
+                 "--with-pcre --with-search-engine=pcre" "" \
+                 "for using pcre as a search engine" y
+
+optional_depends gpm \
+                 "--with-gpm-mouse" \
+                 "--without-gpm-mouse" \
+                 "for GPM mouse support"
+
+optional_depends e2fsprogs \
+                 "--enable-vfs-undelfs" \
+                 "--disable-vfs-undelfs" \
+                 "for ext2 undel operation"
+
+optional_depends samba \
+                 "--enable-vfs-smb" \
+                 "--disable-vfs-smb" \
+                 "for SMB support"
+
+optional_depends libX11 \
+                 "--with-x" \
+                 "--without-x" \
+                 "for X11 event support"
+
+optional_depends antiword "" "" "to view MS documents"
+optional_depends catdoc   "" "" "to view MS documents"
+optional_depends odt2txt  "" "" "to view OpenOffice-like documents"

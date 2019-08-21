@@ -1,0 +1,10 @@
+/usr
+/usr/bin/rpm2cpio
+/usr/bin/rpmunpack
+/usr/share
+/usr/share/doc
+/usr/share/doc/rpmunpack
+/usr/share/doc/rpmunpack/README
+/var/log/lunar/install/rpmunpack-0
+/var/log/lunar/compile/rpmunpack-0.xz
+/var/log/lunar/md5sum/rpmunpack-0

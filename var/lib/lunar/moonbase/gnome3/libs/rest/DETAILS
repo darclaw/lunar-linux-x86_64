@@ -1,0 +1,16 @@
+          MODULE=rest
+         VERSION=0.8.1
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha256:0513aad38e5d3cedd4ae3c551634e3be1b9baaa79775e53b2dba9456f15b01c9
+        WEB_SITE=http://git.gnome.org/browse/librest
+         ENTERED=20120728
+         UPDATED=20171128
+           SHORT="A library to easily access many web services"
+
+cat <<EOF
+This library has been designed to make it easier to access web services that
+claim to be "RESTful". A reasonable description is that a RESTful service
+should have urls that represent remote objects which methods can then be
+called on.
+EOF

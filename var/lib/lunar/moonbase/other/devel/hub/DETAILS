@@ -1,0 +1,15 @@
+          MODULE=hub
+         VERSION=2.2.9
+          SOURCE=$MODULE-$VERSION.tar.gz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION
+ SOURCE_URL_FULL=http://github.com/defunkt/hub/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:b3cf227e38a34a56e37b7705a60bec258cea52174d8e030b559f74af647a70d6
+        WEB_SITE=https://hub.github.com/
+         ENTERED=20141026
+         UPDATED=20161104
+           SHORT="Command-line wrapper for GitHUB"
+
+cat <<EOF
+GIT command-line wrapper for GitHUB.
+EOF
+

@@ -1,0 +1,57 @@
+          MODULE=CUDA-OpenCL-headers
+         VERSION=7.5.18
+          SOURCE=cudatoolkit-$VERSION-linux-headers.tar.xz
+         SOURCE2=cl.h
+         SOURCE3=cl_d3d10.h
+         SOURCE4=cl_d3d11.h
+         SOURCE5=cl_dx9_media_sharing.h
+         SOURCE6=cl_egl.h
+         SOURCE7=cl_ext.h
+         SOURCE8=cl_gl.h
+         SOURCE9=cl_gl_ext.h
+        SOURCE10=cl_platform.h
+        SOURCE11=opencl.h
+        SOURCE12=cl_version.h
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/cudatoolkit-$VERSION-linux-headers
+      SOURCE_URL=$PATCH_URL
+     SOURCE2_URL=https://raw.githubusercontent.com/KhronosGroup/OpenCL-Headers/master/CL/
+     SOURCE3_URL=$SOURCE2_URL
+     SOURCE4_URL=$SOURCE2_URL
+     SOURCE5_URL=$SOURCE2_URL
+     SOURCE6_URL=$SOURCE2_URL
+     SOURCE7_URL=$SOURCE2_URL
+     SOURCE8_URL=$SOURCE2_URL
+     SOURCE9_URL=$SOURCE2_URL
+    SOURCE10_URL=$SOURCE2_URL
+    SOURCE11_URL=$SOURCE2_URL
+    SOURCE12_URL=$SOURCE2_URL
+      SOURCE_VFY=sha256:b18ee1df05c4afceb0427ffdebd079e202f0654817ebb18a10dbe70ae0c3c34c
+        WEB_SITE=http://developer.nvidia.com/object/gpucomputing.html
+         ENTERED=20101016
+         UPDATED=20181108
+           SHORT="Nvidia CUDA and OpenCL headers extracted from SDK"
+CLEAR_CACHE=on
+cat << EOF
+Nvidia since 260 driver release stopped providing header files.
+Now CUDA headers are only present in CUDA Toolkit which weights
+84.2 MB. From this package we need only some header files which
+weights 37 KB. So to avoid big unnecessary downloads of cuda toolkit
+I extracted them to separate archive.
+
+If you are Lunar developer and want to update this package do it
+the following way:
+0. OpenCL headers are present here:
+http://www.khronos.org/registry/cl
+1. Go to http://developer.nvidia.com/object/cuda_download.html
+2. Choose Linux
+3. Choose one of "CUDA Toolkit for " - no matter what Linux
+   distribution and if it is 32 or 64 bit.
+   I checked that all of them have the same header files.
+4. Download chosen CUDA Toolkit.
+5. Unpack it:
+./cudatoolkit_3.2.16_linux_32_rhel5.5.run --target rhel55 --noexec --keep
+6. All files are in include subdir.
+6. Replace files in this module's archive with those updated.
+Do not add any new header files. Just replace those that are already present.
+cudatoolkit provides many header files which are not needed outside toolkit.
+EOF

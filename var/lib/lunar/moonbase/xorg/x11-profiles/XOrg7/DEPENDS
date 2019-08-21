@@ -1,0 +1,23 @@
+# divide and conquer split method to optimize build time
+depends XOrg-libs
+depends XOrg-apps
+depends XOrg-fonts
+#
+
+#adding gccmakedep for xpm
+depends gccmakedep
+
+#startkde needs this
+depends xprop
+
+#and optional, a video driver
+optional_depends xf86-video-vesa "" "" "install VESA driver"
+
+# evdev is optional, some people want a manual setup
+optional_depends xf86-input-evdev "" "" "automatic input device configuration (RECOMMENDED)"
+
+#it work without it
+optional_depends iceauth "" "" "for ICE authorization support"
+
+# for building old X apps
+#depends imake

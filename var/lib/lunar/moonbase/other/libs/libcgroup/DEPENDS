@@ -1,0 +1,1 @@
+optional_depends Linux-PAM "--enable-pam" "" "for PAM support"

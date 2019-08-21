@@ -1,0 +1,8 @@
+depends xauth
+depends xmodmap
+depends xrdb
+
+optional_depends xauth  "" "--without-xauth"  "for X authorization protocol support"
+optional_depends xterm  "" "--without-xterm"  "for a very basic terminal"
+optional_depends xclock "" "--without-xclock" "for a very basic clock app"
+optional_depends twm    "" "--without-twm"    "for a very basic window manager"

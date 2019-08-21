@@ -1,0 +1,18 @@
+          MODULE=kparts
+         VERSION=5.57.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/frameworks/$(module_version kf5)
+      SOURCE_VFY=sha256:5a079986963d186e98a1174e19e490731012732ad5ad31a431a8f7a31c6b6ed2
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=https://projects.kde.org/projects/frameworks/kparts
+         ENTERED=20150205
+         UPDATED=20190415
+           SHORT="plugin framework for user interface components"
+
+cat << EOF
+Plugin framework for user interface components
+
+This library implements the framework for KDE parts, which are
+elaborate widgets with a user-interface defined in terms of actions
+(menu items, toolbar icons).
+EOF

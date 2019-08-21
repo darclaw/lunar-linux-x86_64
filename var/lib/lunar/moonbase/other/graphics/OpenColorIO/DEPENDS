@@ -1,0 +1,4 @@
+depends cmake
+depends glew
+depends lcms2
+depends tinyxml

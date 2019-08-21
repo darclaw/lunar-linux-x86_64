@@ -1,0 +1,18 @@
+default_pre_build &&
+
+# fix build with previous version of the module installed
+# see https://bugreports.qt.io/browse/QTBUG-33948 and related
+sedit "s@\(QMAKE_LFLAGS_RPATH *=\) \(.*\)@\1 -Wl,-enable-new-dtags \2@" qtbase/mkspecs/common/gcc-base-unix.conf &&
+
+# Try and use our flags everywhere
+sedit "s;^\(QMAKE_CFLAGS_RELEASE.*\);\1 ${CFLAGS};" qtbase/mkspecs/common/gcc-base.conf &&
+sedit "s;^\(QMAKE_LFLAGS_RELEASE.*\);\1 ${LDFLAGS};" qtbase/mkspecs/common/gcc-base.conf &&
+sedit "s:QMAKE_LFLAGS_RELEASE += -Wl,-O1:QMAKE_LFLAGS_RELEASE += \$\$LDFLAGS:" qtbase/mkspecs/common/g++-unix.conf &&
+
+# qt5's build breaks with an (incompatible) old version of qt5 installed
+# even with the patch in PRE_BUILD due to old headers being pulled in.
+# this is troublesome, but until someone fixes the includes, we'll have to
+# remove to old version before building the new one...
+if module_installed $MODULE; then
+  lrm --upgrade $MODULE
+fi

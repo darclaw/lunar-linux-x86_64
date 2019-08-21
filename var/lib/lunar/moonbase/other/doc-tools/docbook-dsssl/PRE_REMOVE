@@ -1,0 +1,6 @@
+CENTRALIZED="/etc/sgml/catalog"
+CATALOGDIR="/usr/share/sgml/dsssl/dsssl-stylesheets-$VERSION"
+
+install-catalog --remove $CENTRALIZED $CATALOGDIR/catalog
+
+rm -rf $CATALOGDIR

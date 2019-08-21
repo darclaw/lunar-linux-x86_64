@@ -1,0 +1,12 @@
+conftest.c: In function 'main':
+conftest.c:177:58: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+ struct utimbuf tbuf;  tbuf.actime = 0; tbuf.modtime = 1; exit(utime("foo.c",&tbuf));
+                                                          ^~~~
+conftest.c:177:58: warning: incompatible implicit declaration of built-in function 'exit'
+conftest.c:177:58: note: include '<stdlib.h>' or provide a declaration of 'exit'
+conftest.c:174:1:
++#include <stdlib.h>
+ int
+conftest.c:177:58:
+ struct utimbuf tbuf;  tbuf.actime = 0; tbuf.modtime = 1; exit(utime("foo.c",&tbuf));
+                                                          ^~~~

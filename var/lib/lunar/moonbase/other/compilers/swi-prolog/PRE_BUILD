@@ -1,0 +1,6 @@
+default_pre_build &&
+
+# otherwise swipl will be linked against the installed libswipl.so
+if module_installed $MODULE; then
+  lrm --upgrade $MODULE
+fi

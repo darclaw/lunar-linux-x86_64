@@ -1,0 +1,16 @@
+          MODULE=diffstat
+         VERSION=1.62
+          SOURCE=$MODULE-$VERSION.tgz
+      SOURCE_URL=https://invisible-mirror.net/archives/$MODULE
+      SOURCE_VFY=sha256:7f09183644ed77a156b15346bbad4e89c93543e140add9dab18747e30522591f
+        WEB_SITE=http://invisible-island.net/diffstat/diffstat.html
+         ENTERED=20060322
+         UPDATED=20181231
+           SHORT="Shows a histogram of a diff/patch file"
+
+cat << EOF
+diffstat is widely used by kernel developers to show where a submitted
+patch impacts the kernel. it will read the output of diff and
+display a histogram of the insertions, deletions, and modifications
+per-file. It is useful for reviewing large, complex patch files.
+EOF

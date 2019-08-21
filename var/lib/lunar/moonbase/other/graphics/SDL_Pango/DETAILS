@@ -1,0 +1,14 @@
+          MODULE=SDL_Pango
+         VERSION=0.1.2
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/sdlpango
+      SOURCE_VFY=sha256:7f75d3b97acf707c696ea126424906204ebfa07660162de925173cdd0257eba4
+        WEB_SITE=http://sdlpango.sourceforge.net
+         ENTERED=20061110
+         UPDATED=20190220
+           SHORT="Connects Pango to SDL"
+
+cat << EOF
+Pango is the text rendering engine of GNOME SDL_Pango connects the engine
+to SDL.
+EOF

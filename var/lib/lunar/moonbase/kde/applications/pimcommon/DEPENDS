@@ -1,0 +1,5 @@
+depends libkdepim
+depends kimap
+depends knewstuff
+depends kpimtextedit
+depends kdoctools

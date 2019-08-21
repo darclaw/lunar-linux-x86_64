@@ -1,0 +1,3 @@
+SYSTEMD_SERVICES=" git-daemon.socket"
+DOCS="n"
+CONTRIB="n"

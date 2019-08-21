@@ -1,0 +1,13 @@
+          MODULE=imagesize
+         VERSION=1.0.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://files.pythonhosted.org/packages/source/i/$MODULE/
+      SOURCE_VFY=sha256:5b326e4678b6925158ccc66a9fa3122b6106d7c876ee32d7de6ce59385b96315
+        WEB_SITE=http://github.com/shibukawa/imagesize_py
+         ENTERED=20160520
+         UPDATED=20180217
+           SHORT="Getting image size from png/jpeg/jpeg2000/gif file"
+
+cat << EOF
+This is just a Python library to determine an image's size.
+EOF

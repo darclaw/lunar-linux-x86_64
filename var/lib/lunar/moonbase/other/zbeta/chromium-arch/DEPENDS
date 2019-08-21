@@ -1,0 +1,33 @@
+depends alsa-lib
+depends dbus
+depends desktop-file-utils
+depends flac
+depends cups
+depends json-glib
+depends xz
+depends gtk+-3
+depends harfbuzz
+depends hicolor-icon-theme
+depends icu4c
+depends libevent
+depends libxslt
+depends libwebp
+depends libexif
+depends libjpeg-turbo
+depends libgcrypt
+depends pulseaudio
+depends ffmpeg
+depends libsecret
+depends libvpx
+depends libXScrnSaver
+depends re2
+depends nss
+depends opus
+depends pciutils
+depends minizip
+depends snappy
+depends xdg-utils
+depends mesa-lib
+depends %UDEV
+
+optional_depends libgnome-keyring "" "for storing passwords in GNOME keyring"

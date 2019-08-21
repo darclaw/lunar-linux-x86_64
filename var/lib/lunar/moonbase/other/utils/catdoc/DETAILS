@@ -1,0 +1,16 @@
+          MODULE=catdoc
+         VERSION=0.95
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://ftp.wagner.pp.ru/pub/catdoc/
+      SOURCE_VFY=sha256:514a84180352b6bf367c1d2499819dfa82b60d8c45777432fa643a5ed7d80796
+        WEB_SITE=http://www.wagner.pp.ru/~vitus/software/catdoc/
+         ENTERED=20020504
+         UPDATED=20171130
+           SHORT="Outputs MS Word, Excel, PowerPoint and RTF Files as text"
+
+cat << EOF
+catdoc is program which reads one or more Microsoft word files and
+outputs text, contained inside them to standard output. Therefore it
+does same work for .doc files, as unix cat command for plain ASCII
+files.
+EOF

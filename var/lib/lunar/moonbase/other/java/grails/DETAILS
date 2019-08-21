@@ -1,0 +1,16 @@
+          MODULE=grails
+         VERSION=3.3.3
+          SOURCE=$MODULE-$VERSION.zip
+      SOURCE_URL=https://github.com/grails/grails-core/releases/download/v$VERSION/
+      SOURCE_VFY=sha256:514aa07db10cf530b283ac90e3e08938fea3eaaf8dfab9307c1cbc2b7768eb20
+        WEB_SITE=http://grails.org/
+         ENTERED=20080828
+         UPDATED=20180315
+           SHORT="Groovy on rails, web framework"
+
+cat <<EOF
+It's an open-source web application framework that leverages the Groovy
+language and complements Java Web development.
+You can use Grails as a standalone development environment that hides all
+configuration details or integrate your Java business logic.
+EOF

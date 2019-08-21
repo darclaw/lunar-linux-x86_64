@@ -1,0 +1,19 @@
+          MODULE=libunique
+         VERSION=1.1.6
+          SOURCE=$MODULE-$VERSION.tar.bz2
+         SOURCE2=libunique-1.1.6-upstream_fixes-1.patch
+      SOURCE_URL=$GNOME_URL/sources/$MODULE/${VERSION%.*}
+     SOURCE2_URL=http://www.linuxfromscratch.org/patches/blfs/svn/
+      SOURCE_VFY=sha256:e5c8041cef8e33c55732f06a292381cb345db946cf792a4ae18aa5c66cdd4fbb
+     SOURCE2_VFY=sha256:36203c672c520e508e38b59ab7cc65297ac209e0e70a398b78275687a2126589
+        WEB_SITE=http://live.gnome.org/LibUnique
+         ENTERED=20080825
+         UPDATED=20140922
+           SHORT="A library for single instance application"
+
+cat << EOF
+Unique is a library for writing single instance application. If you
+launch a single instance application twice, the second instance will
+either just quit or will send a message to the running instance.
+EOF
+

@@ -1,0 +1,3 @@
+depends zlib
+
+optional_depends readline "--enable-readline" "" "for readline support"

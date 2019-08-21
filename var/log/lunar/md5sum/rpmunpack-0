@@ -1,0 +1,6 @@
+02a71e91ed671f16f4cc85f35d834170  /usr/bin/rpm2cpio
+97d71d04c763f5133f39533ed43179a8  /usr/bin/rpmunpack
+89a06e2ff0d9efd3881b2b0d4920d6d4  /usr/share/doc/rpmunpack/README
+a05715681e8fe3785c9682923a8b129c  /var/log/lunar/install/rpmunpack-0
+6e1941d6064e4e2dfcbf754915919d82  /var/log/lunar/compile/rpmunpack-0.xz
+438a1e5822c47c62d73300d0bc561557  /var/log/lunar/md5sum/rpmunpack-0

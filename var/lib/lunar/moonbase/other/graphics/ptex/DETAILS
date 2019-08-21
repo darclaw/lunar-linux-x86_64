@@ -1,0 +1,20 @@
+          MODULE=ptex
+         VERSION=2.3.0
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/wdas/ptex/archive/v${VERSION}.tar.gz
+      SOURCE_VFY=sha256:285947961ac7da2a7a15955259e271a50e485793e1d596d9f254c847301eda92
+        WEB_SITE=http://ptex.us/overview.html
+         ENTERED=20180125
+         UPDATED=20180822
+           SHORT="Per-Face Texture Mapping"
+
+cat << EOF
+Ptex is a texture mapping system developed by Walt Disney Animation Studios for production-quality rendering:
+
+No UV assignment is required! Ptex applies a separate texture to each face of a subdivision or polygon mesh.
+
+The Ptex file format can efficiently store hundreds of thousands of texture images in a single file.
+
+The Ptex API provides cached file I/O and high-quality filtering - everything that is needed to easily add
+Ptex support to a production-quality renderer or texture authoring application.
+EOF

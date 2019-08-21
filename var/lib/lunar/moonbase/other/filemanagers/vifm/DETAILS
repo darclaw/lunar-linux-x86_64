@@ -1,0 +1,16 @@
+          MODULE=vifm
+         VERSION=0.10
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/vifm/vifm/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:e5681c9e560e23d9deeec3b5b12e0ccad82612d9592c00407f3dd75cf5066548
+        WEB_SITE=http://github.com/vifm/vifm/
+         ENTERED=20170507
+         UPDATED=20181113
+           SHORT="Ncurses based file manager with vi like keybindings"
+
+cat << EOF
+Vifm is an ncurses based file manager with vi like keybindings/modes/options/
+commands/configuration, which also borrows some useful ideas from mutt.
+Vifm gives you complete keyboard control over your files without having to learn
+a new set of commands.
+EOF

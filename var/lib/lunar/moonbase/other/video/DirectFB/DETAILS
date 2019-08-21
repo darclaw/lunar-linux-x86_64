@@ -1,0 +1,20 @@
+          MODULE=DirectFB
+         VERSION=1.7.7
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://sources.webos-ports.org/
+      SOURCE_VFY=sha256:b785c638dc31b8fe3a7c81be1475c89b2255ab3d67b777c747d3fbc52f8027a3
+        WEB_SITE=http://www.directfb.org
+         ENTERED=20020713
+         UPDATED=20150419
+           SHORT="hardware graphics acceleration, input device handling and abstraction"
+
+cat << EOF
+DirectFB is a thin library that provides developers with hardware
+graphics acceleration, input device handling and abstraction, integrated
+windowing system with support for translucent windows and multiple
+display layers on top of the Linux Framebuffer Device.
+It is a complete hardware abstraction layer with software fallbacks for
+every graphics operation that is not supported by the underlying hardware.
+DirectFB adds graphical power to embedded systems and sets a new standard
+for graphics under Linux.
+EOF

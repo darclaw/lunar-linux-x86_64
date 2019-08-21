@@ -1,0 +1,13 @@
+          MODULE=pdfjs
+         VERSION=2.0.943
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/mozilla/pdf.js/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:4f48077b313f89b88a1f917e6c7ffa465f891667724daeacdca755295581e77d
+        WEB_SITE=https://github.com/mozilla/pdf.js/
+         ENTERED=20181003
+         UPDATED=20181110
+           SHORT="PDF reader in JavaScript"
+
+cat <<EOF
+A PDF reader written in JavaScript.
+EOF

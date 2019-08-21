@@ -1,0 +1,18 @@
+          MODULE=python-pygobject
+         VERSION=3.32.1
+          SOURCE=pygobject-$VERSION.tar.xz
+      SOURCE_URL=$GNOME_URL/sources/pygobject/${VERSION%.*}
+      SOURCE_VFY=sha256:32c99def94b8dea5ce9e4bc99576ef87591ea779b4db77cfdca7af81b76d04d8
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/pygobject-$VERSION
+        WEB_SITE=http://www.pygtk.org/
+         ENTERED=20050319
+         UPDATED=20190422
+        REPLACES=pygobject
+           SHORT="Python bindings for GObject"
+
+cat << EOF
+PyGObject provides a convenient wrapper for the GObject+ library for use in
+Python programs, and takes care of many of the boring details such as managing
+memory and type casting.  When combined with PyGTK, PyORBit and gnome-python,
+it can be used to write full featured GNOME applications.
+EOF

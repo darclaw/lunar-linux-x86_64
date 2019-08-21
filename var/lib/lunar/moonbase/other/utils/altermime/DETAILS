@@ -1,0 +1,18 @@
+          MODULE=altermime
+         VERSION=0.3.10
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.pldaniels.com/$MODULE/
+      SOURCE_VFY=sha256:8334da6b55d4a05dfe1492389dfe1f289953053a21773849b060d7c856ddc36e
+        WEB_SITE=http://www.pldaniels.com/altermime/
+         ENTERED=20030103
+         UPDATED=20101212
+           SHORT="A MIME encoder mail modifier"
+
+cat << EOF
+alterMIME is a small program which is used to alter your mime-encoded
+emailpacks as typically received by Inflex, XaMime and AMaViS.
+alterMIME will allow you to put in things like disclaimers in each
+email's text body, and also permit you to nullify (make into a zero-byte)
+attachments.
+EOF
+

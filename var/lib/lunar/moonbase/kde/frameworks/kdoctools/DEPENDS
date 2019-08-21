@@ -1,0 +1,5 @@
+depends python2
+depends docbook-xml
+depends docbook-xsl
+depends karchive
+depends ki18n

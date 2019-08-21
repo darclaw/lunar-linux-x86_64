@@ -1,0 +1,12 @@
+depends cmake
+depends libXmu
+
+optional_depends %JPEG \
+                 " -DJAS_ENABLE_LIBJPEG=ON" \
+                 " -DJAS_ENABLE_LIBJPEG=OFF" \
+                 "for JPEG support"
+
+optional_depends freeglut \
+                 " -DJAS_ENABLE_OPENGL=ON" \
+                 " -DJAS_ENABLE_OPENGL=OFF" \
+                 "for OpenGL support"

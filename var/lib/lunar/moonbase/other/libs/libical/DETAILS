@@ -1,0 +1,17 @@
+          MODULE=libical
+         VERSION=3.0.4
+          SOURCE=$MODULE-$VERSION.tar.gz
+ SOURCE_URL_FULL=http://github.com/$MODULE/$MODULE/archive/v$VERSION.tar.gz
+      SOURCE_VFY=sha256:20f39343701ccd3ad896a9f9e982fdf85c1d3a35572e9d962216b69a64aef2ae
+        WEB_SITE=https://github.com/libical/libical/
+         ENTERED=20021128
+         UPDATED=20181002
+           SHORT="An implementation of the IETF's Calendar protocol"
+
+cat << EOF
+Libical is an Open Source implementation of the iCalendar protocols and protocol
+data units. The iCalendar specification describes how calendar clients can
+communicate with calendar servers so users can store their calendar data and
+arrange meetings with other users. Libical implements RFC2445, RFC2446 and some
+of RFC2447.
+EOF

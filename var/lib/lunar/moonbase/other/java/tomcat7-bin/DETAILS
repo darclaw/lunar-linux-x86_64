@@ -1,0 +1,14 @@
+          MODULE=tomcat7-bin
+         VERSION=7.0.78
+          SOURCE=apache-tomcat-$VERSION.tar.gz
+      SOURCE_URL=http://archive.apache.org/dist/tomcat/tomcat-7/v$VERSION/bin/
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/apache-tomcat-$VERSION
+      SOURCE_VFY=sha256:7ac4caaf25281e83cba9711e823b23b587a960dc8fb09bf9f039bed9e62b11bf
+        WEB_SITE=http://tomcat.apache.org
+         ENTERED=20110813
+         UPDATED=20170606
+           SHORT="Servlet container for Java Servlet and JavaServer Pages"
+
+cat <<EOF
+Tomcat 7.0.x servlet container for Java Servlet and JavaServer Pages.
+EOF

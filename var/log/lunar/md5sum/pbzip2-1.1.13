@@ -1,0 +1,7 @@
+73e5961c6b926ba922a19c51edd782fc  /usr/bin/pbzip2
+f5cee88ff25aeb702ae95b17119f424a  /usr/share/doc/pbzip2/ChangeLog
+07a2a96c3b929ad7a4074f473a215178  /usr/share/doc/pbzip2/README
+bf564e3d5c065ddb6ac5d07e1af47f3b  /usr/share/man/man1/pbzip2.1.gz
+07cdbfe0a33b1a93aa60bed68710465f  /var/log/lunar/install/pbzip2-1.1.13
+3add285e6929baf82df8e964553c9a53  /var/log/lunar/compile/pbzip2-1.1.13.xz
+8d9f8dcc7909e0d53b449641e913ddd0  /var/log/lunar/md5sum/pbzip2-1.1.13

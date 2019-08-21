@@ -1,0 +1,17 @@
+          MODULE=lxterminal
+         VERSION=0.3.2
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$SFORGE_URL/lxde
+      SOURCE_VFY=sha256:3166b18493a8e55811b02aa0de825cbbea65e2b628e69006c1a65b98e1bb4484
+        WEB_SITE=http://lxde.org
+         ENTERED=20090713
+         UPDATED=20181211
+           SHORT="A VTE terminal for LXDE"
+      MAINTAINER=florin@lunar-linux.org
+
+cat << EOF
+LXterminal is a VTE-based terminal emulator with support for multiple tabs.
+It is completely desktop-independent and does not have any unnecessary
+dependencies. In order to reduce memory usage and increase the performance
+all instances of the terminal are sharing a single process.
+EOF

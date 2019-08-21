@@ -1,0 +1,9 @@
+acb4c952c5f4ef7126ad7c24aa4ae3ac  /usr/bin/hdparm
+b3ab120d416215986e3900e83b03048b  /usr/bin/wiper.sh
+618797463375bb5e212839f922cc1afd  /usr/share/doc/hdparm/Changelog
+450e57ea7f058a7511c839a8c6bbc969  /usr/share/doc/hdparm/README.acoustic
+c570640f3ef3fbb44fa4d80a5b6c0d49  /usr/share/doc/wiper/README.txt
+4d3760a72289cd7fbc0447607bcbb705  /usr/share/man/man8/hdparm.8.gz
+846ab21c71a3375bcf5798893820f4f9  /var/log/lunar/install/hdparm-9.58
+e97dcd7541bff44fd413ba9065d412eb  /var/log/lunar/compile/hdparm-9.58.xz
+49831744264b653e1a9eeae37a9394be  /var/log/lunar/md5sum/hdparm-9.58

@@ -1,0 +1,17 @@
+/usr
+/usr/bin
+/usr/bin/efibootdump
+/usr/bin/efibootmgr
+/usr/share
+/usr/share/doc
+/usr/share/doc/efibootmgr
+/usr/share/doc/efibootmgr/INSTALL
+/usr/share/doc/efibootmgr/README
+/usr/share/doc/efibootmgr/README.md
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/efibootdump.8.gz
+/usr/share/man/man8/efibootmgr.8.gz
+/var/log/lunar/install/efibootmgr-17
+/var/log/lunar/compile/efibootmgr-17.xz
+/var/log/lunar/md5sum/efibootmgr-17

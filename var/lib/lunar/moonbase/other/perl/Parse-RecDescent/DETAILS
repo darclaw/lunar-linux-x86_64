@@ -1,0 +1,43 @@
+          MODULE=Parse-RecDescent
+         VERSION=1.967015
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://search.cpan.org/CPAN/authors/id/J/JT/JTBRAUN
+      SOURCE_VFY=sha256:1943336a4cb54f1788a733f0827c0c55db4310d5eae15e542639c9dd85656e37
+        WEB_SITE=https://search.cpan.org/~jtbraun/Parse-RecDescent
+            TYPE=perl
+         ENTERED=20090320
+         UPDATED=20181018
+           SHORT="generate recursive-descent parsers"
+cat << EOF
+    RecDescent incrementally generates top-down recursive-descent text
+    parsers from simple yacc-like grammar specifications. It provides:
+
+        * Regular expressions or literal strings as terminals (tokens),
+
+        * Multiple (non-contiguous) productions for any rule,
+
+        * Repeated, optional and alternate subrules within productions,
+
+        * Late-bound (run-time dispatched) subrules
+
+        * Full access to Perl within actions specified as part of the grammar,
+
+        * Simple automated error reporting during parser generation and parsing,
+
+        * The ability to commit to, uncommit to, or reject particular
+          productions during a parse,
+
+        * Incremental extension of the parsing grammar (even during a parse),
+
+        * Precompilation of parser objects,
+
+        * User-definable reduce-reduce conflict resolution via
+          "scoring" of matching productions.
+
+
+LIMITATIONS
+
+    * There's no support for parsing directly from an input stream.
+
+    * The generator doesn't handle left-recursion.
+EOF

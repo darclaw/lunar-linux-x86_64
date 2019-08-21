@@ -1,0 +1,17 @@
+depends wayland-protocols
+depends meson
+
+optional_depends scdoc "" "" "for man paged install"
+
+optional_depends systemd "-Dlogind-provider=systemd" "" "for systemd logind support"
+optional_depends elogind "-Dlogind-provider=elogind" "" "for elogind support"
+
+optional_depends bash-completion \
+                 "-Dbash-completions=true" \
+                 "-Dbash-completions=false" \
+                 "for bash completions install"
+
+optional_depends zsh \
+                 "-Dzsh-completions=true" \
+                 "-Dzsh-completions=false" \
+                 "for zsh completions install"

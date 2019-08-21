@@ -1,0 +1,3 @@
+depends libSM
+depends libXaw
+depends libXdmcp

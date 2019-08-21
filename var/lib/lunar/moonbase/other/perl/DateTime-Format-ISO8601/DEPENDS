@@ -1,0 +1,2 @@
+depends File-Find-Rule
+depends Test-Distribution

@@ -1,0 +1,19 @@
+          MODULE=Image-ExifTool
+         VERSION=11.11
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://www.sno.phy.queensu.ca/~phil/exiftool
+      SOURCE_VFY=sha256:e64eee75cdbc0944ea598bade44a2c100e7c940ce7d163cbbd087d2bd00cefeb
+        WEB_SITE=https://www.sno.phy.queensu.ca/~phil/exiftool
+            TYPE=perl
+         ENTERED=20080913
+         UPDATED=20181018
+           SHORT="perl module for editing, writing and editing meta information"
+
+cat << EOF
+Image::ExifTool
+
+ExifTool is a platform-independent Perl library plus a command-line
+application for reading, writing and editing meta information in
+image, audio and video files.
+
+EOF

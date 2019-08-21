@@ -1,0 +1,14 @@
+          MODULE=vcdimager
+         VERSION=2.0.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$GNU_URL/$MODULE
+      SOURCE_VFY=sha256:67515fefb9829d054beae40f3e840309be60cda7d68753cafdd526727758f67a
+        WEB_SITE=http://www.gnu.org/software/vcdimager
+         ENTERED=20020510
+         UPDATED=20180113
+           SHORT="Tools for working with Video CDs and Super Video CDs"
+
+cat << EOF
+VCDImager is a full-featured mastering suite for authoring, disassembling
+and analyzing Video CDs and Super Video CDs.
+EOF

@@ -1,0 +1,14 @@
+          MODULE=libebml
+         VERSION=1.3.8
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://dl.matroska.org/downloads/$MODULE
+      SOURCE_VFY=sha256:8b33246580249a9f33fac283ed474d68aada1433ff254808cab0571959555b78
+        WEB_SITE=http://www.matroska.org
+         ENTERED=20031113
+         UPDATED=20190527
+           SHORT="EBML implementation library"
+
+cat << EOF
+This library implements EBML (Extensible Binary Meta Language), a binary
+derivative of XML.
+EOF

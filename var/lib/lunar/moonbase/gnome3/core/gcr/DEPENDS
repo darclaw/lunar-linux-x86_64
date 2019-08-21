@@ -1,0 +1,5 @@
+depends libgcrypt
+depends p11-kit
+depends dconf
+depends hicolor-icon-theme
+depends desktop-file-utils

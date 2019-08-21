@@ -1,0 +1,14 @@
+/usr
+/usr/bin
+/usr/bin/traceroute
+/usr/share
+/usr/share/doc
+/usr/share/doc/traceroute
+/usr/share/doc/traceroute/ChangeLog
+/usr/share/doc/traceroute/README
+/usr/share/man
+/usr/share/man/man8
+/usr/share/man/man8/traceroute.8.gz
+/var/log/lunar/install/traceroute-2.1.0
+/var/log/lunar/compile/traceroute-2.1.0.xz
+/var/log/lunar/md5sum/traceroute-2.1.0

@@ -1,0 +1,9 @@
+depends hicolor-icon-theme
+depends python
+depends python-six
+depends python-cssselect
+depends cssutils
+depends hunspell
+depends minizip
+depends python-lxml
+depends qt5

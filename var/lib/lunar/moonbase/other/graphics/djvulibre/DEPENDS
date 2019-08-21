@@ -1,0 +1,4 @@
+depends tiff
+depends %JPEG
+
+optional_depends librsvg "" "" "for SVG support"

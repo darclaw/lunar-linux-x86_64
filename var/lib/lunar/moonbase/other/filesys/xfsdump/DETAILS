@@ -1,0 +1,18 @@
+          MODULE=xfsdump
+         VERSION=3.0.4
+          SOURCE=${MODULE}-${VERSION}.tar.gz
+      SOURCE_URL=ftp://oss.sgi.com/projects/xfs/cmd_tars
+      SOURCE_VFY=sha1:7b127ad608986d4330587b38e666669f914db585
+        WEB_SITE=http://oss.sgi.com/projects/xfs/
+         ENTERED=20020531
+         UPDATED=20100401
+           SHORT="dump and restore utilities for XFS filesystems."
+           PSAFE=no
+
+cat << EOF
+xfsdump and xfsrestore dump and restore utilities for XFS file systems,
+including extended attribute and DMAPI support.  For dumping and
+restoring non-XFS you will not want to use xfsdump or xfsrestore, but
+rather dump and restore utilities designed for that filesystem
+(dump and restore in the case of ext2 or ext3, and so on).
+EOF

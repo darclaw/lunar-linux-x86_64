@@ -1,0 +1,17 @@
+db936f7bc8fe990d4f294132568e0c95  /lib/libz.a
+3bea3dc76dcee7296fb65e4abf249561  /lib/libz.so.1.2.11
+95e83c46958f6395f746c80cc6799e76  /usr/include/zconf.h
+0338828e9d00c94645648b1517108324  /usr/include/zlib.h
+0e5e8a2ade008f436fc16a8f2a9ca905  /usr/lib/pkgconfig/zlib.pc
+5b1b3f8b1fc98209b9492717ee39719c  /usr/share/doc/zlib/ChangeLog
+63be46f443f80cc9081ed765198d4b8a  /usr/share/doc/zlib/doc/algorithm.txt
+c9680de1a6b8939e16fd5e2a4f4785b8  /usr/share/doc/zlib/doc/rfc1950.txt
+fe89c9b2d3b621452c4f868590635c5f  /usr/share/doc/zlib/doc/rfc1951.txt
+7c4ee539faa6c908c3860588df424be1  /usr/share/doc/zlib/doc/rfc1952.txt
+33a7749453d872da575e01c2c62fe877  /usr/share/doc/zlib/doc/txtvsbin.txt
+b7a1991f01daea3efe108a215c5514a5  /usr/share/doc/zlib/FAQ
+0ff45db88393c3152e458a047bba0ff1  /usr/share/doc/zlib/README
+24cfd217ff21fdb74382c064788d3e6e  /usr/share/man/man3/zlib.3.gz
+4f09bedcd979656ff1b415e659c3415b  /var/log/lunar/install/zlib-1.2.11
+357d6b995e0eba4da2b41fabebebe5ab  /var/log/lunar/compile/zlib-1.2.11.xz
+c37350ff9164c8fa14887ceaddebf8f4  /var/log/lunar/md5sum/zlib-1.2.11

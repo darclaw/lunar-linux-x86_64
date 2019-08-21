@@ -1,0 +1,17 @@
+          MODULE=kdewebkit
+         VERSION=5.57.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/frameworks/$(module_version kf5)
+      SOURCE_VFY=sha256:809e9df4ac3ca8b59799c8781694092cb1793f03af0b87a347a1c6019f96a592
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=https://projects.kde.org/projects/frameworks/kdewebkit
+         ENTERED=20150205
+         UPDATED=20190415
+           SHORT="integration of the HTML rendering engine WebKit"
+
+cat << EOF
+Integration of the HTML rendering engine WebKit.
+This library provides KDE integration of the QtWebKit library. If you are
+using QtWebKit in your KDE application, you are encouraged to use this layer
+instead of using the QtWebKit classes directly.
+EOF

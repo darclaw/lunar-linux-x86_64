@@ -1,0 +1,17 @@
+          MODULE=xfce4-fsguard-plugin
+         VERSION=1.0.2
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://archive.xfce.org/src/panel-plugins/$MODULE/${VERSION%.*}/
+      SOURCE_VFY=sha256:a2c8d59386ae3d23cf6bdd06a1cdd7a1b9473cf6f38ae106600b194c601040ae
+        WEB_SITE=http://www.xfce.org
+         ENTERED=20061124
+         UPDATED=20150309
+           SHORT="XFCE plugin to monitor free space on mount points"
+
+cat << EOF
+The FSGuard panel plugin checks free space on a chosen mount point
+frequently and displays a message when a limit is reached. There are
+two limits: a warning limit where only the icon changes, and an urgent
+limit that advise the user with a message. The icon button can be
+clicked to open the chosen mount point.
+EOF

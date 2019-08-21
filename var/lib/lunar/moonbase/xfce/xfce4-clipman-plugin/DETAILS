@@ -1,0 +1,16 @@
+          MODULE=xfce4-clipman-plugin
+         VERSION=1.2.6
+          SOURCE=$MODULE-$VERSION.tar.bz2
+      SOURCE_URL=http://archive.xfce.org/src/panel-plugins/$MODULE/${VERSION%.*}
+      SOURCE_VFY=sha1:71767fef0a8366bb9a6bd3edeacf4a8dabdcaa40
+        WEB_SITE=http://goodies.xfce.org/projects/panel-plugins/xfce4-clipman-plugin
+         ENTERED=20061124
+         UPDATED=20140801
+           SHORT="clipboard plugin for the Xfce panel"
+
+cat << EOF
+Clipman allows you to keep several clipboard selections in memory
+which you can then use to toggle. It can pull the clips from both
+the selection and the copy buffer, restore your clipboard on login
+and prevent an empty clipboard.
+EOF

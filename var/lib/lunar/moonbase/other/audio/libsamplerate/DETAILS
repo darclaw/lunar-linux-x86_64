@@ -1,0 +1,15 @@
+          MODULE=libsamplerate
+         VERSION=0.1.9
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.mega-nerd.com/SRC
+      SOURCE_VFY=sha256:0a7eb168e2f21353fb6d84da152e4512126f7dc48ccb0be80578c565413444c1
+        WEB_SITE=http://www.mega-nerd.com/SRC
+         ENTERED=20040102
+         UPDATED=20161023
+           SHORT="Sample Rate Converter for audio"
+
+cat << EOF
+Secret Rabbit Code (aka libsamplerate) is a Sample Rate Converter for audio.
+One example of where such a thing would be useful is converting audio from
+the CD sample rate of 44.1kHz to the 48kHz sample rate used by DAT players.
+EOF

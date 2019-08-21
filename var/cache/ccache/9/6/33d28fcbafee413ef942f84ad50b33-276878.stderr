@@ -1,0 +1,52 @@
+cleanup.c: In function '_exit_cleanup':
+cleanup.c:135:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   if (DEBUG_GTE(EXIT, 2)) {
+      ^
+In file included from cleanup.c:142:
+case_N.h:28:2: note: here
+  case 1:
+  ^~~~
+cleanup.c:145:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   if (cleanup_child_pid != -1) {
+      ^
+In file included from cleanup.c:156:
+case_N.h:31:2: note: here
+  case 2:
+  ^~~~
+cleanup.c:159:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   if (cleanup_got_literal && (cleanup_fname || cleanup_fd_w != -1)) {
+      ^
+In file included from cleanup.c:187:
+case_N.h:34:2: note: here
+  case 3:
+  ^~~~
+cleanup.c:195:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   if (!exit_code && !code)
+      ^
+In file included from cleanup.c:199:
+case_N.h:37:2: note: here
+  case 4:
+  ^~~~
+cleanup.c:226:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   if ((exit_code && line > 0)
+       ~~~~~~~~~~~~~~~~~~~~~~~
+    || am_daemon || (logfile_name && (am_server || !INFO_GTE(STATS, 1))))
+    ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from cleanup.c:230:
+case_N.h:40:2: note: here
+  case 5:
+  ^~~~
+cleanup.c:233:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   if (DEBUG_GTE(EXIT, 1)) {
+      ^
+In file included from cleanup.c:242:
+case_N.h:43:2: note: here
+  case 6:
+  ^~~~
+cleanup.c:245:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   if (exit_code && exit_code != RERR_SOCKETIO && exit_code != RERR_STREAMIO && exit_code != RERR_SIGNAL1
+      ^
+In file included from cleanup.c:258:
+case_N.h:46:2: note: here
+  case 7:
+  ^~~~

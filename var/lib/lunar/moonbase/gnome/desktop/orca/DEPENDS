@@ -1,0 +1,4 @@
+depends pyorbit
+depends python2-dbus
+
+# missing dependencies : BrlTTY, BrlAPI

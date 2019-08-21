@@ -1,0 +1,84 @@
+depends zlib
+depends boost
+depends meson
+
+optional_depends alsa-lib   "-Dalsa=enabled"       "-Dalsa=disabled"      "to enable ALSA output"
+optional_depends pulseaudio "-Dpulse=enabled"      "-Dpulse=disabled"     "to enable PulseAudio output"
+optional_depends jack       "-Djack=enabled"       "-Djack=disabled"      "to enable JACK output"
+optional_depends libao      "-Dao=enabled"         "-Dao=disabled"        "to enable AO output"
+optional_depends openal     "-Dopenal=enabled"     "-Dopenal=disabled"    "to enable OpenAL output"
+optional_depends ffmpeg     "-Dffmpeg=enabled"     "-Dffmpeg=disabled"    "to enable support for multiple other input codecs"
+optional_depends lame       "-Dlame=enabled"       "-Dlame=disabled"      "to enable MP3 encoder support"
+optional_depends twolame    "-Dtwolame=enabled"    "-Dtwolame=disabled"   "to enable MP2 encoder support"
+optional_depends mpg123     "-Dmpg123=enabled"     "-Dmpg123=disabled"    "to enable mpg123 decoder support"
+optional_depends opus       "-Dopus=enabled"       "-Dopus=disabled"      "to enable Opus codec support"
+optional_depends flac       "-Dflac=enabled"       "-Dflac=disabled"      "to enable FLAC input support"
+optional_depends faad2      "-Dfaad=enabled"       "-Dfaad=disabled"      "to enable AAC input support"
+optional_depends audiofile  "-Daudiofile=enabled"  "-Daudiofile=disabled" "to enable WAVE/AIFF and AU input support"
+optional_depends libsndfile "-Dsndfile=enabled"    "-Dsndfile=disabled"   "to enable sndfile input support"
+optional_depends libmad     "-Dmad=enabled"        "-Dmad=disabled"       "to enable MAD input support"
+optional_depends wavpack    "-Dwavpack=enabled"    "-Dwavpack=disabled"   "to enable WavPack decoder support"
+optional_depends libmikmod  "-Dmikmod=enabled"     "-Dmikmod=disabled"    "to enable MOD input support"
+optional_depends wildmidi   "-Dwildmidi=enabled"   "-Dwildmidi=disabled"   "to enable MIDI input support"
+optional_depends mpcdec     "-Dmpcdec=enabled"     "-Dmpcdec=disabled"    "to enable Musepak decoder support"
+optional_depends curl       "-Dcurl=enabled"       "-Dcurl=disabled"      "to play HTTP streams"
+optional_depends libmms     "-Dmms=enabled"        "-Dmms=disabled"       "to enable MMS protocol support"
+optional_depends libid3tag  "-Did3tag=enabled"     "-Did3tag=disabled"    "to enable support for ID3 tags"
+optional_depends libupnp    "-Dupnp=enabled"       "-Dupnp=disabled"      "to enable UPnP client support"
+optional_depends libnfs     "-Dnfs=enabled"        "-Dnfs=disabled"       "to enable NFS support"
+optional_depends samba      "-Dsmbclient=enabled"  "-Dsmbclient=disabled" "to enable SMB support"
+
+optional_depends fluidsynth \
+                 "-Dfluidsynth=enabled" \
+                 "-Dfluidsynth=disabled" \
+                 "to enable MIDI decoder support"
+
+optional_depends dbus \
+                 "-Ddbus=enabled" \
+                 "-Ddbus=disabled" \
+                 "to enable DBUS support"
+
+optional_depends sqlite \
+                 "-Dsqlite=enabled" \
+                 "-Dsqlite=disabled" \
+                 "to enable the sticker database"
+
+optional_depends expat \
+                 "-Dexpat=enabled" \
+                 "-Dexpat=disabled" \
+                 "to enable XML support"
+
+optional_depends icu4c \
+                 "-Dicu=enabled" \
+                 "-Disu=disabled" \
+                 "to enable Unicode support"
+
+optional_depends chromaprint \
+                 "-Dchromaprint=enabled" \
+                 "-Dchromaprint=disabled" \
+                 "to enable the ChromaPrint/AcousticID support"
+
+optional_depends libvorbis \
+                 "-Dvorbis=enabled -D vorbisenc=enabled" \
+                 "-Dvorbis=disabled -D vorbisenc=disabled" \
+                 "to enable vorbis codec support"
+
+optional_depends libsamplerate \
+                 "-Dlibsamplerate=enabled" \
+                 "-Dlibsamplerate=disabled" \
+                 "to support advanced sample rate conversions"
+
+optional_depends libcdio \
+                 "-Diso9660=enabled" \
+                 "-Diso9660=disabled" \
+                 "enable libiso9660 archive plugin"
+
+optional_depends libcdio-paranoia \
+                 "-Dcdio-paranoia=enabled" \
+                 "-Dcdio-paranoia=disabled" \
+                 "to enable audio CD support"
+
+optional_depends avahi \
+                 "-Dzeroconf=avahi" \
+                 "-Dzeroconf=disabled" \
+                 "to enable ZeroConf support"

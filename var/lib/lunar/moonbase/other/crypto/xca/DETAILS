@@ -1,0 +1,19 @@
+          MODULE=xca
+         VERSION=2.1.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://github.com/chris2511/xca/releases/download/RELEASE.$VERSION/
+      SOURCE_VFY=sha256:6c410e4f7e340681284059d2b7f46828e08dce6ff64e4a48baa02239c2f9d2de
+        WEB_SITE=http://xca.sourceforge.net/
+         ENTERED=20120513
+         UPDATED=20181031
+           SHORT="Certificate and Key management interface"
+cat << EOF
+This application is intended for creating and managing X.509
+certificates, certificate requests, RSA, DSA and EC private
+keys, Smartcards and CRLs. Everything that is needed for a CA is
+implemented. All CAs can sign sub-CAs recursively. These certificate
+chains are shown clearly. For an easy company-wide use there are
+customiseable templates that can be used for certificate or request
+generation. All crypto data is stored in an endian-agnostic file
+format portable across operating systems.
+EOF

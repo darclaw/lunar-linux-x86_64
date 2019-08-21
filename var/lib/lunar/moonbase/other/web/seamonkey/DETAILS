@@ -1,0 +1,16 @@
+          MODULE=seamonkey
+         VERSION=2.29.1
+          SOURCE=$MODULE-$VERSION.source.tar.bz2
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/comm-release
+      SOURCE_URL=ftp://ftp.mozilla.org/pub/mozilla.org/$MODULE/releases/$VERSION/source
+      SOURCE_VFY=sha1:56ae09baee2dd53e892c3b940642401ff6299746
+        WEB_SITE=http://www.seamonkey-project.org
+         ENTERED=20051208
+         UPDATED=20140927
+           SHORT="Seamonkey is a next generation mozilla web browser"
+cat << EOF
+Seamonkey is a next generation browser that is being developed by the Free Software
+Community. Initially, its development was based on a last beta version of Mozilla Web Suite.
+Most of code is shared now with FireFox but outlook and behaviour is made in classic
+mozilla style.
+EOF

@@ -1,0 +1,15 @@
+          MODULE=bochs
+         VERSION=2.6.9
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/bochs
+      SOURCE_VFY=sha256:ee5b677fd9b1b9f484b5aeb4614f43df21993088c0c0571187f93acb0866e98c
+        WEB_SITE=http://bochs.sourceforge.net
+         ENTERED=20011015
+         UPDATED=20170422
+           SHORT="i386 hardware emulator"
+
+cat << EOF
+Bochs is a portable x86 PC emulation software package that emulates
+enough of the x86 CPU, related AT hardware, and BIOS to run DOS,
+Windows 95, Linux, FreeBSD, and other OS's, all on your workstation.
+EOF

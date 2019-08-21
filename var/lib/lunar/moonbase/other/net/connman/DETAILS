@@ -1,0 +1,20 @@
+          MODULE=connman
+         VERSION=1.37
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=http://www.kernel.org/pub/linux/network/connman
+      SOURCE_VFY=sha256:
+        WEB_SITE=http://connman.net
+         ENTERED=20110202
+         UPDATED=20190402
+           SHORT="Fast and modular network connection manager"
+
+cat << EOF
+The ConnMan project provides a daemon for managing internet connections within
+embedded devices running the Linux operating system. The Connection Manager is
+designed to be slim and to use as few resources as possible, so it can be easily
+integrated. It is a fully modular system that can be extended, through plug-ins,
+to support all kinds of wired or wireless technologies. Also, configuration
+methods, like DHCP and domain name resolving, are implemented using plug-ins.
+The plug-in approach allows for easy adaption and modification for various use
+cases.
+EOF

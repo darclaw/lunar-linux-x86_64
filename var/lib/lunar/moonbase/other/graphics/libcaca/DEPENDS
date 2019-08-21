@@ -1,0 +1,7 @@
+depends ncurses
+depends pango
+
+optional_depends imlib2 \
+                 "--enable-imlib2"  \
+                 "--disable-imlib2" \
+                 "for Imlib2 graphics support"

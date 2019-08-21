@@ -1,0 +1,12 @@
+[Unit]
+Description=SSH Per-Connection Server - no daemon version
+After=sshd-keys.service
+
+[Service]
+ExecStart=-/usr/sbin/sshd -i
+ExecReload=/usr/bin/kill -HUP $MAINPID
+StandardInput=socket
+StandardError=syslog
+
+[Install]
+WantedBy=network.target

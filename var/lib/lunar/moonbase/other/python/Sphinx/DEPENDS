@@ -1,0 +1,8 @@
+depends docutils
+depends python-jinja
+depends python-pygments
+depends imagesize
+depends alabaster
+depends snowballstemmer
+depends python-babel
+depends python-requests

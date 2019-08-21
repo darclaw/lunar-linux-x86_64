@@ -1,0 +1,15 @@
+          MODULE=ocaml-gettext
+         VERSION=0.3.7
+          SOURCE=${MODULE}-${VERSION}.tar.gz
+ SOURCE_URL_FULL=https://github.com/gildor478/ocaml-gettext/archive/$VERSION.tar.gz
+      SOURCE_VFY=sha256:82f99289cb3c7ac5d1a410f74678b3b22444e1b136090bae1fff1e09fe0856aa
+        WEB_SITE=https://github.com/gildor478/ocaml-gettext
+         ENTERED=20130203
+         UPDATED=20180925
+           SHORT="Provides support for internationalization of OCaml program"
+PSAFE=no
+cat << EOF
+Provides support for internationalization of OCaml program. It uses the
+gettext convention and file format through a pure OCaml implementation
+or gettext C library binding.
+EOF

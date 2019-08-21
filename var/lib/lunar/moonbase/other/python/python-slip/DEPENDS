@@ -1,0 +1,4 @@
+depends polkit
+depends python-six
+depends python-dbus
+depends python-pygobject

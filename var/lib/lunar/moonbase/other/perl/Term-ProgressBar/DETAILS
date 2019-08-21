@@ -1,0 +1,17 @@
+          MODULE=Term-ProgressBar
+         VERSION=2.22
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=https://search.cpan.org/CPAN/authors/id/M/MA/MANWAR/
+      SOURCE_VFY=sha256:2642ecca5b0b038c14812bcad3a9611ff7911dc59c9104d220797f837a880c49
+        WEB_SITE=https://search.cpan.org/~manwar/Term-ProgressBar
+            TYPE=perl
+         ENTERED=20090328
+         UPDATED=20181018
+           SHORT="Perl module to provide a progress meter on a standard terminal"
+
+cat << EOF
+Term::ProgressBar provides a simple progress bar on the terminal,
+to let the user know that something is happening, roughly how much
+stuff has been done, and maybe an estimate at how long remains.
+EOF
+

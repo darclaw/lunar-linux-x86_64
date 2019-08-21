@@ -1,0 +1,23 @@
+          MODULE=nethack
+         VERSION=3.6.1
+           SOURCE=$MODULE-361-src.tgz
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/$MODULE-$VERSION/
+       SOURCE_URL=$SFORGE_URL/$MODULE/
+       SOURCE_VFY=sha256:4b8cbf1cc3ad9f6b9bae892d44a9c63106d44782a210906162a7c3be65040ab6
+        WEB_SITE=http://www.nethack.org
+         ENTERED=20070526
+         UPDATED=20181225
+           SHORT="A single player dungeon exploration game"
+
+cat << EOF
+NetHack is a single player dungeon exploration game that runs on a
+wide variety of computer systems, with a variety of graphical and text
+interfaces all using the same game engine. Unlike many other Dungeons &
+Dragons-inspired games, the emphasis in NetHack is on discovering the
+detail of the dungeon and not simply killing everything in sight - in
+fact, killing everything in sight is a good way to die quickly. Each game
+presents a different landscape - the random number generator provides
+an essentially unlimited number of variations of the dungeon and its
+denizens to be discovered by the player in one of a number of characters:
+you can pick your race, your role, and your gender.
+EOF

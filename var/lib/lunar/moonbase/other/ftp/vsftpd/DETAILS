@@ -1,0 +1,18 @@
+          MODULE=vsftpd
+         VERSION=3.0.3
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://security.appspot.com/downloads/
+      SOURCE_VFY=sha256:9d4d2bf6e6e2884852ba4e69e157a2cecd68c5a7635d66a3a8cf8d898c955ef7
+        WEB_SITE=https://security.appspot.com/vsftpd.html
+         ENTERED=20021109
+         UPDATED=20150725
+           SHORT="Secure and fast FTP server"
+    USE_WRAPPERS=no
+
+cat << EOF
+If your main requirement from an FTP server is one of the following
+things then yes, vsftpd is probably the FTP server you are looking for.
+  Security
+  Performance
+  Stability
+EOF

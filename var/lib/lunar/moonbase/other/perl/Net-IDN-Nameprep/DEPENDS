@@ -1,0 +1,2 @@
+depends Unicode-Stringprep
+depends CPAN-Meta-YAML

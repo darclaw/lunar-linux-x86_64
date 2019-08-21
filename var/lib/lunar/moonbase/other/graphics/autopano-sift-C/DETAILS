@@ -1,0 +1,17 @@
+          MODULE=autopano-sift-C
+         VERSION=2.5.1
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=$SFORGE_URL/hugin/
+      SOURCE_VFY=sha256:9a9029353f240b105a9c0e31e4053b37b0f9ef4bd9166dcb26be3e819c431337
+        WEB_SITE=http://hugin.sourceforge.net
+         ENTERED=20080913
+         UPDATED=20100317
+           SHORT="Creating panorama images"
+
+cat << EOF
+Panorama images are wide-angle images that amaze people: you often
+feel being inside the scene when watching a good panorama image.
+Creating such images is easy and everybody with a digital camera and
+a bit of patience can do it. Autopano-SIFT is there to make the
+creation of panorama images more fun.
+EOF

@@ -1,0 +1,15 @@
+          MODULE=screen-message
+         VERSION=0.24
+          SOURCE=$MODULE-$VERSION.tar.gz
+      SOURCE_URL=http://www.joachim-breitner.de/archive/$MODULE/
+      SOURCE_VFY=sha256:89d06c9a061ede527757b5f8128c64ee2139ce9e6c50c6faaf2e1c72725703ec
+        WEB_SITE=http://www.joachim-breitner.de/archive/screen-message
+         ENTERED=20130706
+         UPDATED=20170121
+           SHORT="display text as large as possible on your screen"
+
+cat << EOF
+Screen Message is a small program to display a text
+as large as possible on your screen. You can edit
+the text while Screen Message is running.
+EOF

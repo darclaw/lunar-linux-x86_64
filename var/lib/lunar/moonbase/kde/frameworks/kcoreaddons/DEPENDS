@@ -1,0 +1,4 @@
+depends gamin
+depends inotify-tools
+depends shared-mime-info
+depends extra-cmake-modules

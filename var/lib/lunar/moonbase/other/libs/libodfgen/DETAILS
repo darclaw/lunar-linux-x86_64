@@ -1,0 +1,21 @@
+          MODULE=libodfgen
+         VERSION=0.1.7
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$SFORGE_URL/libwpd/
+      SOURCE_VFY=sha256:323e491f956c8ca2abb12c998e350670930a32317bf9662b0615dd4b3922b831
+        WEB_SITE=http://sourceforge.net/projects/libwpd/files/libodfgen/
+         ENTERED=20150301
+         UPDATED=20180618
+           SHORT="Generate documents in OpenDocument Format"
+
+cat << EOF
+libodfgen is a library for generating documents in (surprise!) Open
+Document Format (ODF). It provides generator implementations for all
+document interfaces supported by librevenge:
+* text documents
+* vector drawings
+* presentations
+* spreadsheets
+As these APIs are used by multiple libraries, libodfgen can be used to
+generate ODF from many sources.
+EOF

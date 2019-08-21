@@ -1,0 +1,7 @@
+depends flex
+depends bison
+depends iptables
+
+optional_depends db "" "" "to build arpd"
+
+optional_depends linux-atm "" "" "to use ATM networks" n

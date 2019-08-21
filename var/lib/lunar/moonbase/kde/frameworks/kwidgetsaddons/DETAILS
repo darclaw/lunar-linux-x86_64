@@ -1,0 +1,14 @@
+          MODULE=kwidgetsaddons
+         VERSION=5.57.0
+          SOURCE=$MODULE-$VERSION.tar.xz
+      SOURCE_URL=$KDE_URL/stable/frameworks/$(module_version kf5)
+      SOURCE_VFY=sha256:abd80a566e1003bca7c72d3a0dc1ee470bc9935d11371cfff0d960f11e1ef5c2
+   MODULE_PREFIX=${KDE4_INSTALL_DIR:-/usr}
+        WEB_SITE=https://projects.kde.org/projects/frameworks/kwidgetsaddons
+         ENTERED=20150205
+         UPDATED=20190415
+           SHORT="Large set of desktop widgets"
+
+cat << EOF
+Add-on widgets and classes for applications that use the Qt Widgets module.
+EOF

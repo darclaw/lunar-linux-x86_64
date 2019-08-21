@@ -1,0 +1,15 @@
+          MODULE=python2-pygit2
+         VERSION=0.27.4
+          SOURCE=pygit2-$VERSION.tar.gz
+ SOURCE_URL_FULL=https://github.com/libgit2/pygit2/archive/v$VERSION.tar.gz
+      SOURCEE_VFY=sha256:be43f71591c3af8516256cadc080615568a610b4de1711232e0583f339aafe80
+SOURCE_DIRECTORY=$BUILD_DIRECTORY/pygit2-$VERSION
+        WEB_SITE=https://github.com/libgit2/pygit2/
+         ENTERED=20150214
+         UPDATED=20190409
+            TYPE=python2
+           SHORT="Python 2 bindings for libgit2"
+
+cat << EOF
+Python bindings for libgit2.
+EOF

@@ -1,0 +1,2 @@
+depends Module-Build
+depends Test-NoWarnings
